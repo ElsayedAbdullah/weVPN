@@ -68,6 +68,7 @@ ul {
 
 .primary--btn {
   background-color: $primaryColor;
+  font-family: "AvertaSemibold";
   color: #fff;
   border: 0;
   transition: background-color 0.3s ease-in-out;
@@ -199,6 +200,7 @@ header {
     }
     .hero-img-btn {
       background-color: $primaryColor;
+      font-family: "AvertaSemibold";
       color: #fff;
       padding: 24px 57px;
       border: none;
@@ -470,8 +472,6 @@ header {
       &.active {
         a {
           color: $primaryColor;
-          font-weight: bold;
-          font-family: "AvertaBold";
           position: relative;
 
           &:after {

@@ -61,6 +61,7 @@ ul {
 
 .primary--btn {
   background-color: #fd3e72;
+  font-family: "AvertaSemibold";
   color: #fff;
   border: 0;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -201,6 +202,7 @@ header .navbar .login .login-item .get-started:hover {
 
 .hero-img-content .hero-img-btn {
   background-color: #fd3e72;
+  font-family: "AvertaSemibold";
   color: #fff;
   padding: 24px 57px;
   border: none;
@@ -506,8 +508,6 @@ header .navbar .login .login-item .get-started:hover {
 
 .testimonials .testimonials-tabs li.active a {
   color: #fd3e72;
-  font-weight: bold;
-  font-family: "AvertaBold";
   position: relative;
 }
 
