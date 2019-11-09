@@ -333,6 +333,11 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+.hero-img-content {
+  position: relative;
+  z-index: 10;
+}
+
 .hero-img-content .hero-img-title {
   font-size: 80px;
   line-height: 88px;
@@ -421,8 +426,8 @@ header .navbar .login .login-item .get-started:hover {
 
 .hero-img .hero-img-image img {
   position: absolute;
-  top: -86px;
-  left: -170px;
+  top: 50px;
+  left: -10px;
   z-index: 1;
 }
 
@@ -430,8 +435,8 @@ header .navbar .login .login-item .get-started:hover {
   .hero-img .hero-img-image img {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
-    top: -220px;
-    left: -300px;
+    top: -130px;
+    left: -210px;
   }
 }
 
@@ -561,6 +566,7 @@ header .navbar .login .login-item .get-started:hover {
 .advantages {
   padding-top: 130px;
   padding-bottom: 200px;
+  overflow: hidden;
 }
 
 @media (max-width: 767px) {
@@ -1254,6 +1260,8 @@ header .navbar .login .login-item .get-started:hover {
 
 .testimonials .testimonials-slider .slider .owl-carousel .testim .review .review-img {
   display: inline-block;
+  position: relative;
+  top: -4px;
 }
 
 .testimonials .testimonials-slider .slider .owl-carousel .testim .review span {

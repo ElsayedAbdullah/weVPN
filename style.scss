@@ -302,6 +302,8 @@ header {
   }
 
   &-content {
+    position: relative;
+    z-index: 10;
     .hero-img-title {
       font-size: 80px;
       line-height: 88px;
@@ -368,13 +370,13 @@ header {
     }
     img {
       position: absolute;
-      top: -86px;
-      left: -170px;
+      top: 50px;
+      left: -10px;
       z-index: 1;
       @media #{$mobile} {
         transform: scale(0.5);
-        top: -220px;
-        left: -300px;
+        top: -130px;
+        left: -210px;
       }
     }
   }
@@ -474,6 +476,7 @@ header {
 .advantages {
   padding-top: 130px;
   padding-bottom: 200px;
+  overflow: hidden;
   @media #{$mobile} {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -995,6 +998,8 @@ header {
             position: relative;
             .review-img {
               display: inline-block;
+              position: relative;
+              top: -4px;
             }
             span {
               font-size: 16px;
