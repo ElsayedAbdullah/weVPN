@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>weVPN Homepage</title>
+    <title>WeVPN Homepage</title>
     <!-- Favicon -->
     <link rel="icon" href="imgs/favicon.ico" type="image/png" />
     <!-- bootstrap css -->
@@ -19,24 +19,19 @@
   </head>
 
   <body>
-    <!-- Start Header -->
+    <div class="wrapper-header">
+      <!-- Start Header -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand" href="index.html"
             ><img src="imgs/Logo.svg" draggable="false" alt="Logo"
           /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <img src="imgs/menu-btn.svg" alt="menu-btn">
+              <img src="imgs/close.svg" alt="menu-btn">
+            </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -64,8 +59,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Blog</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Support</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                >
+                  Support
+                </a>
               </li>
             </ul>
             <ul class="login">
@@ -86,13 +86,13 @@
     <section class="hero-img">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 order-2 order-md-1">
             <div class="hero-img-content">
               <h1 class="hero-img-title">
                 Top Notch Online Privacy
               </h1>
               <p class="hero-img-txt">World’s Leading VPN</p>
-              <button class="hero-img-btn">
+              <button class="hero-img-btn primary--btn">
                 Get Started Now
                 <i class="fa fa-caret-right" aria-hidden="true"></i>
               </button>
@@ -101,7 +101,7 @@
               >
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 order-1 order-md-2">
             <div class="hero-img-image">
               <img src="imgs/hero-image.png" draggable="false" alt="hero-image" />
             </div>
@@ -111,6 +111,7 @@
       <img class="header-shape" src="imgs/header-shape.svg" draggable="false" alt="imgs/header-shape">
     </section>
     <!-- End Hero Image -->
+    </div>
 
     <!-- Start Features -->
     <section class="features">
@@ -185,7 +186,7 @@
           </div>
         </div>
         <div class="row section-two">
-          <div class="col-md-6">
+          <div class="col-md-6 order-2 order-md-1">
             <div class="advantages-content">
               <h2 class="advantages-title">Anonymous Anytime, Anywhere</h2>
               <p class="advantages-desc">
@@ -195,7 +196,7 @@
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 order-1 order-md-2">
             <div class="advantages-img">
               <img src="imgs/browser.png" draggable="false" alt="browser img" />
             </div>
@@ -216,12 +217,12 @@
               </p>
               <ul class="advantages-icons">
                 <li><a href="#"><img src="imgs/microsoft.svg" draggable="false" alt="microsoft"></a></li>
-                <li><a href="#"><img src="imgs/apple.svg" draggable="false" alt="apple"></a></li>
+                <li><a href="#"><img src="imgs/MacOS.svg" draggable="false" alt="apple"></a></li>
                 <li><a href="#"><img src="imgs/Android.svg" draggable="false" alt="Android"></a></li>
                 <li><a href="#"><img src="imgs/ios.svg" draggable="false" alt="ios"></a></li>
                 <li><a href="#"><img src="imgs/linux.svg" draggable="false" alt="linux"></a></li>
-                <li><a href="#"><img src="imgs/browser-firefox.svg" draggable="false" alt="firefox"></a></li>
-                <li><a href="#"><img src="imgs/browser-chrome.svg" draggable="false" alt="chrome"></a></li>
+                <li><a href="#"><img src="imgs/Firefox.svg" draggable="false" alt="firefox"></a></li>
+                <li><a href="#"><img src="imgs/Chrome.svg" draggable="false" alt="chrome"></a></li>
               </ul>
               <button class="advantages-btn primary--btn">
                 Get Started Now
@@ -238,25 +239,31 @@
     <div class="servers">
       <div class="container">
         <h2 class="servers-title">World-Class and Ultrafast VPN Servers Across the Globe</h2>
+        <div class="server-map-img d-block d-md-none">
+          <img src="imgs/Map.png" alt="Map">
+        </div>
         <div class="servers-content">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-4">
               <div class="server-feat one">
                 <img src="imgs/server-feat1.svg" draggable="false" alt="server-feat1">
+                <!-- <img src="imgs/server-feat1-s.svg" draggable="false" alt="server-feat1"> -->
                 <h2>458</h2>
                 <span>Servers</span>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-4">
               <div class="server-feat two">
-                <img src="imgs/server-feat2.svg" draggable="false" alt="server-feat1">
+                <img src="imgs/server-feat2.svg" draggable="false" alt="server-feat2">
+                <!-- <img src="imgs/server-feat2-s.svg" draggable="false" alt="server-feat2"> -->
                 <h2>23</h2>
                 <span>Countries</span>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-4">
               <div class="server-feat three">
-                <img src="imgs/server-feat3.svg" draggable="false" alt="server-feat1">
+                <img src="imgs/server-feat3.svg" draggable="false" alt="server-feat3">
+                <!-- <img src="imgs/server-feat3-s.svg" draggable="false" alt="server-feat3"> -->
                 <h2>100 <span>%</span></h2>
                 <span>Ultra-fast</span>
               </div>
@@ -273,39 +280,45 @@
     </div>
     <!-- End Servers -->
 
-    <!-- Start Testimonials -->
+    <div class="wrapper">
+      <!-- Start Testimonials -->
     <section class="testimonials">
       <div class="container">
         <div class="row">
+          <div class="col-md-9 offset-md-3">
+            <p class="testimonials-text">See Why Customers Love <span>WeVPN</span></p>
+        <h2 class="testimonials-title">Loyal Service, Loyal Customers</h2>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-md-3">
             <ul class="testimonials-tabs">
-              <li class="active"><a href="#">Trustpilot</a>
+              <li class="active" data-content=".content-one"><a href="#">Trustpilot</a>
                 <span class="review">
                   <img src="imgs/star-sharp.svg" draggable="false" alt="star">
                   9.4
                 </span>
               </li>
-              <li><a href="#">App Store</a>
+              <li data-content=".content-two"><a href="#">App Store</a>
                 <span class="review">
                   <img src="imgs/star.svg" draggable="false" alt="star">
                   4.6
                 </span>
               </li>
-              <li><a href="#">Twitter</a></li>
+              <li data-content=".content-three"><a href="#">Twitter</a></li>
             </ul>
           </div>
-          <div class="col-md-9">
+          <div class="col-md-9 no-padding">
             <div class="testimonials-slider">
               
-              <div class="slider">
+              <div class="slider content-one">
                 <div class="container">
-                  <p class="testimonials-text">See Why Customers Love WeVPN</p>
-                  <h2 class="testimonials-title">Loyal Service, Loyal Customers</h2>
                   <div class="owl-carousel owl-theme" id="our-testimonial-slider">
                     <div class="testim">
-                      <img class="quote" src="imgs/quote.svg" draggable="false" alt="">
+                      <img class="quote" src="imgs/quote.svg" draggable="false" alt="quote">
                       <div class="review">
-                        <img src="imgs/fs-trustpilot.svg" draggable="false" alt="">
+                        <img class="review-img" src="imgs/trustpilot-star.svg" draggable="false" alt="trustpilot">
+                        <span>Trustpilot</span>
                       </div>
                       <p class="testim-txt">Non commodo aliquip est tempor nulla officia excepteur ex. Veniam aute esse ad do laboris ea proident cillum reprehenderit. Culpa enim.</p>
                       <div class="testim-author">
@@ -313,9 +326,10 @@
                       </div>
                     </div>
                     <div class="testim">
-                      <img class="quote" src="imgs/quote.svg" draggable="false" alt="">
+                      <img class="quote" src="imgs/quote.svg" draggable="false" alt="quote">
                       <div class="review">
-                        <img src="imgs/fs-trustpilot.svg" draggable="false" alt="">
+                        <img class="review-img" src="imgs/trustpilot-star.svg" draggable="false" alt="trustpilot">
+                        <span>Trustpilot</span>
                       </div>
                       <p class="testim-txt">Lorem laboris duis ad ullamco officia labore amet sint. Mollit amet consequat incididunt nisi ipsum cillum ipsum ad ut est do mollit officia.</p>
                       <div class="testim-author">
@@ -323,9 +337,10 @@
                       </div>
                     </div>
                     <div class="testim">
-                      <img class="quote" src="imgs/quote.svg" draggable="false" alt="">
+                      <img class="quote" src="imgs/quote.svg" draggable="false" alt="quote">
                       <div class="review">
-                        <img src="imgs/fs-trustpilot.svg" draggable="false" alt="">
+                        <img class="review-img" src="imgs/trustpilot-star.svg" draggable="false" alt="trustpilot">
+                        <span>Trustpilot</span>
                       </div>
                       <p class="testim-txt">Deserunt ea cupidatat nostrud amet deserunt dolor magna. Nulla sint culpa eiusmod duis deserunt consequat Lorem excepteur veniam.</p>
                       <div class="testim-author">
@@ -333,13 +348,114 @@
                       </div>
                     </div>
                     <div class="testim">
-                      <img class="quote" src="imgs/quote.svg" draggable="false" alt="">
+                      <img class="quote" src="imgs/quote.svg" draggable="false" alt="quote">
                       <div class="review">
-                        <img src="imgs/fs-trustpilot.svg" draggable="false" alt="">
+                        <img class="review-img" src="imgs/trustpilot-star.svg" draggable="false" alt="trustpilot">
+                        <span>Trustpilot</span>
                       </div>
                       <p class="testim-txt">Non commodo aliquip est tempor nulla officia excepteur ex. Veniam aute esse ad do laboris ea proident cillum reprehenderit. Culpa enim.</p>
                       <div class="testim-author">
                         <h4><span>P</span>Philip Williamson</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider content-two">
+                <div class="container">
+                  <div class="owl-carousel owl-theme" id="our-testimonial-slider2">
+                    <div class="testim">
+                      <img class="quote" src="imgs/quote.svg" draggable="false" alt="quote">
+                      <div class="review">
+                        <img class="review-img" src="imgs/apple.svg" draggable="false" alt="App Store">
+                        <span>App Store</span>
+                      </div>
+                      <p class="testim-txt">Non commodo aliquip est tempor nulla officia excepteur ex. Veniam aute esse ad do laboris ea proident cillum reprehenderit. Culpa enim.</p>
+                      <div class="testim-author">
+                        <h4><span>S</span>Shane Watson</h4>
+                      </div>
+                    </div>
+                    <div class="testim">
+                      <img class="quote" src="imgs/quote.svg" draggable="false" alt="quote">
+                      <div class="review">
+                        <img class="review-img" src="imgs/apple.svg" draggable="false" alt="App Store">
+                        <span>App Store</span>
+                      </div>
+                      <p class="testim-txt">Lorem laboris duis ad ullamco officia labore amet sint. Mollit amet consequat incididunt nisi ipsum cillum ipsum ad ut est do mollit officia.</p>
+                      <div class="testim-author">
+                        <h4><span>M</span>Max Richards</h4>
+                      </div>
+                    </div>
+                    <div class="testim">
+                      <img class="quote" src="imgs/quote.svg" draggable="false" alt="quote">
+                      <div class="review">
+                        <img class="review-img" src="imgs/apple.svg" draggable="false" alt="App Store">
+                        <span>App Store</span>
+                      </div>
+                      <p class="testim-txt">Deserunt ea cupidatat nostrud amet deserunt dolor magna. Nulla sint culpa eiusmod duis deserunt consequat Lorem excepteur veniam.</p>
+                      <div class="testim-author">
+                        <h4><span>J</span>Julie Robertson</h4>
+                      </div>
+                    </div>
+                    <div class="testim">
+                      <img class="quote" src="imgs/quote.svg" draggable="false" alt="quote">
+                      <div class="review">
+                        <img class="review-img" src="imgs/apple.svg" draggable="false" alt="App Store">
+                        <span>App Store</span>
+                      </div>
+                      <p class="testim-txt">Non commodo aliquip est tempor nulla officia excepteur ex. Veniam aute esse ad do laboris ea proident cillum reprehenderit. Culpa enim.</p>
+                      <div class="testim-author">
+                        <h4><span>P</span>Philip Williamson</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider content-three">
+                <div class="container">
+                  <div class="owl-carousel owl-theme" id="our-testimonial-slider3">
+                    <div class="testim">
+                      <img class="quote" src="imgs/quote.svg" draggable="false" alt="quote">
+                      <div class="review">
+                        <img class="review-img" src="imgs/twitter.svg" draggable="false" alt="twitter">
+                        <span>Twitter</span>
+                      </div>
+                      <p class="testim-txt">Non commodo aliquip est tempor nulla officia excepteur ex. Veniam aute esse ad do laboris ea proident cillum reprehenderit. Culpa enim.</p>
+                      <div class="testim-author">
+                        <h4><img src="imgs/person-1.png" alt="">Robert Robertson</h4>
+                      </div>
+                    </div>
+                    <div class="testim">
+                      <img class="quote" src="imgs/quote.svg" draggable="false" alt="quote">
+                      <div class="review">
+                        <img class="review-img" src="imgs/twitter.svg" draggable="false" alt="twitter">
+                        <span>Twitter</span>
+                      </div>
+                      <p class="testim-txt">Lorem laboris duis ad ullamco officia labore amet sint. Mollit amet consequat incididunt nisi ipsum cillum ipsum ad ut est do mollit officia.</p>
+                      <div class="testim-author">
+                        <h4><img src="imgs/person-2.png" alt="">Brandon Fox</h4>
+                      </div>
+                    </div>
+                    <div class="testim">
+                      <img class="quote" src="imgs/quote.svg" draggable="false" alt="quote">
+                      <div class="review">
+                        <img class="review-img" src="imgs/twitter.svg" draggable="false" alt="twitter">
+                        <span>Twitter</span>
+                      </div>
+                      <p class="testim-txt">Deserunt ea cupidatat nostrud amet deserunt dolor magna. Nulla sint culpa eiusmod duis deserunt consequat Lorem excepteur veniam.</p>
+                      <div class="testim-author">
+                        <h4><img src="imgs/person-3.png" alt="">Ronald Richards</h4>
+                      </div>
+                    </div>
+                    <div class="testim">
+                      <img class="quote" src="imgs/quote.svg" draggable="false" alt="quote">
+                      <div class="review">
+                        <img class="review-img" src="imgs/twitter.svg" draggable="false" alt="twitter">
+                        <span>Twitter</span>
+                      </div>
+                      <p class="testim-txt">Non commodo aliquip est tempor nulla officia excepteur ex. Veniam aute esse ad do laboris ea proident cillum reprehenderit. Culpa enim.</p>
+                      <div class="testim-author">
+                        <h4><img src="imgs/person-1.png" alt="">Philip Williamson</h4>
                       </div>
                     </div>
                   </div>
@@ -373,6 +489,7 @@
       </div>
     </div>
     <!-- End Authority -->
+    </div>
 
     <!-- Start Customers Features -->
     <div class="customers-features">
@@ -408,23 +525,23 @@
             <p class="apps">Our Apps:</p>
             <ul class="footer-icons">
               <li><a href="#"><img src="imgs/microsoft.svg" draggable="false" alt="microsoft"></a></li>
-              <li><a href="#"><img src="imgs/apple.svg" draggable="false" alt="apple"></a></li>
+              <li><a href="#"><img src="imgs/MacOS.svg" draggable="false" alt="apple"></a></li>
               <li><a href="#"><img src="imgs/Android.svg" draggable="false" alt="Android"></a></li>
               <li><a href="#"><img src="imgs/ios.svg" draggable="false" alt="ios"></a></li>
               <li><a href="#"><img src="imgs/linux.svg" draggable="false" alt="linux"></a></li>
-              <li><a href="#"><img src="imgs/browser-firefox.svg" draggable="false" alt="firefox"></a></li>
-              <li><a href="#"><img src="imgs/browser-chrome.svg" draggable="false" alt="chrome"></a></li>
+              <li><a href="#"><img src="imgs/Firefox.svg" draggable="false" alt="firefox"></a></li>
+              <li><a href="#"><img src="imgs/Chrome.svg" draggable="false" alt="chrome"></a></li>
             </ul>
           </div>
         </div>
         <div class="copyright">
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 order-2 order-md-1">
               <div class="copyright-txt">
                 <p>© Copyrights 2019 - WeVPN</p>
               </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 order-1 order-md-2">
               <ul class="copyright-links text-right">
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Apps</a></li>
