@@ -798,6 +798,7 @@ header .navbar .login .login-item .get-started:hover {
 .servers {
   background-color: #fff;
   padding-top: 155px;
+  overflow: hidden;
 }
 
 @media (max-width: 767px) {

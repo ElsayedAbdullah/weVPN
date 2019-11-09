@@ -649,6 +649,7 @@ header {
 .servers {
   background-color: #fff;
   padding-top: 155px;
+  overflow: hidden;
   @media #{$mobile} {
     padding-top: 40px;
     .server-map-img {
