@@ -36,7 +36,6 @@ h4,
 h5,
 h6 {
   font-family: "AvertaBold", sans-serif;
-  font-weight: bold;
 }
 
 ::-moz-selection {
@@ -335,7 +334,7 @@ header .navbar .login .login-item .get-started:hover {
 
 .hero-img-content {
   position: relative;
-  z-index: 10;
+  z-index: 2;
 }
 
 .hero-img-content .hero-img-title {
@@ -1069,6 +1068,12 @@ header .navbar .login .login-item .get-started:hover {
 
 .testimonials .testimonials-text span {
   font-family: "AvertaBold";
+}
+
+@media (max-width: 767px) {
+  .testimonials .testimonials-text span {
+    font-family: "AvertaSemibold";
+  }
 }
 
 .testimonials .testimonials-title {

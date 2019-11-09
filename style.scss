@@ -48,7 +48,9 @@ h4,
 h5,
 h6 {
   font-family: "AvertaBold", sans-serif;
-  font-weight: bold;
+  @media #{$mobile} {
+    // font-family: "AvertaSemibold";
+  }
 }
 
 ::selection {
@@ -303,7 +305,7 @@ header {
 
   &-content {
     position: relative;
-    z-index: 10;
+    z-index: 2;
     .hero-img-title {
       font-size: 80px;
       line-height: 88px;
@@ -855,6 +857,9 @@ header {
     }
     span {
       font-family: "AvertaBold";
+      @media #{$mobile} {
+        font-family: "AvertaSemibold";
+      }
     }
   }
   .testimonials-title {
