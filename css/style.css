@@ -331,11 +331,6 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
-.hero-img-content {
-  position: relative;
-  z-index: 2;
-}
-
 .hero-img-content .hero-img-title {
   font-size: 80px;
   line-height: 88px;
