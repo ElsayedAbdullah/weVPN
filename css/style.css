@@ -22,7 +22,6 @@
 
 body {
   font-family: "Averta", sans-serif;
-  font-weight: normal;
   position: relative;
   overflow-x: hidden;
   color: #5b5863;
@@ -932,7 +931,6 @@ header .navbar .login .login-item .get-started:hover {
   font-size: 20px;
   line-height: 20px;
   color: #a29cb0;
-  font-weight: normal;
   font-family: "Averta";
 }
 
@@ -1068,12 +1066,6 @@ header .navbar .login .login-item .get-started:hover {
 
 .testimonials .testimonials-text span {
   font-family: "AvertaBold";
-}
-
-@media (max-width: 767px) {
-  .testimonials .testimonials-text span {
-    font-family: "AvertaSemibold";
-  }
 }
 
 .testimonials .testimonials-title {
@@ -1515,7 +1507,6 @@ header .navbar .login .login-item .get-started:hover {
   font-size: 20px;
   padding: 21px 42px;
   font-family: "AvertaSemibold";
-  font-weight: 500;
   background-color: #ffecf1;
   color: #fd3e72;
 }

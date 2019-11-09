@@ -34,7 +34,6 @@ $iphone6_7: "(min-width: 650px) and (max-width: 750px)";
 
 body {
   font-family: "Averta", sans-serif;
-  font-weight: normal;
   position: relative;
   overflow-x: hidden;
   color: #5b5863;
@@ -48,9 +47,6 @@ h4,
 h5,
 h6 {
   font-family: "AvertaBold", sans-serif;
-  @media #{$mobile} {
-    // font-family: "AvertaSemibold";
-  }
 }
 
 ::selection {
@@ -750,7 +746,6 @@ header {
           font-size: 20px;
           line-height: 20px;
           color: #a29cb0;
-          font-weight: normal;
           font-family: "Averta";
           @media #{$mobile} {
             font-size: 14px;
@@ -857,9 +852,6 @@ header {
     }
     span {
       font-family: "AvertaBold";
-      @media #{$mobile} {
-        font-family: "AvertaSemibold";
-      }
     }
   }
   .testimonials-title {
@@ -1195,7 +1187,6 @@ header {
       font-size: 20px;
       padding: 21px 42px;
       font-family: "AvertaSemibold";
-      font-weight: 500;
       background-color: #ffecf1;
       color: $primaryColor;
       &:hover {
