@@ -1446,6 +1446,7 @@ header .navbar .login .login-item .get-started:hover {
 /* Start Customers Features */
 .customers-features {
   background-color: #fff;
+  overflow: hidden;
 }
 
 .customers-features .custoemer-feat {
