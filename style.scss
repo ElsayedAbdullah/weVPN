@@ -1,15 +1,8 @@
 $primaryColor: #fd3e72;
-$floatLeft: left;
-$floatRight: right;
-$textRight: right;
-$textLeft: left;
-$desktop: "(max-width: 1366px)";
 $mobile: "(max-width: 767px)";
 $tablet: "(min-width: 768px) and (max-width: 992px)";
 $maxTab: "(max-width: 992px)";
 $betweentabdesk: "(min-width: 1000px) and (max-width: 1200px)";
-$mobileWidth: "(min-width: 640px) and (max-width: 840px)";
-$iphone6_7: "(min-width: 650px) and (max-width: 750px)";
 
 @font-face {
   font-family: "AvertaBold";
@@ -50,7 +43,7 @@ h6 {
 }
 
 ::selection {
-  background-color: $primaryColor;
+  background-color: #5b5863;
   color: #fff;
 }
 
@@ -148,7 +141,7 @@ header {
 
   .navbar {
     padding-top: 32px;
-    @media #{$mobile} {
+    @media #{$maxTab} {
       padding-bottom: 0;
       padding: 20px 25px 25px;
       position: absolute !important;
@@ -162,7 +155,7 @@ header {
     }
     .navbar-brand {
       margin-right: 33px;
-      @media #{$mobile} {
+      @media #{$maxTab} {
         padding: 0;
         margin: 0;
         img {
@@ -171,7 +164,7 @@ header {
       }
     }
     .navbar-nav {
-      @media #{$mobile} {
+      @media #{$maxTab} {
         padding-left: 10px;
         padding-top: 25px;
         .nav-item {
@@ -182,13 +175,13 @@ header {
       .nav-link {
         padding-left: 14px;
         padding-right: 14px;
-        @media #{$mobile} {
+        @media #{$maxTab} {
           line-height: 25px;
         }
       }
     }
     .login {
-      @media #{$mobile} {
+      @media #{$maxTab} {
         padding-left: 10px;
         padding-right: 20px;
       }
@@ -198,7 +191,7 @@ header {
           margin-right: 12px;
         }
         &:last-child {
-          @media #{$mobile} {
+          @media #{$maxTab} {
             display: block;
             border-top: 1px solid #ebe8df;
             margin-top: 20px;
@@ -227,7 +220,7 @@ header {
           font-size: 14px;
           text-align: center;
           transition: background-color 0.3s ease-in-out;
-          @media #{$mobile} {
+          @media #{$maxTab} {
             margin-left: 35px;
             margin-right: 25px;
             padding: 13.5px;
@@ -311,6 +304,15 @@ header {
         width: 85%;
         margin: 30px auto 17px;
       }
+      @media #{$tablet} {
+        font-size: 45px;
+        line-height: 1.5;
+        margin: 100px auto 17px;
+      }
+      @media #{$betweentabdesk} {
+        font-size: 60px;
+        line-height: 1.5;
+      }
     }
     .hero-img-txt {
       font-size: 28px;
@@ -319,6 +321,14 @@ header {
         font-size: 20px;
         line-height: 20px;
         margin-bottom: 0;
+      }
+      @media #{$tablet} {
+        font-size: 22px;
+        line-height: 22px;
+      }
+      @media #{$betweentabdesk} {
+        font-size: 24px;
+        line-height: 24px;
       }
     }
     .hero-img-btn {
@@ -334,6 +344,9 @@ header {
         font-size: 20px;
         width: 100%;
         padding: 21px;
+      }
+      @media #{$tablet} {
+        margin-top: 32px;
       }
       &:hover {
         background-color: #e33866;
@@ -374,6 +387,14 @@ header {
         top: -130px;
         left: -210px;
       }
+      @media #{$tablet} {
+        left: -200px;
+        transform: scale(0.6);
+      }
+      @media #{$betweentabdesk} {
+        left: -135px;
+        transform: scale(0.75);
+      }
     }
   }
   .header-shape {
@@ -386,6 +407,16 @@ header {
       top: -530px;
       left: -125px;
     }
+    @media #{$tablet} {
+      top: -505px;
+      right: -560px;
+      transform: scale(0.75);
+    }
+    @media #{$betweentabdesk} {
+      top: -470px;
+      right: -500px;
+      transform: scale(0.8);
+    }
   }
 }
 /* End Hero Image */
@@ -393,6 +424,7 @@ header {
 /* Start Features */
 .features {
   padding-top: 75px;
+  overflow: hidden;
   @media #{$mobile} {
     padding-top: 35px;
   }
@@ -406,9 +438,17 @@ header {
       &:hover {
         box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 3px 8px #e6e4df;
       }
+      @media #{$tablet} {
+        padding: 36px 10px 36px 20px;
+        width: 100%;
+      }
       @media #{$mobile} {
         margin-bottom: 16px;
         padding: 36px;
+        width: 100%;
+      }
+      @media #{$betweentabdesk} {
+        padding: 60px 40px;
         width: 100%;
       }
       &-hr {
@@ -418,6 +458,10 @@ header {
         @media #{$mobile} {
           margin-top: 32px;
           margin-bottom: 32px;
+        }
+        @media #{$tablet} {
+          margin-top: 40px;
+          margin-bottom: 30px;
         }
       }
       &-title {
@@ -429,6 +473,11 @@ header {
           line-height: 16px;
           margin-bottom: 16px;
         }
+        @media #{$tablet} {
+          font-size: 17px;
+          line-height: 20px;
+          margin-bottom: 15px;
+        }
       }
       &-txt {
         font-size: 16px;
@@ -437,6 +486,10 @@ header {
           font-size: 14px;
           line-height: 24px;
           margin-bottom: 10px;
+        }
+        @media #{$tablet} {
+          font-size: 15px;
+          line-height: 26px;
         }
       }
     }
@@ -451,6 +504,9 @@ header {
       margin-top: 5px;
       padding-bottom: 0;
       border-bottom: 0;
+    }
+    @media #{$tablet} {
+      padding-bottom: 50px;
     }
     a {
       color: $primaryColor;
@@ -477,7 +533,16 @@ header {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  @media #{$tablet} {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+  @media #{$betweentabdesk} {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
   .section-one,
+  .section-two,
   .section-three {
     padding-right: 15px;
     padding-left: 15px;
@@ -497,6 +562,11 @@ header {
           width: 70%;
           margin-bottom: 0;
         }
+        @media #{$tablet} {
+          padding-top: 100px;
+          font-size: 30px;
+          line-height: 36px;
+        }
       }
       .advantages-desc {
         font-size: 18px;
@@ -504,12 +574,15 @@ header {
         margin-top: 26px;
         margin-bottom: 40px;
         width: 75%;
-        @media #{$mobile} {
+        @media #{$maxTab} {
           font-size: 16px;
           line-height: 28px;
           width: 100%;
           margin-top: 24px;
           margin-bottom: 21px;
+        }
+        @media #{$tablet} {
+          width: 100%;
         }
       }
       .advantages-btn {
@@ -531,56 +604,60 @@ header {
           position: absolute;
         }
       }
+      @media #{$tablet} {
+        position: relative;
+        height: 300px;
+        img {
+          transform: scale(0.7);
+          left: -41%;
+          position: absolute;
+        }
+      }
+      @media #{$betweentabdesk} {
+        position: relative;
+        height: 300px;
+        img {
+          position: absolute;
+          transform: scale(0.8);
+          left: -8%;
+        }
+      }
     }
   }
   .section-two {
-    padding-right: 15px;
-    padding-left: 15px;
-    @media #{$mobile} {
-      padding-left: 0;
-      padding-right: 0;
-    }
     .advantages-content {
       .advantages-title {
         padding-top: 150px;
-        font-size: 36px;
-        line-height: 44px;
         width: 80%;
         @media #{$mobile} {
-          padding-top: 35px;
-          font-size: 24px;
-          line-height: 28px;
+          padding-top: 115px;
           width: 90%;
-          margin-bottom: 0;
+        }
+        @media #{$tablet} {
+          width: 100%;
         }
       }
       .advantages-desc {
-        font-size: 18px;
-        line-height: 28px;
-        margin-top: 26px;
-        margin-bottom: 40px;
-        width: 75%;
         @media #{$mobile} {
-          font-size: 16px;
-          line-height: 28px;
-          width: 100%;
-          margin-top: 24px;
           margin-bottom: 0;
         }
-      }
-      .advantages-btn {
-        padding: 24px 57px;
       }
     }
     .advantages-img {
       text-align: center;
       padding-top: 60px;
       @media #{$mobile} {
-        position: relative;
-        height: 380px;
         img {
           transform: scale(0.8);
           top: 23px;
+          left: -12%;
+          position: absolute;
+        }
+      }
+      @media #{$tablet} {
+        img {
+          transform: scale(0.8);
+          top: 50px;
           left: -12%;
           position: absolute;
         }
@@ -600,6 +677,9 @@ header {
           padding-top: 0;
           width: 65%;
         }
+        @media #{$tablet} {
+          width: 90%;
+        }
       }
       .advantages-desc {
         @media #{$mobile} {
@@ -615,10 +695,17 @@ header {
           transform: translateX(-50%) scale(0.7);
         }
       }
+      @media #{$tablet} {
+        img {
+          top: 0;
+          left: -31%;
+          transform: scale(0.7);
+        }
+      }
     }
     .advantages-icons {
       margin-bottom: 40px;
-      @media #{$mobile} {
+      @media #{$maxTab} {
         margin-bottom: 20px;
       }
       li {
@@ -649,6 +736,12 @@ header {
   background-color: #fff;
   padding-top: 155px;
   overflow: hidden;
+  @media #{$tablet} {
+    padding-top: 60px;
+  }
+  @media #{$betweentabdesk} {
+    padding-top: 100px;
+  }
   @media #{$mobile} {
     padding-top: 40px;
     .server-map-img {
@@ -674,12 +767,41 @@ header {
       line-height: 28px;
       width: 85%;
     }
+    @media #{$tablet} {
+      font-size: 30px;
+      line-height: 36px;
+      width: 65%;
+      margin-bottom: 40px;
+    }
+    @media #{$betweentabdesk} {
+      width: 60%;
+    }
   }
   .servers-content {
     background: url(../imgs/Map.png) center center no-repeat;
     padding-top: 165px;
     padding-bottom: 210px;
     margin: 0 65px;
+    @media #{$betweentabdesk} {
+      background-size: contain;
+      padding-top: 95px;
+      padding-bottom: 130px;
+      margin: 0 20px;
+    }
+    @media #{$tablet} {
+      background: none;
+      position: relative;
+      padding-top: 85px;
+      padding-bottom: 100px;
+
+      margin: 0;
+      .map {
+        position: absolute;
+        top: -70px;
+        left: -230px;
+        transform: scale(0.7);
+      }
+    }
     @media #{$mobile} {
       background: none;
       padding-top: 0;
@@ -715,6 +837,16 @@ header {
         padding: 5px 20px 20px;
         box-shadow: none;
       }
+      @media #{$tablet} {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+      }
+      @media #{$betweentabdesk} {
+        width: 100%;
+        padding-left: 140px;
+        padding-right: 30px;
+      }
 
       img {
         position: absolute;
@@ -723,6 +855,13 @@ header {
           margin-bottom: -5px;
           transform: scale(0.5);
           display: block;
+        }
+        @media #{$tablet} {
+          position: static;
+          margin-bottom: -5px;
+          transform: scale(0.8);
+          display: block;
+          margin: auto;
         }
       }
       h2 {
@@ -737,6 +876,11 @@ header {
           display: block;
           margin-bottom: 5px;
         }
+        @media #{$tablet} {
+          font-size: 36px;
+          line-height: 44px;
+          display: block;
+        }
         span {
           position: absolute;
           top: 0;
@@ -750,6 +894,11 @@ header {
             line-height: 14px;
             right: -5px;
           }
+          @media #{$tablet} {
+            font-size: 17px;
+            line-height: 17px;
+            right: 35px;
+          }
         }
       }
       span {
@@ -759,6 +908,10 @@ header {
         @media #{$mobile} {
           font-size: 14px;
           line-height: 14px;
+        }
+        @media #{$tablet} {
+          font-size: 17px;
+          line-height: 17px;
         }
       }
       &.one {
@@ -797,6 +950,12 @@ header {
     @media #{$mobile} {
       padding-bottom: 24px;
     }
+    @media #{$tablet} {
+      padding-bottom: 60px;
+    }
+    @media #{$betweentabdesk} {
+      padding-bottom: 100px;
+    }
     button {
       padding: 24px 64px;
       background-color: #ffecf1;
@@ -833,6 +992,12 @@ header {
       padding: 0 15px;
     }
   }
+  @media #{$tablet} {
+    padding-bottom: 60px;
+    .row {
+      margin-right: -40px;
+    }
+  }
   .testimonials-text {
     font-size: 20px;
     line-height: 20px;
@@ -848,6 +1013,10 @@ header {
       text-align: center;
       margin-bottom: 9px;
     }
+    @media #{$tablet} {
+      padding-left: 20px;
+      padding-top: 60px;
+    }
     span {
       font-family: "AvertaBold";
     }
@@ -862,6 +1031,11 @@ header {
       line-height: 28px;
       text-align: center;
     }
+    @media #{$tablet} {
+      padding-left: 20px;
+      font-size: 30px;
+      line-height: 36px;
+    }
   }
   .testimonials-tabs {
     padding-top: 70px;
@@ -870,6 +1044,13 @@ header {
       padding-top: 60px;
       padding-right: 0;
       border-bottom: 1px solid #ebe8e0;
+    }
+    @media #{$tablet} {
+      padding-top: 60px;
+      padding-right: 0;
+    }
+    @media #{$betweentabdesk} {
+      padding-right: 0;
     }
     li {
       border-bottom: 1px solid #ebe8e0;
@@ -958,16 +1139,25 @@ header {
           padding: 0;
         }
       }
+      @media #{$tablet} {
+        .container {
+          padding-right: 0;
+        }
+      }
       .owl-carousel {
         z-index: 1;
         position: absolute;
         width: 1470px;
         left: 30px;
         top: 70px;
-        @media #{$mobile} {
-          left: 0;
+        @media #{$maxTab} {
+          left: 20px;
           width: 100%;
           // position: static;
+        }
+        @media #{$betweentabdesk} {
+          left: 30px;
+          width: 100%;
         }
         .owl-stage-outer {
           padding-bottom: 50px;
@@ -980,6 +1170,9 @@ header {
           @media #{$mobile} {
             padding: 32px 0 55px 24px;
           }
+          @media #{$tablet} {
+            padding: 40px 0 55px 30px;
+          }
           img {
             width: auto;
           }
@@ -987,6 +1180,9 @@ header {
             margin-bottom: 65px;
             @media #{$mobile} {
               margin-bottom: 25px;
+            }
+            @media #{$tablet} {
+              margin-bottom: 30px;
             }
           }
           .review {
@@ -1062,6 +1258,12 @@ header {
       left: 10px;
       bottom: -40px;
     }
+    @media #{$tablet} {
+      left: -250px;
+    }
+    @media #{$betweentabdesk} {
+      left: -265px;
+    }
   }
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel .owl-nav button.owl-prev {
@@ -1115,6 +1317,22 @@ header {
         }
       }
     }
+    @media #{$tablet} {
+      margin: 0;
+      padding-bottom: 60px;
+      .authority-img {
+        text-align: center;
+        img {
+          transform: scale(0.75);
+          margin-left: -30px;
+          margin-top: 10px;
+        }
+      }
+    }
+    @media #{$betweentabdesk} {
+      margin: 0 20px;
+      padding-bottom: 100px;
+    }
     .authority-text {
       position: relative;
       padding-left: 130px;
@@ -1150,15 +1368,21 @@ header {
   overflow: hidden;
   .custoemer-feat {
     background-color: #f9f8f4;
-    padding: 130px 70px;
+    padding: 130px 60px;
     position: relative;
     @media #{$mobile} {
       padding: 40px 32px 60px;
       margin-bottom: 4px;
     }
+    @media #{$tablet} {
+      padding: 65px 32px 60px;
+    }
     img {
       @media #{$mobile} {
         transform: scale(0.63);
+      }
+      @media #{$tablet} {
+        transform: scale(0.8);
       }
     }
     h2 {
@@ -1169,6 +1393,11 @@ header {
         font-size: 24px;
         line-height: 28px;
         margin: 12px 0 16px;
+      }
+      @media #{$tablet} {
+        font-size: 26px;
+        line-height: 32px;
+        margin: 20px 0;
       }
     }
     p {
@@ -1218,6 +1447,11 @@ header {
           left: -30px;
           border-width: 30px;
         }
+        @media #{$tablet} {
+          top: -40px;
+          left: -40px;
+          border-width: 40px;
+        }
       }
     }
     &.two {
@@ -1226,6 +1460,9 @@ header {
       @media #{$mobile} {
         padding: 30px 32px 60px;
         margin-left: 0;
+      }
+      @media #{$tablet} {
+        padding: 40px 32px 60px;
       }
       &:before {
         content: "";
@@ -1242,11 +1479,19 @@ header {
           right: -30px;
           border-width: 30px;
         }
+        @media #{$tablet} {
+          bottom: -40px;
+          right: -40px;
+          border-width: 40px;
+        }
       }
       h2 {
         margin-top: 38px;
         @media #{$mobile} {
           margin-top: -5px;
+        }
+        @media #{$tablet} {
+          margin-top: 13px;
         }
       }
       button {
@@ -1268,7 +1513,7 @@ header {
 footer {
   background-color: #fff;
   padding-top: 100px;
-  @media #{$mobile} {
+  @media #{$maxTab} {
     padding-top: 60px;
   }
   .footer-content {
@@ -1296,6 +1541,9 @@ footer {
       @media #{$mobile} {
         margin-bottom: 40px;
       }
+      @media #{$tablet} {
+        margin-bottom: 60px;
+      }
       li {
         display: inline-block;
         margin: 0 20px;
@@ -1306,6 +1554,9 @@ footer {
           margin-right: 15px;
           width: 25px;
           height: 25px;
+        }
+        @media #{$tablet} {
+          margin: 0 10px;
         }
         a {
           display: block;
@@ -1319,6 +1570,9 @@ footer {
             filter: grayscale(100%);
             opacity: 0.8;
             transition: all 0.3s ease-in-out;
+            @media #{$tablet} {
+              transform: scale(0.8);
+            }
           }
         }
       }
@@ -1333,6 +1587,9 @@ footer {
     @media #{$mobile} {
       padding-top: 32px;
       padding-bottom: 60px;
+    }
+    @media #{$tablet} {
+      text-align: center;
     }
     .copyright-txt {
       @media #{$mobile} {
@@ -1353,7 +1610,7 @@ footer {
       }
       li {
         display: inline-block;
-        margin-left: 16px;
+        margin-left: 15px;
         @media #{$mobile} {
           font-size: 14px;
           line-height: 28px;

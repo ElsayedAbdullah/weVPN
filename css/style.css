@@ -38,12 +38,12 @@ h6 {
 }
 
 ::-moz-selection {
-  background-color: #fd3e72;
+  background-color: #5b5863;
   color: #fff;
 }
 
 ::selection {
-  background-color: #fd3e72;
+  background-color: #5b5863;
   color: #fff;
 }
 
@@ -157,7 +157,7 @@ header .navbar {
   padding-top: 32px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   header .navbar {
     padding-bottom: 0;
     padding: 20px 25px 25px;
@@ -175,7 +175,7 @@ header .navbar .navbar-brand {
   margin-right: 33px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   header .navbar .navbar-brand {
     padding: 0;
     margin: 0;
@@ -186,7 +186,7 @@ header .navbar .navbar-brand {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   header .navbar .navbar-nav {
     padding-left: 10px;
     padding-top: 25px;
@@ -202,13 +202,13 @@ header .navbar .navbar-nav .nav-link {
   padding-right: 14px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   header .navbar .navbar-nav .nav-link {
     line-height: 25px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   header .navbar .login {
     padding-left: 10px;
     padding-right: 20px;
@@ -223,7 +223,7 @@ header .navbar .login .login-item:first-child {
   margin-right: 12px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   header .navbar .login .login-item:last-child {
     display: block;
     border-top: 1px solid #ebe8df;
@@ -260,7 +260,7 @@ header .navbar .login .login-item .get-started {
   transition: background-color 0.3s ease-in-out;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   header .navbar .login .login-item .get-started {
     margin-left: 35px;
     margin-right: 25px;
@@ -347,6 +347,21 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero-img-content .hero-img-title {
+    font-size: 45px;
+    line-height: 1.5;
+    margin: 100px auto 17px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .hero-img-content .hero-img-title {
+    font-size: 60px;
+    line-height: 1.5;
+  }
+}
+
 .hero-img-content .hero-img-txt {
   font-size: 28px;
   line-height: 33px;
@@ -357,6 +372,20 @@ header .navbar .login .login-item .get-started:hover {
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero-img-content .hero-img-txt {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .hero-img-content .hero-img-txt {
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 
@@ -377,6 +406,12 @@ header .navbar .login .login-item .get-started:hover {
     font-size: 20px;
     width: 100%;
     padding: 21px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero-img-content .hero-img-btn {
+    margin-top: 32px;
   }
 }
 
@@ -433,6 +468,22 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero-img .hero-img-image img {
+    left: -200px;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .hero-img .hero-img-image img {
+    left: -135px;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+
 .hero-img .header-shape {
   position: absolute;
   top: -520px;
@@ -449,10 +500,29 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero-img .header-shape {
+    top: -505px;
+    right: -560px;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .hero-img .header-shape {
+    top: -470px;
+    right: -500px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
 /* End Hero Image */
 /* Start Features */
 .features {
   padding-top: 75px;
+  overflow: hidden;
 }
 
 @media (max-width: 767px) {
@@ -475,10 +545,24 @@ header .navbar .login .login-item .get-started:hover {
           box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 3px 8px #e6e4df;
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .features .features-content .feat {
+    padding: 36px 10px 36px 20px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 767px) {
   .features .features-content .feat {
     margin-bottom: 16px;
     padding: 36px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .features .features-content .feat {
+    padding: 60px 40px;
     width: 100%;
   }
 }
@@ -496,6 +580,13 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .features .features-content .feat-hr {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+}
+
 .features .features-content .feat-title {
   font-size: 20px;
   line-height: 20px;
@@ -507,6 +598,14 @@ header .navbar .login .login-item .get-started:hover {
     font-size: 16px;
     line-height: 16px;
     margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .features .features-content .feat-title {
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 15px;
   }
 }
 
@@ -523,6 +622,13 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .features .features-content .feat-txt {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
+
 .features .feat-more {
   text-align: center;
   margin-top: 44px;
@@ -535,6 +641,12 @@ header .navbar .login .login-item .get-started:hover {
     margin-top: 5px;
     padding-bottom: 0;
     border-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .features .feat-more {
+    padding-bottom: 50px;
   }
 }
 
@@ -569,7 +681,22 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .advantages {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+}
+
 .advantages .section-one,
+.advantages .section-two,
 .advantages .section-three {
   padding-right: 15px;
   padding-left: 15px;
@@ -577,6 +704,7 @@ header .navbar .login .login-item .get-started:hover {
 
 @media (max-width: 767px) {
   .advantages .section-one,
+  .advantages .section-two,
   .advantages .section-three {
     padding-left: 0;
     padding-right: 0;
@@ -584,6 +712,7 @@ header .navbar .login .login-item .get-started:hover {
 }
 
 .advantages .section-one .advantages-content .advantages-title,
+.advantages .section-two .advantages-content .advantages-title,
 .advantages .section-three .advantages-content .advantages-title {
   padding-top: 70px;
   font-size: 36px;
@@ -592,6 +721,7 @@ header .navbar .login .login-item .get-started:hover {
 
 @media (max-width: 767px) {
   .advantages .section-one .advantages-content .advantages-title,
+  .advantages .section-two .advantages-content .advantages-title,
   .advantages .section-three .advantages-content .advantages-title {
     padding-top: 50px;
     font-size: 24px;
@@ -601,7 +731,18 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .advantages .section-one .advantages-content .advantages-title,
+  .advantages .section-two .advantages-content .advantages-title,
+  .advantages .section-three .advantages-content .advantages-title {
+    padding-top: 100px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
 .advantages .section-one .advantages-content .advantages-desc,
+.advantages .section-two .advantages-content .advantages-desc,
 .advantages .section-three .advantages-content .advantages-desc {
   font-size: 18px;
   line-height: 28px;
@@ -610,8 +751,9 @@ header .navbar .login .login-item .get-started:hover {
   width: 75%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .advantages .section-one .advantages-content .advantages-desc,
+  .advantages .section-two .advantages-content .advantages-desc,
   .advantages .section-three .advantages-content .advantages-desc {
     font-size: 16px;
     line-height: 28px;
@@ -621,30 +763,43 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .advantages .section-one .advantages-content .advantages-desc,
+  .advantages .section-two .advantages-content .advantages-desc,
+  .advantages .section-three .advantages-content .advantages-desc {
+    width: 100%;
+  }
+}
+
 .advantages .section-one .advantages-content .advantages-btn,
+.advantages .section-two .advantages-content .advantages-btn,
 .advantages .section-three .advantages-content .advantages-btn {
   padding: 24px 57px;
 }
 
 @media (max-width: 767px) {
   .advantages .section-one .advantages-content .advantages-btn,
+  .advantages .section-two .advantages-content .advantages-btn,
   .advantages .section-three .advantages-content .advantages-btn {
     padding: 22.5px 51.5px;
   }
 }
 
 .advantages .section-one .advantages-img,
+.advantages .section-two .advantages-img,
 .advantages .section-three .advantages-img {
   text-align: left;
 }
 
 @media (max-width: 767px) {
   .advantages .section-one .advantages-img,
+  .advantages .section-two .advantages-img,
   .advantages .section-three .advantages-img {
     position: relative;
     height: 300px;
   }
   .advantages .section-one .advantages-img img,
+  .advantages .section-two .advantages-img img,
   .advantages .section-three .advantages-img img {
     -webkit-transform: scale(0.66);
             transform: scale(0.66);
@@ -654,55 +809,62 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
-.advantages .section-two {
-  padding-right: 15px;
-  padding-left: 15px;
+@media (min-width: 768px) and (max-width: 992px) {
+  .advantages .section-one .advantages-img,
+  .advantages .section-two .advantages-img,
+  .advantages .section-three .advantages-img {
+    position: relative;
+    height: 300px;
+  }
+  .advantages .section-one .advantages-img img,
+  .advantages .section-two .advantages-img img,
+  .advantages .section-three .advantages-img img {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    left: -41%;
+    position: absolute;
+  }
 }
 
-@media (max-width: 767px) {
-  .advantages .section-two {
-    padding-left: 0;
-    padding-right: 0;
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .advantages .section-one .advantages-img,
+  .advantages .section-two .advantages-img,
+  .advantages .section-three .advantages-img {
+    position: relative;
+    height: 300px;
+  }
+  .advantages .section-one .advantages-img img,
+  .advantages .section-two .advantages-img img,
+  .advantages .section-three .advantages-img img {
+    position: absolute;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    left: -8%;
   }
 }
 
 .advantages .section-two .advantages-content .advantages-title {
   padding-top: 150px;
-  font-size: 36px;
-  line-height: 44px;
   width: 80%;
 }
 
 @media (max-width: 767px) {
   .advantages .section-two .advantages-content .advantages-title {
-    padding-top: 35px;
-    font-size: 24px;
-    line-height: 28px;
+    padding-top: 115px;
     width: 90%;
-    margin-bottom: 0;
   }
 }
 
-.advantages .section-two .advantages-content .advantages-desc {
-  font-size: 18px;
-  line-height: 28px;
-  margin-top: 26px;
-  margin-bottom: 40px;
-  width: 75%;
+@media (min-width: 768px) and (max-width: 992px) {
+  .advantages .section-two .advantages-content .advantages-title {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
   .advantages .section-two .advantages-content .advantages-desc {
-    font-size: 16px;
-    line-height: 28px;
-    width: 100%;
-    margin-top: 24px;
     margin-bottom: 0;
   }
-}
-
-.advantages .section-two .advantages-content .advantages-btn {
-  padding: 24px 57px;
 }
 
 .advantages .section-two .advantages-img {
@@ -711,14 +873,20 @@ header .navbar .login .login-item .get-started:hover {
 }
 
 @media (max-width: 767px) {
-  .advantages .section-two .advantages-img {
-    position: relative;
-    height: 380px;
-  }
   .advantages .section-two .advantages-img img {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
     top: 23px;
+    left: -12%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .advantages .section-two .advantages-img img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    top: 50px;
     left: -12%;
     position: absolute;
   }
@@ -746,6 +914,12 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .advantages .section-three .advantages-content .advantages-title {
+    width: 90%;
+  }
+}
+
 @media (max-width: 767px) {
   .advantages .section-three .advantages-content .advantages-desc {
     margin-bottom: 26px;
@@ -761,11 +935,20 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .advantages .section-three .advantages-img img {
+    top: 0;
+    left: -31%;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
 .advantages .section-three .advantages-icons {
   margin-bottom: 40px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .advantages .section-three .advantages-icons {
     margin-bottom: 20px;
   }
@@ -798,6 +981,18 @@ header .navbar .login .login-item .get-started:hover {
   background-color: #fff;
   padding-top: 155px;
   overflow: hidden;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .servers {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .servers {
+    padding-top: 100px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -834,11 +1029,52 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .servers .servers-title {
+    font-size: 30px;
+    line-height: 36px;
+    width: 65%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .servers .servers-title {
+    width: 60%;
+  }
+}
+
 .servers .servers-content {
   background: url(../imgs/Map.png) center center no-repeat;
   padding-top: 165px;
   padding-bottom: 210px;
   margin: 0 65px;
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .servers .servers-content {
+    background-size: contain;
+    padding-top: 95px;
+    padding-bottom: 130px;
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .servers .servers-content {
+    background: none;
+    position: relative;
+    padding-top: 85px;
+    padding-bottom: 100px;
+    margin: 0;
+  }
+  .servers .servers-content .map {
+    position: absolute;
+    top: -70px;
+    left: -230px;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
 }
 
 @media (max-width: 767px) {
@@ -888,6 +1124,22 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .servers .servers-content .server-feat {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .servers .servers-content .server-feat {
+    width: 100%;
+    padding-left: 140px;
+    padding-right: 30px;
+  }
+}
+
 .servers .servers-content .server-feat img {
   position: absolute;
 }
@@ -899,6 +1151,17 @@ header .navbar .login .login-item .get-started:hover {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
     display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .servers .servers-content .server-feat img {
+    position: static;
+    margin-bottom: -5px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    display: block;
+    margin: auto;
   }
 }
 
@@ -916,6 +1179,14 @@ header .navbar .login .login-item .get-started:hover {
     line-height: 28px;
     display: block;
     margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .servers .servers-content .server-feat h2 {
+    font-size: 36px;
+    line-height: 44px;
+    display: block;
   }
 }
 
@@ -937,6 +1208,14 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .servers .servers-content .server-feat h2 span {
+    font-size: 17px;
+    line-height: 17px;
+    right: 35px;
+  }
+}
+
 .servers .servers-content .server-feat span {
   font-size: 20px;
   line-height: 20px;
@@ -947,6 +1226,13 @@ header .navbar .login .login-item .get-started:hover {
   .servers .servers-content .server-feat span {
     font-size: 14px;
     line-height: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .servers .servers-content .server-feat span {
+    font-size: 17px;
+    line-height: 17px;
   }
 }
 
@@ -995,6 +1281,18 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .servers .server-btn {
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .servers .server-btn {
+    padding-bottom: 100px;
+  }
+}
+
 .servers .server-btn button {
   padding: 24px 64px;
   background-color: #ffecf1;
@@ -1039,6 +1337,15 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .testimonials {
+    padding-bottom: 60px;
+  }
+  .testimonials .row {
+    margin-right: -40px;
+  }
+}
+
 .testimonials .testimonials-text {
   font-size: 20px;
   line-height: 20px;
@@ -1056,6 +1363,13 @@ header .navbar .login .login-item .get-started:hover {
     padding-top: 60px;
     text-align: center;
     margin-bottom: 9px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .testimonials .testimonials-text {
+    padding-left: 20px;
+    padding-top: 60px;
   }
 }
 
@@ -1078,6 +1392,14 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .testimonials .testimonials-title {
+    padding-left: 20px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
 .testimonials .testimonials-tabs {
   padding-top: 70px;
   padding-right: 50px;
@@ -1088,6 +1410,19 @@ header .navbar .login .login-item .get-started:hover {
     padding-top: 60px;
     padding-right: 0;
     border-bottom: 1px solid #ebe8e0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .testimonials .testimonials-tabs {
+    padding-top: 60px;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .testimonials .testimonials-tabs {
+    padding-right: 0;
   }
 }
 
@@ -1199,6 +1534,12 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .testimonials .testimonials-slider .slider .container {
+    padding-right: 0;
+  }
+}
+
 .testimonials .testimonials-slider .slider .owl-carousel {
   z-index: 1;
   position: absolute;
@@ -1207,9 +1548,16 @@ header .navbar .login .login-item .get-started:hover {
   top: 70px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .testimonials .testimonials-slider .slider .owl-carousel {
-    left: 0;
+    left: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .testimonials .testimonials-slider .slider .owl-carousel {
+    left: 30px;
     width: 100%;
   }
 }
@@ -1232,6 +1580,12 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .testimonials .testimonials-slider .slider .owl-carousel .testim {
+    padding: 40px 0 55px 30px;
+  }
+}
+
 .testimonials .testimonials-slider .slider .owl-carousel .testim img {
   width: auto;
 }
@@ -1243,6 +1597,12 @@ header .navbar .login .login-item .get-started:hover {
 @media (max-width: 767px) {
   .testimonials .testimonials-slider .slider .owl-carousel .testim .quote {
     margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .testimonials .testimonials-slider .slider .owl-carousel .testim .quote {
+    margin-bottom: 30px;
   }
 }
 
@@ -1332,6 +1692,18 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .testimonials .owl-theme .owl-nav {
+    left: -250px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .testimonials .owl-theme .owl-nav {
+    left: -265px;
+  }
+}
+
 .testimonials .owl-carousel .owl-nav button.owl-next,
 .testimonials .owl-carousel .owl-nav button.owl-prev {
   background-color: #f0eee9;
@@ -1406,6 +1778,29 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .authority .authority-content {
+    margin: 0;
+    padding-bottom: 60px;
+  }
+  .authority .authority-content .authority-img {
+    text-align: center;
+  }
+  .authority .authority-content .authority-img img {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    margin-left: -30px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .authority .authority-content {
+    margin: 0 20px;
+    padding-bottom: 100px;
+  }
+}
+
 .authority .authority-content .authority-text {
   position: relative;
   padding-left: 130px;
@@ -1452,7 +1847,7 @@ header .navbar .login .login-item .get-started:hover {
 
 .customers-features .custoemer-feat {
   background-color: #f9f8f4;
-  padding: 130px 70px;
+  padding: 130px 60px;
   position: relative;
 }
 
@@ -1463,10 +1858,23 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .customers-features .custoemer-feat {
+    padding: 65px 32px 60px;
+  }
+}
+
 @media (max-width: 767px) {
   .customers-features .custoemer-feat img {
     -webkit-transform: scale(0.63);
             transform: scale(0.63);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .customers-features .custoemer-feat img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 
@@ -1481,6 +1889,14 @@ header .navbar .login .login-item .get-started:hover {
     font-size: 24px;
     line-height: 28px;
     margin: 12px 0 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .customers-features .custoemer-feat h2 {
+    font-size: 26px;
+    line-height: 32px;
+    margin: 20px 0;
   }
 }
 
@@ -1550,6 +1966,14 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .customers-features .custoemer-feat.one:before {
+    top: -40px;
+    left: -40px;
+    border-width: 40px;
+  }
+}
+
 .customers-features .custoemer-feat.two {
   padding-top: 118px;
   margin-left: 5px;
@@ -1559,6 +1983,12 @@ header .navbar .login .login-item .get-started:hover {
   .customers-features .custoemer-feat.two {
     padding: 30px 32px 60px;
     margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .customers-features .custoemer-feat.two {
+    padding: 40px 32px 60px;
   }
 }
 
@@ -1583,6 +2013,14 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .customers-features .custoemer-feat.two:before {
+    bottom: -40px;
+    right: -40px;
+    border-width: 40px;
+  }
+}
+
 .customers-features .custoemer-feat.two h2 {
   margin-top: 38px;
 }
@@ -1590,6 +2028,12 @@ header .navbar .login .login-item .get-started:hover {
 @media (max-width: 767px) {
   .customers-features .custoemer-feat.two h2 {
     margin-top: -5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .customers-features .custoemer-feat.two h2 {
+    margin-top: 13px;
   }
 }
 
@@ -1613,7 +2057,7 @@ footer {
   padding-top: 100px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   footer {
     padding-top: 60px;
   }
@@ -1661,6 +2105,12 @@ footer .footer-content .footer-icons {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  footer .footer-content .footer-icons {
+    margin-bottom: 60px;
+  }
+}
+
 footer .footer-content .footer-icons li {
   display: inline-block;
   margin: 0 20px;
@@ -1674,6 +2124,12 @@ footer .footer-content .footer-icons li {
     margin-right: 15px;
     width: 25px;
     height: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  footer .footer-content .footer-icons li {
+    margin: 0 10px;
   }
 }
 
@@ -1695,6 +2151,13 @@ footer .footer-content .footer-icons li a img {
   transition: all 0.3s ease-in-out;
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  footer .footer-content .footer-icons li a img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
 footer .copyright {
   border-top: 1px solid #ebe8df;
   padding-top: 39px;
@@ -1707,6 +2170,12 @@ footer .copyright {
   footer .copyright {
     padding-top: 32px;
     padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  footer .copyright {
+    text-align: center;
   }
 }
 
@@ -1733,7 +2202,7 @@ footer .copyright .copyright-txt p {
 
 footer .copyright .copyright-links li {
   display: inline-block;
-  margin-left: 16px;
+  margin-left: 15px;
 }
 
 @media (max-width: 767px) {

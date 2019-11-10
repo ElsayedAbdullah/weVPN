@@ -54,10 +54,14 @@ $(function() {
         margin: 20
       },
       768: {
-        items: 3,
+        items: 1.5,
         margin: 30
       },
-      1100: {
+      850: {
+        items: 2,
+        margin: 30
+      },
+      1200: {
         items: 3.8
       }
     },
@@ -81,10 +85,14 @@ $(function() {
         margin: 20
       },
       768: {
-        items: 3,
+        items: 1.5,
         margin: 30
       },
-      1100: {
+      850: {
+        items: 2,
+        margin: 30
+      },
+      1200: {
         items: 3.8
       }
     },
@@ -108,10 +116,14 @@ $(function() {
         margin: 20
       },
       768: {
-        items: 3,
+        items: 1.5,
         margin: 30
       },
-      1100: {
+      850: {
+        items: 2,
+        margin: 30
+      },
+      1200: {
         items: 3.8
       }
     },
