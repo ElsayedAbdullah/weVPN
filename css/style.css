@@ -358,7 +358,7 @@ header .navbar .login .login-item .get-started:hover {
 @media (min-width: 1000px) and (max-width: 1200px) {
   .hero-img-content .hero-img-title {
     font-size: 60px;
-    line-height: 1.5;
+    line-height: 75px;
   }
 }
 
@@ -2200,9 +2200,16 @@ footer .copyright .copyright-txt p {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  footer .copyright .copyright-links {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
 footer .copyright .copyright-links li {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 0;
 }
 
 @media (max-width: 767px) {
@@ -2210,6 +2217,12 @@ footer .copyright .copyright-links li {
     font-size: 14px;
     line-height: 28px;
     margin-left: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  footer .copyright .copyright-links li {
+    padding: 0;
   }
 }
 
@@ -2228,6 +2241,18 @@ footer .copyright .copyright-links li a {
 @media (max-width: 767px) {
   footer .copyright .copyright-links li a {
     padding: 0 8px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  footer .copyright .copyright-links li a {
+    padding: 0 14px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  footer .copyright .copyright-links li a {
+    padding: 0 7px;
   }
 }
 

@@ -311,7 +311,7 @@ header {
       }
       @media #{$betweentabdesk} {
         font-size: 60px;
-        line-height: 1.5;
+        line-height: 75px;
       }
     }
     .hero-img-txt {
@@ -1608,13 +1608,20 @@ footer {
         text-align: center !important;
         margin-bottom: 17px;
       }
+      @media #{$tablet} {
+        text-align: left;
+        margin-bottom: 20px;
+      }
       li {
         display: inline-block;
-        margin-left: 15px;
+        margin-left: 0;
         @media #{$mobile} {
           font-size: 14px;
           line-height: 28px;
           margin-left: 5px;
+        }
+        @media #{$tablet} {
+          padding: 0;
         }
         &:last-child {
           a:last-child {
@@ -1628,6 +1635,12 @@ footer {
           transition: color 0.3s ease-in-out;
           @media #{$mobile} {
             padding: 0 8px;
+          }
+          @media #{$tablet} {
+            padding: 0 14px;
+          }
+          @media #{$betweentabdesk} {
+            padding: 0 7px;
           }
           &:hover {
             color: $primaryColor;
