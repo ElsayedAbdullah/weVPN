@@ -86,6 +86,7 @@ ul {
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    position: relative;
   }
 }
 
@@ -111,10 +112,6 @@ ul {
 button:focus {
   box-shadow: none;
   outline: none;
-}
-
-html.overlay {
-  overflow: hidden;
 }
 
 body.overlay:after {
@@ -1651,3 +1648,733 @@ footer {
   }
 }
 /* End Footer */
+
+/////////////////////////////////////////////
+/* Start wevpn windows page */
+
+// header
+.wrapper-header.windows {
+  padding-bottom: 150px;
+}
+
+.window-header {
+  .navbar {
+    .login {
+      .login-item {
+        .login-link {
+          color: #fff;
+          &:hover {
+            color: rgba(#fff, 0.7);
+          }
+        }
+        .get-started {
+          background-color: #fff;
+          color: $primaryColor;
+          &:hover {
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero-img.windows {
+  .hero-img-content {
+    .hero-img-title {
+      font-size: 48px;
+      line-height: 48px;
+      width: 80%;
+    }
+    .hero-img-text {
+      font-size: 24px;
+      line-height: 30px;
+      margin-top: 32px;
+      margin-bottom: 34px;
+    }
+    .hero-img-list {
+      li {
+        font-size: 18px;
+        line-height: 32px;
+        i {
+          color: #62d5b4;
+          margin-right: 7px;
+        }
+      }
+    }
+    .download {
+      padding: 24px 51px;
+      color: #fd3e72;
+      background-color: transparent;
+      margin-left: -4px;
+      text-decoration: underline;
+      &:hover {
+        color: #e33866;
+        text-decoration: none;
+      }
+
+      i {
+        margin-right: 7px;
+        position: static;
+      }
+      color: $primaryColor;
+      background-color: transparent;
+    }
+  }
+  .hero-img-image {
+    img {
+      top: 120px;
+      left: 0;
+    }
+  }
+  .header-shape.windows {
+    top: -565px;
+    right: -825px;
+    transform: scale(1.1);
+  }
+}
+
+/* Start Platform */
+.platforms {
+  padding-top: 40px;
+  .platform-content {
+    box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+    display: flex;
+    align-items: center;
+    height: 136px;
+    li {
+      font-size: 16px;
+      position: relative;
+      line-height: 20px;
+      font-family: "AvertaSemibold";
+      color: rgba(#5b5863, 0.7);
+      border-right: 1px solid #ebe8df;
+      text-align: center;
+      &:not(:first-child) {
+        &:after {
+          content: "";
+          position: absolute;
+          background-color: $primaryColor;
+          display: block;
+          height: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          transition: all 0.3s ease-in-out;
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+      &.active,
+      &:hover {
+        &:after {
+          opacity: 1;
+          visibility: visible;
+          height: 4px;
+        }
+        a {
+          background-color: #f7f6f0;
+          position: relative;
+          height: 100%;
+
+          span {
+            opacity: 1;
+          }
+
+          img {
+            opacity: 1;
+          }
+        }
+      }
+
+      height: 100%;
+      a {
+        display: block;
+        padding: 35px 20px 20px;
+        transition: all 0.3s ease-in-out;
+
+        &.apple-icon {
+          padding-top: 27px;
+        }
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+      &:first-child {
+        flex: 1.15;
+        padding: 50px 40px 50px;
+        text-align: left;
+      }
+      flex: 1;
+      img {
+        filter: grayscale(100%);
+        opacity: 0.7;
+        transition: all 0.3s ease-in-out;
+      }
+      span {
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        opacity: 0.7;
+        color: #5b5863;
+        font-family: "Averta";
+        margin-top: 8px;
+        transition: all 0.3s ease-in-out;
+        &.line-height {
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
+/* End Platform */
+
+/* Start wevpn-setup */
+.wevpn-setup {
+  padding-top: 60px;
+
+  .wevpn-setup-content {
+    padding-bottom: 60px;
+    border-bottom: 1px solid #ebe8df;
+    .wevpn-setup-info {
+      .wevpn-setup-title {
+        padding-top: 80px;
+        margin-bottom: 20px;
+        font-size: 36px;
+        line-height: 44px;
+      }
+      .wevpn-setup-list {
+        li {
+          font-size: 18px;
+          line-height: 32px;
+          &:last-child {
+            padding-bottom: 20px;
+          }
+          span {
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            font-family: "AvertaSemibold";
+            background-color: #62d5b4;
+            color: #fff;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+          }
+          a {
+            text-decoration: underline;
+            color: $primaryColor;
+          }
+        }
+      }
+      p {
+        border-top: 1px solid #ebe8df;
+        font-size: 14px;
+        line-height: 14px;
+        padding-top: 20px;
+        color: #8d8b92;
+        margin-left: 35px;
+        a {
+          text-decoration: underline;
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
+/* End wevpn-setup */
+
+/* Start How to use wevpn */
+.how-to-use {
+  background-color: #fff;
+  padding-top: 100px;
+  padding-bottom: 350px;
+  text-align: center;
+  .how-to-use-title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .step {
+    margin-top: 120px;
+    .step-text {
+      font-size: 20px;
+      line-height: 20px;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 75px;
+      span {
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 72px;
+        line-height: 72px;
+        color: #f1efe8;
+        font-family: "AvertaBold";
+      }
+    }
+    .step-img {
+      // border-right: 1px solid #eae8e0;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -15px;
+        height: 100%;
+        width: 1px;
+        background-color: #eae8e0;
+      }
+      &.last {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+/* End How to use wevpn */
+
+/* Start Video Install */
+.video-install {
+  .container {
+    position: relative;
+  }
+  .video-install-frame {
+    position: absolute;
+    background-image: url(../imgs/video-install-bg.png);
+    background-position-y: 80%;
+    padding: 130px 0;
+    top: -250px;
+    left: 15px;
+    width: 1170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #5b5863;
+      opacity: 0.9;
+      z-index: 1;
+    }
+    .video-install-content {
+      text-align: center;
+      position: relative;
+      z-index: 5;
+
+      a {
+        display: inline-block;
+        width: 124px;
+        height: 124px;
+        line-height: 124px;
+        border-radius: 50%;
+        background-color: $primaryColor;
+        color: #fff;
+        text-align: center;
+        font-size: 35px;
+      }
+      p {
+        font-size: 24px;
+        line-height: 32px;
+        color: #ffffff;
+        width: 60%;
+        margin: 25px auto 0;
+      }
+    }
+  }
+}
+/* End Video Install */
+
+/* Start Testimonials */
+.testimonials.windows {
+  padding-bottom: 115px;
+  .testimonials-text {
+    padding-top: 333px;
+  }
+}
+
+.testimonials.windows .testimonials-slider .slider .owl-carousel {
+  position: relative;
+  left: 0;
+}
+
+.testimonials.windows .owl-theme .owl-nav {
+  left: -354px;
+}
+/* End Testimonials */
+
+.authority.windows {
+  background-color: #f9f8f4;
+  padding-top: 0;
+  .authority-content {
+    padding-bottom: 130px;
+  }
+}
+
+/* Start Features Windows */
+.features-windows {
+  padding-top: 155px;
+  padding-bottom: 175px;
+  background-color: #fff;
+  .features-windows-title {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    width: 45%;
+    margin: 0 auto 95px;
+  }
+  .feats {
+    .feat {
+      padding: 90px 38px 98px;
+      text-align: center;
+      margin-bottom: 60px;
+      width: 350px;
+      .feat-title {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 20px;
+      }
+      .feat-text {
+        font-size: 16px;
+        line-height: 28px;
+      }
+      &.one {
+        margin-top: 80px;
+        background: rgba(#fd3e72, 0.05);
+      }
+      &.two {
+        background: rgba(#c562f3, 0.05);
+      }
+      &.three {
+        background: rgba(#62d5b4, 0.1);
+        margin: 0 auto 60px;
+      }
+      &.four {
+        background: rgba(#766cf0, 0.1);
+        margin: 0 auto 60px;
+      }
+      &.five {
+        margin-top: 80px;
+        margin-left: auto;
+        background: rgba(#f47c5c, 0.1);
+      }
+      &.six {
+        background: rgba(#6ca9f0, 0.1);
+        margin-left: auto;
+      }
+    }
+  }
+  .feats-btn {
+    button {
+      font-size: 20px;
+      line-height: 25px;
+      background-color: #ffecf1;
+      color: $primaryColor;
+      width: 100%;
+      height: 72px;
+      line-height: 72px;
+      text-align: center;
+      &:hover {
+        background-color: $primaryColor;
+        color: #fff;
+        i {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+/* End Features Windows */
+
+/* Start Benefits */
+.benefits {
+  background-color: #fff;
+  padding-bottom: 155px;
+
+  .benefits-wrapper {
+    padding-top: 155px;
+    border-top: 1px solid #ebe8df;
+    .benefits-content {
+      .benfits-title {
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 80px;
+        width: 80%;
+      }
+      .benefits-list {
+        .benefit-item {
+          position: relative;
+          padding-left: 100px;
+          margin-bottom: 80px;
+          .icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8),
+              0px 3px 8px #e6e4df;
+            width: 72px;
+            height: 72px;
+            line-height: 72px;
+            text-align: center;
+            img {
+              transform: scale(0.52);
+            }
+          }
+          .benefit-item-title {
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 10px;
+          }
+          .benefit-item-txt {
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+      .benefits-btn {
+        button {
+          padding: 21px 96px;
+          font-size: 20px;
+          color: $primaryColor;
+          background-color: #ffecf1;
+          &:hover {
+            background-color: $primaryColor;
+            color: #fff;
+            i {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .benefit {
+      position: relative;
+      .benefits-img {
+        margin-top: 170px;
+        width: 695px;
+        height: 695px;
+        border-radius: 50%;
+        background-color: #f9f8f4;
+        overflow: hidden;
+        position: relative;
+        img {
+          position: absolute;
+          right: 110px;
+          top: 130px;
+        }
+      }
+      .benfits-img-two {
+        position: absolute;
+        bottom: 245px;
+        left: 86px;
+        box-shadow: 90px 120px 149px rgba(186, 185, 181, 0.54);
+        border-radius: 10px;
+      }
+    }
+  }
+}
+/* End Benefits */
+
+/* Start Devices operating system */
+.devices-os {
+  padding-top: 155px;
+  padding-bottom: 155px;
+  .devices-content {
+    .devices-title {
+      padding-top: 70px;
+      font-size: 36px;
+      line-height: 44px;
+      width: 80%;
+      @media #{$mobile} {
+        padding-top: 50px;
+        font-size: 24px;
+        line-height: 28px;
+        width: 70%;
+        margin-bottom: 0;
+      }
+      @media #{$tablet} {
+        padding-top: 100px;
+        font-size: 30px;
+        line-height: 36px;
+      }
+    }
+    .devices-desc {
+      font-size: 18px;
+      line-height: 28px;
+      margin-top: 26px;
+      margin-bottom: 40px;
+      width: 90%;
+      @media #{$maxTab} {
+        font-size: 16px;
+        line-height: 28px;
+        width: 100%;
+        margin-top: 24px;
+        margin-bottom: 21px;
+      }
+      @media #{$tablet} {
+        width: 100%;
+      }
+    }
+    .devices-btn {
+      padding: 24px 57px;
+      @media #{$mobile} {
+        padding: 22.5px 51.5px;
+      }
+    }
+  }
+}
+/* End Devices operating system */
+
+/* Start FAQ */
+.faq {
+  background-color: #fff;
+  padding-top: 134px;
+  .faq-title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 70px;
+  }
+  .accordion {
+    width: 650px;
+    margin: auto;
+    .question {
+      border-bottom: 1px solid #dfddd6;
+      &:last-child {
+        border: 0;
+      }
+      .question-header {
+        h2 {
+          position: relative;
+          padding-bottom: 32px;
+          padding-top: 32px;
+          font-size: 20px;
+          line-height: 20px;
+          text-decoration: none;
+          color: #5b5863;
+          cursor: pointer;
+          margin-bottom: 0;
+
+          &.collapsed {
+            span {
+              opacity: 0.7;
+            }
+
+            &:after {
+              content: "\f067";
+              font-family: fontawesome;
+              position: absolute;
+              top: 50%;
+              right: 20px;
+              transform: translateY(-50%);
+              font-size: 15px;
+              color: #878489;
+            }
+            img {
+              filter: grayscale(100%);
+            }
+          }
+          &:after {
+            content: "\f068";
+            font-family: fontawesome;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 15px;
+            color: $primaryColor;
+          }
+          img {
+            filter: none;
+            margin-right: 5px;
+          }
+
+          i {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 15px;
+          }
+        }
+      }
+
+      .question-body {
+        margin-bottom: 32px;
+        margin-left: 40px;
+
+        font-size: 14px;
+        line-height: 24px;
+        p:first-child {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .faq-btn {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 135px;
+    button {
+      background-color: #ffecf1;
+      color: $primaryColor;
+      padding: 24px 95px;
+      &:hover {
+        background-color: $primaryColor;
+        color: #fff;
+        i {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/* End FAQ */
+
+/* Start Risk Free */
+.risk-free {
+  background-image: url(../imgs/how-use-bg.png);
+  padding: 134px 0;
+  background-position-x: 43%;
+  &-content {
+    .risk-free-title {
+      font-size: 36px;
+      line-height: 44px;
+      width: 45%;
+      margin: auto;
+      margin-bottom: 60px;
+    }
+    .risk-free-img {
+      margin-bottom: 38px;
+    }
+    .risk-free-txt {
+      font-size: 18px;
+      line-height: 28px;
+      width: 36%;
+      margin: 0 auto 44px;
+      a {
+        color: $primaryColor;
+      }
+    }
+    .risk-free-btn {
+      button {
+        padding: 24px 64px;
+      }
+    }
+  }
+}
+/* End Risk Free */
+
+.servers.windows {
+  border-bottom: 1px solid #ebe8df;
+}
