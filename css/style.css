@@ -1189,7 +1189,7 @@ header .navbar .login .login-item .get-started:hover {
 
 .servers .servers-content .server-feat h2 span {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: -20px;
   font-size: 20px;
   line-height: 20px;
@@ -1517,9 +1517,9 @@ header .navbar .login .login-item .get-started:hover {
 }
 
 .testimonials .testimonials-slider .slider.content-three, .testimonials .testimonials-slider .slider.content-two {
-  display: none;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 @media (max-width: 767px) {
@@ -1568,12 +1568,14 @@ header .navbar .login .login-item .get-started:hover {
   -webkit-box-shadow: 10px 10px 50px -20px #e6e4df, -10px 6px 20px -15px #e6e4df;
           box-shadow: 10px 10px 50px -20px #e6e4df, -10px 6px 20px -15px #e6e4df;
   background-color: #fff;
-  padding: 80px 0 55px 60px;
+  padding: 67px 0 55px 60px;
+  min-height: 540px;
 }
 
 @media (max-width: 767px) {
   .testimonials .testimonials-slider .slider .owl-carousel .testim {
     padding: 32px 0 55px 24px;
+    min-height: 400px;
   }
 }
 
@@ -1650,6 +1652,7 @@ header .navbar .login .login-item .get-started:hover {
     margin-top: 35px;
     margin-bottom: 20px;
     width: 85%;
+    font-size: 14px;
   }
 }
 
@@ -2673,7 +2676,7 @@ footer .copyright .copyright-links li a:hover {
 }
 
 .features-windows .feats .feat {
-  padding: 90px 38px 98px;
+  padding: 90px 35px 98px;
   text-align: center;
   margin-bottom: 60px;
   width: 350px;
@@ -3061,5 +3064,126 @@ footer .copyright .copyright-links li a:hover {
 /* End Risk Free */
 .servers.windows {
   border-bottom: 1px solid #ebe8df;
+}
+
+.hero-img.mac .hero-img-image img {
+  top: 80px;
+}
+
+.benefits .benefits-wrapper .benefit.mac .benefits-img img {
+  left: 92px;
+}
+
+.benefits .benefits-wrapper .benefit.mac .benfits-img-two {
+  bottom: 155px;
+  left: 270px;
+  -webkit-box-shadow: -90px 120px 149px rgba(186, 185, 181, 0.54);
+          box-shadow: -90px 120px 149px rgba(186, 185, 181, 0.54);
+}
+
+.hero-img.android .hero-img-image.android .one {
+  top: 140px;
+  left: 310px;
+}
+
+.hero-img.android .hero-img-image.android .two {
+  top: 70px;
+  left: 20px;
+}
+
+.hero-img.android .hero-img-btn {
+  padding: 24px 64.5px;
+}
+
+.hero-img.android .google-play {
+  display: inline-block;
+  position: relative;
+}
+
+.hero-img.android .google-play .google-play-btn {
+  background-color: #2c3038;
+  padding: 19.5px 50.5px;
+  position: relative;
+  top: -1px;
+  margin-left: 15px;
+}
+
+.hero-img.android .google-play .google-play-btn img:first-child {
+  margin-right: 10px;
+}
+
+.hero-img.android .google-play .wevpn-apk {
+  position: absolute;
+  bottom: -23px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-decoration: underline !important;
+  color: #8b888d;
+  font-size: 13px;
+  line-height: 16px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.hero-img.android .google-play .wevpn-apk:hover {
+  color: #2c3038;
+  text-decoration: none !important;
+}
+
+.benefits .benefits-wrapper .benefit.android .benfits-img-two {
+  border-radius: 55px;
+  bottom: 180px;
+}
+
+.hero-img.iphone .hero-img-image.iphone .one {
+  top: 75px;
+  left: 280px;
+}
+
+.hero-img.iphone .hero-img-image.iphone .two {
+  top: 190px;
+  left: 50px;
+}
+
+.hero-img.iphone .hero-img-btn {
+  padding: 24px 64.5px;
+}
+
+.hero-img.iphone .google-play {
+  display: inline-block;
+  position: relative;
+}
+
+.hero-img.iphone .google-play .google-play-btn {
+  background-color: #2c3038;
+  padding: 21px 50.5px;
+  position: relative;
+  top: -1px;
+  margin-left: 15px;
+}
+
+.hero-img.iphone .google-play .google-play-btn img:first-child {
+  margin-right: 10px;
+}
+
+.benefits .benefits-wrapper .benefit.iphone .benefits-img {
+  overflow: visible;
+}
+
+.benefits .benefits-wrapper .benefit.iphone .benefits-img img {
+  right: 45px;
+  top: -80px;
+}
+
+.benefits .benefits-wrapper .benefit.iphone .benfits-img-two {
+  border-radius: 50%;
+  background-color: #e7e5e1;
+  -webkit-box-shadow: 100px 120px 149px rgba(186, 185, 181, 0.64);
+          box-shadow: 100px 120px 149px rgba(186, 185, 181, 0.64);
+  bottom: 198px;
+  left: 35px;
 }
 /*# sourceMappingURL=style.css.map */

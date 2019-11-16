@@ -144,11 +144,17 @@ $(function() {
       .siblings("li")
       .removeClass("active");
 
-    $(".testimonials-slider .slider").hide();
+    $(".testimonials-slider .slider").css({
+      opacity: 0,
+      display: "none"
+    });
     $(
       $(this)
         .parent("li")
         .data("content")
-    ).fadeIn();
+    ).css({
+      opacity: 1,
+      display: "block"
+    });
   });
 });
