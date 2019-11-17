@@ -49,6 +49,7 @@ h6 {
 
 a {
   text-decoration: none !important;
+  color: #5b5863;
 }
 
 ul {
@@ -1518,6 +1519,7 @@ header .navbar .login .login-item .get-started:hover {
 
 .testimonials .testimonials-slider .slider.content-three, .testimonials .testimonials-slider .slider.content-two {
   opacity: 0;
+  visibility: none;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
@@ -2642,12 +2644,12 @@ footer .copyright .copyright-links li a:hover {
 }
 
 .testimonials.windows .testimonials-slider .slider .owl-carousel {
-  position: relative;
+  position: absolute;
   left: 0;
 }
 
 .testimonials.windows .owl-theme .owl-nav {
-  left: -354px;
+  left: -310px;
 }
 
 /* End Testimonials */
@@ -2658,6 +2660,7 @@ footer .copyright .copyright-links li a:hover {
 
 .authority.windows .authority-content {
   padding-bottom: 130px;
+  margin-top: 272px;
 }
 
 /* Start Features Windows */
@@ -2922,8 +2925,7 @@ footer .copyright .copyright-links li a:hover {
 }
 
 .faq .accordion {
-  width: 650px;
-  margin: auto;
+  padding: 0 60px;
 }
 
 .faq .accordion .question {
@@ -2955,7 +2957,7 @@ footer .copyright .copyright-links li a:hover {
   font-family: fontawesome;
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   font-size: 15px;
@@ -2972,7 +2974,7 @@ footer .copyright .copyright-links li a:hover {
   font-family: fontawesome;
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   font-size: 15px;
@@ -2996,7 +2998,7 @@ footer .copyright .copyright-links li a:hover {
 
 .faq .accordion .question .question-body {
   margin-bottom: 32px;
-  margin-left: 40px;
+  margin-left: 33px;
   font-size: 14px;
   line-height: 24px;
 }
@@ -3011,18 +3013,19 @@ footer .copyright .copyright-links li a:hover {
   padding-bottom: 135px;
 }
 
-.faq .faq-btn button {
+.faq .faq-btn a {
   background-color: #ffecf1;
   color: #fd3e72;
   padding: 24px 95px;
+  display: inline-block;
 }
 
-.faq .faq-btn button:hover {
+.faq .faq-btn a:hover {
   background-color: #fd3e72;
   color: #fff;
 }
 
-.faq .faq-btn button:hover i {
+.faq .faq-btn a:hover i {
   color: #fff;
 }
 
@@ -3186,4 +3189,270 @@ footer .copyright .copyright-links li a:hover {
   bottom: 198px;
   left: 35px;
 }
+
+header.border--bottom .navbar-content {
+  border-bottom: 1px solid #ebe8df;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+}
+
+/* Start Terms of Service */
+.terms-of-service h1,
+.privay-policy h1 {
+  padding-top: 74px;
+  margin-bottom: 65px;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.terms-of-service p,
+.privay-policy p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.terms-of-service p.first,
+.privay-policy p.first {
+  margin-bottom: 40px;
+}
+
+.terms-of-service p strong,
+.privay-policy p strong {
+  font-family: "AvertaBold";
+}
+
+.terms-of-service .list-internal,
+.privay-policy .list-internal {
+  padding-left: 90px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.terms-of-service .list-internal li,
+.privay-policy .list-internal li {
+  font-size: 18px;
+  line-height: 36px;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  font-family: "AvertaSemibold";
+}
+
+.terms-of-service .list-internal li a,
+.privay-policy .list-internal li a {
+  font-size: 18px;
+  line-height: 36px;
+  text-decoration: underline !important;
+  display: block;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.terms-of-service .list-internal li a:hover,
+.privay-policy .list-internal li a:hover {
+  color: #fd3e72;
+}
+
+.terms-of-service .list-internal li:hover,
+.privay-policy .list-internal li:hover {
+  color: #fd3e72;
+}
+
+.terms-of-service .list-external li,
+.privay-policy .list-external li {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "AvertaSemibold";
+  margin-bottom: 60px;
+  margin-left: 40px;
+}
+
+.terms-of-service .list-external li p,
+.privay-policy .list-external li p {
+  margin-top: 24px;
+  font-family: "Averta";
+  margin-left: -40px;
+}
+
+.faq.faq-main-page {
+  background-color: #f9f8f4;
+  padding-top: 68px;
+  padding-bottom: 134px;
+}
+
+.faq.faq-main-page h1 {
+  font-size: 36px;
+  line-height: 56px;
+  margin-bottom: 25px;
+}
+
+.faq.faq-main-page .faq-content {
+  background-color: #f9f8f4;
+  background-image: url(../imgs/faq-bg.png);
+}
+
+.faq.faq-main-page .faq-content .accordion {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+          box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+}
+
+/* Start login */
+.login {
+  background-image: url(../imgs/login-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.login .padd {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.login h1 {
+  margin-top: 68px;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 56px;
+}
+
+.login .login-content {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+          box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+  padding: 80px 60px 60px;
+}
+
+.login .login-content label {
+  margin-bottom: 4px;
+}
+
+.login .login-content input {
+  border: 0;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-left: 0;
+  padding: 0;
+  height: auto;
+}
+
+.login .login-content input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.login .login-content input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.login .login-content input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.login .login-content input::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.login .login-content .form-group {
+  border: 1px solid #e0ded5;
+  padding: 16px 30px;
+  margin-bottom: 20px;
+}
+
+.login .login-content .form-group label {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "AvertaSemibold";
+}
+
+.login .login-content .forgot-password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.login .login-content .forgot-password a {
+  font-size: 14px;
+  line-height: 20px;
+  color: #fd3e72;
+  text-decoration: underline !important;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.login .login-content .forgot-password a:hover {
+  color: #e33866;
+  text-decoration: none !important;
+}
+
+.login .login-content .forgot-password button {
+  font-family: "AvertaSemibold";
+  background-color: #fd3e72;
+  text-align: center;
+  font-size: 20px;
+  color: #fcf9f2;
+  border: 0;
+  padding: 13px 58px;
+}
+
+.login .login-footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.login .login-footer p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #8d8b92;
+  font-family: "AvertaSemibold";
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.login .login-footer a {
+  color: #fd3e72;
+  margin-left: 8px;
+  display: inline-block;
+  text-decoration: underline !important;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.login .login-footer a:hover {
+  color: #e33866;
+  text-decoration: none !important;
+}
+
+/* End login */
 /*# sourceMappingURL=style.css.map */

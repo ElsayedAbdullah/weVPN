@@ -157,4 +157,15 @@ $(function() {
       display: "block"
     });
   });
+
+  $(".list-internal li a").click(function(event) {
+    event.preventDefault();
+    // $(this).data("scroll");
+    $("html, body").animate(
+      {
+        scrollTop: $($(this).data("scroll")).offset().top - 40
+      },
+      1000
+    );
+  });
 });
