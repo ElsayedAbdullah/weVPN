@@ -3314,37 +3314,43 @@ ol {
 }
 
 /* Start login */
-.login {
+.login-page,
+.contact-us {
   background-image: url(../imgs/login-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.login .padd {
+.login-page .padd,
+.contact-us .padd {
   padding-right: 5px;
   padding-left: 5px;
 }
 
-.login h1 {
+.login-page h1,
+.contact-us h1 {
   margin-top: 68px;
   margin-bottom: 40px;
   font-size: 36px;
   line-height: 56px;
 }
 
-.login .login-content {
+.login-page .login-content,
+.contact-us .login-content {
   background: #ffffff;
   -webkit-box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
           box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
   padding: 80px 60px 60px;
 }
 
-.login .login-content label {
+.login-page .login-content label,
+.contact-us .login-content label {
   margin-bottom: 4px;
 }
 
-.login .login-content input {
+.login-page .login-content input,
+.contact-us .login-content input {
   border: 0;
   outline: none;
   -webkit-box-shadow: none;
@@ -3354,43 +3360,50 @@ ol {
   height: auto;
 }
 
-.login .login-content input::-webkit-input-placeholder {
+.login-page .login-content input::-webkit-input-placeholder,
+.contact-us .login-content input::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 20px;
   color: #8d8b92;
 }
 
-.login .login-content input:-ms-input-placeholder {
+.login-page .login-content input:-ms-input-placeholder,
+.contact-us .login-content input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 20px;
   color: #8d8b92;
 }
 
-.login .login-content input::-ms-input-placeholder {
+.login-page .login-content input::-ms-input-placeholder,
+.contact-us .login-content input::-ms-input-placeholder {
   font-size: 16px;
   line-height: 20px;
   color: #8d8b92;
 }
 
-.login .login-content input::placeholder {
+.login-page .login-content input::placeholder,
+.contact-us .login-content input::placeholder {
   font-size: 16px;
   line-height: 20px;
   color: #8d8b92;
 }
 
-.login .login-content .form-group {
+.login-page .login-content .form-group,
+.contact-us .login-content .form-group {
   border: 1px solid #e0ded5;
   padding: 16px 30px;
   margin-bottom: 20px;
 }
 
-.login .login-content .form-group label {
+.login-page .login-content .form-group label,
+.contact-us .login-content .form-group label {
   font-size: 12px;
   line-height: 20px;
   font-family: "AvertaSemibold";
 }
 
-.login .login-content .forgot-password {
+.login-page .login-content .forgot-password,
+.contact-us .login-content .forgot-password {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3402,7 +3415,8 @@ ol {
           justify-content: space-between;
 }
 
-.login .login-content .forgot-password a {
+.login-page .login-content .forgot-password a,
+.contact-us .login-content .forgot-password a {
   font-size: 14px;
   line-height: 20px;
   color: #fd3e72;
@@ -3411,12 +3425,14 @@ ol {
   transition: color 0.3s ease-in-out;
 }
 
-.login .login-content .forgot-password a:hover {
+.login-page .login-content .forgot-password a:hover,
+.contact-us .login-content .forgot-password a:hover {
   color: #e33866;
   text-decoration: none !important;
 }
 
-.login .login-content .forgot-password button {
+.login-page .login-content .forgot-password button,
+.contact-us .login-content .forgot-password button {
   font-family: "AvertaSemibold";
   background-color: #fd3e72;
   text-align: center;
@@ -3426,12 +3442,14 @@ ol {
   padding: 13px 58px;
 }
 
-.login .login-footer {
+.login-page .login-footer,
+.contact-us .login-footer {
   text-align: center;
   margin-top: 30px;
 }
 
-.login .login-footer p {
+.login-page .login-footer p,
+.contact-us .login-footer p {
   font-size: 14px;
   line-height: 17px;
   color: #8d8b92;
@@ -3440,7 +3458,8 @@ ol {
   margin-bottom: 5px;
 }
 
-.login .login-footer a {
+.login-page .login-footer a,
+.contact-us .login-footer a {
   color: #fd3e72;
   margin-left: 8px;
   display: inline-block;
@@ -3449,7 +3468,8 @@ ol {
   transition: color 0.3s ease-in-out;
 }
 
-.login .login-footer a:hover {
+.login-page .login-footer a:hover,
+.contact-us .login-footer a:hover {
   color: #e33866;
   text-decoration: none !important;
 }
