@@ -3045,6 +3045,18 @@ ol {
     &.three {
       margin-top: 34px;
     }
+    &.three {
+      position: relative;
+      .offer {
+        position: absolute;
+        top: 23px;
+        right: 29px;
+        color: $primaryColor;
+        font-size: 16px;
+        line-height: 20px;
+        font-family: "AvertaSemibold";
+      }
+    }
 
     input[type="radio"] {
       display: none;

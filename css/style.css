@@ -3904,6 +3904,20 @@ ol {
   margin-top: 34px;
 }
 
+.pricing-tables .price-card.three {
+  position: relative;
+}
+
+.pricing-tables .price-card.three .offer {
+  position: absolute;
+  top: 23px;
+  right: 29px;
+  color: #fd3e72;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "AvertaSemibold";
+}
+
 .pricing-tables .price-card input[type="radio"] {
   display: none;
 }
