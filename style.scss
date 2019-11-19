@@ -3139,6 +3139,13 @@ ol {
       }
       .price-bottom {
         padding-top: 40px;
+        .deleted {
+          line-height: 20px;
+          text-decoration-line: line-through;
+          color: #afadb2;
+          font-family: "AvertaSemibold";
+          margin-right: 3px;
+        }
         span {
           font-size: 16px;
           line-height: 20px;
@@ -3295,6 +3302,7 @@ header.features-page {
         outline: none;
         border: 0;
         box-shadow: none;
+        color: #5b5863;
         &::placeholder {
           font-size: 20px;
           line-height: 20px;
@@ -3309,8 +3317,6 @@ header.features-page {
         background: none;
         border: 0;
         cursor: pointer;
-        svg {
-        }
       }
     }
   }
@@ -3360,6 +3366,7 @@ header.features-page {
     margin-bottom: 70px;
     padding: 0 150px;
     overflow: hidden;
+    margin-left: 50px;
     li {
       width: 33.3%;
       float: left;
@@ -3420,3 +3427,236 @@ header.features-page {
   }
 }
 /* End Contacting */
+
+//////////////////////////////////////////////////////////////////////////////
+// Start get Started page
+header.get-started-page {
+  background-color: #fff;
+  .get-started-login {
+    p {
+      font-size: 14px;
+      line-height: 17px;
+      color: #8d8b92;
+      font-family: "AvertaSemibold";
+      a {
+        color: $primaryColor;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+/* Start Choose Plan */
+.choose-plan {
+  background-color: #fff;
+  &-info {
+    ul {
+      margin-top: 80px;
+      margin-bottom: 42px;
+      li {
+        font-size: 18px;
+        line-height: 32px;
+        display: inline-block;
+        &:first-child {
+          margin-right: 32px;
+        }
+        img {
+          margin-right: 16px;
+        }
+      }
+    }
+    h2 {
+      font-size: 56px;
+      line-height: 56px;
+      margin-bottom: 80px;
+    }
+  }
+}
+/* End Choose Plan */
+
+/* Start Choose Steps */
+.choose-steps {
+  padding-top: 80px;
+  padding-bottom: 130px;
+  .step-no {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 4px;
+    color: #5b5863;
+    opacity: 0.7;
+    font-family: "AvertaSemibold";
+  }
+  .choose-title {
+    font-size: 36px;
+    line-height: 44px;
+    small {
+      font-size: 16px;
+      line-height: 44px;
+      color: #8d8b92;
+      font-family: "Averta";
+      a {
+        color: $primaryColor;
+        text-decoration: underline !important;
+      }
+    }
+  }
+  .choose-steps-list {
+    li {
+      display: inline-block;
+      font-size: 18px;
+      line-height: 32px;
+      margin-right: 24px;
+      i {
+        color: #62d5b4;
+        margin-right: 8px;
+      }
+    }
+  }
+  .pricing-tables {
+    padding-bottom: 70px;
+    .price-card .label-radio {
+      padding-bottom: 0;
+    }
+  }
+  .create-account {
+    margin-top: 30px;
+    .step {
+      .form-group {
+        background-color: #fff;
+        padding: 16px 30px;
+        margin-bottom: 0;
+        label {
+          font-size: 12px;
+          line-height: 20px;
+          font-family: "AvertaSemibold";
+          margin-bottom: 2px;
+        }
+        input {
+          border: 0;
+          outline: none;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          padding-left: 0;
+          padding: 0;
+          height: auto;
+          background: none;
+          color: #5b5863;
+          &::placeholder {
+            font-size: 16px;
+            line-height: 20px;
+            color: #8d8b92;
+          }
+        }
+      }
+    }
+    .data {
+      font-size: 14px;
+      line-height: 16px;
+      color: #8d8b92;
+      margin-top: 20px;
+      margin-bottom: 72px;
+    }
+  }
+  .payment {
+    margin-top: 28px;
+    .payment-methods {
+      .card-info {
+        display: none;
+      }
+
+      .credit-payment,
+      .paypal-payment {
+        overflow: hidden;
+        background-color: #fff;
+
+        .pay-card {
+          position: relative;
+
+          input[type="radio"] {
+            display: none;
+
+            &:not(:checked) {
+              & + label:after {
+                opacity: 0;
+                transform: scale(0);
+              }
+            }
+
+            &:checked {
+              & + label:after {
+                opacity: 1;
+                transform: scale(1);
+              }
+            }
+          }
+
+          .label-radio {
+            font-size: 18px;
+            line-height: 13px;
+            text-transform: uppercase;
+            opacity: 0.7;
+            position: relative;
+            cursor: pointer;
+            height: 80px;
+            display: block;
+            padding-left: 80px;
+            line-height: 80px;
+
+            &:before {
+              content: "";
+              position: absolute;
+              top: 25px;
+              left: 32px;
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+              border: 1px solid #adaba5;
+            }
+
+            &:after {
+              content: "";
+              position: absolute;
+              top: 33px;
+              left: 40px;
+              width: 16px;
+              height: 16px;
+              border-radius: 50%;
+              background-color: $primaryColor;
+            }
+          }
+          img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 30px;
+          }
+        }
+      }
+
+      .paypal-payment {
+        margin-top: 12px;
+      }
+    }
+    .license {
+      background: #ffffff;
+      box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+      padding: 60px;
+      h3 {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 20px;
+      }
+      ul {
+        li {
+          font-size: 18px;
+          line-height: 40px;
+          i {
+            color: #62d5b4;
+            margin: 7px;
+          }
+        }
+      }
+    }
+  }
+}
+/* End Choose Steps */

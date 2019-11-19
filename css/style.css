@@ -4018,6 +4018,15 @@ ol {
   padding-top: 40px;
 }
 
+.pricing-tables .price-card .label-radio .price-bottom .deleted {
+  line-height: 20px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #afadb2;
+  font-family: "AvertaSemibold";
+  margin-right: 3px;
+}
+
 .pricing-tables .price-card .label-radio .price-bottom span {
   font-size: 16px;
   line-height: 20px;
@@ -4179,6 +4188,7 @@ header.features-page {
   border: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
+  color: #5b5863;
 }
 
 .help-center-search .help-center-content form input::-webkit-input-placeholder {
@@ -4269,6 +4279,7 @@ header.features-page {
   margin-bottom: 70px;
   padding: 0 150px;
   overflow: hidden;
+  margin-left: 50px;
 }
 
 .popular-tickets .popular-tickets-list li {
@@ -4337,4 +4348,277 @@ header.features-page {
 }
 
 /* End Contacting */
+header.get-started-page {
+  background-color: #fff;
+}
+
+header.get-started-page .get-started-login p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #8d8b92;
+  font-family: "AvertaSemibold";
+}
+
+header.get-started-page .get-started-login p a {
+  color: #fd3e72;
+  margin-left: 5px;
+}
+
+/* Start Choose Plan */
+.choose-plan {
+  background-color: #fff;
+}
+
+.choose-plan-info ul {
+  margin-top: 80px;
+  margin-bottom: 42px;
+}
+
+.choose-plan-info ul li {
+  font-size: 18px;
+  line-height: 32px;
+  display: inline-block;
+}
+
+.choose-plan-info ul li:first-child {
+  margin-right: 32px;
+}
+
+.choose-plan-info ul li img {
+  margin-right: 16px;
+}
+
+.choose-plan-info h2 {
+  font-size: 56px;
+  line-height: 56px;
+  margin-bottom: 80px;
+}
+
+/* End Choose Plan */
+/* Start Choose Steps */
+.choose-steps {
+  padding-top: 80px;
+  padding-bottom: 130px;
+}
+
+.choose-steps .step-no {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 4px;
+  color: #5b5863;
+  opacity: 0.7;
+  font-family: "AvertaSemibold";
+}
+
+.choose-steps .choose-title {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.choose-steps .choose-title small {
+  font-size: 16px;
+  line-height: 44px;
+  color: #8d8b92;
+  font-family: "Averta";
+}
+
+.choose-steps .choose-title small a {
+  color: #fd3e72;
+  text-decoration: underline !important;
+}
+
+.choose-steps .choose-steps-list li {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 32px;
+  margin-right: 24px;
+}
+
+.choose-steps .choose-steps-list li i {
+  color: #62d5b4;
+  margin-right: 8px;
+}
+
+.choose-steps .pricing-tables {
+  padding-bottom: 70px;
+}
+
+.choose-steps .pricing-tables .price-card .label-radio {
+  padding-bottom: 0;
+}
+
+.choose-steps .create-account {
+  margin-top: 30px;
+}
+
+.choose-steps .create-account .step .form-group {
+  background-color: #fff;
+  padding: 16px 30px;
+  margin-bottom: 0;
+}
+
+.choose-steps .create-account .step .form-group label {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "AvertaSemibold";
+  margin-bottom: 2px;
+}
+
+.choose-steps .create-account .step .form-group input {
+  border: 0;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding-left: 0;
+  padding: 0;
+  height: auto;
+  background: none;
+  color: #5b5863;
+}
+
+.choose-steps .create-account .step .form-group input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.choose-steps .create-account .step .form-group input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.choose-steps .create-account .step .form-group input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.choose-steps .create-account .step .form-group input::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.choose-steps .create-account .data {
+  font-size: 14px;
+  line-height: 16px;
+  color: #8d8b92;
+  margin-top: 20px;
+  margin-bottom: 72px;
+}
+
+.choose-steps .payment {
+  margin-top: 28px;
+}
+
+.choose-steps .payment .payment-methods .card-info {
+  display: none;
+}
+
+.choose-steps .payment .payment-methods .credit-payment,
+.choose-steps .payment .payment-methods .paypal-payment {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.choose-steps .payment .payment-methods .credit-payment .pay-card,
+.choose-steps .payment .payment-methods .paypal-payment .pay-card {
+  position: relative;
+}
+
+.choose-steps .payment .payment-methods .credit-payment .pay-card input[type="radio"],
+.choose-steps .payment .payment-methods .paypal-payment .pay-card input[type="radio"] {
+  display: none;
+}
+
+.choose-steps .payment .payment-methods .credit-payment .pay-card input[type="radio"]:not(:checked) + label:after,
+.choose-steps .payment .payment-methods .paypal-payment .pay-card input[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.choose-steps .payment .payment-methods .credit-payment .pay-card input[type="radio"]:checked + label:after,
+.choose-steps .payment .payment-methods .paypal-payment .pay-card input[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.choose-steps .payment .payment-methods .credit-payment .pay-card .label-radio,
+.choose-steps .payment .payment-methods .paypal-payment .pay-card .label-radio {
+  font-size: 18px;
+  line-height: 13px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  position: relative;
+  cursor: pointer;
+  height: 80px;
+  display: block;
+  padding-left: 80px;
+  line-height: 80px;
+}
+
+.choose-steps .payment .payment-methods .credit-payment .pay-card .label-radio:before,
+.choose-steps .payment .payment-methods .paypal-payment .pay-card .label-radio:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #adaba5;
+}
+
+.choose-steps .payment .payment-methods .credit-payment .pay-card .label-radio:after,
+.choose-steps .payment .payment-methods .paypal-payment .pay-card .label-radio:after {
+  content: "";
+  position: absolute;
+  top: 33px;
+  left: 40px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fd3e72;
+}
+
+.choose-steps .payment .payment-methods .credit-payment .pay-card img,
+.choose-steps .payment .payment-methods .paypal-payment .pay-card img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 30px;
+}
+
+.choose-steps .payment .payment-methods .paypal-payment {
+  margin-top: 12px;
+}
+
+.choose-steps .payment .license {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+          box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+  padding: 60px;
+}
+
+.choose-steps .payment .license h3 {
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.choose-steps .payment .license ul li {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.choose-steps .payment .license ul li i {
+  color: #62d5b4;
+  margin: 7px;
+}
+
+/* End Choose Steps */
 /*# sourceMappingURL=style.css.map */

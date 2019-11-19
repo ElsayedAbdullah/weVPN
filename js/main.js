@@ -173,4 +173,18 @@ $(function() {
   $('[data-fancybox="gallery"]').fancybox({
     // Options will go here
   });
+
+  // toggle between credit card and paypal
+  $(".credit-payment .pay-card").click(function() {
+    $(this)
+      .parent()
+      .siblings(".card-info")
+      .slideDown(500);
+  });
+  $(".paypal-payment .pay-card").click(function() {
+    $(this)
+      .parent()
+      .siblings(".card-info")
+      .slideUp(500);
+  });
 });
