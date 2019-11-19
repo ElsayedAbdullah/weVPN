@@ -4040,4 +4040,301 @@ ol {
 }
 
 /* End Pricing Tables */
+.advantages.benefits-page {
+  padding-top: 112px;
+  padding-bottom: 134px;
+}
+
+.advantages.benefits-page .benefits-title {
+  font-size: 56px;
+  line-height: 56px;
+  margin-bottom: 35px;
+}
+
+.advantages.benefits-page .benefits-text {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 128px;
+}
+
+.advantages.benefits-page .section-two .advantages-img {
+  padding-top: 20px;
+}
+
+.advantages.benefits-page .section-two .advantages-content .advantages-title {
+  padding-top: 110px;
+}
+
+.advantages.benefits-page .section-three .advantages-content .advantages-desc {
+  margin-bottom: 30px;
+}
+
+.advantages.benefits-page .section-three .advantages-icons {
+  margin-bottom: 30px;
+}
+
+.more-benefits.benefits-page {
+  padding-top: 154px;
+  padding-bottom: 154px;
+}
+
+/* Start Need Help */
+.need-help {
+  padding-top: 134px;
+  padding-bottom: 134px;
+}
+
+.need-help .need-help-content .need-help-title {
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 35px;
+}
+
+.need-help .need-help-content .need-help-list {
+  margin-bottom: 30px;
+}
+
+.need-help .need-help-content .need-help-list li {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 15px;
+}
+
+.need-help .need-help-content .need-help-list li i {
+  color: #62d5b4;
+  margin-right: 7px;
+}
+
+.need-help .need-help-content .need-help-btn {
+  background-color: #ffecf1;
+  color: #fd3e72;
+  padding: 24px 50px;
+  font-size: 20px;
+}
+
+.need-help .need-help-content .help-center {
+  color: #fd3e72;
+  text-decoration: underline !important;
+  margin-left: 30px;
+}
+
+/* End Need Help */
+header.features-page {
+  background-color: #fff;
+}
+
+.features-windows.features-page {
+  padding-top: 112px;
+  padding-bottom: 90px;
+}
+
+.features-windows.features-page .features-windows-title {
+  font-size: 56px;
+  line-height: 56px;
+  width: 65%;
+  margin-bottom: 136px;
+}
+
+.features-windows.features-page .feats .feat.one,
+.features-windows.features-page .feats .feat.five {
+  margin-top: 60px;
+}
+
+.features-windows.features-page .feats .feat.one.repeat,
+.features-windows.features-page .feats .feat.five.repeat {
+  margin-top: 0;
+}
+
+.features-windows.features-page .feats .feat.three.repeat {
+  margin-top: -60px;
+}
+
+/* Start Help Center Search*/
+.help-center-search {
+  padding-bottom: 88px;
+  border-bottom: 1px solid #e8e4db;
+}
+
+.help-center-search .help-center-content h2 {
+  font-size: 36px;
+  line-height: 44px;
+  margin-top: 74px;
+  margin-bottom: 40px;
+}
+
+.help-center-search .help-center-content form {
+  border: 1px solid #ebe8df;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+          box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+  position: relative;
+}
+
+.help-center-search .help-center-content form input {
+  width: 100%;
+  display: block;
+  padding: 30px 40px;
+  outline: none;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.help-center-search .help-center-content form input::-webkit-input-placeholder {
+  font-size: 20px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.help-center-search .help-center-content form input:-ms-input-placeholder {
+  font-size: 20px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.help-center-search .help-center-content form input::-ms-input-placeholder {
+  font-size: 20px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.help-center-search .help-center-content form input::placeholder {
+  font-size: 20px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.help-center-search .help-center-content form button {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+/* End Help Center Search*/
+/* Start Help-feats */
+.help-feats .help-feats-content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #e8e4db;
+}
+
+.help-feats .help-feats-content .feat {
+  text-align: center;
+  border: 1px solid #e0ded5;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 10px 20px rgba(240, 238, 233, 0.4);
+          box-shadow: 0px 10px 20px rgba(240, 238, 233, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 173px;
+  width: 350px;
+}
+
+.help-feats .help-feats-content .feat h3 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+/* End Help-feats */
+/* Start popular Tickests */
+.popular-tickets h2 {
+  font-size: 20px;
+  line-height: 20px;
+  position: relative;
+  width: 280px;
+  margin: auto;
+  background-color: #f9f8f4;
+  top: -10px;
+}
+
+.popular-tickets .popular-tickets-list {
+  margin-top: 30px;
+  margin-bottom: 70px;
+  padding: 0 150px;
+  overflow: hidden;
+}
+
+.popular-tickets .popular-tickets-list li {
+  width: 33.3%;
+  float: left;
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.popular-tickets .popular-tickets-list li a {
+  color: #fd3e72;
+  text-decoration: underline !important;
+}
+
+/* End popular Tickests */
+/* Start Contacting */
+.contacting {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contacting .contacting-item {
+  background: #ffffff;
+  border: 1px solid #ebe8df;
+  -webkit-box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+          box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+  position: relative;
+  padding-left: 115px;
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
+
+.contacting .contacting-item img {
+  position: absolute;
+  top: 29px;
+  left: 32px;
+}
+
+.contacting .contacting-item img.ticket {
+  margin-top: 10px;
+}
+
+.contacting .contacting-item .contacting-item-info p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.contacting .contacting-item .contacting-item-info h4 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.contacting .contacting-item .contacting-item-btn {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+
+.contacting .contacting-item .contacting-item-btn button {
+  background-color: #f0eee8;
+  border: 0;
+  font-family: "AvertaSemibold";
+  padding: 16px 43px;
+  color: #5b5863;
+}
+
+/* End Contacting */
 /*# sourceMappingURL=style.css.map */

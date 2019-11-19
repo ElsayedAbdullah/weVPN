@@ -2978,10 +2978,6 @@ ol {
 /* Start VPN Protocol */
 .vpn-protocol {
   padding: 110px 0 50px;
-  .vpn-protocol-img {
-    img {
-    }
-  }
   .vpn-protocol-content {
     .title {
       margin-top: 80px;
@@ -3166,3 +3162,261 @@ ol {
   }
 }
 /* End Pricing Tables */
+
+//////////////////////////////////////////////////////////////////////////////
+// Start benefits page
+.advantages.benefits-page {
+  padding-top: 112px;
+  padding-bottom: 134px;
+  .benefits-title {
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 35px;
+  }
+  .benefits-text {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 128px;
+  }
+}
+
+.advantages.benefits-page .section-two .advantages-img {
+  padding-top: 20px;
+}
+
+.advantages.benefits-page .section-two .advantages-content .advantages-title {
+  padding-top: 110px;
+}
+
+.advantages.benefits-page .section-three .advantages-content .advantages-desc {
+  margin-bottom: 30px;
+}
+
+.advantages.benefits-page .section-three .advantages-icons {
+  margin-bottom: 30px;
+}
+
+.more-benefits.benefits-page {
+  padding-top: 154px;
+  padding-bottom: 154px;
+}
+
+/* Start Need Help */
+.need-help {
+  padding-top: 134px;
+  padding-bottom: 134px;
+  .need-help-content {
+    .need-help-title {
+      font-size: 36px;
+      line-height: 44px;
+      margin-bottom: 35px;
+    }
+    .need-help-list {
+      margin-bottom: 30px;
+      li {
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 15px;
+        i {
+          color: #62d5b4;
+          margin-right: 7px;
+        }
+      }
+    }
+    .need-help-btn {
+      background-color: #ffecf1;
+      color: $primaryColor;
+      padding: 24px 50px;
+      font-size: 20px;
+    }
+    .help-center {
+      color: $primaryColor;
+      text-decoration: underline !important;
+      margin-left: 30px;
+    }
+  }
+}
+/* End Need Help */
+
+//////////////////////////////////////////////////////////////////////////////
+// Start features page
+header.features-page {
+  background-color: #fff;
+}
+
+.features-windows.features-page {
+  padding-top: 112px;
+  padding-bottom: 90px;
+}
+.features-windows.features-page .features-windows-title {
+  font-size: 56px;
+  line-height: 56px;
+  width: 65%;
+  margin-bottom: 136px;
+}
+
+.features-windows.features-page .feats .feat.one,
+.features-windows.features-page .feats .feat.five {
+  margin-top: 60px;
+}
+
+.features-windows.features-page .feats .feat.one.repeat,
+.features-windows.features-page .feats .feat.five.repeat {
+  margin-top: 0;
+}
+.features-windows.features-page .feats .feat.three.repeat {
+  margin-top: -60px;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+// Start Help Center page
+
+/* Start Help Center Search*/
+
+.help-center-search {
+  padding-bottom: 88px;
+  border-bottom: 1px solid #e8e4db;
+  .help-center-content {
+    h2 {
+      font-size: 36px;
+      line-height: 44px;
+      margin-top: 74px;
+      margin-bottom: 40px;
+    }
+    form {
+      border: 1px solid #ebe8df;
+      box-sizing: border-box;
+      box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+      position: relative;
+      input {
+        width: 100%;
+        display: block;
+        padding: 30px 40px;
+        outline: none;
+        border: 0;
+        box-shadow: none;
+        &::placeholder {
+          font-size: 20px;
+          line-height: 20px;
+          color: #8d8b92;
+        }
+      }
+      button {
+        position: absolute;
+        top: 50%;
+        right: 40px;
+        transform: translateY(-50%);
+        background: none;
+        border: 0;
+        cursor: pointer;
+        svg {
+        }
+      }
+    }
+  }
+}
+/* End Help Center Search*/
+
+/* Start Help-feats */
+.help-feats {
+  .help-feats-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e8e4db;
+    .feat {
+      text-align: center;
+      border: 1px solid #e0ded5;
+      background-color: #fff;
+      box-shadow: 0px 10px 20px rgba(240, 238, 233, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 173px;
+      width: 350px;
+
+      h3 {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+/* End Help-feats */
+
+/* Start popular Tickests */
+.popular-tickets {
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+    width: 280px;
+    margin: auto;
+    background-color: #f9f8f4;
+    top: -10px;
+  }
+  .popular-tickets-list {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    padding: 0 150px;
+    overflow: hidden;
+    li {
+      width: 33.3%;
+      float: left;
+      font-size: 14px;
+      line-height: 32px;
+      a {
+        color: $primaryColor;
+        text-decoration: underline !important;
+      }
+    }
+  }
+}
+/* End popular Tickests */
+
+/* Start Contacting */
+.contacting {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .contacting-item {
+    background: #ffffff;
+    border: 1px solid #ebe8df;
+    box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+    position: relative;
+    padding-left: 115px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    img {
+      position: absolute;
+      top: 29px;
+      left: 32px;
+      &.ticket {
+        margin-top: 10px;
+      }
+    }
+    .contacting-item-info {
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        color: #8d8b92;
+      }
+      h4 {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+    .contacting-item-btn {
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      button {
+        background-color: #f0eee8;
+        border: 0;
+        font-family: "AvertaSemibold";
+        padding: 16px 43px;
+        color: #5b5863;
+      }
+    }
+  }
+}
+/* End Contacting */
