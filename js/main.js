@@ -187,4 +187,12 @@ $(function() {
       .siblings(".card-info")
       .slideUp(500);
   });
+
+  // add class active in blog page in categories links section
+  $(".categories-links .links li").on("click", function() {
+    $(this)
+      .addClass("active")
+      .siblings()
+      .removeClass("active");
+  });
 });
