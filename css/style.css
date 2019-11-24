@@ -2997,7 +2997,7 @@ footer .copyright .copyright-links li a:hover {
 }
 
 .faq .accordion .question .question-body {
-  margin-bottom: 32px;
+  padding-bottom: 32px;
   margin-left: 33px;
   font-size: 14px;
   line-height: 24px;
@@ -5339,4 +5339,252 @@ header.get-started-page .get-started-login p a {
 }
 
 /* End Knowledge */
+.servers-search {
+  padding-top: 108px;
+  padding-bottom: 213px;
+  background-image: url(../imgs/map-grey.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 1px solid #e0ded5;
+}
+
+.servers-search h2 {
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 35px;
+}
+
+.servers-search .servers-list {
+  width: 225px;
+  margin: auto;
+  margin-bottom: 36px;
+}
+
+.servers-search .servers-list li {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.servers-search .servers-list li i {
+  color: #62d5b4;
+  margin-right: 7px;
+}
+
+.servers-search form {
+  border: 1px solid #ebe8df;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+          box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+  position: relative;
+}
+
+.servers-search form input {
+  width: 100%;
+  display: block;
+  padding: 29px 40px;
+  outline: none;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #5b5863;
+  font-size: 20px;
+}
+
+.servers-search form input::-webkit-input-placeholder {
+  font-size: 20px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.servers-search form input:-ms-input-placeholder {
+  font-size: 20px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.servers-search form input::-ms-input-placeholder {
+  font-size: 20px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.servers-search form input::placeholder {
+  font-size: 20px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.servers-search form button {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+/* Start Americas */
+body.servers-page {
+  background: #f5f4f0;
+}
+
+.americas {
+  margin-top: -114px;
+  padding-bottom: 88px;
+}
+
+.americas h2 {
+  margin-bottom: 33px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #5b5863;
+}
+
+.americas .table {
+  background-color: #fff;
+  border-color: #e0ded5;
+}
+
+.americas .table thead tr {
+  background-color: #f5f4f0;
+}
+
+.americas .table thead tr th {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #8d8b92;
+  font-family: "AvertaSemibold";
+  padding-bottom: 20px;
+  height: 56px;
+}
+
+.americas .table thead tr th.tcp {
+  padding-bottom: 14px;
+}
+
+.americas .table thead tr th:first-child {
+  padding-left: 32px;
+}
+
+.americas .table thead tr th:not(:first-child) {
+  width: 191px;
+}
+
+.americas .table tbody th:first-child {
+  font-size: 14px;
+  line-height: 64px;
+  color: #5b5863;
+  height: 64px;
+  padding: 0;
+  padding-left: 32px;
+}
+
+.americas .table tbody th:first-child img {
+  padding-right: 7px;
+}
+
+.americas .table tbody td {
+  line-height: 64px;
+  height: 64px;
+  padding: 0;
+}
+
+.americas .table tbody td i {
+  color: #62d5b4;
+}
+
+.americas .europe-content {
+  margin-top: 57px;
+  margin-bottom: 57px;
+}
+
+.table-bordered thead td,
+.table-bordered thead th {
+  border-bottom-width: 1px;
+  border-color: #e0ded5;
+}
+
+.table-bordered td,
+.table-bordered th {
+  border-color: #e0ded5;
+}
+
+/* End Americas */
+.devices-os.servers-page {
+  background-color: #f9f8f4;
+  padding-bottom: 154px;
+}
+
+.devices-os.servers-page .platforms {
+  padding-top: 0;
+}
+
+/* Start Servers Benefits */
+.servers-benefits {
+  padding: 134px 0 155px;
+  background-color: #f9f8f4;
+}
+
+.servers-benefits h2 {
+  font-size: 36px;
+  line-height: 44px;
+  width: 50%;
+  margin: 0 auto 60px;
+}
+
+.servers-benefits .servers-benefits-list li {
+  float: left;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+.servers-benefits .servers-benefits-list li:nth-child(odd) {
+  width: 60%;
+}
+
+.servers-benefits .servers-benefits-list li:nth-child(even) {
+  width: 40%;
+}
+
+.servers-benefits .servers-benefits-list li i {
+  color: #fff;
+  font-size: 27px;
+  width: 48px;
+  height: 48px;
+  background-color: #62d5b4;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+  position: relative;
+  top: 5px;
+  margin-right: 5px;
+}
+
+.servers-benefits .benefits-btn {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.servers-benefits .benefits-btn button {
+  padding: 21px 96px;
+  font-size: 20px;
+  color: #fd3e72;
+  background-color: #ffecf1;
+}
+
+.servers-benefits .benefits-btn button:hover {
+  background-color: #fd3e72;
+  color: #fff;
+}
+
+.servers-benefits .benefits-btn button:hover i {
+  color: #fff;
+}
+
+/* End Servers Benefits */
 /*# sourceMappingURL=style.css.map */

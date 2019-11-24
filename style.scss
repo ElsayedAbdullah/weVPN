@@ -2315,7 +2315,7 @@ footer {
       }
 
       .question-body {
-        margin-bottom: 32px;
+        padding-bottom: 32px;
         margin-left: 33px;
 
         font-size: 14px;
@@ -3913,6 +3913,9 @@ header.get-started-page {
 }
 
 /* End Featured Articles */
+
+//////////////////////////////////////////////////////////////////////////////
+// Start Single Post page
 .single {
   padding-top: 50px;
   .container {
@@ -4237,3 +4240,210 @@ header.get-started-page {
   }
 }
 /* End Knowledge */
+
+//////////////////////////////////////////////////////////////////////////////
+// Start Servers page
+
+.servers-search {
+  padding-top: 108px;
+  padding-bottom: 213px;
+  background-image: url(../imgs/map-grey.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 1px solid #e0ded5;
+  h2 {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 35px;
+  }
+  .servers-list {
+    width: 225px;
+    margin: auto;
+    margin-bottom: 36px;
+    li {
+      font-size: 18px;
+      line-height: 32px;
+      i {
+        color: #62d5b4;
+        margin-right: 7px;
+      }
+    }
+  }
+  form {
+    border: 1px solid #ebe8df;
+    box-sizing: border-box;
+    box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+    position: relative;
+    input {
+      width: 100%;
+      display: block;
+      padding: 29px 40px;
+      outline: none;
+      border: 0;
+      box-shadow: none;
+      color: #5b5863;
+      font-size: 20px;
+      &::placeholder {
+        font-size: 20px;
+        line-height: 20px;
+        color: #8d8b92;
+      }
+    }
+    button {
+      position: absolute;
+      top: 50%;
+      right: 40px;
+      transform: translateY(-50%);
+      background: none;
+      border: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+/* Start Americas */
+
+body.servers-page {
+  background: #f5f4f0;
+}
+.americas {
+  margin-top: -114px;
+  padding-bottom: 88px;
+  h2 {
+    margin-bottom: 33px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #5b5863;
+  }
+  .table {
+    background-color: #fff;
+    border-color: #e0ded5;
+    thead {
+      tr {
+        background-color: #f5f4f0;
+        th {
+          font-size: 12px;
+          line-height: 12px;
+          text-transform: uppercase;
+          color: #8d8b92;
+          font-family: "AvertaSemibold";
+          padding-bottom: 20px;
+          height: 56px;
+          &.tcp {
+            padding-bottom: 14px;
+          }
+          &:first-child {
+            padding-left: 32px;
+          }
+          &:not(:first-child) {
+            width: 191px;
+          }
+        }
+      }
+    }
+    tbody {
+      th {
+        &:first-child {
+          font-size: 14px;
+          line-height: 64px;
+          color: #5b5863;
+          height: 64px;
+          padding: 0;
+          padding-left: 32px;
+          img {
+            padding-right: 7px;
+          }
+        }
+      }
+      td {
+        line-height: 64px;
+        height: 64px;
+        padding: 0;
+        i {
+          color: #62d5b4;
+        }
+      }
+    }
+  }
+  .europe-content {
+    margin-top: 57px;
+    margin-bottom: 57px;
+  }
+}
+
+.table-bordered thead td,
+.table-bordered thead th {
+  border-bottom-width: 1px;
+  border-color: #e0ded5;
+}
+
+.table-bordered td,
+.table-bordered th {
+  border-color: #e0ded5;
+}
+/* End Americas */
+
+.devices-os.servers-page {
+  background-color: #f9f8f4;
+  padding-bottom: 154px;
+  .platforms {
+    padding-top: 0;
+  }
+}
+
+/* Start Servers Benefits */
+.servers-benefits {
+  padding: 134px 0 155px;
+  background-color: #f9f8f4;
+  h2 {
+    font-size: 36px;
+    line-height: 44px;
+    width: 50%;
+    margin: 0 auto 60px;
+  }
+  .servers-benefits-list {
+    li {
+      float: left;
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 25px;
+      &:nth-child(odd) {
+        width: 60%;
+      }
+      &:nth-child(even) {
+        width: 40%;
+      }
+      i {
+        color: #fff;
+        font-size: 27px;
+        width: 48px;
+        height: 48px;
+        background-color: #62d5b4;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 48px;
+        position: relative;
+        top: 5px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .benefits-btn {
+    text-align: center;
+    margin-top: 60px;
+    button {
+      padding: 21px 96px;
+      font-size: 20px;
+      color: $primaryColor;
+      background-color: #ffecf1;
+      &:hover {
+        background-color: $primaryColor;
+        color: #fff;
+        i {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+/* End Servers Benefits */
