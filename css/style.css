@@ -4189,6 +4189,8 @@ header.features-page {
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #5b5863;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 .help-center-search .help-center-content form input::-webkit-input-placeholder {
@@ -4216,14 +4218,16 @@ header.features-page {
 }
 
 .help-center-search .help-center-content form button {
+  background-color: #fff;
   position: absolute;
   top: 50%;
-  right: 40px;
+  right: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: none;
   border: 0;
   cursor: pointer;
+  width: 88px;
+  height: 100%;
 }
 
 /* End Help Center Search*/
@@ -5416,14 +5420,16 @@ header.get-started-page .get-started-login p a {
 }
 
 .servers-search form button {
+  background-color: #fff;
   position: absolute;
   top: 50%;
-  right: 40px;
+  right: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: none;
   border: 0;
   cursor: pointer;
+  width: 88px;
+  height: 100%;
 }
 
 /* Start Americas */
@@ -5553,7 +5559,7 @@ body.servers-page {
 
 .servers-benefits .servers-benefits-list li i {
   color: #fff;
-  font-size: 27px;
+  font-size: 21px;
   width: 48px;
   height: 48px;
   background-color: #62d5b4;
