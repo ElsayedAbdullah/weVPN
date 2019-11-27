@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WeVPN | Dashboard</title>
+    <!-- Favicon -->
+    <link rel="icon" href="imgs/favicon.ico" type="image/png" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- fontawesome -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!-- fancybox -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <!-- custom style css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Start Header -->
+    <header class="dashboard-page">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img src="imgs/Logo.svg" draggable="false" alt="Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="imgs/menu-btn.svg" alt="menu-btn" />
+            <img src="imgs/close.svg" alt="menu-btn" />
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="wevpn-windows.html">
+                  Products
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#">
+                  Resources
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#">
+                  Support
+                </a>
+              </li>
+            </ul>
+            <div class="get-started-login ml-auto">
+              <p>
+                Session123@me.com
+                <a href="#"
+                  >Logout <i class="fa fa-angle-right" aria-hidden="true"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Dashboard -->
+    <section class="dashboard">
+      <div class="container">
+        <h2 class="text-center">Dashboard</h2>
+        <ul class="dashboard-list">
+          <li class="active" data-content=".content-one">
+            <a href="#">
+              <svg
+                width="22"
+                height="24"
+                viewBox="0 0 22 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 14H1C0.448 14 0 13.552 0 13V1C0 0.448 0.448 0 1 0H9C9.552 0 10 0.448 10 1V13C10 13.552 9.552 14 9 14Z"
+                  fill="#F9F8F4"
+                />
+                <path
+                  d="M9 24H1C0.448 24 0 23.552 0 23V17C0 16.448 0.448 16 1 16H9C9.552 16 10 16.448 10 17V23C10 23.552 9.552 24 9 24Z"
+                  fill="#F9F8F4"
+                />
+                <path
+                  d="M21 8H13C12.448 8 12 7.552 12 7V1C12 0.448 12.448 0 13 0H21C21.552 0 22 0.448 22 1V7C22 7.552 21.552 8 21 8Z"
+                  fill="#F9F8F4"
+                />
+                <path
+                  d="M21 24H13C12.448 24 12 23.552 12 23V11C12 10.448 12.448 10 13 10H21C21.552 10 22 10.448 22 11V23C22 23.552 21.552 24 21 24Z"
+                  fill="#F9F8F4"
+                />
+              </svg>
+              Dashboard</a
+            >
+          </li>
+          <li data-content=".content-two">
+            <a href="#">
+              <svg
+                width="21"
+                height="24"
+                viewBox="0 0 21 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.00342 1H19.0651V22L16.0548 20L13.0445 22L10.0342 20L7.02397 22L4.01369 20L1.00342 22V1Z"
+                  stroke="#F9F8F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M5.01709 15H10.0342"
+                  stroke="#F9F8F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M14.0479 15H15.0513"
+                  stroke="#F9F8F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M10.0342 11C11.6967 11 13.0445 9.65685 13.0445 8C13.0445 6.34315 11.6967 5 10.0342 5C8.37167 5 7.02393 6.34315 7.02393 8C7.02393 9.65685 8.37167 11 10.0342 11Z"
+                  stroke="#F9F8F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="square"
+                />
+              </svg>
+              Invoices</a
+            >
+          </li>
+          <li data-content=".content-three">
+            <a href="#">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23Z"
+                  stroke="#F9F8F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M12 5V19"
+                  stroke="#F9F8F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M15.375 7.21901C13.754 6.32801 8.648 5.66301 8.648 8.73201C8.648 12.406 15.132 11.109 15.132 14.351C15.132 17.593 10.918 17.349 8 16.296"
+                  stroke="#F9F8F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="square"
+                />
+              </svg>
+              Subscription Settings</a
+            >
+          </li>
+          <li data-content=".content-four">
+            <a href="#">
+              <svg
+                width="27"
+                height="27"
+                viewBox="0 0 27 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.7285 12.757L25.4855 2"
+                  stroke="#F9F8F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M22.4854 5L25.4854 8L22.4854 11L19.4854 8"
+                  stroke="#F9F8F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M14.7278 21.2425C17.0709 18.8994 17.0709 15.1004 14.7278 12.7573C12.3847 10.4142 8.58572 10.4142 6.2426 12.7573C3.89948 15.1004 3.89948 18.8994 6.2426 21.2425C8.58572 23.5856 12.3847 23.5856 14.7278 21.2425Z"
+                  stroke="#F9F8F4"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="square"
+                />
+              </svg>
+              Change Password</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- End Dashboard -->
+
+    <div class="list-content">
+      <div class="content-one">
+        <!-- Start Download -->
+        <section class="download">
+          <div class="container">
+            <div class="download-content">
+              <div class="item">
+                <p>Setup WeVPN for Windows</p>
+                <button>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.27271 2.21257e-05H0V7.27273H7.27271V2.21257e-05Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M8.72725 7.27271H16V3.2669e-10L8.72725 0V7.27271Z"
+                      fill="white"
+                    />
+                    <path d="M7.27271 8.72729H0V16H7.27271V8.72729Z" fill="white" />
+                    <path d="M8.72725 16L16 16V8.72727H8.72725V16Z" fill="white" />
+                  </svg>
+                  Download for windows
+                </button>
+              </div>
+              <div class="item">
+                <p>Setup WeVPN for Chrome</p>
+                <button class="web-store">
+                  <img src="imgs/chrome-web-store.svg" alt="" />
+                  Chrome Web Store
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Download -->
+
+        <!-- Start Subscribe -->
+        <section class="subscribe">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 padd-right">
+                <div class="left-column">
+                  <div class="item-heading">
+                    <h3>
+                      Subscription
+                      <a href="#">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12.9 4.5L14.4 3L13 1.6L11.5 3.1C10.8 2.6 9.9 2.2 9 2.1V0H7V2.1C6.1 2.3 5.2 2.6 4.5 3.1L3.1 1.6L1.6 3.1L3.1 4.6C2.6 5.2 2.2 6.1 2.1 7H0V9H2.1C2.3 9.9 2.6 10.8 3.1 11.5L1.6 13L3 14.4L4.5 12.9C5.2 13.4 6.1 13.8 7 13.9V16H9V13.9C9.9 13.7 10.8 13.4 11.5 12.9L13 14.4L14.4 13L12.9 11.5C13.4 10.8 13.8 9.9 13.9 9H16V7H13.9C13.8 6.1 13.4 5.2 12.9 4.5ZM8 11C6.3 11 5 9.7 5 8C5 6.3 6.3 5 8 5C9.7 5 11 6.3 11 8C11 9.7 9.7 11 8 11Z"
+                            fill="#AFADB2"
+                          />
+                        </svg>
+                        Settings</a
+                      >
+                    </h3>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <div class="list-item-text">
+                        <p class="label">Subscription Plan:</p>
+                        <p>$69.96 billed every 12 months.</p>
+                      </div>
+                      <a class="button primary--btn" href="#">
+                        Upgrade
+                      </a>
+                    </li>
+                    <li>
+                      <div class="list-item-text">
+                        <p class="label">Renewal Date:</p>
+                        <p>Dec 20, 2019</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list-item-text">
+                        <p class="label">Payment Method:</p>
+                        <p><img src="imgs/visa.png" alt="" /> ••••9423</p>
+                      </div>
+                      <button type="button" class="button edit" data-toggle="modal" data-target="#creditModal">
+                        Edit Credit Card
+                      </button>
+                      <a class="link" class="" href="#">
+                        Update Payment Method
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- Modal -->
+                  <div class="modal fade" id="creditModal" tabindex="-1" role="dialog" aria-labelledby="creditModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="creditModal-header">
+                          <h5 class="title text-center" id="creditModalLabel">Edit Credit Card</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13.7 0.3C13.3 -0.1 12.7 -0.1 12.3 0.3L7 5.6L1.7 0.3C1.3 -0.1 0.7 -0.1 0.3 0.3C-0.1 0.7 -0.1 1.3 0.3 1.7L5.6 7L0.3 12.3C-0.1 12.7 -0.1 13.3 0.3 13.7C0.5 13.9 0.7 14 1 14C1.3 14 1.5 13.9 1.7 13.7L7 8.4L12.3 13.7C12.5 13.9 12.8 14 13 14C13.2 14 13.5 13.9 13.7 13.7C14.1 13.3 14.1 12.7 13.7 12.3L8.4 7L13.7 1.7C14.1 1.3 14.1 0.7 13.7 0.3Z" fill="#fd3e72"/>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-6 padd-right">
+                              <div class="form-group">
+                                <label>First Name</label>
+                                <input
+                                type="text"
+                                  class="form-control"
+                                  placeholder="Type your First Name..."
+                                  value="Jonathan"
+                                >
+                              </div>
+                            </div>
+                            <div class="col-6 padd-left">
+                              <div class="form-group">
+                                <label>Last Name</label>
+                                <input
+                                type="text"
+                                  class="form-control"
+                                  placeholder="Type your Last Name..."
+                                  value="Roudier"
+                                >
+                              </div>
+                            </div>
+                            <div class="col-6 padd-right">
+                              <div class="form-group">
+                                <label>Credit Card Number</label>
+                                <input
+                                  type="text"
+                                  class="form-control input-card-number"
+                                  value="2521212512125251"
+                                  placeholder="xxxx-xxxx-xxxx-xxxx"
+                                >
+                              </div>
+                            </div>
+                            <div class="col-6 padd-left">
+                              <div class="form-group">
+                                <label>Card Security Code 
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 0C3.6 0 0 3.6 0 8C0 12.4 3.6 16 8 16C12.4 16 16 12.4 16 8C16 3.6 12.4 0 8 0ZM8 13C7.4 13 7 12.6 7 12C7 11.4 7.4 11 8 11C8.6 11 9 11.4 9 12C9 12.6 8.6 13 8 13ZM9.5 8.4C9 8.7 9 8.8 9 9V10H7V9C7 7.7 7.8 7.1 8.4 6.7C8.9 6.4 9 6.3 9 6C9 5.4 8.6 5 8 5C7.6 5 7.3 5.2 7.1 5.5L6.6 6.4L4.9 5.4L5.4 4.5C5.9 3.6 6.9 3 8 3C9.7 3 11 4.3 11 6C11 7.4 10.1 8 9.5 8.4Z" fill="#ACAAAE"/>
+                                  </svg>
+                                </label>
+                                <input
+                                type="text"
+                                  class="form-control input-cvc"
+                                  value="256"
+                                  placeholder="•••"
+                                  maxlength="3"
+                                >
+                              </div>
+                            </div>
+                            <div class="col-4 padd-right">
+                              <div class="form-group">
+                                <label>Expiry Month</label>
+                                <input
+                                type="text"
+                                  class="form-control input-month"
+                                  value="05"
+                                  placeholder="MM"
+                                >
+                              </div>
+                            </div>
+                            <div class="col-4 padd">
+                              <div class="form-group">
+                                <label>Expiry Year</label>
+                                <input
+                                  type="text"
+                                  class="form-control input-year"
+                                  value="23"
+                                  placeholder="YY"
+                                >
+                              </div>
+                            </div>
+                            <div class="col-4 padd-left">
+                              <div class="form-group">
+                                <label>Zip / Postal Code (Optional)</label>
+                                <input
+                                  type="text"
+                                  maxlength="5"
+                                  class="form-control input-zipcode"
+                                  value="90069"
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <button class="primary--btn save">
+                            Save Credit Card Details
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 padd-left">
+                <div class="right-column">
+                  <div class="item-heading">
+                    <h3>
+                      Downloads
+                    </h3>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <svg
+                        class="icon"
+                        width="34"
+                        height="40"
+                        viewBox="0 0 34 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.66667 30C6.66667 30.9167 7.41667 31.6667 8.33333 31.6667H10V37.5C10 38.8833 11.1167 40 12.5 40C13.8833 40 15 38.8833 15 37.5V31.6667H18.3333V37.5C18.3333 38.8833 19.45 40 20.8333 40C22.2167 40 23.3333 38.8833 23.3333 37.5V31.6667H25C25.9167 31.6667 26.6667 30.9167 26.6667 30V13.3333H6.66667V30ZM2.5 13.3333C1.11667 13.3333 0 14.45 0 15.8333V27.5C0 28.8833 1.11667 30 2.5 30C3.88333 30 5 28.8833 5 27.5V15.8333C5 14.45 3.88333 13.3333 2.5 13.3333ZM30.8333 13.3333C29.45 13.3333 28.3333 14.45 28.3333 15.8333V27.5C28.3333 28.8833 29.45 30 30.8333 30C32.2167 30 33.3333 28.8833 33.3333 27.5V15.8333C33.3333 14.45 32.2167 13.3333 30.8333 13.3333ZM22.55 3.6L24.7167 1.43333C25.05 1.1 25.05 0.583333 24.7167 0.25C24.3833 -0.0833333 23.8667 -0.0833333 23.5333 0.25L21.0667 2.71667C19.75 2.05 18.25 1.66667 16.6667 1.66667C15.0667 1.66667 13.5667 2.05 12.2333 2.71667L9.75 0.25C9.41667 -0.0833333 8.9 -0.0833333 8.56667 0.25C8.23333 0.583333 8.23333 1.1 8.56667 1.43333L10.75 3.61667C8.28333 5.43333 6.66667 8.35 6.66667 11.6667H26.6667C26.6667 8.35 25.05 5.41667 22.55 3.6ZM13.3333 8.33333H11.6667V6.66667H13.3333V8.33333ZM21.6667 8.33333H20V6.66667H21.6667V8.33333Z"
+                          fill="#AFADB2"
+                        />
+                      </svg>
+                      <p>Android</p>
+                      <span>Version 2.3.1</span>
+                      <a href="#" class="download"
+                        ><img src="imgs/data-download.svg" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <svg
+                        class="icon"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M18 36C27.9411 36 36 27.9411 36 18C36 8.05887 27.9411 0 18 0C8.05888 0 0 8.05887 0 18C0 27.9411 8.05888 36 18 36ZM7.12321 11.4918C6.43168 11.4918 5.87109 12.0524 5.87109 12.7439C5.87109 13.4355 6.43168 13.9961 7.12321 13.9961C7.81473 13.9961 8.37532 13.4355 8.37532 12.7439C8.37532 12.0524 7.81473 11.4918 7.12321 11.4918ZM5.9532 15.3123V24.5082H8.29321V15.3123H5.9532ZM15.4408 11.4918C14.4751 11.5045 13.6437 11.6938 12.8268 12.1008C10.7409 13.1399 9.53613 15.3282 9.53613 18.0854C9.53613 20.849 10.7212 22.9723 12.8145 23.9655C13.38 24.2338 13.9468 24.3799 14.8073 24.4822C14.8739 24.4849 14.9399 24.4879 15.0053 24.4908H15.0053H15.0054H15.0054C15.3679 24.5074 15.715 24.5232 16.0744 24.4822C16.9349 24.3799 17.5017 24.2338 18.0672 23.9655C20.1605 22.9723 21.3455 20.849 21.3455 18.0854C21.3455 15.3282 20.1408 13.1399 18.0549 12.1008C17.238 11.6938 16.4066 11.5045 15.4408 11.4918ZM16.2712 13.4355C17.5237 13.7693 18.4325 14.8994 18.7807 16.5477C19.0253 17.7054 18.9586 19.0431 18.6085 20.0967C18.0632 21.7375 16.8795 22.6641 15.4408 22.6493C14.0022 22.6641 12.8185 21.7375 12.2732 20.0967C11.9231 19.0431 11.8564 17.7054 12.101 16.5477C12.4492 14.8994 13.358 13.7693 14.6105 13.4355C15.1784 13.3151 15.7443 13.3368 16.2712 13.4355ZM24.4994 24.4468C24.5818 24.4607 24.6647 24.4747 24.7477 24.4889C25.0245 24.5205 25.8321 24.5117 26.175 24.4735C28.0047 24.2693 29.223 23.5179 29.8205 22.2251C30.0665 21.6929 30.1308 21.3713 30.1289 20.6819C30.1236 19.8543 29.8984 19.0193 29.1857 18.3076C28.6727 17.7864 28.0744 17.4369 26.8274 16.9301C25.1344 16.2422 24.6743 15.8902 24.5258 15.1694C24.316 14.0193 25.5058 13.368 26.6031 13.3833C27.3786 13.3878 28.2948 13.619 29.1118 13.9426C29.1366 13.9048 29.6208 12.1978 29.6208 12.1482C29.6208 12.0139 28.6732 11.7014 27.8469 11.5632C27.2735 11.4672 26.1082 11.4682 25.5633 11.5651C23.6824 11.8996 22.4568 12.9941 22.2016 14.5673C22.1098 15.1329 22.1775 15.7805 22.3815 16.2892C22.7964 17.3237 23.8117 18.1193 25.5429 18.7665C27.0951 19.3467 27.6607 19.8174 27.7874 20.6341C27.9001 21.3601 27.5647 21.9896 26.884 22.3302C25.6354 22.9042 23.7835 22.2776 22.468 21.8309C22.4457 21.8638 21.9515 23.7101 21.9625 23.7196C22.7131 24.1457 23.5864 24.2929 24.4994 24.4468Z"
+                          fill="#AFADB2"
+                        />
+                      </svg>
+
+                      <p>iOS</p>
+                      <span>Version 2.3.1</span>
+                      <a href="#" class="download"
+                        ><img src="imgs/data-download.svg" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <svg
+                        class="icon"
+                        width="33"
+                        height="39"
+                        viewBox="0 0 33 39"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M31.3835 26.6702C29.2141 25.8398 27.763 23.8458 27.5992 21.4678C27.4387 19.1505 28.5607 17.0925 30.6004 15.9618L32.2963 15.0214L31.0852 13.4952C29.0503 10.9301 26.1384 9.39725 23.2961 9.39725C21.3261 9.39725 19.9593 9.91913 18.8617 10.3393C18.0866 10.6363 17.4754 10.8693 16.8041 10.8693C16.0389 10.8693 15.2833 10.5969 14.4078 10.2818C13.2598 9.86825 11.9595 9.39889 10.2895 9.39889C7.06296 9.39889 3.80888 11.3486 1.79838 14.4831C-1.20277 19.1587 -0.37912 27.1756 3.75699 33.5465C5.3962 36.0706 7.69368 38.9705 10.9478 39C10.9688 39 10.9899 39 11.011 39C13.6749 39 14.2586 37.5624 16.8447 37.546C19.6691 37.6805 20.0258 39.0115 22.6638 38.9934C25.8433 38.9639 28.1359 36.087 29.9583 33.2757C31.0349 31.6231 31.4516 30.7582 32.2898 28.8808L33 27.2889L31.3835 26.6702Z"
+                          fill="#AFADB2"
+                        />
+                        <path
+                          d="M21.2434 5.2746C22.2973 3.9059 23.0966 1.97428 22.8064 0C21.0845 0.119803 19.074 1.22757 17.8985 2.67176C16.8317 3.98303 15.9513 5.92613 16.2934 7.81672C18.1709 7.8758 20.1149 6.74013 21.2434 5.2746Z"
+                          fill="#AFADB2"
+                        />
+                      </svg>
+                      <p>MacOS</p>
+                      <span>Version 2.3.1</span>
+                      <a href="#" class="download"
+                        ><img src="imgs/data-download.svg" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <svg
+                        class="icon"
+                        width="34"
+                        height="40"
+                        viewBox="0 0 34 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24.2903 25.4699C24.8604 25.6433 25.4075 25.8848 25.9199 26.189C26.0314 26.2505 26.1363 26.3155 26.2395 26.3687C26.5058 26.3438 26.937 26.2539 27.2932 26.179C27.932 26.0226 28.5852 25.9323 29.2424 25.9093C29.4656 25.9102 29.6883 25.9297 29.9082 25.9676C29.9394 25.3765 29.9272 24.784 29.8716 24.1948C29.5584 21.548 28.4938 19.0463 26.8038 16.9855C25.2358 15.2626 22.8238 12.7857 22.8238 10.9048V5.6863C22.798 4.16939 22.1774 2.72331 21.0956 1.65967C20.0137 0.596037 18.5573 0 17.0402 0C15.5231 0 14.0667 0.596037 12.9848 1.65967C11.903 2.72331 11.2823 4.16939 11.2566 5.6863V13.2884C11.0053 14.6035 10.3477 14.73 9.31404 16.1715C8.294 17.5278 7.48062 19.0278 6.90039 20.6226C6.41767 22.0708 5.39395 23.5989 4.9262 24.8024C5.05186 24.7633 5.1797 24.7316 5.30905 24.7075C5.49624 24.6778 5.68547 24.6627 5.87501 24.6625C6.54165 24.6676 7.19533 24.8473 7.77097 25.1835C8.48888 22.3017 9.6676 19.5547 11.2616 17.0487C12.1932 15.6102 12.6044 13.8961 12.4268 12.1915C13.0327 12.6742 13.637 14.1757 15.2882 14.1757C16.9395 14.1757 18.0431 12.8873 18.962 12.4212C19.1966 12.3035 19.4112 12.1496 19.5978 11.9651L19.756 12.0017C21.1891 14.6526 22.4674 17.3843 23.5845 20.1831C24.0742 21.902 24.3119 23.6828 24.2903 25.4699ZM14.8854 8.68255C14.6186 8.73621 14.3585 8.81881 14.1097 8.9289L13.9815 8.98883C13.7628 9.09016 13.5534 9.21047 13.3556 9.34838C13.0123 8.96985 12.8111 8.48386 12.7864 7.97343C12.7048 7.00798 13.1276 6.18234 13.7285 6.13241C14.3294 6.08247 14.8821 6.82487 14.9636 7.79699C14.9883 8.09448 14.9618 8.39399 14.8854 8.68255ZM18.8804 7.98675C18.8481 8.46431 18.6876 8.92432 18.416 9.31842C18.3211 9.26848 18.2162 9.21688 18.108 9.16527L18.0265 9.12532C17.8966 9.0654 17.7568 9.0088 17.607 8.95887H17.5903C17.2254 8.82532 16.847 8.7321 16.4618 8.68088C16.3952 8.38789 16.3739 8.08644 16.3985 7.787C16.49 6.69836 17.1193 5.86274 17.8051 5.92101C18.4909 5.97927 18.9803 6.89478 18.8804 7.98675Z"
+                          fill="#AFADB2"
+                        />
+                        <path
+                          d="M7.82752 28.6775C7.26322 27.8219 6.49585 27.0479 5.71683 27.1794C4.9378 27.3109 4.40014 28.7058 3.89911 29.1236C3.39807 29.5415 1.47547 29.1653 0.889542 29.7895C0.303609 30.4137 0.847927 32.6509 0.743058 33.7179C0.63819 34.7849 0.0772258 35.3475 0.0123071 35.8486C-0.0526115 36.3496 0.117175 36.9139 1.05766 37.2485C1.99815 37.5831 5.50876 38.4603 6.71724 38.7316C7.92573 39.0029 10.7705 40.8007 12.1088 38.6284C12.5286 37.8919 12.6789 37.0323 12.534 36.197C12.3892 35.3617 11.9581 34.6029 11.3148 34.0508C10.0512 32.3275 8.88688 30.5335 7.82752 28.6775Z"
+                          fill="#AFADB2"
+                        />
+                        <path
+                          d="M16.1352 35.9818C15.7649 35.9816 15.3949 35.9621 15.0266 35.9235C15.1351 36.5053 15.1463 37.1009 15.0599 37.6863C16.4948 37.604 17.9342 37.6553 19.3595 37.8395C19.2437 36.9363 19.29 36.0198 19.496 35.1329C18.4651 35.6943 17.3091 35.9863 16.1352 35.9818Z"
+                          fill="#AFADB2"
+                        />
+                        <path
+                          d="M32.5233 32.7521C31.6094 32.3352 30.8861 31.5894 30.4975 30.6631C30.3094 29.8308 30.4758 29.0534 29.8316 28.5524C29.1874 28.0514 27.0701 29.0068 25.8217 28.852C24.9461 28.7422 23.6411 27.3722 22.7505 27.9398C22.2212 28.2727 22.4975 29.6177 22.5175 30.3285C22.493 31.7542 22.3886 33.1775 22.2045 34.5915C22.058 35.4055 20.9294 37.9756 23.1234 39.4388C23.8066 39.7771 24.5848 39.8724 25.3296 39.709C26.0743 39.5456 26.7411 39.1332 27.2199 38.5399C28.1284 37.6073 29.1791 36.8247 30.3327 36.2211C31.375 35.8437 32.3233 35.2452 33.1125 34.4667C33.4438 33.9024 33.4022 33.2532 32.5233 32.7521Z"
+                          fill="#AFADB2"
+                        />
+                      </svg>
+
+                      <p>Linux</p>
+                      <span>Version 2.3.1</span>
+                      <a href="#" class="download"
+                        ><img src="imgs/data-download.svg" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <svg
+                        class="icon"
+                        width="34"
+                        height="34"
+                        viewBox="0 0 34 34"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.39307 16.4711C1.39307 7.92684 8.3199 1 16.8642 1C25.4084 1 32.3353 7.92684 32.3353 16.4711"
+                          stroke="#AFADB2"
+                          stroke-width="2"
+                          stroke-miterlimit="10"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M27.5968 3.44281C31.7922 16.7592 21.9836 29.3653 12.0131 22.0827C12.0272 22.0855 15.8303 22.1277 17.1861 21.3991C18.0412 20.9392 19.1341 20.0306 19.6615 20.1164C20.5166 20.243 20.7177 19.5553 20.2874 19.0616C19.7937 18.4948 18.4857 17.4203 16.9681 18.1404C12.7994 20.115 10.0188 17.1966 10.5012 15.485C10.5912 15.1629 10.9358 14.7381 11.0807 14.71C11.7853 14.025 15.8669 11.3401 16.3774 10.094C16.4984 9.79862 16.6348 9.10524 16.2396 8.96037C15.5827 8.80425 14.023 8.79863 13.4463 8.80285C12.3479 8.81269 11.6109 8.12774 11.6601 7.44561C11.722 6.5947 12.3155 5.53422 14.0005 4.14464C11.1074 3.7227 9.4379 6.0307 9.4365 6.03352C7.87813 5.64674 5.44636 6.09259 5.44495 6.09118C3.84299 5.15448 3.50122 2.79584 3.50122 2.79584C3.50122 2.79584 1.11023 4.57923 1.75158 8.90974C1.75158 8.90974 -2.44531 16.2951 2.15383 24.7536C2.15383 24.7521 6.40275 33.3485 16.864 33.3485C27.4125 33.3485 33.7416 24.6045 33.7416 16.4709C33.7416 10.5145 30.7472 5.98007 27.5968 3.44281Z"
+                          fill="#AFADB2"
+                        />
+                      </svg>
+
+                      <p>Firefoxe extension</p>
+                      <span>Version 2.3.1</span>
+                      <a href="#" class="download"
+                        ><img src="imgs/data-download.svg" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <svg
+                        class="icon"
+                        width="32"
+                        height="28"
+                        viewBox="0 0 32 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 27H24"
+                          stroke="#AFADB2"
+                          stroke-width="2"
+                          stroke-miterlimit="10"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M31 1H1V22H31V1Z"
+                          stroke="#AFADB2"
+                          stroke-width="2"
+                          stroke-miterlimit="10"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M14 8L20 12L14 16V8Z"
+                          stroke="#AFADB2"
+                          stroke-width="2"
+                          stroke-miterlimit="10"
+                          stroke-linecap="square"
+                        />
+                      </svg>
+
+                      <p>Smart TV</p>
+                      <span>Version 2.3.1</span>
+                      <a href="#" class="download"
+                        ><img src="imgs/data-download.svg" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Subscribe -->
+
+        <!-- Start Contacting -->
+        <div class="contacting dashboard-page">
+          <div class="container">
+            <div class="contacting-content">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="contacting-item">
+                    <img src="imgs/email.svg" alt="" />
+                    <div class="contacting-item-info">
+                      <p>Send us an email:</p>
+                      <h4>Sales@wevpn.com</h4>
+                    </div>
+                    <div class="contacting-item-btn">
+                      <button>Email Us</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="contacting-item">
+                    <img class="ticket" src="imgs/event-ticket.svg" alt="" />
+                    <div class="contacting-item-info">
+                      <p>Ticket support:</p>
+                      <h4>Fill our contact form</h4>
+                    </div>
+                    <div class="contacting-item-btn">
+                      <button>Open a ticket</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Contacting -->
+
+        <!-- Start popular Tickests -->
+        <div class="popular-tickets dashboard-page">
+          <div class="container">
+            <h2 class="text-center">Popular tickets support</h2>
+            <ul class="popular-tickets-list">
+              <li><a href="#">Consequat incididunt nulla nulla.</a></li>
+              <li><a href="#">consectetur aute aliqua aute.</a></li>
+              <li><a href="#">Proin porta arcu a lacus malesuad.</a></li>
+              <li><a href="#">Praesent ut faucibus sapien feugiat.</a></li>
+              <li><a href="#">Vestibulum feugiat, nisl sed como.</a></li>
+              <li><a href="#">Praesent molestie elit vel lacus.</a></li>
+              <li><a href="#">Nulla feugiat, libero in dapibus.</a></li>
+              <li><a href="#">Quisque vestibulum iaculis nibh.</a></li>
+              <li><a href="#">Class aptent taciti sociosqu ad.</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End popular Tickests -->
+      </div>
+      <div class="content-two">
+        <div class="container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Date</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Subscription</th>
+                <th scope="col">Payment Method</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">46139288</th>
+                <td>Nov 22, 2019</td>
+                <td>US$69.96</td>
+                <td>12 months</td>
+                <td><img src="imgs/visa.png" alt=""> ••••••9423</td>
+              </tr>
+              <tr>
+                <th scope="row">25009763</th>
+                <td>Nov 1, 2018</td>
+                <td>US$69.96</td>
+                <td>12 months</td>
+                <td><img src="imgs/visa.png" alt="">••••••9423</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="content-three">
+
+      </div>
+      <div class="content-four">
+
+      </div>
+    </div>
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="imgs/footer-logo.svg" draggable="false" alt="logo" />
+            <p class="apps">Our Apps:</p>
+            <ul class="footer-icons">
+              <li>
+                <a href="#"
+                  ><img
+                    src="imgs/microsoft.svg"
+                    draggable="false"
+                    alt="microsoft"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="imgs/MacOS.svg" draggable="false" alt="apple"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="imgs/Android.svg" draggable="false" alt="Android"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="imgs/ios.svg" draggable="false" alt="ios"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="imgs/linux.svg" draggable="false" alt="linux"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="imgs/Firefox.svg" draggable="false" alt="firefox"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="imgs/Chrome.svg" draggable="false" alt="chrome"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="row">
+            <div class="col-lg-4 order-2 order-lg-1">
+              <div class="copyright-txt">
+                <p>© Copyrights 2019 - WeVPN</p>
+              </div>
+            </div>
+            <div class="col-lg-8 order-1 order-lg-2">
+              <ul class="copyright-links text-xl-right">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Apps</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">My Account</a></li>
+                <li>
+                  <a href="privacy-policy.html">Privacy Policy</a>|<a
+                    href="terms-of-service.html"
+                    >Terms of Use</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper.js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- fancybox -->
+    <script src="js/jquery.fancybox.min.js"></script>
+    <!-- custom main js -->
+    <script src="js/cleave.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+      var cleaveCard = new Cleave('.input-card-number', {
+        creditCard: true,
+        delimiter: '-'
+      });
+
+      var cleaveMonth = new Cleave('.input-month', {
+        date: true,
+        datePattern: ['m']
+      });
+
+      var cleaveYear = new Cleave('.input-year', {
+        date: true,
+        datePattern: ['y']
+      });
+
+      var cleaveZip = new Cleave('.input-zipcode', {
+        numeral: true,
+        numeralThousandsGroupStyle: "none"
+      });
+
+      var cleaveCvc = new Cleave('.input-cvc', {
+        numeral: true,
+        numeralThousandsGroupStyle: "none"
+      });
+
+    </script>
+  </body>
+</html>

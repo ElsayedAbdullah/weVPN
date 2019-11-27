@@ -1,11 +1,14 @@
 $(function() {
   // add class active on navbar link and remove from siblings
-  $(".navbar .navbar-nav li").on("click", function() {
-    $(this)
-      .addClass("active")
-      .siblings()
-      .removeClass("active");
-  });
+  $(".navbar .navbar-nav li,.categories-links .links li").on(
+    "click",
+    function() {
+      $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+    }
+  );
 
   // when click on the menu button it open the menu links
   $(".navbar .navbar-toggler").click(function(event) {
@@ -23,6 +26,21 @@ $(function() {
       }
     }
     return false;
+  });
+
+  // switch between tabs in live-product section
+  $(".dashboard-list li").on("click", function() {
+    $(this)
+      .addClass("active")
+      .siblings()
+      .removeClass("active");
+    $(".list-content > div").hide();
+    $($(this).data("content")).fadeIn();
+    $(".dashboard h2").text(
+      $(this)
+        .find("a")
+        .text()
+    );
   });
 
   // when click in anywhere in document close the navbar menu and clear the overlay from the body
@@ -186,13 +204,5 @@ $(function() {
       .parent()
       .siblings(".card-info")
       .slideUp(500);
-  });
-
-  // add class active in blog page in categories links section
-  $(".categories-links .links li").on("click", function() {
-    $(this)
-      .addClass("active")
-      .siblings()
-      .removeClass("active");
   });
 });

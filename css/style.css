@@ -20,6 +20,19 @@
   padding: 0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
 body {
   font-family: "Averta", sans-serif;
   position: relative;
@@ -5593,4 +5606,468 @@ body.servers-page {
 }
 
 /* End Servers Benefits */
+header.dashboard-page .navbar {
+  padding-bottom: 30px;
+}
+
+header.dashboard-page p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #8d8b92;
+  font-family: "AvertaSemibold";
+}
+
+header.dashboard-page p a {
+  color: #fd3e72;
+  margin-left: 5px;
+  text-decoration: underline !important;
+}
+
+/* Start Dashboard */
+.dashboard {
+  background-color: #fd3e72;
+  color: #fff;
+  padding-top: 55px;
+}
+
+.dashboard h2 {
+  font-size: 56px;
+  line-height: 56px;
+  padding-bottom: 60px;
+}
+
+.dashboard .dashboard-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid rgba(249, 248, 244, 0.2);
+}
+
+.dashboard .dashboard-list li {
+  opacity: 0.7;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard .dashboard-list li.active, .dashboard .dashboard-list li:hover {
+  opacity: 1;
+}
+
+.dashboard .dashboard-list li.active a:before, .dashboard .dashboard-list li:hover a:before {
+  opacity: 1;
+  visibility: visible;
+  height: 3px;
+}
+
+.dashboard .dashboard-list li a {
+  padding: 25px 71px;
+  color: #f9f8f4;
+  font-family: "AvertaSemibold";
+  display: block;
+  position: relative;
+}
+
+.dashboard .dashboard-list li a:hover:before {
+  opacity: 1;
+  visibility: visible;
+  height: 3px;
+}
+
+.dashboard .dashboard-list li a:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard .dashboard-list li a svg {
+  margin-right: 12px;
+}
+
+/* End Dashboard */
+/* Start Download */
+.download {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.download .download-content {
+  background: #ffffff;
+  border: 1px solid #ebe8df;
+  overflow: hidden;
+}
+
+.download .download-content .item {
+  width: 50%;
+  float: left;
+  padding: 34px 60px;
+  height: 132px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.download .download-content .item:first-child {
+  border-right: 1px solid #ebe8df;
+}
+
+.download .download-content .item p {
+  display: inline-block;
+  margin-bottom: 0;
+  width: 120px;
+  line-height: 20px;
+  opacity: 0.7;
+  font-family: "AvertaSemibold";
+}
+
+.download .download-content .item button {
+  color: #ffffff;
+  font-family: "AvertaSemibold";
+  border: 0;
+  background-color: #fd3e72;
+  padding: 20px 46px;
+}
+
+.download .download-content .item button svg {
+  margin-right: 5px;
+  position: relative;
+  top: -2px;
+}
+
+.download .download-content .item button.web-store {
+  border: 1px solid #e3e0d3;
+  background: none;
+  color: #5b5863;
+}
+
+.download .download-content .item button.web-store img {
+  position: relative;
+  top: -2px;
+  left: -5px;
+}
+
+/* End Download */
+/* Start Subscribe */
+.subscribe {
+  padding-bottom: 60px;
+}
+
+.subscribe .padd-right {
+  padding-right: 20px;
+}
+
+.subscribe .padd-left {
+  padding-left: 20px;
+}
+
+.subscribe .left-column,
+.subscribe .right-column {
+  background-color: #fff;
+}
+
+.subscribe .left-column .item-heading h3,
+.subscribe .right-column .item-heading h3 {
+  font-size: 24px;
+  line-height: 35px;
+  position: relative;
+  border-bottom: 1px solid rgba(227, 224, 211, 0.4);
+  padding-left: 40px;
+  padding-right: 50px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin-bottom: 0;
+}
+
+.subscribe .left-column .item-heading h3 a,
+.subscribe .right-column .item-heading h3 a {
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  color: #8d8b92;
+  font-family: "AvertaSemibold";
+  border: 1px solid #e3e0d2;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 12px;
+  position: absolute;
+  right: 50px;
+  top: 22px;
+}
+
+.subscribe .left-column .list,
+.subscribe .right-column .list {
+  padding-left: 40px;
+  padding-right: 50px;
+}
+
+.subscribe .left-column .list li,
+.subscribe .right-column .list li {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  position: relative;
+}
+
+.subscribe .left-column .list li:not(:last-child),
+.subscribe .right-column .list li:not(:last-child) {
+  border-bottom: 1px dashed #e3e0d3;
+}
+
+.subscribe .left-column .list li .list-item-text p,
+.subscribe .right-column .list li .list-item-text p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #5a5761;
+  font-family: "AvertaSemibold";
+  margin-bottom: 5px;
+}
+
+.subscribe .left-column .list li .list-item-text p.label,
+.subscribe .right-column .list li .list-item-text p.label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8d8b92;
+  font-family: "Averta";
+}
+
+.subscribe .left-column .list li .button,
+.subscribe .right-column .list li .button {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  font-size: 14px;
+  line-height: 40px;
+  padding: 0px 13px;
+  display: inline-block;
+}
+
+.subscribe .left-column .list li .button:hover,
+.subscribe .right-column .list li .button:hover {
+  color: #fff;
+}
+
+.subscribe .left-column .list li .button.edit,
+.subscribe .right-column .list li .button.edit {
+  background: #ffecf1;
+  color: #fd3e72;
+  font-family: "AvertaSemibold";
+  padding: 0px 15px;
+  border: 0;
+}
+
+.subscribe .left-column .list li .link,
+.subscribe .right-column .list li .link {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: underline !important;
+  color: #fd3e72;
+  margin-top: 15px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.subscribe .left-column .modal-dialog,
+.subscribe .right-column .modal-dialog {
+  max-width: 840px;
+  margin-top: 174px;
+}
+
+.subscribe .left-column .modal-dialog .padd,
+.subscribe .right-column .modal-dialog .padd {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.subscribe .left-column .modal-dialog .padd-right,
+.subscribe .right-column .modal-dialog .padd-right {
+  padding-right: 10px;
+}
+
+.subscribe .left-column .modal-dialog .padd-left,
+.subscribe .right-column .modal-dialog .padd-left {
+  padding-left: 10px;
+}
+
+.subscribe .left-column .modal-dialog .modal-content,
+.subscribe .right-column .modal-dialog .modal-content {
+  padding: 60px 25px 45px;
+  border-radius: 0;
+}
+
+.subscribe .left-column .modal-dialog .modal-content .creditModal-header,
+.subscribe .right-column .modal-dialog .modal-content .creditModal-header {
+  position: relative;
+}
+
+.subscribe .left-column .modal-dialog .modal-content .creditModal-header h5,
+.subscribe .right-column .modal-dialog .modal-content .creditModal-header h5 {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 45px;
+}
+
+.subscribe .left-column .modal-dialog .modal-content .creditModal-header .close,
+.subscribe .right-column .modal-dialog .modal-content .creditModal-header .close {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  line-height: 12px;
+  padding: 0 !important;
+  opacity: 1;
+  position: absolute;
+  top: -10px;
+  right: 15px;
+}
+
+.subscribe .left-column .modal-dialog .modal-body .form-group,
+.subscribe .right-column .modal-dialog .modal-body .form-group {
+  border: 1px solid #e0ded5;
+  padding: 16px 30px;
+  margin-bottom: 20px;
+  padding: 12px 30px 18px;
+}
+
+.subscribe .left-column .modal-dialog .modal-body .form-group label,
+.subscribe .right-column .modal-dialog .modal-body .form-group label {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "AvertaSemibold";
+  margin-bottom: 0;
+}
+
+.subscribe .left-column .modal-dialog .modal-body .form-group label svg,
+.subscribe .right-column .modal-dialog .modal-body .form-group label svg {
+  margin-left: 5px;
+}
+
+.subscribe .left-column .modal-dialog .modal-body .form-group input,
+.subscribe .right-column .modal-dialog .modal-body .form-group input {
+  border: 0;
+  padding: 0;
+  height: auto;
+  font-family: "AvertaSemibold";
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  color: #5B5863;
+}
+
+.subscribe .left-column .modal-dialog .modal-body .form-group input::-webkit-input-placeholder,
+.subscribe .right-column .modal-dialog .modal-body .form-group input::-webkit-input-placeholder {
+  color: #8D8B92;
+  font-family: "Averta";
+}
+
+.subscribe .left-column .modal-dialog .modal-body .form-group input:-ms-input-placeholder,
+.subscribe .right-column .modal-dialog .modal-body .form-group input:-ms-input-placeholder {
+  color: #8D8B92;
+  font-family: "Averta";
+}
+
+.subscribe .left-column .modal-dialog .modal-body .form-group input::-ms-input-placeholder,
+.subscribe .right-column .modal-dialog .modal-body .form-group input::-ms-input-placeholder {
+  color: #8D8B92;
+  font-family: "Averta";
+}
+
+.subscribe .left-column .modal-dialog .modal-body .form-group input::placeholder,
+.subscribe .right-column .modal-dialog .modal-body .form-group input::placeholder {
+  color: #8D8B92;
+  font-family: "Averta";
+}
+
+.subscribe .left-column .modal-dialog .modal-body .save,
+.subscribe .right-column .modal-dialog .modal-body .save {
+  padding: 13px 42px;
+  float: right;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #FCF9F2;
+}
+
+.subscribe .right-column .list li {
+  position: relative;
+  padding-left: 50px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  overflow: hidden;
+}
+
+.subscribe .right-column .list li:not(:last-child) {
+  border-bottom: 1px dashed #e3e0d3;
+}
+
+.subscribe .right-column .list li p {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #5a5761;
+  font-family: "AvertaSemibold";
+}
+
+.subscribe .right-column .list li span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.subscribe .right-column .list li .icon {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+.subscribe .right-column .list li .download {
+  position: absolute;
+  top: -40px;
+  right: 0;
+}
+
+/* End Subscribe */
+.modal-backdrop.show {
+  opacity: 0.7;
+}
+
+.modal-backdrop {
+  background-color: #5b5863;
+}
+
+.contacting.dashboard-page {
+  background-color: #fff;
+  padding-bottom: 0;
+}
+
+.contacting.dashboard-page .contacting-content {
+  border-bottom: 1px solid #ebe8df;
+  padding-bottom: 60px;
+}
+
+.popular-tickets.dashboard-page {
+  background-color: #fff;
+  border-bottom: 1px solid #ebe8df;
+}
+
+.popular-tickets.dashboard-page .popular-tickets-list {
+  margin-bottom: 50px;
+}
 /*# sourceMappingURL=style.css.map */
