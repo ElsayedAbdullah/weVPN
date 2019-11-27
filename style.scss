@@ -4836,3 +4836,11 @@ header.dashboard-page {
     margin-bottom: 50px;
   }
 }
+
+.list-content {
+  > div {
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+}
