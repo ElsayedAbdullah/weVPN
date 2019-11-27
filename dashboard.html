@@ -19,8 +19,6 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-    <!-- fancybox -->
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <!-- custom style css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -93,138 +91,66 @@
         <ul class="dashboard-list">
           <li class="active" data-content=".content-one">
             <a href="#">
-              <svg
-                width="22"
-                height="24"
-                viewBox="0 0 22 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9 14H1C0.448 14 0 13.552 0 13V1C0 0.448 0.448 0 1 0H9C9.552 0 10 0.448 10 1V13C10 13.552 9.552 14 9 14Z"
-                  fill="#F9F8F4"
-                />
-                <path
-                  d="M9 24H1C0.448 24 0 23.552 0 23V17C0 16.448 0.448 16 1 16H9C9.552 16 10 16.448 10 17V23C10 23.552 9.552 24 9 24Z"
-                  fill="#F9F8F4"
-                />
-                <path
-                  d="M21 8H13C12.448 8 12 7.552 12 7V1C12 0.448 12.448 0 13 0H21C21.552 0 22 0.448 22 1V7C22 7.552 21.552 8 21 8Z"
-                  fill="#F9F8F4"
-                />
-                <path
-                  d="M21 24H13C12.448 24 12 23.552 12 23V11C12 10.448 12.448 10 13 10H21C21.552 10 22 10.448 22 11V23C22 23.552 21.552 24 21 24Z"
-                  fill="#F9F8F4"
-                />
+              <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 14H1C0.448 14 0 13.552 0 13V1C0 0.448 0.448 0 1 0H9C9.552 0 10 0.448 10 1V13C10 13.552 9.552 14 9 14Z" fill="#F9F8F4" class="active-item"/>
+                <path d="M9 24H1C0.448 24 0 23.552 0 23V17C0 16.448 0.448 16 1 16H9C9.552 16 10 16.448 10 17V23C10 23.552 9.552 24 9 24Z" fill="#F9F8F4" class="active-item"/>
+                <path d="M21 8H13C12.448 8 12 7.552 12 7V1C12 0.448 12.448 0 13 0H21C21.552 0 22 0.448 22 1V7C22 7.552 21.552 8 21 8Z" fill="#F9F8F4" class="active-item"/>
+                <path d="M21 24H13C12.448 24 12 23.552 12 23V11C12 10.448 12.448 10 13 10H21C21.552 10 22 10.448 22 11V23C22 23.552 21.552 24 21 24Z" fill="#F9F8F4" class="active-item"/>
+
+                <path d="M8 1H1V13H8V1Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square" class="inactive-item"/>
+                <path d="M8 17H1V23H8V17Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square" class="inactive-item"/>
+                <path d="M19 1H12V7H19V1Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square" class="inactive-item"/>
+                <path d="M19 11H12V23H19V11Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square" class="inactive-item"/>
+                
               </svg>
+
               Dashboard</a
             >
           </li>
           <li data-content=".content-two">
             <a href="#">
-              <svg
-                width="21"
-                height="24"
-                viewBox="0 0 21 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.00342 1H19.0651V22L16.0548 20L13.0445 22L10.0342 20L7.02397 22L4.01369 20L1.00342 22V1Z"
-                  stroke="#F9F8F4"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="square"
-                />
-                <path
-                  d="M5.01709 15H10.0342"
-                  stroke="#F9F8F4"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="square"
-                />
-                <path
-                  d="M14.0479 15H15.0513"
-                  stroke="#F9F8F4"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="square"
-                />
-                <path
-                  d="M10.0342 11C11.6967 11 13.0445 9.65685 13.0445 8C13.0445 6.34315 11.6967 5 10.0342 5C8.37167 5 7.02393 6.34315 7.02393 8C7.02393 9.65685 8.37167 11 10.0342 11Z"
-                  stroke="#F9F8F4"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="square"
-                />
+              <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.0651 0H1.00342C0.7373 0 0.482075 0.105357 0.293896 0.292893C0.105718 0.48043 0 0.734784 0 1V23.868L4.0137 21.2L7.02397 23.2L10.0342 21.2L13.0445 23.2L16.0548 21.2L20.0685 23.866V1C20.0685 0.734784 19.9628 0.48043 19.7746 0.292893C19.5864 0.105357 19.3312 0 19.0651 0V0ZM11.0377 15H4.0137V13H11.0377V15ZM10.0342 10C9.43887 10 8.85686 9.82405 8.36183 9.49441C7.86679 9.16476 7.48096 8.69623 7.25312 8.14805C7.02528 7.59987 6.96566 6.99667 7.08181 6.41473C7.19797 5.83279 7.48467 5.29824 7.90566 4.87868C8.32666 4.45912 8.86304 4.1734 9.44697 4.05764C10.0309 3.94189 10.6362 4.0013 11.1862 4.22836C11.7363 4.45542 12.2064 4.83994 12.5372 5.33329C12.868 5.82664 13.0445 6.40666 13.0445 7C13.0445 7.79565 12.7274 8.55871 12.1628 9.12132C11.5983 9.68393 10.8326 10 10.0342 10ZM16.0548 15H13.0445V13H16.0548V15Z" fill="white" class="active-item"/>
+
+                <path d="M1.00342 1H19.0651V22L16.0548 20L13.0445 22L10.0342 20L7.02397 22L4.01369 20L1.00342 22V1Z" stroke="#F9F8F4" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square" class="inactive-item"/>
+                <path d="M5.01709 15H10.0342" stroke="#F9F8F4" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square" class="inactive-item"/>
+                <path d="M14.0479 15H15.0513" stroke="#F9F8F4" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square" class="inactive-item"/>
+                <path d="M10.0342 11C11.6967 11 13.0445 9.65685 13.0445 8C13.0445 6.34315 11.6967 5 10.0342 5C8.37167 5 7.02393 6.34315 7.02393 8C7.02393 9.65685 8.37167 11 10.0342 11Z" stroke="#F9F8F4" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square" class="inactive-item"/>
               </svg>
+
               Invoices</a
             >
           </li>
           <li data-content=".content-three">
             <a href="#">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23Z"
-                  stroke="#F9F8F4"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="square"
-                />
-                <path
-                  d="M12 5V19"
-                  stroke="#F9F8F4"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="square"
-                />
-                <path
-                  d="M15.375 7.21901C13.754 6.32801 8.648 5.66301 8.648 8.73201C8.648 12.406 15.132 11.109 15.132 14.351C15.132 17.593 10.918 17.349 8 16.296"
-                  stroke="#F9F8F4"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="square"
-                />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.592 15.564C13.824 15.401 14.132 15.099 14.132 14.35C14.132 13.818 13.771 13.499 13 13.169V15.828C13.225 15.759 13.432 15.677 13.592 15.564Z" fill="white" class="active-item"/>
+                <path d="M12 0C5.383 0 0 5.383 0 12C0 18.617 5.383 24 12 24C18.617 24 24 18.617 24 12C24 5.383 18.617 0 12 0ZM16.132 14.351C16.132 15.9 15.376 16.756 14.741 17.202C14.244 17.551 13.645 17.759 13 17.879V20H11V17.963C9.849 17.876 8.675 17.602 7.66 17.236L6.72 16.897L7.399 15.016L8.34 15.356C9.26 15.688 10.174 15.886 11 15.962V12.453C9.411 11.883 7.648 10.993 7.648 8.731C7.648 7.603 8.171 6.672 9.122 6.11C9.664 5.79 10.316 5.617 11 5.536V4H13V5.551C14.177 5.688 15.255 6.011 15.856 6.343L16.733 6.824L15.77 8.577L14.894 8.095C14.461 7.857 13.754 7.663 13 7.558V11.022C14.528 11.562 16.132 12.344 16.132 14.351Z" fill="white" class="active-item"/>
+                <path d="M10.1409 7.833C9.79595 8.037 9.64795 8.305 9.64795 8.731C9.64795 9.488 10.0769 9.901 10.9999 10.302V7.556C10.6719 7.613 10.3699 7.697 10.1409 7.833Z" fill="white" class="active-item"/>
+
+                <path d="M12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23Z" stroke="#F9F8F4" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square" class="inactive-item"/>
+                <path d="M12 5V19" stroke="#F9F8F4" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square" class="inactive-item"/>
+                <path d="M15.375 7.21901C13.754 6.32801 8.648 5.66301 8.648 8.73201C8.648 12.406 15.132 11.109 15.132 14.351C15.132 17.593 10.918 17.349 8 16.296" stroke="#F9F8F4" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square" class="inactive-item"/>
               </svg>
+
+
               Subscription Settings</a
             >
           </li>
           <li data-content=".content-four">
             <a href="#">
-              <svg
-                width="27"
-                height="27"
-                viewBox="0 0 27 27"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M14.7285 12.757L25.4855 2"
-                  stroke="#F9F8F4"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="square"
-                />
-                <path
-                  d="M22.4854 5L25.4854 8L22.4854 11L19.4854 8"
-                  stroke="#F9F8F4"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                />
-                <path
-                  d="M14.7278 21.2425C17.0709 18.8994 17.0709 15.1004 14.7278 12.7573C12.3847 10.4142 8.58572 10.4142 6.2426 12.7573C3.89948 15.1004 3.89948 18.8994 6.2426 21.2425C8.58572 23.5856 12.3847 23.5856 14.7278 21.2425Z"
-                  stroke="#F9F8F4"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="square"
-                />
+              <svg class="key1" width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.7436 7.29325L17.8622 4.00025L19.8686 1.70725C20.2107 1.31625 20.2107 0.68425 19.8686 0.29325C19.5265 -0.09775 18.9735 -0.09775 18.6313 0.29325L9.53833 10.6853C9.76758 10.8892 9.99071 11.1053 10.1998 11.3433C10.409 11.5823 10.5971 11.8372 10.7756 12.0992L14 8.41425L16.8813 11.7072C17.052 11.9022 17.276 12.0002 17.5 12.0002C17.724 12.0002 17.948 11.9022 18.1186 11.7072L20.7436 8.70725C21.0857 8.31625 21.0857 7.68425 20.7436 7.29325Z" fill="white"/>
+                <path d="M5.25001 23.0002C6.65263 23.0002 7.97039 22.3762 8.96264 21.2432C9.95489 20.1102 10.5 18.6032 10.5 17.0002C10.5 15.3972 9.95401 13.8912 8.96264 12.7572C7.97126 11.6232 6.65263 11.0002 5.25001 11.0002C3.84738 11.0002 2.52963 11.6242 1.53738 12.7572C0.545126 13.8902 0 15.3972 0 17.0002C0 18.6032 0.546001 20.1092 1.53738 21.2432C2.52875 22.3772 3.84738 23.0002 5.25001 23.0002Z" fill="white"/>
               </svg>
+
+              <svg class="key2" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.7285 12.757L25.4855 2" stroke="#F9F8F4" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+                <path d="M22.4854 5L25.4854 8L22.4854 11L19.4854 8" stroke="#F9F8F4" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M14.7278 21.2425C17.0709 18.8994 17.0709 15.1004 14.7278 12.7573C12.3847 10.4142 8.58572 10.4142 6.2426 12.7573C3.89948 15.1004 3.89948 18.8994 6.2426 21.2425C8.58572 23.5856 12.3847 23.5856 14.7278 21.2425Z" stroke="#F9F8F4" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+              </svg>
+
+
               Change Password</a
             >
           </li>
@@ -686,32 +612,272 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row">46139288</th>
+                <td scope="row">46139288</td>
                 <td>Nov 22, 2019</td>
                 <td>US$69.96</td>
                 <td>12 months</td>
                 <td><img src="imgs/visa.png" alt=""> ••••••9423</td>
               </tr>
               <tr>
-                <th scope="row">25009763</th>
+                <td scope="row">25009763</td>
                 <td>Nov 1, 2018</td>
                 <td>US$69.96</td>
                 <td>12 months</td>
-                <td><img src="imgs/visa.png" alt="">••••••9423</td>
+                <td><img src="imgs/visa.png" alt=""> ••••••9423</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
       <div class="content-three">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <div class="subscription-settings">
+                <div class="subscription-content">
+                  <h3>
+                    Subscription ID: 46578547
+                  </h3>
+                  <ul class="list">
+                    <li>
+                      <div class="list-item-text">
+                        <p class="label">Automatic Renewal:</p>
+                        <span>ON</span>
+                        <button class="menu-btn">
+                          <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4 8C4 6.89543 3.10457 6 2 6C0.89543 6 -1.35705e-07 6.89543 -8.74228e-08 8C-3.91405e-08 9.10457 0.89543 10 2 10C3.10457 10 4 9.10457 4 8Z" fill="#D1D0D3"/>
+                          <path d="M4 14C4 12.8954 3.10457 12 2 12C0.89543 12 -1.35705e-07 12.8954 -8.74228e-08 14C-3.91405e-08 15.1046 0.89543 16 2 16C3.10457 16 4 15.1046 4 14Z" fill="#D1D0D3"/>
+                          <path d="M4 2C4 0.89543 3.10457 -1.35705e-07 2 -8.74228e-08C0.89543 -3.91405e-08 -1.35705e-07 0.895431 -8.74228e-08 2C-3.91405e-08 3.10457 0.89543 4 2 4C3.10457 4 4 3.10457 4 2Z" fill="#D1D0D3"/>
+                        </svg>
+                        </button>
+                      </div>
+                      <button class="cancel" data-toggle="modal" data-target="#cancelrenewal">
+                        Cancel Automatic Renewal
+                      </button>
+                    </li>
+                    <li>
+                      <div class="list-item-text">
+                        <p class="label">Subscription Plan:</p>
+                        <p>$69.96 billed every 12 months.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list-item-text">
+                        <p class="label">Renewal Date:</p>
+                        <p>Dec 20, 2019</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list-item-text">
+                        <p class="label">Payment Method:</p>
+                        <p><img src="imgs/visa.png" alt="" /> ••••9423</p>
+                      </div>
+                      <button type="button" class="button edit" data-toggle="modal" data-target="#creditModal00">
+                        Edit Credit Card
+                      </button>
+                      <a class="link" class="" href="#">
+                        Update Payment Method
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- Modal -->
+                  <div class="modal fade" id="creditModal00" tabindex="-1" role="dialog" aria-labelledby="creditModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="creditModal-header">
+                          <h5 class="title text-center" id="creditModalLabel">Edit Credit Card</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13.7 0.3C13.3 -0.1 12.7 -0.1 12.3 0.3L7 5.6L1.7 0.3C1.3 -0.1 0.7 -0.1 0.3 0.3C-0.1 0.7 -0.1 1.3 0.3 1.7L5.6 7L0.3 12.3C-0.1 12.7 -0.1 13.3 0.3 13.7C0.5 13.9 0.7 14 1 14C1.3 14 1.5 13.9 1.7 13.7L7 8.4L12.3 13.7C12.5 13.9 12.8 14 13 14C13.2 14 13.5 13.9 13.7 13.7C14.1 13.3 14.1 12.7 13.7 12.3L8.4 7L13.7 1.7C14.1 1.3 14.1 0.7 13.7 0.3Z" fill="#fd3e72"/>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-6 padd-right">
+                              <div class="form-group">
+                                <label>First Name</label>
+                                <input
+                                type="text"
+                                  class="form-control"
+                                  placeholder="Type your First Name..."
+                                  value="Jonathan"
+                                >
+                              </div>
+                            </div>
+                            <div class="col-6 padd-left">
+                              <div class="form-group">
+                                <label>Last Name</label>
+                                <input
+                                type="text"
+                                  class="form-control"
+                                  placeholder="Type your Last Name..."
+                                  value="Roudier"
+                                >
+                              </div>
+                            </div>
+                            <div class="col-6 padd-right">
+                              <div class="form-group">
+                                <label>Credit Card Number</label>
+                                <input
+                                  type="text"
+                                  class="form-control input-card-number2"
+                                  value="2521212512125251"
+                                  placeholder="xxxx-xxxx-xxxx-xxxx"
+                                >
+                              </div>
+                            </div>
+                            <div class="col-6 padd-left">
+                              <div class="form-group">
+                                <label>Card Security Code 
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 0C3.6 0 0 3.6 0 8C0 12.4 3.6 16 8 16C12.4 16 16 12.4 16 8C16 3.6 12.4 0 8 0ZM8 13C7.4 13 7 12.6 7 12C7 11.4 7.4 11 8 11C8.6 11 9 11.4 9 12C9 12.6 8.6 13 8 13ZM9.5 8.4C9 8.7 9 8.8 9 9V10H7V9C7 7.7 7.8 7.1 8.4 6.7C8.9 6.4 9 6.3 9 6C9 5.4 8.6 5 8 5C7.6 5 7.3 5.2 7.1 5.5L6.6 6.4L4.9 5.4L5.4 4.5C5.9 3.6 6.9 3 8 3C9.7 3 11 4.3 11 6C11 7.4 10.1 8 9.5 8.4Z" fill="#ACAAAE"/>
+                                  </svg>
+                                </label>
+                                <input
+                                type="text"
+                                  class="form-control input-cvc2"
+                                  value="256"
+                                  placeholder="•••"
+                                  maxlength="3"
+                                >
+                              </div>
+                            </div>
+                            <div class="col-4 padd-right">
+                              <div class="form-group">
+                                <label>Expiry Month</label>
+                                <input
+                                type="text"
+                                  class="form-control input-month2"
+                                  value="05"
+                                  placeholder="MM"
+                                >
+                              </div>
+                            </div>
+                            <div class="col-4 padd">
+                              <div class="form-group">
+                                <label>Expiry Year</label>
+                                <input
+                                  type="text"
+                                  class="form-control input-year2"
+                                  value="23"
+                                  placeholder="YY"
+                                >
+                              </div>
+                            </div>
+                            <div class="col-4 padd-left">
+                              <div class="form-group">
+                                <label>Zip / Postal Code (Optional)</label>
+                                <input
+                                  type="text"
+                                  maxlength="5"
+                                  class="form-control input-zipcode2"
+                                  value="90069"
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <button class="primary--btn save">
+                            Save Credit Card Details
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
+                  <div class="modal fade" id="cancelrenewal" tabindex="-1" role="dialog" aria-labelledby="creditModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="creditModal-header">
+                          <h5 class="title" id="creditModalLabel">Are you sure to cancel Automatic Renewal Payments?</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13.7 0.3C13.3 -0.1 12.7 -0.1 12.3 0.3L7 5.6L1.7 0.3C1.3 -0.1 0.7 -0.1 0.3 0.3C-0.1 0.7 -0.1 1.3 0.3 1.7L5.6 7L0.3 12.3C-0.1 12.7 -0.1 13.3 0.3 13.7C0.5 13.9 0.7 14 1 14C1.3 14 1.5 13.9 1.7 13.7L7 8.4L12.3 13.7C12.5 13.9 12.8 14 13 14C13.2 14 13.5 13.9 13.7 13.7C14.1 13.3 14.1 12.7 13.7 12.3L8.4 7L13.7 1.7C14.1 1.3 14.1 0.7 13.7 0.3Z" fill="#fd3e72"/>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Duis tempor laborum dolore eu sunt ullamco irure cupidatat Lorem. Cillum amet dolore enim excepteur eu esse tempor nostrud.</p>
+                          
+                        </div>
+                        <div class="cancel-btns">
+                          <button class="primary--btn confirm-cancellation">
+                            Confirm Cancellation
+                          </button>
+                          <button class="primary--btn keep-automatic-renewal">
+                            Keep Automatic Payments
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="back-to-dashboard">
+                  <button class="primary--btn"><i class="fa fa-caret-left" aria-hidden="true"></i> Back to dashboard</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
       </div>
       <div class="content-four">
-
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <div class="change-password">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="change-password-content">
+                      <form>
+                        <div class="form-group">
+                          <label>Current Password</label>
+                          <input
+                            type="password"
+                            class="input-current-password form-control"
+                            placeholder="Type your password"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label>New Password</label>
+                          <input
+                            type="password"
+                            class="input-password form-control"
+                            placeholder="8 to 20 characters"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label>Confirm New Password</label>
+                          <input
+                            type="password"
+                            class="input-confirm-password form-control"
+                            placeholder="8 to 20 characters"
+                          />
+                        </div>
+                        <button class="primary--btn" type="submit">Save New Password</button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="check-password">
+                      <h4>Use a password you don’t use elsewhere</h4>
+                      <ul>
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>At least 8 - 20 characters</li>
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>Contains at least one number</li>
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>Contains at least one symbol</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Start Footer -->
+ <!-- Start Footer -->
     <footer>
       <div class="container">
         <div class="footer-content">
@@ -720,42 +886,64 @@
             <p class="apps">Our Apps:</p>
             <ul class="footer-icons">
               <li>
-                <a href="#"
-                  ><img
-                    src="imgs/microsoft.svg"
-                    draggable="false"
-                    alt="microsoft"
-                /></a>
+                <a href="#">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.1818 5.53144e-05H0V18.1819H18.1818V5.53144e-05Z" fill="#AFADB3"/>
+                    <path d="M21.8182 18.1818H40V8.16726e-10L21.8182 0V18.1818Z" fill="#AFADB3"/>
+                    <path d="M18.1818 21.8183H0V40.0001H18.1818V21.8183Z" fill="#AFADB3"/>
+                    <path d="M21.8182 40.0001L40 40.0001V21.8182H21.8182V40.0001Z" fill="#AFADB3"/>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><img src="imgs/MacOS.svg" draggable="false" alt="apple"
-                /></a>
+                <a href="#">
+                  <svg width="40" height="47" viewBox="0 0 40 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M38.0406 31.9382C35.411 30.9437 33.6521 28.5559 33.4536 25.7082C33.259 22.9332 34.619 20.4687 37.0914 19.1146L39.1471 17.9885L37.679 16.1608C35.2125 13.089 31.6829 11.2534 28.2377 11.2534C25.8499 11.2534 24.1931 11.8784 22.8626 12.3815C21.9232 12.7372 21.1823 13.0163 20.3687 13.0163C19.441 13.0163 18.5252 12.6901 17.464 12.3127C16.0725 11.8175 14.4964 11.2554 12.4721 11.2554C8.56117 11.2554 4.61682 13.5902 2.17985 17.3439C-1.45791 22.943 -0.459539 32.5435 4.55393 40.1728C6.54084 43.1954 9.32567 46.6681 13.27 46.7034C13.2956 46.7034 13.3211 46.7034 13.3467 46.7034C16.5756 46.7034 17.2831 44.9818 20.4178 44.9622C23.8413 45.1233 24.2737 46.7172 27.4712 46.6956C31.3252 46.6602 34.1041 43.215 36.3131 39.8485C37.6181 37.8694 38.1231 36.8337 39.1392 34.5854L40 32.6791L38.0406 31.9382Z" fill="#AFADB2"/>
+                    <path d="M25.7496 6.31646C27.027 4.6774 27.9959 2.36425 27.6441 0C25.557 0.143467 23.12 1.47004 21.6952 3.1995C20.402 4.76977 19.3349 7.09668 19.7495 9.3607C22.0253 9.43145 24.3817 8.07147 25.7496 6.31646Z" fill="#AFADB2"/>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><img src="imgs/Android.svg" draggable="false" alt="Android"
-                /></a>
+                <a href="#">
+                  <svg width="34" height="40" viewBox="0 0 34 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.66667 30C6.66667 30.9167 7.41667 31.6667 8.33333 31.6667H10V37.5C10 38.8833 11.1167 40 12.5 40C13.8833 40 15 38.8833 15 37.5V31.6667H18.3333V37.5C18.3333 38.8833 19.45 40 20.8333 40C22.2167 40 23.3333 38.8833 23.3333 37.5V31.6667H25C25.9167 31.6667 26.6667 30.9167 26.6667 30V13.3333H6.66667V30ZM2.5 13.3333C1.11667 13.3333 0 14.45 0 15.8333V27.5C0 28.8833 1.11667 30 2.5 30C3.88333 30 5 28.8833 5 27.5V15.8333C5 14.45 3.88333 13.3333 2.5 13.3333ZM30.8333 13.3333C29.45 13.3333 28.3333 14.45 28.3333 15.8333V27.5C28.3333 28.8833 29.45 30 30.8333 30C32.2167 30 33.3333 28.8833 33.3333 27.5V15.8333C33.3333 14.45 32.2167 13.3333 30.8333 13.3333ZM22.55 3.6L24.7167 1.43333C25.05 1.1 25.05 0.583333 24.7167 0.25C24.3833 -0.0833333 23.8667 -0.0833333 23.5333 0.25L21.0667 2.71667C19.75 2.05 18.25 1.66667 16.6667 1.66667C15.0667 1.66667 13.5667 2.05 12.2333 2.71667L9.75 0.25C9.41667 -0.0833333 8.9 -0.0833333 8.56667 0.25C8.23333 0.583333 8.23333 1.1 8.56667 1.43333L10.75 3.61667C8.28333 5.43333 6.66667 8.35 6.66667 11.6667H26.6667C26.6667 8.35 25.05 5.41667 22.55 3.6ZM13.3333 8.33333H11.6667V6.66667H13.3333V8.33333ZM21.6667 8.33333H20V6.66667H21.6667V8.33333Z" fill="#AFADB2"/>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><img src="imgs/ios.svg" draggable="false" alt="ios"
-                /></a>
+                <a href="#">
+                  <svg width="40" height="40" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 36C27.9411 36 36 27.9411 36 18C36 8.05887 27.9411 0 18 0C8.05888 0 0 8.05887 0 18C0 27.9411 8.05888 36 18 36ZM7.12321 11.4918C6.43168 11.4918 5.87109 12.0524 5.87109 12.7439C5.87109 13.4355 6.43168 13.9961 7.12321 13.9961C7.81473 13.9961 8.37532 13.4355 8.37532 12.7439C8.37532 12.0524 7.81473 11.4918 7.12321 11.4918ZM5.9532 15.3123V24.5082H8.29321V15.3123H5.9532ZM15.4408 11.4918C14.4751 11.5045 13.6437 11.6938 12.8268 12.1008C10.7409 13.1399 9.53613 15.3282 9.53613 18.0854C9.53613 20.849 10.7212 22.9723 12.8145 23.9655C13.38 24.2338 13.9468 24.3799 14.8073 24.4822C14.8739 24.4849 14.9399 24.4879 15.0053 24.4908H15.0053H15.0054H15.0054C15.3679 24.5074 15.715 24.5232 16.0744 24.4822C16.9349 24.3799 17.5017 24.2338 18.0672 23.9655C20.1605 22.9723 21.3455 20.849 21.3455 18.0854C21.3455 15.3282 20.1408 13.1399 18.0549 12.1008C17.238 11.6938 16.4066 11.5045 15.4408 11.4918ZM16.2712 13.4355C17.5237 13.7693 18.4325 14.8994 18.7807 16.5477C19.0253 17.7054 18.9586 19.0431 18.6085 20.0967C18.0632 21.7375 16.8795 22.6641 15.4408 22.6493C14.0022 22.6641 12.8185 21.7375 12.2732 20.0967C11.9231 19.0431 11.8564 17.7054 12.101 16.5477C12.4492 14.8994 13.358 13.7693 14.6105 13.4355C15.1784 13.3151 15.7443 13.3368 16.2712 13.4355ZM24.4994 24.4468C24.5818 24.4607 24.6647 24.4747 24.7477 24.4889C25.0245 24.5205 25.8321 24.5117 26.175 24.4735C28.0047 24.2693 29.223 23.5179 29.8205 22.2251C30.0665 21.6929 30.1308 21.3713 30.1289 20.6819C30.1236 19.8543 29.8984 19.0193 29.1857 18.3076C28.6727 17.7864 28.0744 17.4369 26.8274 16.9301C25.1344 16.2422 24.6743 15.8902 24.5258 15.1694C24.316 14.0193 25.5058 13.368 26.6031 13.3833C27.3786 13.3878 28.2948 13.619 29.1118 13.9426C29.1366 13.9048 29.6208 12.1978 29.6208 12.1482C29.6208 12.0139 28.6732 11.7014 27.8469 11.5632C27.2735 11.4672 26.1082 11.4682 25.5633 11.5651C23.6824 11.8996 22.4568 12.9941 22.2016 14.5673C22.1098 15.1329 22.1775 15.7805 22.3815 16.2892C22.7964 17.3237 23.8117 18.1193 25.5429 18.7665C27.0951 19.3467 27.6607 19.8174 27.7874 20.6341C27.9001 21.3601 27.5647 21.9896 26.884 22.3302C25.6354 22.9042 23.7835 22.2776 22.468 21.8309C22.4457 21.8638 21.9515 23.7101 21.9625 23.7196C22.7131 24.1457 23.5864 24.2929 24.4994 24.4468Z" fill="#AFADB2"/>
+                    </svg>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><img src="imgs/linux.svg" draggable="false" alt="linux"
-                /></a>
+                <a href="#">
+                  <svg width="34" height="40" viewBox="0 0 34 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24.6233 25.4699C25.1934 25.6433 25.7405 25.8848 26.2529 26.189C26.3644 26.2505 26.4693 26.3155 26.5725 26.3687C26.8388 26.3438 27.27 26.2539 27.6262 26.179C28.265 26.0226 28.9182 25.9323 29.5754 25.9093C29.7986 25.9102 30.0213 25.9297 30.2412 25.9676C30.2724 25.3765 30.2602 24.784 30.2046 24.1948C29.8914 21.548 28.8268 19.0463 27.1368 16.9855C25.5688 15.2626 23.1568 12.7857 23.1568 10.9048V5.6863C23.1311 4.16939 22.5104 2.72331 21.4286 1.65967C20.3467 0.596037 18.8903 0 17.3732 0C15.8561 0 14.3997 0.596037 13.3178 1.65967C12.236 2.72331 11.6153 4.16939 11.5896 5.6863V13.2884C11.3383 14.6035 10.6807 14.73 9.64704 16.1715C8.62701 17.5278 7.81363 19.0278 7.2334 20.6226C6.75067 22.0708 5.72695 23.5989 5.25921 24.8024C5.38487 24.7633 5.51271 24.7316 5.64206 24.7075C5.82925 24.6778 6.01848 24.6627 6.20802 24.6625C6.87466 24.6676 7.52834 24.8473 8.10398 25.1835C8.82189 22.3017 10.0006 19.5547 11.5946 17.0487C12.5262 15.6102 12.9374 13.8961 12.7598 12.1915C13.3657 12.6742 13.97 14.1757 15.6212 14.1757C17.2725 14.1757 18.3761 12.8873 19.295 12.4212C19.5296 12.3035 19.7442 12.1496 19.9308 11.9651L20.089 12.0017C21.5221 14.6526 22.8004 17.3843 23.9175 20.1831C24.4072 21.902 24.6449 23.6828 24.6233 25.4699ZM15.2184 8.68255C14.9516 8.73621 14.6915 8.81881 14.4427 8.9289L14.3145 8.98883C14.0958 9.09016 13.8864 9.21047 13.6886 9.34838C13.3453 8.96985 13.1441 8.48386 13.1194 7.97343C13.0378 7.00798 13.4606 6.18234 14.0615 6.13241C14.6624 6.08247 15.2151 6.82487 15.2966 7.79699C15.3213 8.09448 15.2948 8.39399 15.2184 8.68255ZM19.2134 7.98675C19.1811 8.46431 19.0206 8.92432 18.749 9.31842C18.6541 9.26848 18.5492 9.21688 18.441 9.16527L18.3595 9.12532C18.2296 9.0654 18.0898 9.0088 17.94 8.95887H17.9233C17.5584 8.82532 17.18 8.7321 16.7948 8.68088C16.7282 8.38789 16.7069 8.08644 16.7315 7.787C16.8231 6.69836 17.4523 5.86274 18.1381 5.92101C18.8239 5.97927 19.3133 6.89478 19.2134 7.98675Z" fill="#AFADB2"/>
+                  <path d="M8.16052 28.6775C7.59623 27.8219 6.82886 27.0479 6.04984 27.1794C5.27081 27.3109 4.73315 28.7058 4.23211 29.1236C3.73107 29.5415 1.80848 29.1653 1.22255 29.7895C0.636617 30.4137 1.18093 32.6509 1.07607 33.7179C0.971197 34.7849 0.410234 35.3475 0.345315 35.8486C0.280396 36.3496 0.450183 36.9139 1.39067 37.2485C2.33116 37.5831 5.84176 38.4603 7.05025 38.7316C8.25874 39.0029 11.1035 40.8007 12.4418 38.6284C12.8616 37.8919 13.0119 37.0323 12.8671 36.197C12.7222 35.3617 12.2911 34.6029 11.6478 34.0508C10.3842 32.3275 9.21988 30.5335 8.16052 28.6775Z" fill="#AFADB2"/>
+                  <path d="M16.4682 35.9818C16.0979 35.9816 15.7279 35.9621 15.3596 35.9235C15.4681 36.5053 15.4793 37.1009 15.3929 37.6863C16.8278 37.604 18.2672 37.6553 19.6925 37.8395C19.5768 36.9363 19.623 36.0198 19.829 35.1329C18.7981 35.6943 17.6421 35.9863 16.4682 35.9818Z" fill="#AFADB2"/>
+                  <path d="M32.8563 32.7521C31.9424 32.3352 31.2191 31.5894 30.8305 30.6631C30.6424 29.8308 30.8088 29.0534 30.1646 28.5524C29.5204 28.0514 27.4031 29.0068 26.1547 28.852C25.2791 28.7422 23.9741 27.3722 23.0835 27.9398C22.5542 28.2727 22.8305 29.6177 22.8505 30.3285C22.8261 31.7542 22.7216 33.1775 22.5375 34.5915C22.391 35.4055 21.2625 37.9756 23.4564 39.4388C24.1396 39.7771 24.9178 39.8724 25.6626 39.709C26.4073 39.5456 27.0741 39.1332 27.5529 38.5399C28.4614 37.6073 29.5121 36.8247 30.6657 36.2211C31.708 35.8437 32.6563 35.2452 33.4455 34.4667C33.7768 33.9024 33.7352 33.2532 32.8563 32.7521Z" fill="#AFADB2"/>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><img src="imgs/Firefox.svg" draggable="false" alt="firefox"
-                /></a>
+                <a href="#">
+                  <svg class="firefox" width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="line" d="M2.31787 20.3257C2.31787 10.014 10.6776 1.6543 20.9892 1.6543C31.3009 1.6543 39.6606 10.014 39.6606 20.3257" stroke="#AFADB2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+                  <path class="fox" d="M33.942 4.60234C39.0053 20.6733 27.1677 35.8871 15.1348 27.0979C15.1518 27.1013 19.7416 27.1523 21.3779 26.273C22.4099 25.718 23.7287 24.6214 24.3653 24.725C25.3973 24.8777 25.64 24.0477 25.1206 23.4519C24.5248 22.7679 22.9462 21.4711 21.1148 22.3401C16.0837 24.7233 12.7279 21.2012 13.3101 19.1354C13.4188 18.7467 13.8346 18.2341 14.0095 18.2002C14.8598 17.3736 19.7857 14.1332 20.4018 12.6293C20.5478 12.2729 20.7125 11.4361 20.2355 11.2612C19.4428 11.0728 17.5604 11.066 16.8645 11.0711C15.5388 11.083 14.6494 10.2564 14.7088 9.43313C14.7835 8.4062 15.4998 7.12637 17.5332 5.44934C14.0417 4.94012 12.0269 7.72555 12.0252 7.72894C10.1445 7.26216 7.20968 7.80023 7.20798 7.79853C5.27465 6.66807 4.86218 3.82153 4.86218 3.82153C4.86218 3.82153 1.9766 5.97383 2.75062 11.2001C2.75062 11.2001 -2.31442 20.1131 3.23607 30.3213C3.23607 30.3196 8.36391 40.6941 20.9891 40.6941C33.7196 40.6941 41.3579 30.1414 41.3579 20.3253C41.3579 13.1368 37.7442 7.66444 33.942 4.60234Z" fill="#AFADB2"/>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><img src="imgs/Chrome.svg" draggable="false" alt="chrome"
-                /></a>
+                <a href="#">
+                  <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.5667 26.6667C24.2486 26.6667 27.2334 23.6819 27.2334 20C27.2334 16.3181 24.2486 13.3333 20.5667 13.3333C16.8848 13.3333 13.9001 16.3181 13.9001 20C13.9001 23.6819 16.8848 26.6667 20.5667 26.6667Z" fill="#AFADB2"/>
+                  <path d="M11.0699 16.885C12.3832 12.8917 16.1399 10 20.5665 10H37.6532C34.1882 4.03167 27.7432 0 20.3582 0C14.3499 0 8.96488 2.675 5.29655 6.88333L11.0699 16.885Z" fill="#AFADB2"/>
+                  <path d="M22.6134 29.7887C21.9517 29.927 21.2684 30.0003 20.5667 30.0003C16.8717 30.0003 13.6484 27.982 11.9167 24.9953L11.9067 25.0003L3.15673 9.847C1.39173 12.827 0.358398 16.292 0.358398 20.0003C0.358398 29.8487 7.5184 38.0353 16.9017 39.6803L22.6134 29.7887Z" fill="#AFADB2"/>
+                  <path d="M27.9999 13.3333C29.5899 15.105 30.5666 17.4367 30.5666 20C30.5666 21.82 30.0699 23.5233 29.2166 24.995L29.2266 25L20.5732 39.9883C31.5016 39.8717 40.3582 30.955 40.3582 20C40.3582 17.66 39.9332 15.4217 39.1916 13.3333H27.9999Z" fill="#AFADB2"/>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
@@ -795,36 +983,63 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Owl Carousel -->
     <script src="js/owl.carousel.min.js"></script>
-    <!-- fancybox -->
-    <script src="js/jquery.fancybox.min.js"></script>
     <!-- custom main js -->
     <script src="js/cleave.min.js"></script>
     <script src="js/main.js"></script>
     <script>
 
-      var cleaveCard = new Cleave('.input-card-number', {
-        creditCard: true,
-        delimiter: '-'
-      });
+      $(function() {
 
-      var cleaveMonth = new Cleave('.input-month', {
-        date: true,
-        datePattern: ['m']
-      });
+        var cleaveCard = new Cleave('.input-card-number', {
+          creditCard: true,
+          delimiter: '-'
+        });
 
-      var cleaveYear = new Cleave('.input-year', {
-        date: true,
-        datePattern: ['y']
-      });
+        var cleaveCard = new Cleave('.input-card-number2', {
+          creditCard: true,
+          delimiter: '-'
+        });
 
-      var cleaveZip = new Cleave('.input-zipcode', {
-        numeral: true,
-        numeralThousandsGroupStyle: "none"
-      });
+        var cleaveMonth = new Cleave('.input-month', {
+          date: true,
+          datePattern: ['m']
+        });
 
-      var cleaveCvc = new Cleave('.input-cvc', {
-        numeral: true,
-        numeralThousandsGroupStyle: "none"
+        var cleaveMonth = new Cleave(' .input-month2', {
+          date: true,
+          datePattern: ['m']
+        });
+
+        var cleaveYear = new Cleave('.input-year', {
+          date: true,
+          datePattern: ['y']
+        });
+
+        var cleaveYear = new Cleave('.input-year2', {
+          date: true,
+          datePattern: ['y']
+        });
+
+        var cleaveZip = new Cleave('.input-zipcode', {
+          numeral: true,
+          numeralThousandsGroupStyle: "none"
+        });
+
+        var cleaveZip = new Cleave('.input-zipcode2', {
+          numeral: true,
+          numeralThousandsGroupStyle: "none"
+        });
+
+        var cleaveCvc = new Cleave('.input-cvc', {
+          numeral: true,
+          numeralThousandsGroupStyle: "none"
+        });
+
+        var cleaveCvc = new Cleave('.input-cvc2', {
+          numeral: true,
+          numeralThousandsGroupStyle: "none"
+        });
+        
       });
 
     </script>

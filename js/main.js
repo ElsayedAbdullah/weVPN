@@ -187,11 +187,6 @@ $(function() {
     );
   });
 
-  // trigger fancybox
-  $('[data-fancybox="gallery"]').fancybox({
-    // Options will go here
-  });
-
   // toggle between credit card and paypal
   $(".credit-payment .pay-card").click(function() {
     $(this)
@@ -204,5 +199,15 @@ $(function() {
       .parent()
       .siblings(".card-info")
       .slideUp(500);
+  });
+
+  // when click menu button in subscription settings tab open cancel button
+  $(".list li .list-item-text .menu-btn").on("click", function() {
+    $(".list li .cancel").fadeToggle(200);
+  });
+
+  // hide Cancel Automatic Renewal button when click on it
+  $(".list li .cancel").on("click", function() {
+    $(this).fadeOut();
   });
 });

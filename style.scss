@@ -32,8 +32,8 @@ input::-webkit-inner-spin-button {
   margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
-input[type=number] {
-  -moz-appearance:textfield; /* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
 }
 
 body {
@@ -1574,15 +1574,25 @@ footer {
         a {
           display: block;
           &:hover {
-            img {
-              filter: none;
-              opacity: 1;
+            svg {
+              path {
+                fill: $primaryColor;
+              }
+            }
+            .firefox {
+              .line {
+                stroke: $primaryColor;
+                fill: none
+              }
+              .fox {
+                fill: $primaryColor;
+              }
             }
           }
-          img {
-            filter: grayscale(100%);
-            opacity: 0.8;
-            transition: all 0.3s ease-in-out;
+          svg {
+            path {
+              transition: all 0.3s ease-in-out;
+            }
             @media #{$tablet} {
               transform: scale(0.8);
             }
@@ -3071,6 +3081,9 @@ ol {
         background-color: $primaryColor;
         border-color: $primaryColor;
       }
+      &:checked + label:after {
+        color: #fff;
+      }
       &:checked + .label-radio .price-top p .value {
         color: $primaryColor;
       }
@@ -4509,10 +4522,29 @@ header.dashboard-page {
           visibility: visible;
           height: 3px;
         }
+        svg {
+          .active-item {
+            visibility: visible;
+            opacity: 1
+
+          }
+          .inactive-item {
+            visibility: hidden;
+            opacity: 0
+          }
+        }
+        .key1 {
+          opacity: 1;
+          visibility: visible;
+        }
+        .key2 {
+          opacity: 0;
+          visibility: hidden;
+        }
       }
 
       a {
-        padding: 25px 71px;
+        padding: 25px 76px;
         color: #f9f8f4;
         font-family: "AvertaSemibold";
         display: block;
@@ -4537,8 +4569,33 @@ header.dashboard-page {
           opacity: 0;
           transition: all 0.3s ease-in-out;
         }
+        .key1 {
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.3s ease-in-out;
+          position: absolute;
+          left: 40px;
+        }
+        .key2 {
+          opacity: 1;
+          visibility: visible;
+          transition: all 0.3s ease-in-out;
+          position: absolute;
+          left: 35px;
+        }
         svg {
           margin-right: 12px;
+          .active-item {
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+
+          }
+          .inactive-item {
+            visibility: visible;
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+          }
         }
       }
     }
@@ -4696,83 +4753,6 @@ header.dashboard-page {
         }
       }
     }
-    .modal-dialog {
-      max-width: 840px;
-      margin-top:174px;
-      .padd {
-        padding-right: 10px;
-        padding-left: 10px
-      }
-      .padd-right {
-        padding-right: 10px;
-      }
-      .padd-left {
-        padding-left: 10px
-      }
-      .modal-content {
-        padding: 60px 25px 45px;
-        border-radius: 0;
-        .creditModal-header {
-          position: relative;
-          h5 {
-            font-size: 24px;
-            line-height: 24px;
-            margin-bottom: 45px;
-          }
-          .close {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            border: 1px solid #ccc;
-            line-height: 12px;
-            padding: 0 !important;
-            opacity: 1;
-            position: absolute;
-            top: -10px;
-            right: 15px;
-          }
-        }
-        
-      }
-      .modal-body {
-        .form-group {
-          border: 1px solid #e0ded5;
-          padding: 16px 30px;
-          margin-bottom: 20px;
-          padding: 12px 30px 18px;
-          label {
-            font-size: 12px;
-            line-height: 20px;
-            font-family: "AvertaSemibold";
-            margin-bottom: 0;
-              svg {
-              margin-left: 5px;
-            }
-          }
-          input {
-            border: 0;
-            padding: 0;
-            height: auto;
-            font-family: "AvertaSemibold";
-            box-shadow: none;
-            outline: none;
-            color: #5B5863;
-            &::placeholder {
-              color: #8D8B92;
-              font-family: "Averta";
-            }
-          }
-        }
-        .save {
-          padding: 13px 42px;
-          float: right;
-          margin-top: 20px;
-          font-size: 20px;
-          color: #FCF9F2;
-        }
-      }
-    }
-    
   }
   .right-column {
     .list {
@@ -4813,6 +4793,81 @@ header.dashboard-page {
     }
   }
 }
+.modal-dialog {
+  max-width: 840px;
+  margin-top: 174px;
+  .padd {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .padd-right {
+    padding-right: 10px;
+  }
+  .padd-left {
+    padding-left: 10px;
+  }
+  .modal-content {
+    padding: 60px 25px 45px;
+    border-radius: 0;
+    .creditModal-header {
+      position: relative;
+      h5 {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 45px;
+      }
+      .close {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+        line-height: 12px;
+        padding: 0 !important;
+        opacity: 1;
+        position: absolute;
+        top: -10px;
+        right: 15px;
+      }
+    }
+  }
+  .modal-body {
+    .form-group {
+      border: 1px solid #e0ded5;
+      padding: 16px 30px;
+      margin-bottom: 20px;
+      padding: 12px 30px 18px;
+      label {
+        font-size: 12px;
+        line-height: 20px;
+        font-family: "AvertaSemibold";
+        margin-bottom: 0;
+        svg {
+          margin-left: 5px;
+        }
+      }
+      input {
+        border: 0;
+        padding: 0;
+        height: auto;
+        font-family: "AvertaSemibold";
+        box-shadow: none;
+        outline: none;
+        color: #5b5863;
+        &::placeholder {
+          color: #8d8b92;
+          font-family: "Averta";
+        }
+      }
+    }
+    .save {
+      padding: 13px 42px;
+      float: right;
+      margin-top: 20px;
+      font-size: 20px;
+      color: #fcf9f2;
+    }
+  }
+}
 /* End Subscribe */
 .modal-backdrop.show {
   opacity: 0.7;
@@ -4842,5 +4897,593 @@ header.dashboard-page {
     &:not(:first-child) {
       display: none;
     }
+  }
+  .content-two {
+    table {
+      margin-top: 60px;
+      margin-bottom: 195px;
+      background-color: #fff;
+      td {
+        border-bottom: 1px solid #e0ded5;
+        border-top: 0;
+        font-family: "AvertaSemibold";
+        font-size: 14px;
+        color: #5b5863;
+        height: 64px;
+        padding: 0;
+        line-height: 64px;
+      }
+      thead {
+        tr {
+          background-color: #f5f4f0;
+          border-top: 1px solid #e0ded5;
+          th {
+            font-size: 12px;
+            line-height: 12px;
+            text-transform: uppercase;
+            color: #8d8b92;
+            font-family: "AvertaSemibold";
+            border-bottom: 0;
+            height: 56px;
+            line-height: 56px;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+            &:first-child {
+              padding-left: 32px;
+            }
+          }
+        }
+      }
+      tbody {
+        td[scope="row"] {
+          font-size: 14px;
+          color: #8d8b92;
+          font-family: "AvertaSemibold";
+          padding-left: 32px;
+        }
+        td:nth-child(2) {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+  .content-three {
+    .subscription-settings {
+      margin-top: 80px;
+      margin-bottom: 200px;
+      box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+      .subscription-content {
+        background-color: #fff;
+        padding: 50px 60px 0;
+      }
+      h3 {
+        font-size: 24px;
+        line-height: 44px;
+        color: #8d8b92;
+        font-family: "Averta";
+        border-bottom: 1px solid #e3e0d3;
+        margin-bottom: 0;
+        padding-bottom: 15px;
+      }
+      .list {
+        margin-top: 10px;
+        li {
+          padding-top: 25px;
+          padding-bottom: 25px;
+          position: relative;
+          &:not(:last-child) {
+            border-bottom: 1px dashed #e3e0d3;
+          }
+          .list-item-text {
+            p {
+              font-size: 16px;
+              line-height: 20px;
+              color: #5a5761;
+              font-family: "AvertaSemibold";
+              margin-bottom: 5px;
+              &.label {
+                font-size: 14px;
+                line-height: 20px;
+                color: #8d8b92;
+                font-family: "Averta";
+              }
+            }
+            span {
+              background-color: rgba(#62d5b4, 0.3);
+              border-radius: 5px;
+              color: #62d5b4;
+              padding: 4px 11px;
+              display: inline-block;
+              margin-top: 5px;
+            }
+            .menu-btn {
+              position: absolute;
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+              line-height: 15px;
+              text-align: center;
+              top: 35px;
+              right: 0px;
+              background: #fefefe;
+              border: 1px solid #efeee6;
+              transition: all 0.3s ease-in-out;
+              svg {
+                path {
+                  transition: all 0.3s ease-in-out;
+                }
+              }
+              &:hover {
+                border-color: #e1ddcf;
+                svg {
+                  path {
+                    fill: #acaaae;
+                  }
+                }
+              }
+            }
+          }
+          .cancel {
+            font-size: 14px;
+            line-height: 20px;
+            color: #5a5761;
+            padding: 16px;
+            background: #ffffff;
+            box-shadow: 0px 20px 40px rgba(240, 238, 233, 0.8),
+              0px 3px 8px #e6e4df;
+            position: absolute;
+            right: 0;
+            top: 75px;
+            display: none;
+            transition: all 0.2s ease-in-out;
+            font-family: "AvertaSemibold";
+            border: 0;
+          }
+          .button {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            font-size: 14px;
+            line-height: 40px;
+            padding: 0px 13px;
+            display: inline-block;
+            &:hover {
+              color: #fff;
+            }
+            &.edit {
+              background: #ffecf1;
+              color: $primaryColor;
+              font-family: "AvertaSemibold";
+              padding: 0px 15px;
+              border: 0;
+            }
+          }
+          .link {
+            font-size: 14px;
+            line-height: 20px;
+            text-decoration: underline !important;
+            color: $primaryColor;
+            margin-top: 15px;
+            margin-bottom: 0;
+            display: inline-block;
+          }
+        }
+      }
+      #cancelrenewal {
+        .modal-dialog {
+          width: 700px;
+          .modal-content {
+            padding: 0;
+          }
+          .creditModal-header {
+            h5 {
+              font-size: 24px;
+              line-height: 32px;
+              color: #5b5863;
+              width: 60%;
+              margin-bottom: 30px;
+              padding-top: 50px;
+              padding-left: 40px;
+            }
+            .close {
+              top: 60px;
+              right: 40px;
+            }
+          }
+          .modal-body {
+            padding-left: 40px;
+            padding-right: 39px;
+            padding-top: 38px;
+            padding-bottom: 38px;
+            border-top: 1px solid #e3e0d3;
+            p {
+              font-size: 18px;
+              line-height: 28px;
+              color: #5b5863;
+              margin-bottom: 0;
+            }
+          }
+          .cancel-btns {
+            .confirm-cancellation,
+            .keep-automatic-renewal {
+              width: 50%;
+              padding: 20px;
+              float: left;
+            }
+            .keep-automatic-renewal {
+              color: $primaryColor;
+              background-color: #ffecf1;
+            }
+          }
+        }
+      }
+    }
+    .back-to-dashboard {
+      padding: 32px 60px;
+      background-color: #f5f4f0;
+      text-align: right;
+
+      button {
+        padding: 16px 65px;
+        &:hover {
+          i {
+            left: -12px;
+          }
+        }
+        i {
+          position: relative;
+          transition: all 0.3s ease-in-out;
+          left: -7px;
+          top: 0;
+        }
+      }
+    }
+  }
+  .content-four {
+    .change-password {
+      background-color: #fff;
+      box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+      margin-top: 80px;
+      margin-bottom: 140px;
+
+      &-content {
+        padding: 60px;
+        border-right: 1px solid #e3e0d3;
+        form {
+          .form-group {
+            border: 1px solid #e0ded5;
+            padding: 16px 30px;
+            margin-bottom: 20px;
+            label {
+              font-size: 12px;
+              line-height: 20px;
+              font-family: "AvertaSemibold";
+              margin-bottom: 0;
+            }
+            input {
+              border: 0;
+              outline: none;
+              box-shadow: none;
+              padding-left: 0;
+              padding: 0;
+              height: auto;
+              color: #5b5863;
+              &::placeholder {
+                font-size: 16px;
+                line-height: 20px;
+                color: #8d8b92;
+              }
+            }
+          }
+          button {
+            width: 100%;
+            display: block;
+            padding-top: 16px;
+            padding-bottom: 16px;
+          }
+        }
+      }
+    }
+    .check-password {
+      padding: 60px;
+      padding-left: 30px;
+      h4 {
+        font-size: 16px;
+        line-height: 20px;
+        color: #5b5863;
+        font-family: "AvertaSemibold";
+        margin-bottom: 11px;
+        width: 70%;
+      }
+      ul {
+        li {
+          font-size: 13px;
+          line-height: 32px;
+          color: #8d8b92;
+
+          i {
+            margin-right: 8px;
+            color: #5b5863;
+            font-size: 16px;
+            position: relative;
+            top: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Start expired subscription */
+.expired-subscription {
+  .expiration-msg {
+    padding: 50px 35px 50px 105px;
+    background: rgba(239, 66, 115, 0.05);
+    border: 1px solid #EF4273;
+    border-radius: 5px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    position: relative;
+    img {
+          position: absolute;
+    left: 60px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      font-family: "AvertaBold";
+      color: $primaryColor;
+      margin-bottom: 0;
+    }
+    button {
+          position: absolute;
+    top: 35px;
+    right: 35px;
+    padding: 16px 53px;
+    }
+  }
+}
+/* End expired subscription */
+
+/* Start wevpn benefits */
+.wevpn-benefits {
+  margin-bottom: 80px;
+  .wevpn-benefits-content {
+    padding: 60px 80px 35px;
+    background-color: #fff;
+    box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #E6E4DF;
+    h2 {
+    font-size: 24px;
+line-height: 32px;
+width: 40%;
+margin-bottom: 40px;
+  }
+  .wevpn-benefits-list {
+    overflow: hidden;
+    li {
+      float: left;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 25px;
+      width: 33.3333%;
+      color: #5A5761;
+      i {
+        color: #fff;
+        font-size: 12px;
+        width: 32px;
+        height: 32px;
+        background-color: #62d5b4;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 32px;
+        margin-right: 5px;
+      }
+    }
+  }
+  }
+  
+}
+/* End wevpn benefits */
+
+///////////////
+// Start Upgrade Plan
+.dashboard {
+  .payment-features {
+    text-align: center;
+        margin-top: -30px;
+    margin-bottom: 50px;
+    li {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.list-content {
+  .content-one {
+    .pricing-tables {
+      padding-top: 80px;
+      padding-bottom: 60px;
+      .price-card {
+        label {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+  .payment {
+    margin-top: 28px;
+    hr {
+        height: 1px;
+        width: 100%;
+        background-color: #E3E0D3;
+        margin-top: 15px;
+        margin-bottom: 32px;
+        border: 0;
+      }
+    .payment-methods {
+      padding-bottom: 80px;
+      h3 {
+        font-size: 24px;
+        line-height: 44px;
+        padding-top: 16px;
+      }
+      
+      .card-info {
+        display: none;
+      }
+
+      .credit-payment,
+      .paypal-payment {
+        overflow: hidden;
+        background-color: #fff;
+
+        .pay-card {
+          position: relative;
+
+          input[type="radio"] {
+            display: none;
+
+            &:not(:checked) {
+              & + label:after {
+                opacity: 0;
+                transform: scale(0);
+              }
+            }
+
+            &:checked {
+              & + label:after {
+                opacity: 1;
+                transform: scale(1);
+              }
+            }
+          }
+
+          .label-radio {
+            font-size: 18px;
+            line-height: 13px;
+            text-transform: uppercase;
+            opacity: 0.7;
+            position: relative;
+            cursor: pointer;
+            height: 80px;
+            display: block;
+            padding-left: 80px;
+            line-height: 80px;
+
+            &:before {
+              content: "";
+              position: absolute;
+              top: 25px;
+              left: 32px;
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+              border: 1px solid #adaba5;
+            }
+
+            &:after {
+              content: "";
+              position: absolute;
+              top: 33px;
+              left: 40px;
+              width: 16px;
+              height: 16px;
+              border-radius: 50%;
+              background-color: $primaryColor;
+            }
+          }
+          img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 30px;
+          }
+        }
+      }
+
+      .paypal-payment {
+        margin-top: 12px;
+      }
+      .order-now {
+        button {
+          padding: 16px 54px;
+          margin-top: 32px;
+          margin-bottom: 32px;
+        }
+      }
+      .back {
+        font-size: 20px;
+        line-height: 25px;
+        font-family: "AvertaSemibold";
+            color: $primaryColor;
+    background: none;
+    border: 0;
+      }
+    }
+    .plan-details {
+      background-color: #fff;
+      h3 {
+        font-size: 24px;
+        line-height: 44px;
+        padding-left: 60px;
+        padding-top: 16px;
+      }
+      .line {
+        margin-bottom: 20px;
+      }
+      .plan-details-content {
+        padding-left: 60px;
+        padding-right: 60px;
+        li {
+          padding-top: 6px;
+          padding-bottom: 15px;
+          color: #8D8B92;
+          line-height: 28px;
+          &:not(:last-child) {
+            border-bottom: 1px dashed rgba(#E3E0D3, 0.7);
+          }
+          span {
+            float: right;
+            color: #5B5863;
+          }
+          .month {
+            color: $primaryColor;
+          }
+        }
+      }
+      .total {
+        margin-left: 60px;
+        margin-right: 60px;
+        padding-top: 26px;
+        padding-bottom: 40px;
+        border-top: 2px solid rgba(#E3E0D3, 0.7);
+        span {
+          font-family: "AvertaSemibold";
+
+        }
+        .value {
+          float: right;
+        }
+      }
+      
+    }
+    .subscription-period {
+      padding: 28px 60px;
+      border: 1px solid #E3E0D3;
+      border-radius: 5px;
+      font-size: 16px;
+      line-height: 28px;
+      color: #8D8B92;
+      margin-top: 20px;
+
+      }
   }
 }

@@ -28,7 +28,7 @@ input::-webkit-inner-spin-button {
   /* <-- Apparently some margin are still there even though it's hidden */
 }
 
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
   /* Firefox */
 }
@@ -2152,22 +2152,26 @@ footer .footer-content .footer-icons li a {
   display: block;
 }
 
-footer .footer-content .footer-icons li a:hover img {
-  -webkit-filter: none;
-          filter: none;
-  opacity: 1;
+footer .footer-content .footer-icons li a:hover svg path {
+  fill: #fd3e72;
 }
 
-footer .footer-content .footer-icons li a img {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  opacity: 0.8;
+footer .footer-content .footer-icons li a:hover .firefox .line {
+  stroke: #fd3e72;
+  fill: none;
+}
+
+footer .footer-content .footer-icons li a:hover .firefox .fox {
+  fill: #fd3e72;
+}
+
+footer .footer-content .footer-icons li a svg path {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  footer .footer-content .footer-icons li a img {
+  footer .footer-content .footer-icons li a svg {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
@@ -3940,6 +3944,10 @@ ol {
   border-color: #fd3e72;
 }
 
+.pricing-tables .price-card input[type="radio"]:checked + label:after {
+  color: #fff;
+}
+
 .pricing-tables .price-card input[type="radio"]:checked + .label-radio .price-top p .value {
   color: #fd3e72;
 }
@@ -5662,8 +5670,28 @@ header.dashboard-page p a {
   height: 3px;
 }
 
+.dashboard .dashboard-list li.active svg .active-item, .dashboard .dashboard-list li:hover svg .active-item {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dashboard .dashboard-list li.active svg .inactive-item, .dashboard .dashboard-list li:hover svg .inactive-item {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.dashboard .dashboard-list li.active .key1, .dashboard .dashboard-list li:hover .key1 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dashboard .dashboard-list li.active .key2, .dashboard .dashboard-list li:hover .key2 {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .dashboard .dashboard-list li a {
-  padding: 25px 71px;
+  padding: 25px 76px;
   color: #f9f8f4;
   font-family: "AvertaSemibold";
   display: block;
@@ -5691,8 +5719,40 @@ header.dashboard-page p a {
   transition: all 0.3s ease-in-out;
 }
 
+.dashboard .dashboard-list li a .key1 {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  left: 40px;
+}
+
+.dashboard .dashboard-list li a .key2 {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  left: 35px;
+}
+
 .dashboard .dashboard-list li a svg {
   margin-right: 12px;
+}
+
+.dashboard .dashboard-list li a svg .active-item {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard .dashboard-list li a svg .inactive-item {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* End Dashboard */
@@ -5882,126 +5942,6 @@ header.dashboard-page p a {
   display: inline-block;
 }
 
-.subscribe .left-column .modal-dialog,
-.subscribe .right-column .modal-dialog {
-  max-width: 840px;
-  margin-top: 174px;
-}
-
-.subscribe .left-column .modal-dialog .padd,
-.subscribe .right-column .modal-dialog .padd {
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.subscribe .left-column .modal-dialog .padd-right,
-.subscribe .right-column .modal-dialog .padd-right {
-  padding-right: 10px;
-}
-
-.subscribe .left-column .modal-dialog .padd-left,
-.subscribe .right-column .modal-dialog .padd-left {
-  padding-left: 10px;
-}
-
-.subscribe .left-column .modal-dialog .modal-content,
-.subscribe .right-column .modal-dialog .modal-content {
-  padding: 60px 25px 45px;
-  border-radius: 0;
-}
-
-.subscribe .left-column .modal-dialog .modal-content .creditModal-header,
-.subscribe .right-column .modal-dialog .modal-content .creditModal-header {
-  position: relative;
-}
-
-.subscribe .left-column .modal-dialog .modal-content .creditModal-header h5,
-.subscribe .right-column .modal-dialog .modal-content .creditModal-header h5 {
-  font-size: 24px;
-  line-height: 24px;
-  margin-bottom: 45px;
-}
-
-.subscribe .left-column .modal-dialog .modal-content .creditModal-header .close,
-.subscribe .right-column .modal-dialog .modal-content .creditModal-header .close {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-  line-height: 12px;
-  padding: 0 !important;
-  opacity: 1;
-  position: absolute;
-  top: -10px;
-  right: 15px;
-}
-
-.subscribe .left-column .modal-dialog .modal-body .form-group,
-.subscribe .right-column .modal-dialog .modal-body .form-group {
-  border: 1px solid #e0ded5;
-  padding: 16px 30px;
-  margin-bottom: 20px;
-  padding: 12px 30px 18px;
-}
-
-.subscribe .left-column .modal-dialog .modal-body .form-group label,
-.subscribe .right-column .modal-dialog .modal-body .form-group label {
-  font-size: 12px;
-  line-height: 20px;
-  font-family: "AvertaSemibold";
-  margin-bottom: 0;
-}
-
-.subscribe .left-column .modal-dialog .modal-body .form-group label svg,
-.subscribe .right-column .modal-dialog .modal-body .form-group label svg {
-  margin-left: 5px;
-}
-
-.subscribe .left-column .modal-dialog .modal-body .form-group input,
-.subscribe .right-column .modal-dialog .modal-body .form-group input {
-  border: 0;
-  padding: 0;
-  height: auto;
-  font-family: "AvertaSemibold";
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none;
-  color: #5B5863;
-}
-
-.subscribe .left-column .modal-dialog .modal-body .form-group input::-webkit-input-placeholder,
-.subscribe .right-column .modal-dialog .modal-body .form-group input::-webkit-input-placeholder {
-  color: #8D8B92;
-  font-family: "Averta";
-}
-
-.subscribe .left-column .modal-dialog .modal-body .form-group input:-ms-input-placeholder,
-.subscribe .right-column .modal-dialog .modal-body .form-group input:-ms-input-placeholder {
-  color: #8D8B92;
-  font-family: "Averta";
-}
-
-.subscribe .left-column .modal-dialog .modal-body .form-group input::-ms-input-placeholder,
-.subscribe .right-column .modal-dialog .modal-body .form-group input::-ms-input-placeholder {
-  color: #8D8B92;
-  font-family: "Averta";
-}
-
-.subscribe .left-column .modal-dialog .modal-body .form-group input::placeholder,
-.subscribe .right-column .modal-dialog .modal-body .form-group input::placeholder {
-  color: #8D8B92;
-  font-family: "Averta";
-}
-
-.subscribe .left-column .modal-dialog .modal-body .save,
-.subscribe .right-column .modal-dialog .modal-body .save {
-  padding: 13px 42px;
-  float: right;
-  margin-top: 20px;
-  font-size: 20px;
-  color: #FCF9F2;
-}
-
 .subscribe .right-column .list li {
   position: relative;
   padding-left: 50px;
@@ -6043,6 +5983,109 @@ header.dashboard-page p a {
   right: 0;
 }
 
+.modal-dialog {
+  max-width: 840px;
+  margin-top: 174px;
+}
+
+.modal-dialog .padd {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.modal-dialog .padd-right {
+  padding-right: 10px;
+}
+
+.modal-dialog .padd-left {
+  padding-left: 10px;
+}
+
+.modal-dialog .modal-content {
+  padding: 60px 25px 45px;
+  border-radius: 0;
+}
+
+.modal-dialog .modal-content .creditModal-header {
+  position: relative;
+}
+
+.modal-dialog .modal-content .creditModal-header h5 {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 45px;
+}
+
+.modal-dialog .modal-content .creditModal-header .close {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  line-height: 12px;
+  padding: 0 !important;
+  opacity: 1;
+  position: absolute;
+  top: -10px;
+  right: 15px;
+}
+
+.modal-dialog .modal-body .form-group {
+  border: 1px solid #e0ded5;
+  padding: 16px 30px;
+  margin-bottom: 20px;
+  padding: 12px 30px 18px;
+}
+
+.modal-dialog .modal-body .form-group label {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "AvertaSemibold";
+  margin-bottom: 0;
+}
+
+.modal-dialog .modal-body .form-group label svg {
+  margin-left: 5px;
+}
+
+.modal-dialog .modal-body .form-group input {
+  border: 0;
+  padding: 0;
+  height: auto;
+  font-family: "AvertaSemibold";
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  color: #5b5863;
+}
+
+.modal-dialog .modal-body .form-group input::-webkit-input-placeholder {
+  color: #8d8b92;
+  font-family: "Averta";
+}
+
+.modal-dialog .modal-body .form-group input:-ms-input-placeholder {
+  color: #8d8b92;
+  font-family: "Averta";
+}
+
+.modal-dialog .modal-body .form-group input::-ms-input-placeholder {
+  color: #8d8b92;
+  font-family: "Averta";
+}
+
+.modal-dialog .modal-body .form-group input::placeholder {
+  color: #8d8b92;
+  font-family: "Averta";
+}
+
+.modal-dialog .modal-body .save {
+  padding: 13px 42px;
+  float: right;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #fcf9f2;
+}
+
 /* End Subscribe */
 .modal-backdrop.show {
   opacity: 0.7;
@@ -6073,5 +6116,655 @@ header.dashboard-page p a {
 
 .list-content > div:not(:first-child) {
   display: none;
+}
+
+.list-content .content-two table {
+  margin-top: 60px;
+  margin-bottom: 195px;
+  background-color: #fff;
+}
+
+.list-content .content-two table td {
+  border-bottom: 1px solid #e0ded5;
+  border-top: 0;
+  font-family: "AvertaSemibold";
+  font-size: 14px;
+  color: #5b5863;
+  height: 64px;
+  padding: 0;
+  line-height: 64px;
+}
+
+.list-content .content-two table thead tr {
+  background-color: #f5f4f0;
+  border-top: 1px solid #e0ded5;
+}
+
+.list-content .content-two table thead tr th {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #8d8b92;
+  font-family: "AvertaSemibold";
+  border-bottom: 0;
+  height: 56px;
+  line-height: 56px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+.list-content .content-two table thead tr th:first-child {
+  padding-left: 32px;
+}
+
+.list-content .content-two table tbody td[scope="row"] {
+  font-size: 14px;
+  color: #8d8b92;
+  font-family: "AvertaSemibold";
+  padding-left: 32px;
+}
+
+.list-content .content-two table tbody td:nth-child(2) {
+  color: #fd3e72;
+}
+
+.list-content .content-three .subscription-settings {
+  margin-top: 80px;
+  margin-bottom: 200px;
+  -webkit-box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+          box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+}
+
+.list-content .content-three .subscription-settings .subscription-content {
+  background-color: #fff;
+  padding: 50px 60px 0;
+}
+
+.list-content .content-three .subscription-settings h3 {
+  font-size: 24px;
+  line-height: 44px;
+  color: #8d8b92;
+  font-family: "Averta";
+  border-bottom: 1px solid #e3e0d3;
+  margin-bottom: 0;
+  padding-bottom: 15px;
+}
+
+.list-content .content-three .subscription-settings .list {
+  margin-top: 10px;
+}
+
+.list-content .content-three .subscription-settings .list li {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.list-content .content-three .subscription-settings .list li:not(:last-child) {
+  border-bottom: 1px dashed #e3e0d3;
+}
+
+.list-content .content-three .subscription-settings .list li .list-item-text p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #5a5761;
+  font-family: "AvertaSemibold";
+  margin-bottom: 5px;
+}
+
+.list-content .content-three .subscription-settings .list li .list-item-text p.label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8d8b92;
+  font-family: "Averta";
+}
+
+.list-content .content-three .subscription-settings .list li .list-item-text span {
+  background-color: rgba(98, 213, 180, 0.3);
+  border-radius: 5px;
+  color: #62d5b4;
+  padding: 4px 11px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.list-content .content-three .subscription-settings .list li .list-item-text .menu-btn {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  line-height: 15px;
+  text-align: center;
+  top: 35px;
+  right: 0px;
+  background: #fefefe;
+  border: 1px solid #efeee6;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.list-content .content-three .subscription-settings .list li .list-item-text .menu-btn svg path {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.list-content .content-three .subscription-settings .list li .list-item-text .menu-btn:hover {
+  border-color: #e1ddcf;
+}
+
+.list-content .content-three .subscription-settings .list li .list-item-text .menu-btn:hover svg path {
+  fill: #acaaae;
+}
+
+.list-content .content-three .subscription-settings .list li .cancel {
+  font-size: 14px;
+  line-height: 20px;
+  color: #5a5761;
+  padding: 16px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 20px 40px rgba(240, 238, 233, 0.8), 0px 3px 8px #e6e4df;
+          box-shadow: 0px 20px 40px rgba(240, 238, 233, 0.8), 0px 3px 8px #e6e4df;
+  position: absolute;
+  right: 0;
+  top: 75px;
+  display: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-family: "AvertaSemibold";
+  border: 0;
+}
+
+.list-content .content-three .subscription-settings .list li .button {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  font-size: 14px;
+  line-height: 40px;
+  padding: 0px 13px;
+  display: inline-block;
+}
+
+.list-content .content-three .subscription-settings .list li .button:hover {
+  color: #fff;
+}
+
+.list-content .content-three .subscription-settings .list li .button.edit {
+  background: #ffecf1;
+  color: #fd3e72;
+  font-family: "AvertaSemibold";
+  padding: 0px 15px;
+  border: 0;
+}
+
+.list-content .content-three .subscription-settings .list li .link {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: underline !important;
+  color: #fd3e72;
+  margin-top: 15px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.list-content .content-three .subscription-settings #cancelrenewal .modal-dialog {
+  width: 700px;
+}
+
+.list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .modal-content {
+  padding: 0;
+}
+
+.list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .creditModal-header h5 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #5b5863;
+  width: 60%;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  padding-left: 40px;
+}
+
+.list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .creditModal-header .close {
+  top: 60px;
+  right: 40px;
+}
+
+.list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .modal-body {
+  padding-left: 40px;
+  padding-right: 39px;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  border-top: 1px solid #e3e0d3;
+}
+
+.list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .modal-body p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #5b5863;
+  margin-bottom: 0;
+}
+
+.list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .cancel-btns .confirm-cancellation,
+.list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .cancel-btns .keep-automatic-renewal {
+  width: 50%;
+  padding: 20px;
+  float: left;
+}
+
+.list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .cancel-btns .keep-automatic-renewal {
+  color: #fd3e72;
+  background-color: #ffecf1;
+}
+
+.list-content .content-three .back-to-dashboard {
+  padding: 32px 60px;
+  background-color: #f5f4f0;
+  text-align: right;
+}
+
+.list-content .content-three .back-to-dashboard button {
+  padding: 16px 65px;
+}
+
+.list-content .content-three .back-to-dashboard button:hover i {
+  left: -12px;
+}
+
+.list-content .content-three .back-to-dashboard button i {
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  left: -7px;
+  top: 0;
+}
+
+.list-content .content-four .change-password {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+          box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+  margin-top: 80px;
+  margin-bottom: 140px;
+}
+
+.list-content .content-four .change-password-content {
+  padding: 60px;
+  border-right: 1px solid #e3e0d3;
+}
+
+.list-content .content-four .change-password-content form .form-group {
+  border: 1px solid #e0ded5;
+  padding: 16px 30px;
+  margin-bottom: 20px;
+}
+
+.list-content .content-four .change-password-content form .form-group label {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "AvertaSemibold";
+  margin-bottom: 0;
+}
+
+.list-content .content-four .change-password-content form .form-group input {
+  border: 0;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-left: 0;
+  padding: 0;
+  height: auto;
+  color: #5b5863;
+}
+
+.list-content .content-four .change-password-content form .form-group input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.list-content .content-four .change-password-content form .form-group input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.list-content .content-four .change-password-content form .form-group input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.list-content .content-four .change-password-content form .form-group input::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #8d8b92;
+}
+
+.list-content .content-four .change-password-content form button {
+  width: 100%;
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.list-content .content-four .check-password {
+  padding: 60px;
+  padding-left: 30px;
+}
+
+.list-content .content-four .check-password h4 {
+  font-size: 16px;
+  line-height: 20px;
+  color: #5b5863;
+  font-family: "AvertaSemibold";
+  margin-bottom: 11px;
+  width: 70%;
+}
+
+.list-content .content-four .check-password ul li {
+  font-size: 13px;
+  line-height: 32px;
+  color: #8d8b92;
+}
+
+.list-content .content-four .check-password ul li i {
+  margin-right: 8px;
+  color: #5b5863;
+  font-size: 16px;
+  position: relative;
+  top: 1px;
+}
+
+/* Start expired subscription */
+.expired-subscription .expiration-msg {
+  padding: 50px 35px 50px 105px;
+  background: rgba(239, 66, 115, 0.05);
+  border: 1px solid #EF4273;
+  border-radius: 5px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.expired-subscription .expiration-msg img {
+  position: absolute;
+  left: 60px;
+}
+
+.expired-subscription .expiration-msg p {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "AvertaBold";
+  color: #fd3e72;
+  margin-bottom: 0;
+}
+
+.expired-subscription .expiration-msg button {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  padding: 16px 53px;
+}
+
+/* End expired subscription */
+/* Start wevpn benefits */
+.wevpn-benefits {
+  margin-bottom: 80px;
+}
+
+.wevpn-benefits .wevpn-benefits-content {
+  padding: 60px 80px 35px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #E6E4DF;
+          box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #E6E4DF;
+}
+
+.wevpn-benefits .wevpn-benefits-content h2 {
+  font-size: 24px;
+  line-height: 32px;
+  width: 40%;
+  margin-bottom: 40px;
+}
+
+.wevpn-benefits .wevpn-benefits-content .wevpn-benefits-list {
+  overflow: hidden;
+}
+
+.wevpn-benefits .wevpn-benefits-content .wevpn-benefits-list li {
+  float: left;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 25px;
+  width: 33.3333%;
+  color: #5A5761;
+}
+
+.wevpn-benefits .wevpn-benefits-content .wevpn-benefits-list li i {
+  color: #fff;
+  font-size: 12px;
+  width: 32px;
+  height: 32px;
+  background-color: #62d5b4;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  margin-right: 5px;
+}
+
+/* End wevpn benefits */
+.dashboard .payment-features {
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: 50px;
+}
+
+.dashboard .payment-features li {
+  display: inline-block;
+}
+
+.dashboard .payment-features li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.dashboard .payment-features li svg {
+  margin-right: 5px;
+}
+
+.list-content .content-one .pricing-tables {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.list-content .content-one .pricing-tables .price-card label {
+  padding-bottom: 0;
+}
+
+.list-content .payment {
+  margin-top: 28px;
+}
+
+.list-content .payment hr {
+  height: 1px;
+  width: 100%;
+  background-color: #E3E0D3;
+  margin-top: 15px;
+  margin-bottom: 32px;
+  border: 0;
+}
+
+.list-content .payment .payment-methods {
+  padding-bottom: 80px;
+}
+
+.list-content .payment .payment-methods h3 {
+  font-size: 24px;
+  line-height: 44px;
+  padding-top: 16px;
+}
+
+.list-content .payment .payment-methods .card-info {
+  display: none;
+}
+
+.list-content .payment .payment-methods .credit-payment,
+.list-content .payment .payment-methods .paypal-payment {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.list-content .payment .payment-methods .credit-payment .pay-card,
+.list-content .payment .payment-methods .paypal-payment .pay-card {
+  position: relative;
+}
+
+.list-content .payment .payment-methods .credit-payment .pay-card input[type="radio"],
+.list-content .payment .payment-methods .paypal-payment .pay-card input[type="radio"] {
+  display: none;
+}
+
+.list-content .payment .payment-methods .credit-payment .pay-card input[type="radio"]:not(:checked) + label:after,
+.list-content .payment .payment-methods .paypal-payment .pay-card input[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.list-content .payment .payment-methods .credit-payment .pay-card input[type="radio"]:checked + label:after,
+.list-content .payment .payment-methods .paypal-payment .pay-card input[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.list-content .payment .payment-methods .credit-payment .pay-card .label-radio,
+.list-content .payment .payment-methods .paypal-payment .pay-card .label-radio {
+  font-size: 18px;
+  line-height: 13px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  position: relative;
+  cursor: pointer;
+  height: 80px;
+  display: block;
+  padding-left: 80px;
+  line-height: 80px;
+}
+
+.list-content .payment .payment-methods .credit-payment .pay-card .label-radio:before,
+.list-content .payment .payment-methods .paypal-payment .pay-card .label-radio:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #adaba5;
+}
+
+.list-content .payment .payment-methods .credit-payment .pay-card .label-radio:after,
+.list-content .payment .payment-methods .paypal-payment .pay-card .label-radio:after {
+  content: "";
+  position: absolute;
+  top: 33px;
+  left: 40px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fd3e72;
+}
+
+.list-content .payment .payment-methods .credit-payment .pay-card img,
+.list-content .payment .payment-methods .paypal-payment .pay-card img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 30px;
+}
+
+.list-content .payment .payment-methods .paypal-payment {
+  margin-top: 12px;
+}
+
+.list-content .payment .payment-methods .order-now button {
+  padding: 16px 54px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.list-content .payment .payment-methods .back {
+  font-size: 20px;
+  line-height: 25px;
+  font-family: "AvertaSemibold";
+  color: #fd3e72;
+  background: none;
+  border: 0;
+}
+
+.list-content .payment .plan-details {
+  background-color: #fff;
+}
+
+.list-content .payment .plan-details h3 {
+  font-size: 24px;
+  line-height: 44px;
+  padding-left: 60px;
+  padding-top: 16px;
+}
+
+.list-content .payment .plan-details .line {
+  margin-bottom: 20px;
+}
+
+.list-content .payment .plan-details .plan-details-content {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.list-content .payment .plan-details .plan-details-content li {
+  padding-top: 6px;
+  padding-bottom: 15px;
+  color: #8D8B92;
+  line-height: 28px;
+}
+
+.list-content .payment .plan-details .plan-details-content li:not(:last-child) {
+  border-bottom: 1px dashed rgba(227, 224, 211, 0.7);
+}
+
+.list-content .payment .plan-details .plan-details-content li span {
+  float: right;
+  color: #5B5863;
+}
+
+.list-content .payment .plan-details .plan-details-content li .month {
+  color: #fd3e72;
+}
+
+.list-content .payment .plan-details .total {
+  margin-left: 60px;
+  margin-right: 60px;
+  padding-top: 26px;
+  padding-bottom: 40px;
+  border-top: 2px solid rgba(227, 224, 211, 0.7);
+}
+
+.list-content .payment .plan-details .total span {
+  font-family: "AvertaSemibold";
+}
+
+.list-content .payment .plan-details .total .value {
+  float: right;
+}
+
+.list-content .payment .subscription-period {
+  padding: 28px 60px;
+  border: 1px solid #E3E0D3;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #8D8B92;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
