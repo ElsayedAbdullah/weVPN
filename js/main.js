@@ -226,6 +226,10 @@ $(function() {
       $(".check-password ul #length")
         .removeClass("valid")
         .addClass("invalid");
+    } else if (pswd.length > 20) {
+      $(".check-password ul #length")
+        .removeClass("valid")
+        .addClass("invalid");
     } else {
       $(".check-password ul #length")
         .removeClass("invalid")
