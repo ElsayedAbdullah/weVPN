@@ -5758,7 +5758,7 @@ header.dashboard-page p a {
   opacity: 0.7;
 }
 
-.download .download-content .item a {
+.download .download-content .item a, .download .download-content .item button {
   color: #ffffff;
   font-family: "AvertaSemibold";
   display: inline-block;
@@ -5766,19 +5766,19 @@ header.dashboard-page p a {
   padding: 20px 46px;
 }
 
-.download .download-content .item a svg {
+.download .download-content .item a svg, .download .download-content .item button svg {
   margin-right: 5px;
   position: relative;
   top: -2px;
 }
 
-.download .download-content .item a.web-store {
+.download .download-content .item a.web-store, .download .download-content .item button.web-store {
   border: 1px solid #e3e0d3;
   background: none;
   color: #5b5863;
 }
 
-.download .download-content .item a.web-store img {
+.download .download-content .item a.web-store img, .download .download-content .item button.web-store img {
   position: relative;
   top: -2px;
   left: -5px;
