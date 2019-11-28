@@ -121,7 +121,7 @@
               Invoices</a
             >
           </li>
-          <li data-content=".content-three">
+          <li data-content=".content-three" id="subscription">
             <a href="#">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- <path d="M13.592 15.564C13.824 15.401 14.132 15.099 14.132 14.35C14.132 13.818 13.771 13.499 13 13.169V15.828C13.225 15.759 13.432 15.677 13.592 15.564Z" fill="white" class="active-item"/>
@@ -165,7 +165,7 @@
             <div class="download-content">
               <div class="item">
                 <p>Setup WeVPN for Windows</p>
-                <button>
+                <a href="file.txt" download="Test">
                   <svg
                     width="16"
                     height="16"
@@ -185,7 +185,7 @@
                     <path d="M8.72725 16L16 16V8.72727H8.72725V16Z" fill="white" />
                   </svg>
                   Download for windows
-                </button>
+                </a>
               </div>
               <div class="item">
                 <p>Setup WeVPN for Chrome</p>
@@ -208,7 +208,7 @@
                   <div class="item-heading">
                     <h3>
                       Subscription
-                      <a href="upgrade-plan.html">
+                      <button class="settings">
                         <svg
                           width="16"
                           height="16"
@@ -221,8 +221,7 @@
                             fill="#AFADB2"
                           />
                         </svg>
-                        Settings</a
-                      >
+                        Settings</button>
                     </h3>
                   </div>
                   <ul class="list">
@@ -386,7 +385,7 @@
                       <span>Version 2.3.1</span>
                       <a href="file.txt" download="weVPN" class="download"
                         ><img src="imgs/data-download.svg" alt=""
-                      /></a>
+                      /></but>
                     </li>
                     <li>
                       <svg
@@ -861,9 +860,9 @@
                     <div class="check-password">
                       <h4>Use a password you don’t use elsewhere</h4>
                       <ul>
-                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>At least 8 - 20 characters</li>
-                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>Contains at least one number</li>
-                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>Contains at least one symbol</li>
+                        <li id="length" class="invalid"><i class="fa fa-check-circle"></i>At least 8 - 20 characters</li>
+                        <li id="number" class="invalid"><i class="fa fa-check-circle"></i>Contains at least one number</li>
+                        <li id="symbol" class="invalid"><i class="fa fa-check-circle"></i>Contains at least one symbol</li>
                       </ul>
                     </div>
                   </div>
@@ -928,7 +927,7 @@
               <li>
                 <a href="#">
                   <svg class="firefox" width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="line" d="M2.31787 20.3257C2.31787 10.014 10.6776 1.6543 20.9892 1.6543C31.3009 1.6543 39.6606 10.014 39.6606 20.3257" stroke="#AFADB2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+                  <!-- <path class="line" d="M2.31787 20.3257C2.31787 10.014 10.6776 1.6543 20.9892 1.6543C31.3009 1.6543 39.6606 10.014 39.6606 20.3257" stroke="#AFADB2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/> -->
                   <path class="fox" d="M33.942 4.60234C39.0053 20.6733 27.1677 35.8871 15.1348 27.0979C15.1518 27.1013 19.7416 27.1523 21.3779 26.273C22.4099 25.718 23.7287 24.6214 24.3653 24.725C25.3973 24.8777 25.64 24.0477 25.1206 23.4519C24.5248 22.7679 22.9462 21.4711 21.1148 22.3401C16.0837 24.7233 12.7279 21.2012 13.3101 19.1354C13.4188 18.7467 13.8346 18.2341 14.0095 18.2002C14.8598 17.3736 19.7857 14.1332 20.4018 12.6293C20.5478 12.2729 20.7125 11.4361 20.2355 11.2612C19.4428 11.0728 17.5604 11.066 16.8645 11.0711C15.5388 11.083 14.6494 10.2564 14.7088 9.43313C14.7835 8.4062 15.4998 7.12637 17.5332 5.44934C14.0417 4.94012 12.0269 7.72555 12.0252 7.72894C10.1445 7.26216 7.20968 7.80023 7.20798 7.79853C5.27465 6.66807 4.86218 3.82153 4.86218 3.82153C4.86218 3.82153 1.9766 5.97383 2.75062 11.2001C2.75062 11.2001 -2.31442 20.1131 3.23607 30.3213C3.23607 30.3196 8.36391 40.6941 20.9891 40.6941C33.7196 40.6941 41.3579 30.1414 41.3579 20.3253C41.3579 13.1368 37.7442 7.66444 33.942 4.60234Z" fill="#AFADB2"/>
                   </svg>
                 </a>

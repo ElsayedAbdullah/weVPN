@@ -4647,10 +4647,10 @@ header.dashboard-page {
         line-height: 20px;
         opacity: 0.7;
       }
-      button {
+      a {
         color: #ffffff;
         font-family: "AvertaSemibold";
-        border: 0;
+        display: inline-block;
         background-color: $primaryColor;
         padding: 20px 46px;
         svg {
@@ -4697,7 +4697,7 @@ header.dashboard-page {
         padding-top: 22px;
         padding-bottom: 22px;
         margin-bottom: 0;
-        a {
+        .settings {
           font-size: 12px;
           line-height: 24px;
           text-align: center;
@@ -4710,6 +4710,7 @@ header.dashboard-page {
           position: absolute;
           right: 50px;
           top: 22px;
+          background: none;
         }
       }
     }
@@ -5213,13 +5214,21 @@ header.dashboard-page {
           font-size: 13px;
           line-height: 32px;
           color: #8d8b92;
-
           i {
             margin-right: 8px;
-            color: #5b5863;
             font-size: 16px;
             position: relative;
             top: 1px;
+          }
+          &.invalid {
+            i {
+            color: #5b5863;
+          }
+          }
+          &.valid {
+            i {
+              color: #62d5b4;
+            }
           }
         }
       }
