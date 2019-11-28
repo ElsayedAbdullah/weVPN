@@ -36,6 +36,8 @@ $(function() {
       .removeClass("active");
     $(".list-content > div").hide();
     $($(this).data("content")).fadeIn();
+    $(".payment-features").hide();
+    $(".upgrade-plan-content").hide();
     $(".dashboard h2").text(
       $(this)
         .find("a")
@@ -210,4 +212,48 @@ $(function() {
   $(".list li .cancel").on("click", function() {
     $(this).fadeOut();
   });
+
+  // detect the operating system
+  var OSName = "Unknown";
+  if (window.navigator.userAgent.indexOf("Windows NT 10.0") != -1)
+    OSName = "Windows 10";
+  if (window.navigator.userAgent.indexOf("Windows NT 6.2") != -1)
+    OSName = "Windows 8";
+  if (window.navigator.userAgent.indexOf("Windows NT 6.1") != -1)
+    OSName = "Windows 7";
+  if (window.navigator.userAgent.indexOf("Windows NT 6.0") != -1)
+    OSName = "Windows Vista";
+  if (window.navigator.userAgent.indexOf("Windows NT 5.1") != -1)
+    OSName = "Windows XP";
+  if (window.navigator.userAgent.indexOf("Windows NT 5.0") != -1)
+    OSName = "Windows 2000";
+  if (window.navigator.userAgent.indexOf("Mac") != -1) OSName = "Mac/iOS";
+  if (window.navigator.userAgent.indexOf("X11") != -1) OSName = "UNIX";
+  if (window.navigator.userAgent.indexOf("Linux") != -1) OSName = "Linux";
+
+  console.log(OSName);
+
+  // to detect the browser
+  var browser = (function() {
+    var test = function(regexp) {
+      return regexp.test(window.navigator.userAgent);
+    };
+    switch (true) {
+      case test(/edge/i):
+        return "edge";
+      case test(/opr/i) && (!!window.opr || !!window.opera):
+        return "opera";
+      case test(/chrome/i) && !!window.chrome:
+        return "chrome";
+      case test(/trident/i):
+        return "ie";
+      case test(/firefox/i):
+        return "firefox";
+      case test(/safari/i):
+        return "safari";
+      default:
+        return "other";
+    }
+  })();
+  console.log(browser);
 });

@@ -1538,6 +1538,12 @@ header .navbar .login .login-item .get-started:hover {
 }
 
 @media (max-width: 767px) {
+  .testimonials .testimonials-slider .slider.content-three, .testimonials .testimonials-slider .slider.content-two {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
   .testimonials .testimonials-slider .slider {
     height: 120px;
   }
@@ -2170,7 +2176,7 @@ footer .footer-content .footer-icons li a svg path {
   transition: all 0.3s ease-in-out;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (max-width: 992px) {
   footer .footer-content .footer-icons li a svg {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
@@ -2419,8 +2425,17 @@ footer .copyright .copyright-links li a:hover {
   opacity: 1;
 }
 
-.platforms .platform-content li.active a img, .platforms .platform-content li:hover a img {
-  opacity: 1;
+.platforms .platform-content li.active a svg path, .platforms .platform-content li:hover a svg path {
+  fill: #5B5863;
+}
+
+.platforms .platform-content li.active a .firefox .line, .platforms .platform-content li:hover a .firefox .line {
+  stroke: #5B5863;
+  fill: none;
+}
+
+.platforms .platform-content li.active a .firefox .fox, .platforms .platform-content li:hover a .firefox .fox {
+  fill: #5B5863;
 }
 
 .platforms .platform-content li a {
@@ -2446,10 +2461,7 @@ footer .copyright .copyright-links li a:hover {
   text-align: left;
 }
 
-.platforms .platform-content li img {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  opacity: 0.7;
+.platforms .platform-content li svg path {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -4364,12 +4376,13 @@ header.features-page {
   right: 32px;
 }
 
-.contacting .contacting-item .contacting-item-btn button {
+.contacting .contacting-item .contacting-item-btn a, .contacting .contacting-item .contacting-item-btn button {
   background-color: #f0eee8;
   border: 0;
   font-family: "AvertaSemibold";
   padding: 16px 43px;
   color: #5b5863;
+  display: inline-block;
 }
 
 /* End Contacting */
@@ -5622,13 +5635,14 @@ header.dashboard-page p {
   font-size: 14px;
   line-height: 17px;
   color: #8d8b92;
-  font-family: "AvertaSemibold";
 }
 
 header.dashboard-page p a {
   color: #fd3e72;
   margin-left: 5px;
   text-decoration: underline !important;
+  font-family: "AvertaSemibold";
+  font-size: 16px;
 }
 
 /* Start Dashboard */
@@ -5670,28 +5684,8 @@ header.dashboard-page p a {
   height: 3px;
 }
 
-.dashboard .dashboard-list li.active svg .active-item, .dashboard .dashboard-list li:hover svg .active-item {
-  visibility: visible;
-  opacity: 1;
-}
-
-.dashboard .dashboard-list li.active svg .inactive-item, .dashboard .dashboard-list li:hover svg .inactive-item {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.dashboard .dashboard-list li.active .key1, .dashboard .dashboard-list li:hover .key1 {
-  opacity: 1;
-  visibility: visible;
-}
-
-.dashboard .dashboard-list li.active .key2, .dashboard .dashboard-list li:hover .key2 {
-  opacity: 0;
-  visibility: hidden;
-}
-
 .dashboard .dashboard-list li a {
-  padding: 25px 76px;
+  padding: 25px 71px;
   color: #f9f8f4;
   font-family: "AvertaSemibold";
   display: block;
@@ -5719,40 +5713,8 @@ header.dashboard-page p a {
   transition: all 0.3s ease-in-out;
 }
 
-.dashboard .dashboard-list li a .key1 {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  position: absolute;
-  left: 40px;
-}
-
-.dashboard .dashboard-list li a .key2 {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  position: absolute;
-  left: 35px;
-}
-
 .dashboard .dashboard-list li a svg {
   margin-right: 12px;
-}
-
-.dashboard .dashboard-list li a svg .active-item {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.dashboard .dashboard-list li a svg .inactive-item {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
 /* End Dashboard */
@@ -5794,7 +5756,6 @@ header.dashboard-page p a {
   width: 120px;
   line-height: 20px;
   opacity: 0.7;
-  font-family: "AvertaSemibold";
 }
 
 .download .download-content .item button {
@@ -5861,7 +5822,7 @@ header.dashboard-page p a {
   line-height: 24px;
   text-align: center;
   color: #8d8b92;
-  font-family: "AvertaSemibold";
+  font-family: "Averta";
   border: 1px solid #e3e0d2;
   border-radius: 5px;
   display: inline-block;
@@ -6127,7 +6088,6 @@ header.dashboard-page p a {
 .list-content .content-two table td {
   border-bottom: 1px solid #e0ded5;
   border-top: 0;
-  font-family: "AvertaSemibold";
   font-size: 14px;
   color: #5b5863;
   height: 64px;
@@ -6142,10 +6102,8 @@ header.dashboard-page p a {
 
 .list-content .content-two table thead tr th {
   font-size: 12px;
-  line-height: 12px;
   text-transform: uppercase;
   color: #8d8b92;
-  font-family: "AvertaSemibold";
   border-bottom: 0;
   height: 56px;
   line-height: 56px;
@@ -6161,7 +6119,6 @@ header.dashboard-page p a {
 .list-content .content-two table tbody td[scope="row"] {
   font-size: 14px;
   color: #8d8b92;
-  font-family: "AvertaSemibold";
   padding-left: 32px;
 }
 
@@ -6499,11 +6456,16 @@ header.dashboard-page p a {
   margin-bottom: 0;
 }
 
-.expired-subscription .expiration-msg button {
+.expired-subscription .expiration-msg a {
   position: absolute;
+  display: inline-block;
   top: 35px;
   right: 35px;
   padding: 16px 53px;
+}
+
+.expired-subscription .expiration-msg a:hover {
+  color: #fff;
 }
 
 /* End expired subscription */
@@ -6570,20 +6532,24 @@ header.dashboard-page p a {
   margin-right: 5px;
 }
 
-.list-content .content-one .pricing-tables {
+.list-content.upgrade-plan-page > div {
+  display: none;
+}
+
+.upgrade-plan-content .pricing-tables {
   padding-top: 80px;
   padding-bottom: 60px;
 }
 
-.list-content .content-one .pricing-tables .price-card label {
+.upgrade-plan-content .pricing-tables .price-card label {
   padding-bottom: 0;
 }
 
-.list-content .payment {
+.upgrade-plan-content .payment {
   margin-top: 28px;
 }
 
-.list-content .payment hr {
+.upgrade-plan-content .payment hr {
   height: 1px;
   width: 100%;
   background-color: #E3E0D3;
@@ -6592,52 +6558,52 @@ header.dashboard-page p a {
   border: 0;
 }
 
-.list-content .payment .payment-methods {
+.upgrade-plan-content .payment .payment-methods {
   padding-bottom: 80px;
 }
 
-.list-content .payment .payment-methods h3 {
+.upgrade-plan-content .payment .payment-methods h3 {
   font-size: 24px;
   line-height: 44px;
   padding-top: 16px;
 }
 
-.list-content .payment .payment-methods .card-info {
+.upgrade-plan-content .payment .payment-methods .card-info {
   display: none;
 }
 
-.list-content .payment .payment-methods .credit-payment,
-.list-content .payment .payment-methods .paypal-payment {
+.upgrade-plan-content .payment .payment-methods .credit-payment,
+.upgrade-plan-content .payment .payment-methods .paypal-payment {
   overflow: hidden;
   background-color: #fff;
 }
 
-.list-content .payment .payment-methods .credit-payment .pay-card,
-.list-content .payment .payment-methods .paypal-payment .pay-card {
+.upgrade-plan-content .payment .payment-methods .credit-payment .pay-card,
+.upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card {
   position: relative;
 }
 
-.list-content .payment .payment-methods .credit-payment .pay-card input[type="radio"],
-.list-content .payment .payment-methods .paypal-payment .pay-card input[type="radio"] {
+.upgrade-plan-content .payment .payment-methods .credit-payment .pay-card input[type="radio"],
+.upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card input[type="radio"] {
   display: none;
 }
 
-.list-content .payment .payment-methods .credit-payment .pay-card input[type="radio"]:not(:checked) + label:after,
-.list-content .payment .payment-methods .paypal-payment .pay-card input[type="radio"]:not(:checked) + label:after {
+.upgrade-plan-content .payment .payment-methods .credit-payment .pay-card input[type="radio"]:not(:checked) + label:after,
+.upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card input[type="radio"]:not(:checked) + label:after {
   opacity: 0;
   -webkit-transform: scale(0);
           transform: scale(0);
 }
 
-.list-content .payment .payment-methods .credit-payment .pay-card input[type="radio"]:checked + label:after,
-.list-content .payment .payment-methods .paypal-payment .pay-card input[type="radio"]:checked + label:after {
+.upgrade-plan-content .payment .payment-methods .credit-payment .pay-card input[type="radio"]:checked + label:after,
+.upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card input[type="radio"]:checked + label:after {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.list-content .payment .payment-methods .credit-payment .pay-card .label-radio,
-.list-content .payment .payment-methods .paypal-payment .pay-card .label-radio {
+.upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio,
+.upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio {
   font-size: 18px;
   line-height: 13px;
   text-transform: uppercase;
@@ -6650,8 +6616,8 @@ header.dashboard-page p a {
   line-height: 80px;
 }
 
-.list-content .payment .payment-methods .credit-payment .pay-card .label-radio:before,
-.list-content .payment .payment-methods .paypal-payment .pay-card .label-radio:before {
+.upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio:before,
+.upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio:before {
   content: "";
   position: absolute;
   top: 25px;
@@ -6662,8 +6628,8 @@ header.dashboard-page p a {
   border: 1px solid #adaba5;
 }
 
-.list-content .payment .payment-methods .credit-payment .pay-card .label-radio:after,
-.list-content .payment .payment-methods .paypal-payment .pay-card .label-radio:after {
+.upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio:after,
+.upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio:after {
   content: "";
   position: absolute;
   top: 33px;
@@ -6674,8 +6640,8 @@ header.dashboard-page p a {
   background-color: #fd3e72;
 }
 
-.list-content .payment .payment-methods .credit-payment .pay-card img,
-.list-content .payment .payment-methods .paypal-payment .pay-card img {
+.upgrade-plan-content .payment .payment-methods .credit-payment .pay-card img,
+.upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card img {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -6683,66 +6649,68 @@ header.dashboard-page p a {
   right: 30px;
 }
 
-.list-content .payment .payment-methods .paypal-payment {
+.upgrade-plan-content .payment .payment-methods .paypal-payment {
   margin-top: 12px;
 }
 
-.list-content .payment .payment-methods .order-now button {
+.upgrade-plan-content .payment .payment-methods .order-now button {
   padding: 16px 54px;
   margin-top: 32px;
   margin-bottom: 32px;
 }
 
-.list-content .payment .payment-methods .back {
+.upgrade-plan-content .payment .payment-methods .back {
   font-size: 20px;
   line-height: 25px;
   font-family: "AvertaSemibold";
   color: #fd3e72;
-  background: none;
-  border: 0;
 }
 
-.list-content .payment .plan-details {
+.upgrade-plan-content .payment .payment-methods .back:hover {
+  color: #fd3e72;
+}
+
+.upgrade-plan-content .payment .plan-details {
   background-color: #fff;
 }
 
-.list-content .payment .plan-details h3 {
+.upgrade-plan-content .payment .plan-details h3 {
   font-size: 24px;
   line-height: 44px;
   padding-left: 60px;
   padding-top: 16px;
 }
 
-.list-content .payment .plan-details .line {
+.upgrade-plan-content .payment .plan-details .line {
   margin-bottom: 20px;
 }
 
-.list-content .payment .plan-details .plan-details-content {
+.upgrade-plan-content .payment .plan-details .plan-details-content {
   padding-left: 60px;
   padding-right: 60px;
 }
 
-.list-content .payment .plan-details .plan-details-content li {
+.upgrade-plan-content .payment .plan-details .plan-details-content li {
   padding-top: 6px;
   padding-bottom: 15px;
   color: #8D8B92;
   line-height: 28px;
 }
 
-.list-content .payment .plan-details .plan-details-content li:not(:last-child) {
+.upgrade-plan-content .payment .plan-details .plan-details-content li:not(:last-child) {
   border-bottom: 1px dashed rgba(227, 224, 211, 0.7);
 }
 
-.list-content .payment .plan-details .plan-details-content li span {
+.upgrade-plan-content .payment .plan-details .plan-details-content li span {
   float: right;
   color: #5B5863;
 }
 
-.list-content .payment .plan-details .plan-details-content li .month {
+.upgrade-plan-content .payment .plan-details .plan-details-content li .month {
   color: #fd3e72;
 }
 
-.list-content .payment .plan-details .total {
+.upgrade-plan-content .payment .plan-details .total {
   margin-left: 60px;
   margin-right: 60px;
   padding-top: 26px;
@@ -6750,15 +6718,15 @@ header.dashboard-page p a {
   border-top: 2px solid rgba(227, 224, 211, 0.7);
 }
 
-.list-content .payment .plan-details .total span {
+.upgrade-plan-content .payment .plan-details .total span {
   font-family: "AvertaSemibold";
 }
 
-.list-content .payment .plan-details .total .value {
+.upgrade-plan-content .payment .plan-details .total .value {
   float: right;
 }
 
-.list-content .payment .subscription-period {
+.upgrade-plan-content .payment .subscription-period {
   padding: 28px 60px;
   border: 1px solid #E3E0D3;
   border-radius: 5px;
