@@ -7411,12 +7411,13 @@ header.dashboard-page p a {
   }
 }
 
-.list-content .content-three .back-to-dashboard button {
+.list-content .content-three .back-to-dashboard a {
   padding: 16px 65px;
+  display: inline-block;
 }
 
 @media (max-width: 767px) {
-  .list-content .content-three .back-to-dashboard button {
+  .list-content .content-three .back-to-dashboard a {
     width: 100%;
     display: block;
     padding: 16px 0;
@@ -7424,11 +7425,15 @@ header.dashboard-page p a {
   }
 }
 
-.list-content .content-three .back-to-dashboard button:hover i {
+.list-content .content-three .back-to-dashboard a:hover {
+  color: #fff;
+}
+
+.list-content .content-three .back-to-dashboard a:hover i {
   left: -12px;
 }
 
-.list-content .content-three .back-to-dashboard button i {
+.list-content .content-three .back-to-dashboard a i {
   position: relative;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;

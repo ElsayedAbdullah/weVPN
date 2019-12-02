@@ -5734,8 +5734,9 @@ header.dashboard-page {
         padding: 30px 40px;
       }
 
-      button {
+      a {
         padding: 16px 65px;
+        display: inline-block;
         @media #{$mobile} {
           width: 100%;
           display: block;
@@ -5743,6 +5744,7 @@ header.dashboard-page {
           font-size: 16px;
         }
         &:hover {
+          color: #fff;
           i {
             left: -12px;
           }
