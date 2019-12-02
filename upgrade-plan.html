@@ -87,7 +87,7 @@
     <!-- End Header -->
 
     <!-- Start Dashboard -->
-    <section class="dashboard">
+    <section class="dashboard upgrade-plan-page">
       <div class="container">
         <h2 class="text-center">Edit Subscription “46125487”</h2>
         <ul class="payment-features">
@@ -247,7 +247,7 @@
             <div class="download-content">
               <div class="item">
                 <p>Setup WeVPN for Windows</p>
-                <button>
+                <a href="file.txt" download="Test">
                   <svg
                     width="16"
                     height="16"
@@ -267,7 +267,7 @@
                     <path d="M8.72725 16L16 16V8.72727H8.72725V16Z" fill="white" />
                   </svg>
                   Download for windows
-                </button>
+                </a>
               </div>
               <div class="item">
                 <p>Setup WeVPN for Chrome</p>
@@ -290,7 +290,7 @@
                   <div class="item-heading">
                     <h3>
                       Subscription
-                      <a href="upgrade-plan.html">
+                      <button class="settings">
                         <svg
                           width="16"
                           height="16"
@@ -303,14 +303,13 @@
                             fill="#AFADB2"
                           />
                         </svg>
-                        Settings</a
-                      >
+                        Settings</button>
                     </h3>
                   </div>
                   <ul class="list">
                     <li>
                       <div class="list-item-text">
-                        <p class="label">Subscription Plan:</p>
+                        <label>Subscription Plan:</label>
                         <p>$69.96 billed every 12 months.</p>
                       </div>
                       <a class="button primary--btn" href="upgrade-plan.html">
@@ -319,13 +318,13 @@
                     </li>
                     <li>
                       <div class="list-item-text">
-                        <p class="label">Renewal Date:</p>
+                        <label>Renewal Date:</label>
                         <p>Dec 20, 2019</p>
                       </div>
                     </li>
                     <li>
                       <div class="list-item-text">
-                        <p class="label">Payment Method:</p>
+                        <label>Payment Method:</label>
                         <p><img src="imgs/visa.png" alt="" /> ••••9423</p>
                       </div>
                       <button type="button" class="button edit" data-toggle="modal" data-target="#creditModal">
@@ -350,7 +349,7 @@
                         </div>
                         <div class="modal-body">
                           <div class="row">
-                            <div class="col-6 padd-right">
+                            <div class="col-md-6 padd-right">
                               <div class="form-group">
                                 <label>First Name</label>
                                 <input
@@ -361,7 +360,7 @@
                                 >
                               </div>
                             </div>
-                            <div class="col-6 padd-left">
+                            <div class="col-md-6 padd-left">
                               <div class="form-group">
                                 <label>Last Name</label>
                                 <input
@@ -372,7 +371,7 @@
                                 >
                               </div>
                             </div>
-                            <div class="col-6 padd-right">
+                            <div class="col-md-6 padd-right">
                               <div class="form-group">
                                 <label>Credit Card Number</label>
                                 <input
@@ -383,7 +382,7 @@
                                 >
                               </div>
                             </div>
-                            <div class="col-6 padd-left">
+                            <div class="col-md-6 padd-left">
                               <div class="form-group">
                                 <label>Card Security Code 
                                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -399,7 +398,7 @@
                                 >
                               </div>
                             </div>
-                            <div class="col-4 padd-right">
+                            <div class="col-md-4 padd-right">
                               <div class="form-group">
                                 <label>Expiry Month</label>
                                 <input
@@ -410,7 +409,7 @@
                                 >
                               </div>
                             </div>
-                            <div class="col-4 padd">
+                            <div class="col-md-4 padd">
                               <div class="form-group">
                                 <label>Expiry Year</label>
                                 <input
@@ -421,7 +420,7 @@
                                 >
                               </div>
                             </div>
-                            <div class="col-4 padd-left">
+                            <div class="col-md-4 padd-left">
                               <div class="form-group">
                                 <label>Zip / Postal Code (Optional)</label>
                                 <input
@@ -642,14 +641,14 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="contacting-item">
+                  <div class="contacting-item last">
                     <img class="ticket" src="imgs/event-ticket.svg" alt="" />
                     <div class="contacting-item-info">
                       <p>Ticket support:</p>
                       <h4>Fill our contact form</h4>
                     </div>
                     <div class="contacting-item-btn">
-                      <button>Open a ticket</button>
+                      <a href="contact-us.html">Open a ticket</a>
                     </div>
                   </div>
                 </div>
@@ -677,11 +676,10 @@
           </div>
         </div>
         <!-- End popular Tickests -->
-
       </div>
       <div class="content-two">
         <div class="container">
-          <table class="table">
+          <table class="table d-none d-md-table">
             <thead>
               <tr>
                 <th scope="col">ID</th>
@@ -708,6 +706,34 @@
               </tr>
             </tbody>
           </table>
+          <div class="invoices d-block d-md-none">
+            <div class="cell">
+              <span>Nov 22, 2019</span>
+              <div class="arrow">
+                <span class="one"></span>
+                <span class="two"></span>
+              </div>
+            </div>
+            <div class="toggle">
+              <div class="cell"><p>ID<span class="id">46139288</span></p></div>
+              <div class="cell"><p>Amount<span class="amount">US$69.96</span></p></div>
+              <div class="cell"><p>Subscription<span class="subscription">12 months</span></p></div>
+              <div class="cell"><p>Payment Method<span class="payment"><img src="imgs/visa.png" alt=""> ••••••9423</span></p></div>
+            </div>
+            <div class="cell">
+              <span>Nov 1, 2018</span>
+              <div class="arrow">
+                <span class="one"></span>
+                <span class="two"></span>
+              </div>
+            </div>
+            <div class="toggle">
+              <div class="cell"><p>ID<span>46139288</span></p></div>
+              <div class="cell"><p>Amount<span>US$69.96</span></p></div>
+              <div class="cell"><p>Subscription<span>12 months</span></p></div>
+              <div class="cell"><p>Payment Method<span><img src="imgs/visa.png" alt=""> ••••••9423</span></p></div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="content-three">
@@ -756,7 +782,7 @@
                       <button type="button" class="button edit" data-toggle="modal" data-target="#creditModal00">
                         Edit Credit Card
                       </button>
-                      <a class="link" class="" href="#">
+                      <a class="link" href="upgrade-plan.html">
                         Update Payment Method
                       </a>
                     </li>
@@ -775,7 +801,7 @@
                         </div>
                         <div class="modal-body">
                           <div class="row">
-                            <div class="col-6 padd-right">
+                            <div class="col-md-6 padd-right">
                               <div class="form-group">
                                 <label>First Name</label>
                                 <input
@@ -786,7 +812,7 @@
                                 >
                               </div>
                             </div>
-                            <div class="col-6 padd-left">
+                            <div class="col-md-6 padd-left">
                               <div class="form-group">
                                 <label>Last Name</label>
                                 <input
@@ -797,7 +823,7 @@
                                 >
                               </div>
                             </div>
-                            <div class="col-6 padd-right">
+                            <div class="col-md-6 padd-right">
                               <div class="form-group">
                                 <label>Credit Card Number</label>
                                 <input
@@ -808,7 +834,7 @@
                                 >
                               </div>
                             </div>
-                            <div class="col-6 padd-left">
+                            <div class="col-md-6 padd-left">
                               <div class="form-group">
                                 <label>Card Security Code 
                                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -824,7 +850,7 @@
                                 >
                               </div>
                             </div>
-                            <div class="col-4 padd-right">
+                            <div class="col-md-4 padd-right">
                               <div class="form-group">
                                 <label>Expiry Month</label>
                                 <input
@@ -835,7 +861,7 @@
                                 >
                               </div>
                             </div>
-                            <div class="col-4 padd">
+                            <div class="col-md-4 padd">
                               <div class="form-group">
                                 <label>Expiry Year</label>
                                 <input
@@ -846,7 +872,7 @@
                                 >
                               </div>
                             </div>
-                            <div class="col-4 padd-left">
+                            <div class="col-md-4 padd-left">
                               <div class="form-group">
                                 <label>Zip / Postal Code (Optional)</label>
                                 <input
@@ -944,9 +970,9 @@
                     <div class="check-password">
                       <h4>Use a password you don’t use elsewhere</h4>
                       <ul>
-                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>At least 8 - 20 characters</li>
-                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>Contains at least one number</li>
-                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>Contains at least one symbol</li>
+                        <li id="length" class="invalid"><i class="fa fa-check-circle"></i>At least 8 - 20 characters</li>
+                        <li id="number" class="invalid"><i class="fa fa-check-circle"></i>Contains at least one number</li>
+                        <li id="symbol" class="invalid"><i class="fa fa-check-circle"></i>Contains at least one symbol</li>
                       </ul>
                     </div>
                   </div>
@@ -961,8 +987,8 @@
         <div class="pricing-tables">
           <div class="container">
             <div class="row">
-              <div class="col-md-4">
-                <div class="price-card one text-center">
+              <div class="col-lg-4 col-md-6 order-3 order-lg-1">
+                <div class="price-card one text-md-center">
                   <input type="radio" name="pricing" id="test1" />
                   <label for="test1" class="label-radio">
                     <div class="price-top">
@@ -980,7 +1006,7 @@
                   </label>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 order-1 order-lg-2">
                 <div class="marked m-auto">
                   <h3>
                     <svg
@@ -997,7 +1023,7 @@
                     </svg>
                     Most Popular<span>Save 47%</span>
                   </h3>
-                  <div class="price-card text-center">
+                  <div class="price-card text-md-center">
                     <input type="radio" name="pricing" id="test2" checked />
                     <label for="test2" class="label-radio">
                       <div class="price-top">
@@ -1017,8 +1043,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="price-card three ml-auto text-center">
+              <div class="col-lg-4 col-md-6 order-2 order-lg-3">
+                <div class="price-card three ml-auto text-md-center">
                   <span class="offer">Save 32%</span>
                   <input type="radio" name="pricing" id="test3" />
                   <label for="test3" class="label-radio">
@@ -1054,8 +1080,8 @@
                 <div class="credit-payment">
                   <div class="pay-card">
                     <input type="radio" name="method" id="card" />
-                    <label class="label-radio" for="card">credit card</label>
-                    <img src="imgs/cards.svg" alt="" />
+                    <label class="label-radio" for="card">Credit Card</label>
+                    <img class="cards-img" src="imgs/cards.svg" alt="" />
                   </div>
                 </div>
                 <div
@@ -1065,8 +1091,8 @@
                 <div class="paypal-payment">
                   <div class="pay-card">
                     <input type="radio" name="method" id="paypal" />
-                    <label class="label-radio" for="paypal">paypal</label>
-                    <img src="imgs/paypal.svg" alt="" />
+                    <label class="label-radio" for="paypal">PayPal</label>
+                    <img class="paypal-img" src="imgs/paypal.svg" alt="" />
                   </div>
                 </div>
                 <div class="order-now">
@@ -1075,28 +1101,33 @@
                     <i class="fa fa-caret-right" aria-hidden="true"></i>
                   </button>
                 </div>
-                <a href="dashboard.html" class="back">
-                  <i class="fa fa-caret-left" aria-hidden="true"></i>
-                  Back
-                </a>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="plan-details">
-                <h3>Your selected plan details:</h3>
-                <hr class="line">
-                <ul class="plan-details-content">
-                  <li>Selected Plan <span class="month">12 months</span></li>
-                  <li>Monthly Price <span>$5.83</span></li>
-                  <li>Months in package <span>12 months</span></li>
-                </ul>
-                <div class="total">
-                  <span>ORDER TOTAL</span> <span class="value">US$ 69.96</span>
+                <div class="back-btn">
+                  <a href="dashboard.html" class="back">
+                    <i class="fa fa-caret-left" aria-hidden="true"></i>
+                    Back
+                  </a>
                 </div>
               </div>
-              <div class="subscription-period">
-                After payment, your subscription will expire on Nov 22, 2021.
+            </div>
+            <div class="col-md-6 plan-details-col">
+              <div class="plan-details">
+                <div class="plan-details-content">
+                  <h3>Your selected plan details:</h3>
+                  <hr class="line">
+                  <ul class="plan-details-list">
+                    <li>Selected Plan <span class="month">12 months</span></li>
+                    <li>Monthly Price <span>$5.83</span></li>
+                    <li>Months in package <span>12 months</span></li>
+                  </ul>
+                  <div class="total">
+                    <span>ORDER TOTAL</span> <span class="value">US$ 69.96</span>
+                  </div>
+                </div>
+                <div class="subscription-period">
+                  After payment, your subscription will expire on Nov 22, 2021.
+                </div>
               </div>
+              
             </div>
           </div>
          </div>

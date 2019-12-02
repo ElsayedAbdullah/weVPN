@@ -284,9 +284,11 @@ header .navbar .login .login-item .get-started:hover {
 }
 
 .navbar-light .navbar-toggler {
-  padding: 6px 11px;
+  padding: 4px 11px 8px;
   border-radius: 0;
   border: 1px solid #e1e0de;
+  width: 36px;
+  height: 36px;
 }
 
 .navbar-light .navbar-toggler img:last-child {
@@ -2076,6 +2078,7 @@ header .navbar .login .login-item .get-started:hover {
 footer {
   background-color: #fff;
   padding-top: 100px;
+  border-top: 1px solid #E8E4DB;
 }
 
 @media (max-width: 992px) {
@@ -2426,16 +2429,16 @@ footer .copyright .copyright-links li a:hover {
 }
 
 .platforms .platform-content li.active a svg path, .platforms .platform-content li:hover a svg path {
-  fill: #5B5863;
+  fill: #5b5863;
 }
 
 .platforms .platform-content li.active a .firefox .line, .platforms .platform-content li:hover a .firefox .line {
-  stroke: #5B5863;
+  stroke: #5b5863;
   fill: none;
 }
 
 .platforms .platform-content li.active a .firefox .fox, .platforms .platform-content li:hover a .firefox .fox {
-  fill: #5B5863;
+  fill: #5b5863;
 }
 
 .platforms .platform-content li a {
@@ -3899,6 +3902,18 @@ ol {
   width: 366px;
 }
 
+@media (max-width: 992px) {
+  .pricing-tables .marked {
+    width: auto;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .pricing-tables .marked {
+    width: auto;
+  }
+}
+
 .pricing-tables .marked h3 {
   font-size: 20px;
   line-height: 20px;
@@ -3907,6 +3922,21 @@ ol {
   padding: 20px 0 20px 12px;
   margin: 0;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .pricing-tables .marked h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .pricing-tables .marked h3 {
+    font-size: 18px;
+    line-height: 20px;
+    padding-left: 6px;
+  }
 }
 
 .pricing-tables .marked h3 svg {
@@ -3924,13 +3954,43 @@ ol {
   right: 0;
 }
 
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .pricing-tables .marked h3 span {
+    padding: 12px;
+  }
+}
+
 .pricing-tables .price-card {
   background-color: #fff;
   width: 350px;
 }
 
+@media (max-width: 992px) {
+  .pricing-tables .price-card {
+    width: auto;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .pricing-tables .price-card {
+    width: auto;
+  }
+}
+
 .pricing-tables .price-card.one, .pricing-tables .price-card.three {
   margin-top: 34px;
+}
+
+@media (max-width: 767px) {
+  .pricing-tables .price-card.one, .pricing-tables .price-card.three {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .pricing-tables .price-card.one, .pricing-tables .price-card.three {
+    margin-top: 30px;
+  }
 }
 
 .pricing-tables .price-card.three {
@@ -3978,6 +4038,24 @@ ol {
   padding: 44px;
 }
 
+@media (max-width: 767px) {
+  .pricing-tables .price-card .label-radio {
+    padding: 24px 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .pricing-tables .price-card .label-radio {
+    padding: 35px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .pricing-tables .price-card .label-radio {
+    padding: 24px 16px;
+  }
+}
+
 .pricing-tables .price-card .label-radio:before {
   content: "";
   position: absolute;
@@ -3993,6 +4071,13 @@ ol {
   transition: all 0.4s ease-in-out;
 }
 
+@media (max-width: 767px) {
+  .pricing-tables .price-card .label-radio:before {
+    top: 24px;
+    left: 16px;
+  }
+}
+
 .pricing-tables .price-card .label-radio:after {
   content: "\f00c";
   position: absolute;
@@ -4003,9 +4088,29 @@ ol {
   font-family: "fontawesome";
 }
 
+@media (max-width: 767px) {
+  .pricing-tables .price-card .label-radio:after {
+    top: 35px;
+    left: 32px;
+  }
+}
+
 .pricing-tables .price-card .label-radio .price-top {
   padding-bottom: 45px;
   border-bottom: 1px solid #ebe8df;
+}
+
+@media (max-width: 767px) {
+  .pricing-tables .price-card .label-radio .price-top {
+    padding-left: 60px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .pricing-tables .price-card .label-radio .price-top {
+    padding-bottom: 20px;
+  }
 }
 
 .pricing-tables .price-card .label-radio .price-top .month {
@@ -4017,15 +4122,44 @@ ol {
   margin-top: 65px;
 }
 
+@media (max-width: 767px) {
+  .pricing-tables .price-card .label-radio .price-top .month {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+
 .pricing-tables .price-card .label-radio .price-top p {
   position: relative;
   display: inline-block;
+}
+
+@media (max-width: 767px) {
+  .pricing-tables .price-card .label-radio .price-top p {
+    margin-left: 35px;
+    margin-bottom: 0;
+  }
 }
 
 .pricing-tables .price-card .label-radio .price-top p .value {
   font-size: 64px;
   line-height: 56px;
   font-family: "AvertaBold";
+}
+
+@media (max-width: 767px) {
+  .pricing-tables .price-card .label-radio .price-top p .value {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .pricing-tables .price-card .label-radio .price-top p .value {
+    font-size: 50px;
+    line-height: 50px;
+  }
 }
 
 .pricing-tables .price-card .label-radio .price-top p .usd {
@@ -4038,6 +4172,12 @@ ol {
   font-family: "AvertaSemibold";
 }
 
+@media (max-width: 767px) {
+  .pricing-tables .price-card .label-radio .price-top p .usd {
+    font-size: 14px;
+  }
+}
+
 .pricing-tables .price-card .label-radio .price-top p .mo {
   position: absolute;
   bottom: 5px;
@@ -4047,8 +4187,20 @@ ol {
   font-family: "Averta";
 }
 
+@media (max-width: 767px) {
+  .pricing-tables .price-card .label-radio .price-top p .mo {
+    font-size: 14px;
+  }
+}
+
 .pricing-tables .price-card .label-radio .price-bottom {
   padding-top: 40px;
+}
+
+@media (max-width: 992px) {
+  .pricing-tables .price-card .label-radio .price-bottom {
+    padding-top: 20px;
+  }
 }
 
 .pricing-tables .price-card .label-radio .price-bottom .deleted {
@@ -4071,6 +4223,12 @@ ol {
   line-height: 28px;
   color: #8d8b92;
   margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .pricing-tables .price-card .label-radio .price-bottom p {
+    margin-bottom: 0;
+  }
 }
 
 .pricing-tables .price-card .label-radio .price-bottom button {
@@ -4311,6 +4469,14 @@ header.features-page {
   top: -10px;
 }
 
+@media (max-width: 767px) {
+  .popular-tickets h2 {
+    font-size: 16px;
+    background-color: #fff;
+    width: 195px;
+  }
+}
+
 .popular-tickets .popular-tickets-list {
   margin-top: 30px;
   margin-bottom: 70px;
@@ -4319,11 +4485,38 @@ header.features-page {
   margin-left: 50px;
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .popular-tickets .popular-tickets-list {
+    padding: 0 30px;
+    margin-left: 90px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .popular-tickets .popular-tickets-list {
+    margin-top: 20px;
+    padding: 0;
+  }
+}
+
 .popular-tickets .popular-tickets-list li {
   width: 33.3%;
   float: left;
   font-size: 14px;
   line-height: 32px;
+}
+
+@media (max-width: 767px) {
+  .popular-tickets .popular-tickets-list li {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .popular-tickets .popular-tickets-list li {
+    width: 50%;
+  }
 }
 
 .popular-tickets .popular-tickets-list li a {
@@ -4349,6 +4542,23 @@ header.features-page {
   padding-bottom: 29px;
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .contacting .contacting-item {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacting .contacting-item {
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .contacting .contacting-item.last {
+    margin-top: 10px;
+  }
+}
+
 .contacting .contacting-item img {
   position: absolute;
   top: 29px;
@@ -4359,15 +4569,76 @@ header.features-page {
   margin-top: 10px;
 }
 
+@media (max-width: 767px) {
+  .contacting .contacting-item img {
+    -webkit-transform: scale(0.55);
+            transform: scale(0.55);
+    top: 12px;
+    left: 68px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .contacting .contacting-item img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .contacting .contacting-item img.ticket {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacting .contacting-item .contacting-item-info {
+    padding: 25px 70px 25px 127px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .contacting .contacting-item .contacting-item-info {
+    padding-left: 100px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+  }
+}
+
 .contacting .contacting-item .contacting-item-info p {
   font-size: 16px;
   line-height: 20px;
   color: #8d8b92;
 }
 
+@media (max-width: 767px) {
+  .contacting .contacting-item .contacting-item-info p {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .contacting .contacting-item .contacting-item-info p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+
 .contacting .contacting-item .contacting-item-info h4 {
   font-size: 20px;
   line-height: 20px;
+}
+
+@media (max-width: 767px) {
+  .contacting .contacting-item .contacting-item-info h4 {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .contacting .contacting-item .contacting-item-info h4 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
 }
 
 .contacting .contacting-item .contacting-item-btn {
@@ -4376,13 +4647,34 @@ header.features-page {
   right: 32px;
 }
 
-.contacting .contacting-item .contacting-item-btn a, .contacting .contacting-item .contacting-item-btn button {
+@media (max-width: 992px) {
+  .contacting .contacting-item .contacting-item-btn {
+    position: static;
+  }
+}
+
+.contacting .contacting-item .contacting-item-btn a {
   background-color: #f0eee8;
   border: 0;
   font-family: "AvertaSemibold";
   padding: 16px 43px;
   color: #5b5863;
   display: inline-block;
+}
+
+@media (max-width: 992px) {
+  .contacting .contacting-item .contacting-item-btn a {
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .contacting .contacting-item .contacting-item-btn a {
+    font-size: 16px;
+  }
 }
 
 /* End Contacting */
@@ -5627,8 +5919,21 @@ body.servers-page {
 }
 
 /* End Servers Benefits */
+@media (max-width: 992px) {
+  header.dashboard-page {
+    height: 76px;
+  }
+}
+
 header.dashboard-page .navbar {
   padding-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  header.dashboard-page .get-started-login {
+    padding-left: 25px;
+    padding-top: 10px;
+  }
 }
 
 header.dashboard-page p {
@@ -5652,10 +5957,36 @@ header.dashboard-page p a {
   padding-top: 55px;
 }
 
+@media (max-width: 767px) {
+  .dashboard {
+    padding-top: 24px;
+  }
+  .dashboard .container {
+    padding: 0;
+  }
+}
+
 .dashboard h2 {
   font-size: 56px;
   line-height: 56px;
   padding-bottom: 60px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .dashboard h2 {
+    font-size: 28px;
+    line-height: 32px;
+    padding-bottom: 28px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .dashboard h2 {
+    font-size: 46px;
+    line-height: 46px;
+    padding-bottom: 45px;
+  }
 }
 
 .dashboard .dashboard-list {
@@ -5666,6 +5997,13 @@ header.dashboard-page p a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-top: 1px solid rgba(249, 248, 244, 0.2);
+}
+
+@media (max-width: 767px) {
+  .dashboard .dashboard-list {
+    overflow-x: auto;
+    display: -webkit-box;
+  }
 }
 
 .dashboard .dashboard-list li {
@@ -5684,12 +6022,45 @@ header.dashboard-page p a {
   height: 3px;
 }
 
+.dashboard .dashboard-list li.active svg .active-item {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dashboard .dashboard-list li.active svg .inactive-item {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .dashboard .dashboard-list li a {
   padding: 25px 71px;
   color: #f9f8f4;
   font-family: "AvertaSemibold";
   display: block;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .dashboard .dashboard-list li a {
+    padding: 15px 20px 12px;
+    font-family: "Averta";
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .dashboard .dashboard-list li a {
+    padding: 17px;
+    font-family: "Averta";
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .dashboard .dashboard-list li a {
+    padding: 20px 42px;
+    font-family: "Averta";
+    font-size: 16px;
+  }
 }
 
 .dashboard .dashboard-list li a:hover:before {
@@ -5704,7 +6075,7 @@ header.dashboard-page p a {
   width: 100%;
   height: 0;
   position: absolute;
-  top: -3px;
+  top: 0;
   left: 0;
   background-color: #fff;
   visibility: hidden;
@@ -5717,11 +6088,44 @@ header.dashboard-page p a {
   margin-right: 12px;
 }
 
+@media (max-width: 767px) {
+  .dashboard .dashboard-list li a svg {
+    margin-right: 4px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .dashboard .dashboard-list li a svg {
+    margin-right: 0;
+  }
+}
+
+.dashboard .dashboard-list li a svg .active-item {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard .dashboard-list li a svg .inactive-item {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 /* End Dashboard */
 /* Start Download */
 .download {
   margin-top: 60px;
   margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .download {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .download .download-content {
@@ -5746,8 +6150,25 @@ header.dashboard-page p a {
           align-items: center;
 }
 
+@media (max-width: 767px) {
+  .download .download-content .item {
+    width: 100%;
+    float: none;
+    display: block;
+    padding: 20px 24px 24px;
+    height: auto;
+  }
+}
+
 .download .download-content .item:first-child {
   border-right: 1px solid #ebe8df;
+}
+
+@media (max-width: 767px) {
+  .download .download-content .item:first-child {
+    border-bottom: 1px solid #ebe8df;
+    border-right: 0;
+  }
 }
 
 .download .download-content .item p {
@@ -5758,7 +6179,18 @@ header.dashboard-page p a {
   opacity: 0.7;
 }
 
-.download .download-content .item a, .download .download-content .item button {
+@media (max-width: 767px) {
+  .download .download-content .item p {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+}
+
+.download .download-content .item a,
+.download .download-content .item button {
   color: #ffffff;
   font-family: "AvertaSemibold";
   display: inline-block;
@@ -5766,19 +6198,39 @@ header.dashboard-page p a {
   padding: 20px 46px;
 }
 
-.download .download-content .item a svg, .download .download-content .item button svg {
+@media (max-width: 767px) {
+  .download .download-content .item a,
+  .download .download-content .item button {
+    display: block;
+    padding: 14px 42px;
+    font-family: "Averta";
+    width: 100%;
+  }
+}
+
+.download .download-content .item a svg,
+.download .download-content .item button svg {
   margin-right: 5px;
   position: relative;
   top: -2px;
 }
 
-.download .download-content .item a.web-store, .download .download-content .item button.web-store {
+.download .download-content .item a.web-store,
+.download .download-content .item button.web-store {
   border: 1px solid #e3e0d3;
   background: none;
   color: #5b5863;
 }
 
-.download .download-content .item a.web-store img, .download .download-content .item button.web-store img {
+@media (max-width: 767px) {
+  .download .download-content .item a.web-store,
+  .download .download-content .item button.web-store {
+    padding: 12px 42px;
+  }
+}
+
+.download .download-content .item a.web-store img,
+.download .download-content .item button.web-store img {
   position: relative;
   top: -2px;
   left: -5px;
@@ -5790,12 +6242,30 @@ header.dashboard-page p a {
   padding-bottom: 60px;
 }
 
+@media (max-width: 767px) {
+  .subscribe {
+    padding-bottom: 20px;
+  }
+}
+
 .subscribe .padd-right {
   padding-right: 20px;
 }
 
+@media (max-width: 767px) {
+  .subscribe .padd-right {
+    padding-right: 15px;
+  }
+}
+
 .subscribe .padd-left {
   padding-left: 20px;
+}
+
+@media (max-width: 767px) {
+  .subscribe .padd-left {
+    padding-left: 15px;
+  }
 }
 
 .subscribe .left-column,
@@ -5816,6 +6286,15 @@ header.dashboard-page p a {
   margin-bottom: 0;
 }
 
+@media (max-width: 767px) {
+  .subscribe .left-column .item-heading h3,
+  .subscribe .right-column .item-heading h3 {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 19px 13px;
+  }
+}
+
 .subscribe .left-column .item-heading h3 .settings,
 .subscribe .right-column .item-heading h3 .settings {
   font-size: 12px;
@@ -5833,10 +6312,30 @@ header.dashboard-page p a {
   background: none;
 }
 
+@media (max-width: 767px) {
+  .subscribe .left-column .item-heading h3 .settings,
+  .subscribe .right-column .item-heading h3 .settings {
+    right: 13px;
+    top: 12px;
+    padding: 3px 7px;
+  }
+  .subscribe .left-column .item-heading h3 .settings:not(svg),
+  .subscribe .right-column .item-heading h3 .settings:not(svg) {
+    font-size: 0;
+  }
+}
+
 .subscribe .left-column .list,
 .subscribe .right-column .list {
   padding-left: 40px;
   padding-right: 50px;
+}
+
+@media (max-width: 767px) {
+  .subscribe .left-column .list,
+  .subscribe .right-column .list {
+    padding: 0 13px;
+  }
 }
 
 .subscribe .left-column .list li,
@@ -5846,9 +6345,32 @@ header.dashboard-page p a {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .subscribe .left-column .list li,
+  .subscribe .right-column .list li {
+    padding: 12px 0;
+  }
+}
+
 .subscribe .left-column .list li:not(:last-child),
 .subscribe .right-column .list li:not(:last-child) {
-  border-bottom: 1px dashed #e3e0d3;
+  border-bottom: 1px dashed rgba(227, 224, 211, 0.7);
+}
+
+.subscribe .left-column .list li .list-item-text label,
+.subscribe .right-column .list li .list-item-text label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8d8b92;
+  font-family: "Averta";
+  margin-bottom: 2px;
+}
+
+@media (max-width: 767px) {
+  .subscribe .left-column .list li .list-item-text label,
+  .subscribe .right-column .list li .list-item-text label {
+    font-size: 12px;
+  }
 }
 
 .subscribe .left-column .list li .list-item-text p,
@@ -5860,12 +6382,11 @@ header.dashboard-page p a {
   margin-bottom: 5px;
 }
 
-.subscribe .left-column .list li .list-item-text p.label,
-.subscribe .right-column .list li .list-item-text p.label {
-  font-size: 14px;
-  line-height: 20px;
-  color: #8d8b92;
-  font-family: "Averta";
+@media (max-width: 767px) {
+  .subscribe .left-column .list li .list-item-text p,
+  .subscribe .right-column .list li .list-item-text p {
+    font-size: 14px;
+  }
 }
 
 .subscribe .left-column .list li .button,
@@ -5875,8 +6396,15 @@ header.dashboard-page p a {
   right: 0;
   font-size: 14px;
   line-height: 40px;
-  padding: 0px 13px;
+  padding: 0px 16px;
   display: inline-block;
+}
+
+@media (max-width: 767px) {
+  .subscribe .left-column .list li .button,
+  .subscribe .right-column .list li .button {
+    top: 12px;
+  }
 }
 
 .subscribe .left-column .list li .button:hover,
@@ -5889,7 +6417,7 @@ header.dashboard-page p a {
   background: #ffecf1;
   color: #fd3e72;
   font-family: "AvertaSemibold";
-  padding: 0px 15px;
+  padding: 0px 16px;
   border: 0;
 }
 
@@ -5904,6 +6432,20 @@ header.dashboard-page p a {
   display: inline-block;
 }
 
+@media (max-width: 767px) {
+  .subscribe .left-column .list li .link,
+  .subscribe .right-column .list li .link {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .subscribe .right-column {
+    margin-top: 12px;
+  }
+}
+
 .subscribe .right-column .list li {
   position: relative;
   padding-left: 50px;
@@ -5913,7 +6455,7 @@ header.dashboard-page p a {
 }
 
 .subscribe .right-column .list li:not(:last-child) {
-  border-bottom: 1px dashed #e3e0d3;
+  border-bottom: 1px dashed rgba(227, 224, 211, 0.7);
 }
 
 .subscribe .right-column .list li p {
@@ -5945,9 +6487,22 @@ header.dashboard-page p a {
   right: 0;
 }
 
+@media (max-width: 767px) {
+  .subscribe .right-column .list li .download {
+    top: 0;
+  }
+}
+
 .modal-dialog {
   max-width: 840px;
   margin-top: 174px;
+}
+
+@media (max-width: 767px) {
+  .modal-dialog {
+    width: auto;
+    margin: 20px;
+  }
 }
 
 .modal-dialog .padd {
@@ -5955,17 +6510,42 @@ header.dashboard-page p a {
   padding-left: 10px;
 }
 
+@media (max-width: 767px) {
+  .modal-dialog .padd {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
 .modal-dialog .padd-right {
   padding-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .modal-dialog .padd-right {
+    padding-right: 15px;
+  }
 }
 
 .modal-dialog .padd-left {
   padding-left: 10px;
 }
 
+@media (max-width: 767px) {
+  .modal-dialog .padd-left {
+    padding-left: 15px;
+  }
+}
+
 .modal-dialog .modal-content {
   padding: 60px 25px 45px;
   border-radius: 0;
+}
+
+@media (max-width: 767px) {
+  .modal-dialog .modal-content {
+    padding: 24px 10px;
+  }
 }
 
 .modal-dialog .modal-content .creditModal-header {
@@ -5976,6 +6556,14 @@ header.dashboard-page p a {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 45px;
+}
+
+@media (max-width: 767px) {
+  .modal-dialog .modal-content .creditModal-header h5 {
+    margin-bottom: 24px;
+    text-align: left !important;
+    padding-left: 15px;
+  }
 }
 
 .modal-dialog .modal-content .creditModal-header .close {
@@ -5991,6 +6579,19 @@ header.dashboard-page p a {
   right: 15px;
 }
 
+@media (max-width: 767px) {
+  .modal-dialog .modal-content .creditModal-header .close {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-dialog .modal-body {
+    padding: 0 14px;
+  }
+}
+
 .modal-dialog .modal-body .form-group {
   border: 1px solid #e0ded5;
   padding: 16px 30px;
@@ -5998,11 +6599,24 @@ header.dashboard-page p a {
   padding: 12px 30px 18px;
 }
 
+@media (max-width: 767px) {
+  .modal-dialog .modal-body .form-group {
+    margin-bottom: 8px;
+    padding: 7px 16px;
+  }
+}
+
 .modal-dialog .modal-body .form-group label {
   font-size: 12px;
   line-height: 20px;
   font-family: "AvertaSemibold";
   margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .modal-dialog .modal-body .form-group label {
+    font-family: "Averta";
+  }
 }
 
 .modal-dialog .modal-body .form-group label svg {
@@ -6018,6 +6632,13 @@ header.dashboard-page p a {
           box-shadow: none;
   outline: none;
   color: #5b5863;
+}
+
+@media (max-width: 767px) {
+  .modal-dialog .modal-body .form-group input {
+    line-height: 20px;
+    font-size: 14px;
+  }
 }
 
 .modal-dialog .modal-body .form-group input::-webkit-input-placeholder {
@@ -6048,6 +6669,17 @@ header.dashboard-page p a {
   color: #fcf9f2;
 }
 
+@media (max-width: 767px) {
+  .modal-dialog .modal-body .save {
+    line-height: 20px;
+    font-size: 16px;
+    margin-top: 0;
+    display: block;
+    width: 100%;
+    padding: 18px 0;
+  }
+}
+
 /* End Subscribe */
 .modal-backdrop.show {
   opacity: 0.7;
@@ -6062,22 +6694,48 @@ header.dashboard-page p a {
   padding-bottom: 0;
 }
 
+@media (max-width: 767px) {
+  .contacting.dashboard-page {
+    padding-top: 20px;
+  }
+}
+
 .contacting.dashboard-page .contacting-content {
   border-bottom: 1px solid #ebe8df;
   padding-bottom: 60px;
 }
 
+@media (max-width: 767px) {
+  .contacting.dashboard-page .contacting-content {
+    padding-bottom: 37px;
+  }
+}
+
 .popular-tickets.dashboard-page {
   background-color: #fff;
-  border-bottom: 1px solid #ebe8df;
+  border-bottom: 1px solid #E8E4DB;
 }
 
 .popular-tickets.dashboard-page .popular-tickets-list {
   margin-bottom: 50px;
 }
 
+@media (max-width: 767px) {
+  .popular-tickets.dashboard-page .popular-tickets-list {
+    margin-bottom: 40px;
+  }
+}
+
 .list-content > div:not(:first-child) {
   display: none;
+}
+
+@media (max-width: 767px) {
+  .list-content .content-two {
+    background-color: #f1f1ed;
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
 }
 
 .list-content .content-two table {
@@ -6127,6 +6785,106 @@ header.dashboard-page p a {
   color: #fd3e72;
 }
 
+.list-content .content-two .invoices > .cell {
+  background-color: #fff;
+  position: relative;
+  padding: 0 28px;
+  border-bottom: 1px solid #e0ded5;
+  height: 64px;
+  line-height: 64px;
+}
+
+.list-content .content-two .invoices > .cell > span {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "AvertaSemibold";
+  color: #fd3e72;
+}
+
+.list-content .content-two .invoices > .cell.active .arrow span {
+  background-color: #5b5863;
+}
+
+.list-content .content-two .invoices > .cell.active .arrow .one {
+  -webkit-transform: rotate(-45deg) translate(-3px, 7px);
+          transform: rotate(-45deg) translate(-3px, 7px);
+}
+
+.list-content .content-two .invoices > .cell.active .arrow .two {
+  -webkit-transform: rotate(45deg) translate(0px, 10px);
+          transform: rotate(45deg) translate(0px, 10px);
+}
+
+.list-content .content-two .invoices > .cell .arrow {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+}
+
+.list-content .content-two .invoices > .cell .arrow span {
+  width: 8px;
+  height: 2px;
+  background-color: #acaaae;
+  display: inline-block;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.list-content .content-two .invoices > .cell .arrow .one {
+  -webkit-transform: rotate(45deg) translate(4px, 2px);
+          transform: rotate(45deg) translate(4px, 2px);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.list-content .content-two .invoices > .cell .arrow .two {
+  -webkit-transform: rotate(-45deg) translate(-8px, -2px);
+          transform: rotate(-45deg) translate(-8px, -2px);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.list-content .content-two .invoices .toggle {
+  display: none;
+}
+
+.list-content .content-two .invoices .toggle .cell {
+  padding: 0 28px;
+  height: 54px;
+  line-height: 54px;
+  border-bottom: 1px solid #ebeae5;
+  background-color: #fbfaf9;
+}
+
+.list-content .content-two .invoices .toggle .cell:last-child {
+  border-bottom: 1px solid #e0ded5;
+}
+
+.list-content .content-two .invoices .toggle .cell p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #8d8b92;
+}
+
+.list-content .content-two .invoices .toggle .cell p span {
+  float: right;
+}
+
+.list-content .content-two .invoices .toggle .cell p span.payment {
+  color: #5a5761;
+}
+
+.list-content .content-two .invoices .toggle .cell p span.amount, .list-content .content-two .invoices .toggle .cell p span.subscription {
+  font-size: 14px;
+  color: #5b5863;
+}
+
+@media (max-width: 767px) {
+  .list-content .content-three {
+    background: rgba(241, 241, 237, 0.3);
+  }
+}
+
 .list-content .content-three .subscription-settings {
   margin-top: 80px;
   margin-bottom: 200px;
@@ -6134,9 +6892,22 @@ header.dashboard-page p a {
           box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
 }
 
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+
 .list-content .content-three .subscription-settings .subscription-content {
   background-color: #fff;
   padding: 50px 60px 0;
+}
+
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings .subscription-content {
+    padding: 19px 13px;
+  }
 }
 
 .list-content .content-three .subscription-settings h3 {
@@ -6149,14 +6920,35 @@ header.dashboard-page p a {
   padding-bottom: 15px;
 }
 
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings h3 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding-bottom: 19px;
+  }
+}
+
 .list-content .content-three .subscription-settings .list {
   margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings .list {
+    margin-top: 0;
+  }
 }
 
 .list-content .content-three .subscription-settings .list li {
   padding-top: 25px;
   padding-bottom: 25px;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings .list li {
+    padding: 20px 0;
+  }
 }
 
 .list-content .content-three .subscription-settings .list li:not(:last-child) {
@@ -6171,6 +6963,13 @@ header.dashboard-page p a {
   margin-bottom: 5px;
 }
 
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings .list li .list-item-text p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+
 .list-content .content-three .subscription-settings .list li .list-item-text p.label {
   font-size: 14px;
   line-height: 20px;
@@ -6178,13 +6977,25 @@ header.dashboard-page p a {
   font-family: "Averta";
 }
 
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings .list li .list-item-text p.label {
+    font-size: 12px;
+  }
+}
+
 .list-content .content-three .subscription-settings .list li .list-item-text span {
   background-color: rgba(98, 213, 180, 0.3);
   border-radius: 5px;
-  color: #62d5b4;
+  color: #08ae7e;
   padding: 4px 11px;
   display: inline-block;
   margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings .list li .list-item-text span {
+    font-size: 14px;
+  }
 }
 
 .list-content .content-three .subscription-settings .list li .list-item-text .menu-btn {
@@ -6202,9 +7013,18 @@ header.dashboard-page p a {
   transition: all 0.3s ease-in-out;
 }
 
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings .list li .list-item-text .menu-btn {
+    top: 47px;
+    border: 0;
+    background: none;
+  }
+}
+
 .list-content .content-three .subscription-settings .list li .list-item-text .menu-btn svg path {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  fill: #b7b5ba;
 }
 
 .list-content .content-three .subscription-settings .list li .list-item-text .menu-btn:hover {
@@ -6212,7 +7032,7 @@ header.dashboard-page p a {
 }
 
 .list-content .content-three .subscription-settings .list li .list-item-text .menu-btn:hover svg path {
-  fill: #acaaae;
+  fill: #b7b5ba;
 }
 
 .list-content .content-three .subscription-settings .list li .cancel {
@@ -6233,6 +7053,15 @@ header.dashboard-page p a {
   border: 0;
 }
 
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings .list li .cancel {
+    font-size: 12px;
+    padding: 12px;
+    right: 10px;
+    z-index: 2;
+  }
+}
+
 .list-content .content-three .subscription-settings .list li .button {
   position: absolute;
   top: 40px;
@@ -6241,6 +7070,12 @@ header.dashboard-page p a {
   line-height: 40px;
   padding: 0px 13px;
   display: inline-block;
+}
+
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings .list li .button {
+    top: 20px;
+  }
 }
 
 .list-content .content-three .subscription-settings .list li .button:hover {
@@ -6265,12 +7100,31 @@ header.dashboard-page p a {
   display: inline-block;
 }
 
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings .list li .link {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
 .list-content .content-three .subscription-settings #cancelrenewal .modal-dialog {
   width: 700px;
 }
 
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings #cancelrenewal .modal-dialog {
+    width: auto;
+  }
+}
+
 .list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .modal-content {
   padding: 0;
+}
+
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .modal-content {
+    text-align: center;
+  }
 }
 
 .list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .creditModal-header h5 {
@@ -6283,9 +7137,32 @@ header.dashboard-page p a {
   padding-left: 40px;
 }
 
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .creditModal-header h5 {
+    text-align: center !important;
+    padding-left: 0;
+    padding-top: 95px;
+    font-size: 18px;
+    line-height: 18px;
+    width: 80%;
+    padding-bottom: 25px;
+    margin: auto;
+  }
+}
+
 .list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .creditModal-header .close {
   top: 60px;
   right: 40px;
+}
+
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .creditModal-header .close {
+    top: 30px;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 .list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .modal-body {
@@ -6296,6 +7173,12 @@ header.dashboard-page p a {
   border-top: 1px solid #e3e0d3;
 }
 
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .modal-body {
+    padding: 23px 0 66px;
+  }
+}
+
 .list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .modal-body p {
   font-size: 18px;
   line-height: 28px;
@@ -6303,11 +7186,30 @@ header.dashboard-page p a {
   margin-bottom: 0;
 }
 
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .modal-body p {
+    font-size: 14px;
+    line-height: 24px;
+    width: 80%;
+    margin: auto;
+  }
+}
+
 .list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .cancel-btns .confirm-cancellation,
 .list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .cancel-btns .keep-automatic-renewal {
   width: 50%;
   padding: 20px;
   float: left;
+}
+
+@media (max-width: 767px) {
+  .list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .cancel-btns .confirm-cancellation,
+  .list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .cancel-btns .keep-automatic-renewal {
+    width: 100%;
+    display: block;
+    float: none;
+    font-size: 16px;
+  }
 }
 
 .list-content .content-three .subscription-settings #cancelrenewal .modal-dialog .cancel-btns .keep-automatic-renewal {
@@ -6321,8 +7223,23 @@ header.dashboard-page p a {
   text-align: right;
 }
 
+@media (max-width: 767px) {
+  .list-content .content-three .back-to-dashboard {
+    padding: 10px;
+  }
+}
+
 .list-content .content-three .back-to-dashboard button {
   padding: 16px 65px;
+}
+
+@media (max-width: 767px) {
+  .list-content .content-three .back-to-dashboard button {
+    width: 100%;
+    display: block;
+    padding: 16px 0;
+    font-size: 16px;
+  }
 }
 
 .list-content .content-three .back-to-dashboard button:hover i {
@@ -6345,15 +7262,36 @@ header.dashboard-page p a {
   margin-bottom: 140px;
 }
 
+@media (max-width: 767px) {
+  .list-content .content-four .change-password {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+
 .list-content .content-four .change-password-content {
   padding: 60px;
   border-right: 1px solid #e3e0d3;
+}
+
+@media (max-width: 767px) {
+  .list-content .content-four .change-password-content {
+    padding: 24px;
+  }
 }
 
 .list-content .content-four .change-password-content form .form-group {
   border: 1px solid #e0ded5;
   padding: 16px 30px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .list-content .content-four .change-password-content form .form-group {
+    padding: 5px 16px;
+    height: 60px;
+    margin-bottom: 8px;
+  }
 }
 
 .list-content .content-four .change-password-content form .form-group label {
@@ -6372,6 +7310,12 @@ header.dashboard-page p a {
   padding: 0;
   height: auto;
   color: #5b5863;
+}
+
+@media (max-width: 767px) {
+  .list-content .content-four .change-password-content form .form-group input {
+    font-size: 14px;
+  }
 }
 
 .list-content .content-four .change-password-content form .form-group input::-webkit-input-placeholder {
@@ -6398,6 +7342,21 @@ header.dashboard-page p a {
   color: #8d8b92;
 }
 
+@media (max-width: 767px) {
+  .list-content .content-four .change-password-content form .form-group input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .list-content .content-four .change-password-content form .form-group input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .list-content .content-four .change-password-content form .form-group input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .list-content .content-four .change-password-content form .form-group input::placeholder {
+    font-size: 14px;
+  }
+}
+
 .list-content .content-four .change-password-content form button {
   width: 100%;
   display: block;
@@ -6405,9 +7364,25 @@ header.dashboard-page p a {
   padding-bottom: 16px;
 }
 
+@media (max-width: 767px) {
+  .list-content .content-four .change-password-content form button {
+    margin-top: 165px;
+    font-size: 16px;
+  }
+}
+
 .list-content .content-four .check-password {
   padding: 60px;
   padding-left: 30px;
+}
+
+@media (max-width: 767px) {
+  .list-content .content-four .check-password {
+    padding: 25px 25px 15px;
+    position: absolute;
+    top: -247px;
+    z-index: 5;
+  }
 }
 
 .list-content .content-four .check-password h4 {
@@ -6417,6 +7392,13 @@ header.dashboard-page p a {
   font-family: "AvertaSemibold";
   margin-bottom: 11px;
   width: 70%;
+}
+
+@media (max-width: 767px) {
+  .list-content .content-four .check-password h4 {
+    width: 100%;
+    font-size: 14px;
+  }
 }
 
 .list-content .content-four .check-password ul li {
@@ -6441,19 +7423,59 @@ header.dashboard-page p a {
 }
 
 /* Start expired subscription */
+.content-one.expired-subscription-page {
+  background-color: #f1f1ed;
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .content-one.expired-subscription-page {
+    padding-top: 40px;
+  }
+}
+
 .expired-subscription .expiration-msg {
   padding: 50px 35px 50px 105px;
   background: rgba(239, 66, 115, 0.05);
-  border: 1px solid #EF4273;
+  border: 1px solid #ef4273;
   border-radius: 5px;
   margin-top: 80px;
   margin-bottom: 20px;
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .expired-subscription .expiration-msg {
+    padding: 22px 25px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .expired-subscription .expiration-msg {
+    padding: 30px 35px 30px 75px;
+    margin-top: 0;
+  }
+}
+
 .expired-subscription .expiration-msg img {
   position: absolute;
   left: 60px;
+}
+
+@media (max-width: 767px) {
+  .expired-subscription .expiration-msg img {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 22px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .expired-subscription .expiration-msg img {
+    left: 35px;
+  }
 }
 
 .expired-subscription .expiration-msg p {
@@ -6464,12 +7486,42 @@ header.dashboard-page p a {
   margin-bottom: 0;
 }
 
+@media (max-width: 767px) {
+  .expired-subscription .expiration-msg p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+
 .expired-subscription .expiration-msg a {
   position: absolute;
   display: inline-block;
   top: 35px;
   right: 35px;
   padding: 16px 53px;
+}
+
+@media (max-width: 767px) {
+  .expired-subscription .expiration-msg a {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .expired-subscription .expiration-msg a {
+    padding: 16px 35px;
+    top: 14px;
+  }
 }
 
 .expired-subscription .expiration-msg a:hover {
@@ -6482,11 +7534,37 @@ header.dashboard-page p a {
   margin-bottom: 80px;
 }
 
+@media (max-width: 767px) {
+  .wevpn-benefits {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .wevpn-benefits {
+    margin-bottom: 40px;
+  }
+}
+
 .wevpn-benefits .wevpn-benefits-content {
   padding: 60px 80px 35px;
   background-color: #fff;
-  -webkit-box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #E6E4DF;
-          box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #E6E4DF;
+  -webkit-box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+          box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+}
+
+@media (max-width: 767px) {
+  .wevpn-benefits .wevpn-benefits-content {
+    padding: 28px 21px 20px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .wevpn-benefits .wevpn-benefits-content {
+    padding: 60px 40px 35px;
+  }
 }
 
 .wevpn-benefits .wevpn-benefits-content h2 {
@@ -6494,6 +7572,21 @@ header.dashboard-page p a {
   line-height: 32px;
   width: 40%;
   margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .wevpn-benefits .wevpn-benefits-content h2 {
+    font-size: 18px;
+    line-height: 24px;
+    width: 95%;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .wevpn-benefits .wevpn-benefits-content h2 {
+    width: 70%;
+  }
 }
 
 .wevpn-benefits .wevpn-benefits-content .wevpn-benefits-list {
@@ -6506,7 +7599,22 @@ header.dashboard-page p a {
   line-height: 20px;
   margin-bottom: 25px;
   width: 33.3333%;
-  color: #5A5761;
+  color: #5a5761;
+}
+
+@media (max-width: 767px) {
+  .wevpn-benefits .wevpn-benefits-content .wevpn-benefits-list li {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .wevpn-benefits .wevpn-benefits-content .wevpn-benefits-list li {
+    width: 50%;
+    margin-bottom: 20px;
+  }
 }
 
 .wevpn-benefits .wevpn-benefits-content .wevpn-benefits-list li i {
@@ -6522,22 +7630,64 @@ header.dashboard-page p a {
 }
 
 /* End wevpn benefits */
-.dashboard .payment-features {
+@media (max-width: 767px) {
+  .dashboard.upgrade-plan-page h2 {
+    width: 60%;
+    margin: 0 auto 28px;
+  }
+}
+
+.dashboard.upgrade-plan-page .payment-features {
   text-align: center;
   margin-top: -30px;
   margin-bottom: 50px;
 }
 
-.dashboard .payment-features li {
+@media (max-width: 767px) {
+  .dashboard.upgrade-plan-page .payment-features {
+    text-align: left;
+    margin-left: 80px;
+    margin-bottom: 30px;
+  }
+}
+
+.dashboard.upgrade-plan-page .payment-features li {
   display: inline-block;
 }
 
-.dashboard .payment-features li:not(:last-child) {
+@media (max-width: 767px) {
+  .dashboard.upgrade-plan-page .payment-features li {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .dashboard.upgrade-plan-page .payment-features li {
+    font-size: 15px;
+  }
+}
+
+.dashboard.upgrade-plan-page .payment-features li:not(:last-child) {
   margin-right: 24px;
 }
 
-.dashboard .payment-features li svg {
+@media (min-width: 768px) and (max-width: 992px) {
+  .dashboard.upgrade-plan-page .payment-features li:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.dashboard.upgrade-plan-page .payment-features li svg {
   margin-right: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .dashboard.upgrade-plan-page .payment-features li svg {
+    position: relative;
+    top: -1px;
+    margin-right: 0;
+  }
 }
 
 .list-content.upgrade-plan-page > div {
@@ -6549,31 +7699,94 @@ header.dashboard-page p a {
   padding-bottom: 60px;
 }
 
+@media (max-width: 767px) {
+  .upgrade-plan-content .pricing-tables {
+    padding-top: 20px;
+    padding-bottom: 29px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .upgrade-plan-content .pricing-tables {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+
 .upgrade-plan-content .pricing-tables .price-card label {
   padding-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .upgrade-plan-content .pricing-tables .price-card label {
+    padding-bottom: 24px;
+  }
 }
 
 .upgrade-plan-content .payment {
   margin-top: 28px;
 }
 
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment {
+    margin-top: 0;
+  }
+  .upgrade-plan-content .payment .row {
+    position: relative;
+  }
+  .upgrade-plan-content .payment .row .plan-details-col {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 182px;
+  }
+}
+
 .upgrade-plan-content .payment hr {
   height: 1px;
   width: 100%;
-  background-color: #E3E0D3;
+  background-color: #e3e0d3;
   margin-top: 15px;
   margin-bottom: 32px;
   border: 0;
+}
+
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment hr {
+    display: none;
+  }
 }
 
 .upgrade-plan-content .payment .payment-methods {
   padding-bottom: 80px;
 }
 
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment .payment-methods {
+    padding-bottom: 35px;
+  }
+}
+
 .upgrade-plan-content .payment .payment-methods h3 {
   font-size: 24px;
   line-height: 44px;
   padding-top: 16px;
+}
+
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment .payment-methods h3 {
+    padding-top: 0;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .upgrade-plan-content .payment .payment-methods h3 {
+    font-size: 22px;
+    line-height: 34px;
+  }
 }
 
 .upgrade-plan-content .payment .payment-methods .card-info {
@@ -6614,14 +7827,33 @@ header.dashboard-page p a {
 .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio {
   font-size: 18px;
   line-height: 13px;
-  text-transform: uppercase;
-  opacity: 0.7;
+  text-transform: capitalize;
   position: relative;
   cursor: pointer;
   height: 80px;
   display: block;
   padding-left: 80px;
   line-height: 80px;
+  font-family: "AvertaSemibold";
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio,
+  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio {
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    padding-left: 43px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio,
+  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio {
+    font-size: 16px;
+    padding-left: 53px;
+  }
 }
 
 .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio:before,
@@ -6636,6 +7868,26 @@ header.dashboard-page p a {
   border: 1px solid #adaba5;
 }
 
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio:before,
+  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio:before {
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    left: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio:before,
+  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio:before {
+    width: 25px;
+    height: 25px;
+    top: 28px;
+    left: 20px;
+  }
+}
+
 .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio:after,
 .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio:after {
   content: "";
@@ -6648,6 +7900,26 @@ header.dashboard-page p a {
   background-color: #fd3e72;
 }
 
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio:after,
+  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio:after {
+    width: 10px;
+    height: 10px;
+    top: 19px;
+    left: 21px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio:after,
+  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio:after {
+    top: 34px;
+    left: 26px;
+    width: 13px;
+    height: 13px;
+  }
+}
+
 .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card img,
 .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card img {
   position: absolute;
@@ -6657,8 +7929,65 @@ header.dashboard-page p a {
   right: 30px;
 }
 
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card img.cards-img,
+  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card img.cards-img {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    right: -43px;
+    top: 13px;
+  }
+  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card img.paypal-img,
+  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card img.paypal-img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    right: 8px;
+    top: 15px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card img.cards-img,
+  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card img.cards-img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    right: -15px;
+    top: 30px;
+  }
+  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card img.paypal-img,
+  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card img.paypal-img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    right: 8px;
+    top: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card img.cards-img,
+  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card img.cards-img {
+    -webkit-transform: scale(0.56);
+            transform: scale(0.56);
+    right: -55px;
+    top: 30px;
+  }
+  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card img.paypal-img,
+  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card img.paypal-img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    right: 8px;
+    top: 30px;
+  }
+}
+
 .upgrade-plan-content .payment .payment-methods .paypal-payment {
   margin-top: 12px;
+}
+
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment .payment-methods .order-now {
+    margin-top: 385px;
+  }
 }
 
 .upgrade-plan-content .payment .payment-methods .order-now button {
@@ -6667,80 +7996,189 @@ header.dashboard-page p a {
   margin-bottom: 32px;
 }
 
-.upgrade-plan-content .payment .payment-methods .back {
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment .payment-methods .order-now button {
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment .payment-methods .back-btn {
+    text-align: center;
+  }
+}
+
+.upgrade-plan-content .payment .payment-methods .back-btn .back {
   font-size: 20px;
   line-height: 25px;
   font-family: "AvertaSemibold";
   color: #fd3e72;
 }
 
-.upgrade-plan-content .payment .payment-methods .back:hover {
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment .payment-methods .back-btn .back {
+    font-size: 16px;
+  }
+}
+
+.upgrade-plan-content .payment .payment-methods .back-btn .back:hover {
   color: #fd3e72;
 }
 
-.upgrade-plan-content .payment .plan-details {
+.upgrade-plan-content .payment .plan-details .plan-details-content {
   background-color: #fff;
 }
 
-.upgrade-plan-content .payment .plan-details h3 {
+.upgrade-plan-content .payment .plan-details .plan-details-content h3 {
   font-size: 24px;
   line-height: 44px;
   padding-left: 60px;
   padding-top: 16px;
 }
 
-.upgrade-plan-content .payment .plan-details .line {
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment .plan-details .plan-details-content h3 {
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 16px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .upgrade-plan-content .payment .plan-details .plan-details-content h3 {
+    font-size: 22px;
+    line-height: 34px;
+    padding-left: 20px;
+  }
+}
+
+.upgrade-plan-content .payment .plan-details .plan-details-content .line {
   margin-bottom: 20px;
 }
 
-.upgrade-plan-content .payment .plan-details .plan-details-content {
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment .plan-details .plan-details-content .line {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.upgrade-plan-content .payment .plan-details .plan-details-content .plan-details-list {
   padding-left: 60px;
   padding-right: 60px;
 }
 
-.upgrade-plan-content .payment .plan-details .plan-details-content li {
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment .plan-details .plan-details-content .plan-details-list {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .upgrade-plan-content .payment .plan-details .plan-details-content .plan-details-list {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.upgrade-plan-content .payment .plan-details .plan-details-content .plan-details-list li {
   padding-top: 6px;
   padding-bottom: 15px;
-  color: #8D8B92;
+  color: #8d8b92;
   line-height: 28px;
 }
 
-.upgrade-plan-content .payment .plan-details .plan-details-content li:not(:last-child) {
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment .plan-details .plan-details-content .plan-details-list li {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+}
+
+.upgrade-plan-content .payment .plan-details .plan-details-content .plan-details-list li:not(:last-child) {
   border-bottom: 1px dashed rgba(227, 224, 211, 0.7);
 }
 
-.upgrade-plan-content .payment .plan-details .plan-details-content li span {
+.upgrade-plan-content .payment .plan-details .plan-details-content .plan-details-list li span {
   float: right;
-  color: #5B5863;
+  color: #5b5863;
 }
 
-.upgrade-plan-content .payment .plan-details .plan-details-content li .month {
+.upgrade-plan-content .payment .plan-details .plan-details-content .plan-details-list li .month {
   color: #fd3e72;
 }
 
-.upgrade-plan-content .payment .plan-details .total {
+.upgrade-plan-content .payment .plan-details .plan-details-content .total {
   margin-left: 60px;
   margin-right: 60px;
   padding-top: 26px;
   padding-bottom: 40px;
+  color: #8d8b92;
   border-top: 2px solid rgba(227, 224, 211, 0.7);
 }
 
-.upgrade-plan-content .payment .plan-details .total span {
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment .plan-details .plan-details-content .total {
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 14px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .upgrade-plan-content .payment .plan-details .plan-details-content .total {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.upgrade-plan-content .payment .plan-details .plan-details-content .total span {
   font-family: "AvertaSemibold";
 }
 
-.upgrade-plan-content .payment .plan-details .total .value {
+.upgrade-plan-content .payment .plan-details .plan-details-content .total .value {
   float: right;
+  color: #5b5863;
 }
 
-.upgrade-plan-content .payment .subscription-period {
+.upgrade-plan-content .payment .plan-details .subscription-period {
   padding: 28px 60px;
-  border: 1px solid #E3E0D3;
+  border: 1px solid #e3e0d3;
   border-radius: 5px;
   font-size: 16px;
   line-height: 28px;
-  color: #8D8B92;
+  color: #8d8b92;
   margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .upgrade-plan-content .payment .plan-details .subscription-period {
+    font-size: 14px;
+    padding: 13px 38px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .upgrade-plan-content .payment .plan-details .subscription-period {
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .upgrade-plan-content .payment .plan-details .subscription-period {
+    padding: 15px 60px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

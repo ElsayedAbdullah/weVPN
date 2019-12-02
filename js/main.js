@@ -222,11 +222,7 @@ $(function() {
     console.log("keyup");
     var pswd = $(this).val();
     //validate the length
-    if (pswd.length < 8) {
-      $(".check-password ul #length")
-        .removeClass("valid")
-        .addClass("invalid");
-    } else if (pswd.length > 20) {
+    if (pswd.length < 8 || pswd.length > 20) {
       $(".check-password ul #length")
         .removeClass("valid")
         .addClass("invalid");
@@ -248,7 +244,7 @@ $(function() {
     }
 
     //validate symbol
-    if (pswd.match(/[$-/:-?{-~!"^_`\[\]]/)) {
+    if (pswd.match(/(?=.*?[~!@#$%^&()_+-=./{}<>?:"'])/)) {
       $(".check-password ul #symbol")
         .removeClass("invalid")
         .addClass("valid");
@@ -263,6 +259,23 @@ $(function() {
     if ($(".input-password").val() != $(".input-confirm-password").val()) {
       console.log("password not matched");
     }
+  });
+
+  // open dropdown menu in invoices in mobile screen
+  $(".invoices .toggle:first").css("display", "block");
+
+  $(".invoices .cell").on("click", function() {
+    $(this)
+      .toggleClass("active")
+      .siblings()
+      .removeClass("active");
+    $(this)
+      .next(".toggle")
+      .slideToggle();
+
+    $(".toggle")
+      .not($(this).next(".toggle"))
+      .slideUp();
   });
 
   //---------------------------------------

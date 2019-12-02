@@ -244,9 +244,11 @@ header {
 }
 
 .navbar-light .navbar-toggler {
-  padding: 6px 11px;
+  padding: 4px 11px 8px;
   border-radius: 0;
   border: 1px solid #e1e0de;
+  width: 36px;
+  height: 36px;
   img {
     &:last-child {
       display: none;
@@ -1529,6 +1531,7 @@ header {
 footer {
   background-color: #fff;
   padding-top: 100px;
+  border-top: 1px solid #E8E4DB;
   @media #{$maxTab} {
     padding-top: 60px;
   }
@@ -1585,7 +1588,7 @@ footer {
             .firefox {
               .line {
                 stroke: $primaryColor;
-                fill: none
+                fill: none;
               }
               .fox {
                 fill: $primaryColor;
@@ -1812,18 +1815,18 @@ footer {
 
           svg {
             path {
-              fill: #5B5863;
+              fill: #5b5863;
             }
           }
           .firefox {
-              .line {
-                stroke: #5B5863;
-                fill: none
-              }
-              .fox {
-                fill: #5B5863;
-              }
+            .line {
+              stroke: #5b5863;
+              fill: none;
             }
+            .fox {
+              fill: #5b5863;
+            }
+          }
         }
       }
 
@@ -3046,6 +3049,12 @@ ol {
     padding: 8px;
     padding-top: 0;
     width: 366px;
+    @media #{$maxTab} {
+      width: auto;
+    }
+    @media #{$betweentabdesk} {
+      width: auto;
+    }
     h3 {
       font-size: 20px;
       line-height: 20px;
@@ -3054,6 +3063,15 @@ ol {
       padding: 20px 0 20px 12px;
       margin: 0;
       position: relative;
+      @media #{$mobile} {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      @media #{$betweentabdesk} {
+        font-size: 18px;
+        line-height: 20px;
+        padding-left: 6px;
+      }
       svg {
         position: relative;
         top: -3px;
@@ -3066,15 +3084,30 @@ ol {
         position: absolute;
         top: 8px;
         right: 0;
+         @media #{$betweentabdesk} {
+        padding: 12px;
+      }
       }
     }
   }
   .price-card {
     background-color: #fff;
     width: 350px;
+    @media #{$maxTab} {
+      width: auto;
+    }
+     @media #{$betweentabdesk} {
+      width: auto;
+    }
     &.one,
     &.three {
       margin-top: 34px;
+      @media #{$mobile} {
+        margin-top: 10px;
+      }
+      @media #{$tablet} {
+        margin-top: 30px;
+      }
     }
     &.three {
       position: relative;
@@ -3113,6 +3146,15 @@ ol {
       height: 100%;
       margin: 0;
       padding: 44px;
+      @media #{$mobile} {
+        padding: 24px 16px;
+      }
+      @media #{$tablet} {
+        padding: 35px;
+      }
+      @media #{$betweentabdesk} {
+        padding: 24px 16px;
+      }
 
       &:before {
         content: "";
@@ -3126,6 +3168,10 @@ ol {
         text-align: center;
         line-height: 48px;
         transition: all 0.4s ease-in-out;
+        @media #{$mobile} {
+          top: 24px;
+          left: 16px;
+        }
       }
       &:after {
         content: "\f00c";
@@ -3135,10 +3181,21 @@ ol {
         color: #e0ded5;
         font-size: 18px;
         font-family: "fontawesome";
+        @media #{$mobile} {
+          top: 35px;
+          left: 32px;
+        }
       }
       .price-top {
         padding-bottom: 45px;
         border-bottom: 1px solid #ebe8df;
+        @media #{$mobile} {
+          padding-left: 60px;
+          padding-bottom: 20px;
+        }
+        @media #{$tablet} {
+        padding-bottom: 20px;
+      }
         .month {
           display: block;
           font-size: 20px;
@@ -3146,14 +3203,31 @@ ol {
           font-family: "AvertaSemibold";
           margin-bottom: 10px;
           margin-top: 65px;
+          @media #{$mobile} {
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 5px;
+          }
         }
         p {
           position: relative;
           display: inline-block;
+          @media #{$mobile} {
+            margin-left: 35px;
+            margin-bottom: 0;
+          }
           .value {
             font-size: 64px;
             line-height: 56px;
             font-family: "AvertaBold";
+            @media #{$mobile} {
+              font-size: 36px;
+              line-height: 36px;
+            }
+            @media #{$tablet} {
+              font-size: 50px;
+              line-height: 50px;
+            }
           }
 
           .usd {
@@ -3164,6 +3238,9 @@ ol {
             line-height: 20px;
             color: #8d8b92;
             font-family: "AvertaSemibold";
+            @media #{$mobile} {
+              font-size: 14px;
+            }
           }
           .mo {
             position: absolute;
@@ -3172,11 +3249,17 @@ ol {
             font-size: 20px;
             line-height: 20px;
             font-family: "Averta";
+            @media #{$mobile} {
+              font-size: 14px;
+            }
           }
         }
       }
       .price-bottom {
         padding-top: 40px;
+        @media #{$maxTab} {
+          padding-top: 20px;
+        }
         .deleted {
           line-height: 20px;
           text-decoration-line: line-through;
@@ -3194,6 +3277,9 @@ ol {
           line-height: 28px;
           color: #8d8b92;
           margin-bottom: 40px;
+          @media #{$mobile} {
+            margin-bottom: 0;
+          }
         }
         button {
           background-color: #ffecf1;
@@ -3402,6 +3488,11 @@ header.features-page {
     margin: auto;
     background-color: #f9f8f4;
     top: -10px;
+    @media #{$mobile} {
+      font-size: 16px;
+      background-color: #fff;
+      width: 195px;
+    }
   }
   .popular-tickets-list {
     margin-top: 30px;
@@ -3409,11 +3500,26 @@ header.features-page {
     padding: 0 150px;
     overflow: hidden;
     margin-left: 50px;
+    @media #{$tablet} {
+      padding: 0 30px;
+      margin-left: 90px;
+    }
+    @media #{$tablet} {
+      margin-top: 20px;
+      padding: 0;
+    }
     li {
       width: 33.3%;
       float: left;
       font-size: 14px;
       line-height: 32px;
+      @media #{$mobile} {
+        width: 100%;
+        float: none;
+      }
+      @media #{$tablet} {
+      width: 50%;
+    }
       a {
         color: $primaryColor;
         text-decoration: underline !important;
@@ -3435,6 +3541,16 @@ header.features-page {
     padding-left: 115px;
     padding-top: 29px;
     padding-bottom: 29px;
+    @media #{$tablet} {
+        padding: 0;
+      }
+    @media #{$mobile} {
+      padding: 0;
+      box-shadow: none;
+      &.last {
+        margin-top: 10px;
+      }
+    }
     img {
       position: absolute;
       top: 29px;
@@ -3442,29 +3558,77 @@ header.features-page {
       &.ticket {
         margin-top: 10px;
       }
+      @media #{$mobile} {
+        transform: scale(0.55);
+        top: 12px;
+        left: 68px;
+      }
+      @media #{$tablet} {
+        transform: scale(0.8);
+        &.ticket {
+        margin-top: 5px;
+      }
+      }
+      
     }
     .contacting-item-info {
+      @media #{$mobile} {
+        padding: 25px 70px 25px 127px;
+      }
+      @media #{$tablet} {
+        padding-left: 100px;
+        padding-top: 29px;
+        padding-bottom: 29px;
+      }
       p {
         font-size: 16px;
         line-height: 20px;
         color: #8d8b92;
+        @media #{$mobile} {
+          font-size: 12px;
+          margin-bottom: 0;
+        }
+        @media #{$tablet} {
+          font-size: 14px;
+          margin-bottom: 8px;
+        }
       }
       h4 {
         font-size: 20px;
         line-height: 20px;
+        @media #{$mobile} {
+          font-size: 14px;
+          margin-bottom: 0;
+        }
+        @media #{$tablet} {
+          font-size: 18px;
+          margin-bottom: 0;
+        }
       }
     }
     .contacting-item-btn {
       position: absolute;
       top: 32px;
       right: 32px;
-      a,button {
+      @media #{$maxTab} {
+        position: static;
+      }
+      a {
         background-color: #f0eee8;
         border: 0;
         font-family: "AvertaSemibold";
         padding: 16px 43px;
         color: #5b5863;
         display: inline-block;
+        @media #{$maxTab} {
+          font-size: 14px;
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+        @media #{$tablet} {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -4496,14 +4660,23 @@ body.servers-page {
 //////////////////////////////////////////////////////////////////////////////
 // Start Dashboard page
 header.dashboard-page {
+  @media #{$maxTab} {
+    height: 76px;
+  }
   .navbar {
     padding-bottom: 30px;
+  }
+  .get-started-login {
+    @media #{$maxTab} {
+      padding-left: 25px;
+      padding-top: 10px;
+    }
   }
   p {
     font-size: 14px;
     line-height: 17px;
     color: #8d8b92;
-    
+
     a {
       color: $primaryColor;
       margin-left: 5px;
@@ -4519,15 +4692,36 @@ header.dashboard-page {
   background-color: $primaryColor;
   color: #fff;
   padding-top: 55px;
+  @media #{$mobile} {
+    padding-top: 24px;
+    .container {
+      padding: 0;
+    }
+  }
   h2 {
     font-size: 56px;
     line-height: 56px;
     padding-bottom: 60px;
+    margin-bottom: 0;
+    @media #{$mobile} {
+      font-size: 28px;
+      line-height: 32px;
+      padding-bottom: 28px;
+    }
+    @media #{$tablet} {
+      font-size: 46px;
+      line-height: 46px;
+      padding-bottom: 45px;
+    }
   }
   .dashboard-list {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid rgba(#f9f8f4, 0.2);
+    @media #{$mobile} {
+      overflow-x: auto;
+      display: -webkit-box;
+    }
     li {
       opacity: 0.7;
       transition: all 0.3s ease-in-out;
@@ -4539,25 +4733,18 @@ header.dashboard-page {
           visibility: visible;
           height: 3px;
         }
-        // svg {
-        //   .active-item {
-        //     visibility: visible;
-        //     opacity: 1
-
-        //   }
-        //   .inactive-item {
-        //     visibility: hidden;
-        //     opacity: 0
-        //   }
-        // }
-        // .key1 {
-        //   opacity: 1;
-        //   visibility: visible;
-        // }
-        // .key2 {
-        //   opacity: 0;
-        //   visibility: hidden;
-        // }
+      }
+      &.active {
+        svg {
+          .active-item {
+            visibility: visible;
+            opacity: 1;
+          }
+          .inactive-item {
+            visibility: hidden;
+            opacity: 0;
+          }
+        }
       }
 
       a {
@@ -4566,6 +4753,20 @@ header.dashboard-page {
         font-family: "AvertaSemibold";
         display: block;
         position: relative;
+        @media #{$mobile} {
+          padding: 15px 20px 12px;
+          font-family: "Averta";
+        }
+        @media #{$tablet} {
+          padding: 17px;
+          font-family: "Averta";
+          font-size: 16px;
+        }
+        @media #{$betweentabdesk} {
+          padding: 20px 42px;
+          font-family: "Averta";
+          font-size: 16px;
+        }
         &:hover {
           &:before {
             opacity: 1;
@@ -4579,51 +4780,48 @@ header.dashboard-page {
           width: 100%;
           height: 0;
           position: absolute;
-          top: -3px;
+          top: 0;
           left: 0;
           background-color: #fff;
           visibility: hidden;
           opacity: 0;
           transition: all 0.3s ease-in-out;
         }
-        // .key1 {
-        //   opacity: 0;
-        //   visibility: hidden;
-        //   transition: all 0.3s ease-in-out;
-        //   position: absolute;
-        //   left: 40px;
-        // }
-        // .key2 {
-        //   opacity: 1;
-        //   visibility: visible;
-        //   transition: all 0.3s ease-in-out;
-        //   position: absolute;
-        //   left: 35px;
-        // }
+
         svg {
           margin-right: 12px;
-          // .active-item {
-          //   visibility: hidden;
-          //   opacity: 0;
-          //   transition: all 0.3s ease-in-out;
-
-          // }
-          // .inactive-item {
-          //   visibility: visible;
-          //   opacity: 1;
-          //   transition: all 0.3s ease-in-out;
-          // }
+          @media #{$mobile} {
+            margin-right: 4px;
+          }
+          @media #{$tablet} {
+            margin-right: 0;
+          }
+          .active-item {
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+          }
+          .inactive-item {
+            visibility: visible;
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+          }
         }
       }
     }
   }
 }
+
 /* End Dashboard */
 
 /* Start Download */
 .download {
   margin-top: 60px;
   margin-bottom: 40px;
+  @media #{$mobile} {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .download-content {
     background: #ffffff;
     border: 1px solid #ebe8df;
@@ -4637,8 +4835,19 @@ header.dashboard-page {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media #{$mobile} {
+        width: 100%;
+        float: none;
+        display: block;
+        padding: 20px 24px 24px;
+        height: auto;
+      }
       &:first-child {
         border-right: 1px solid #ebe8df;
+        @media #{$mobile} {
+          border-bottom: 1px solid #ebe8df;
+          border-right: 0;
+        }
       }
       p {
         display: inline-block;
@@ -4646,13 +4855,27 @@ header.dashboard-page {
         width: 120px;
         line-height: 20px;
         opacity: 0.7;
+        @media #{$mobile} {
+          width: 100%;
+          display: block;
+          text-align: center;
+          margin-bottom: 5px;
+          font-size: 12px;
+        }
       }
-      a, button {
+      a,
+      button {
         color: #ffffff;
         font-family: "AvertaSemibold";
         display: inline-block;
         background-color: $primaryColor;
         padding: 20px 46px;
+        @media #{$mobile} {
+          display: block;
+          padding: 14px 42px;
+          font-family: "Averta";
+          width: 100%;
+        }
         svg {
           margin-right: 5px;
           position: relative;
@@ -4662,6 +4885,9 @@ header.dashboard-page {
           border: 1px solid #e3e0d3;
           background: none;
           color: #5b5863;
+          @media #{$mobile} {
+            padding: 12px 42px;
+          }
           img {
             position: relative;
             top: -2px;
@@ -4677,11 +4903,20 @@ header.dashboard-page {
 /* Start Subscribe */
 .subscribe {
   padding-bottom: 60px;
+  @media #{$mobile} {
+    padding-bottom: 20px;
+  }
   .padd-right {
     padding-right: 20px;
+    @media #{$mobile} {
+      padding-right: 15px;
+    }
   }
   .padd-left {
     padding-left: 20px;
+    @media #{$mobile} {
+      padding-left: 15px;
+    }
   }
   .left-column,
   .right-column {
@@ -4697,6 +4932,11 @@ header.dashboard-page {
         padding-top: 22px;
         padding-bottom: 22px;
         margin-bottom: 0;
+        @media #{$mobile} {
+          font-size: 18px;
+          line-height: 18px;
+          padding: 19px 13px;
+        }
         .settings {
           font-size: 12px;
           line-height: 24px;
@@ -4711,6 +4951,14 @@ header.dashboard-page {
           right: 50px;
           top: 22px;
           background: none;
+          @media #{$mobile} {
+            right: 13px;
+            top: 12px;
+            padding: 3px 7px;
+            &:not(svg) {
+              font-size: 0;
+            }
+          }
         }
       }
     }
@@ -4718,25 +4966,38 @@ header.dashboard-page {
     .list {
       padding-left: 40px;
       padding-right: 50px;
+      @media #{$mobile} {
+        padding: 0 13px;
+      }
       li {
         padding-top: 35px;
         padding-bottom: 35px;
         position: relative;
+        @media #{$mobile} {
+          padding: 12px 0;
+        }
         &:not(:last-child) {
-          border-bottom: 1px dashed #e3e0d3;
+          border-bottom: 1px dashed rgba(#e3e0d3, 0.7);
         }
         .list-item-text {
+          label {
+            font-size: 14px;
+            line-height: 20px;
+            color: #8d8b92;
+            font-family: "Averta";
+            margin-bottom: 2px;
+            @media #{$mobile} {
+              font-size: 12px;
+            }
+          }
           p {
             font-size: 16px;
             line-height: 20px;
             color: #5a5761;
             font-family: "AvertaSemibold";
             margin-bottom: 5px;
-            &.label {
+            @media #{$mobile} {
               font-size: 14px;
-              line-height: 20px;
-              color: #8d8b92;
-              font-family: "Averta";
             }
           }
         }
@@ -4746,8 +5007,11 @@ header.dashboard-page {
           right: 0;
           font-size: 14px;
           line-height: 40px;
-          padding: 0px 13px;
+          padding: 0px 16px;
           display: inline-block;
+          @media #{$mobile} {
+            top: 12px;
+          }
           &:hover {
             color: #fff;
           }
@@ -4755,7 +5019,7 @@ header.dashboard-page {
             background: #ffecf1;
             color: $primaryColor;
             font-family: "AvertaSemibold";
-            padding: 0px 15px;
+            padding: 0px 16px;
             border: 0;
           }
         }
@@ -4767,11 +5031,18 @@ header.dashboard-page {
           margin-top: 15px;
           margin-bottom: 16px;
           display: inline-block;
+          @media #{$mobile} {
+            font-size: 12px;
+            margin-top: 5px;
+          }
         }
       }
     }
   }
   .right-column {
+    @media #{$mobile} {
+      margin-top: 12px;
+    }
     .list {
       li {
         position: relative;
@@ -4779,8 +5050,9 @@ header.dashboard-page {
         padding-top: 12px;
         padding-bottom: 12px;
         overflow: hidden;
+
         &:not(:last-child) {
-          border-bottom: 1px dashed #e3e0d3;
+          border-bottom: 1px dashed rgba(#e3e0d3, 0.7);
         }
         p {
           margin-bottom: 0;
@@ -4805,6 +5077,9 @@ header.dashboard-page {
           position: absolute;
           top: -40px;
           right: 0;
+          @media #{$mobile} {
+            top: 0;
+          }
         }
       }
     }
@@ -4813,25 +5088,47 @@ header.dashboard-page {
 .modal-dialog {
   max-width: 840px;
   margin-top: 174px;
+  @media #{$mobile} {
+    width: auto;
+    margin: 20px;
+  }
   .padd {
     padding-right: 10px;
     padding-left: 10px;
+    @media #{$mobile} {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
   }
   .padd-right {
     padding-right: 10px;
+    @media #{$mobile} {
+      padding-right: 15px;
+    }
   }
   .padd-left {
     padding-left: 10px;
+    @media #{$mobile} {
+      padding-left: 15px;
+    }
   }
   .modal-content {
     padding: 60px 25px 45px;
     border-radius: 0;
+    @media #{$mobile} {
+      padding: 24px 10px;
+    }
     .creditModal-header {
       position: relative;
       h5 {
         font-size: 24px;
         line-height: 24px;
         margin-bottom: 45px;
+        @media #{$mobile} {
+          margin-bottom: 24px;
+          text-align: left !important;
+          padding-left: 15px;
+        }
       }
       .close {
         width: 48px;
@@ -4844,20 +5141,34 @@ header.dashboard-page {
         position: absolute;
         top: -10px;
         right: 15px;
+        @media #{$mobile} {
+          width: 40px;
+          height: 40px;
+        }
       }
     }
   }
   .modal-body {
+    @media #{$mobile} {
+      padding: 0 14px;
+    }
     .form-group {
       border: 1px solid #e0ded5;
       padding: 16px 30px;
       margin-bottom: 20px;
       padding: 12px 30px 18px;
+      @media #{$mobile} {
+        margin-bottom: 8px;
+        padding: 7px 16px;
+      }
       label {
         font-size: 12px;
         line-height: 20px;
         font-family: "AvertaSemibold";
         margin-bottom: 0;
+        @media #{$mobile} {
+          font-family: "Averta";
+        }
         svg {
           margin-left: 5px;
         }
@@ -4870,6 +5181,10 @@ header.dashboard-page {
         box-shadow: none;
         outline: none;
         color: #5b5863;
+        @media #{$mobile} {
+          line-height: 20px;
+          font-size: 14px;
+        }
         &::placeholder {
           color: #8d8b92;
           font-family: "Averta";
@@ -4882,6 +5197,14 @@ header.dashboard-page {
       margin-top: 20px;
       font-size: 20px;
       color: #fcf9f2;
+      @media #{$mobile} {
+        line-height: 20px;
+        font-size: 16px;
+        margin-top: 0;
+        display: block;
+        width: 100%;
+        padding: 18px 0;
+      }
     }
   }
 }
@@ -4895,17 +5218,26 @@ header.dashboard-page {
 .contacting.dashboard-page {
   background-color: #fff;
   padding-bottom: 0;
+  @media #{$mobile} {
+    padding-top: 20px;
+  }
   .contacting-content {
     border-bottom: 1px solid #ebe8df;
     padding-bottom: 60px;
+    @media #{$mobile} {
+      padding-bottom: 37px;
+    }
   }
 }
 
 .popular-tickets.dashboard-page {
   background-color: #fff;
-  border-bottom: 1px solid #ebe8df;
+  border-bottom: 1px solid #E8E4DB;
   .popular-tickets-list {
     margin-bottom: 50px;
+    @media #{$mobile} {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -4916,6 +5248,11 @@ header.dashboard-page {
     }
   }
   .content-two {
+    @media #{$mobile} {
+      background-color: #f1f1ed;
+      padding-top: 20px;
+      padding-bottom: 60px;
+    }
     table {
       margin-top: 60px;
       margin-bottom: 195px;
@@ -4960,15 +5297,103 @@ header.dashboard-page {
         }
       }
     }
+    .invoices {
+      > .cell {
+        background-color: #fff;
+        position: relative;
+        padding: 0 28px;
+        border-bottom: 1px solid #e0ded5;
+        height: 64px;
+        line-height: 64px;
+        > span {
+          font-size: 16px;
+          line-height: 20px;
+          font-family: "AvertaSemibold";
+          color: $primaryColor;
+        }
+        &.active {
+          .arrow {
+            span {
+              background-color: #5b5863;
+            }
+            .one {
+              transform: rotate(-45deg) translate(-3px, 7px);
+            }
+            .two {
+              transform: rotate(45deg) translate(0px, 10px);
+            }
+          }
+        }
+        .arrow {
+          position: absolute;
+          top: -10px;
+          right: 20px;
+          span {
+            width: 8px;
+            height: 2px;
+            background-color: #acaaae;
+            display: inline-block;
+            transition: all 0.5s ease-in-out;
+          }
+          .one {
+            transform: rotate(45deg) translate(4px, 2px);
+            transform-origin: left;
+          }
+          .two {
+            transform: rotate(-45deg) translate(-8px, -2px);
+            transform-origin: right;
+          }
+        }
+      }
+      .toggle {
+        display: none;
+        .cell {
+          padding: 0 28px;
+          height: 54px;
+          line-height: 54px;
+          border-bottom: 1px solid #ebeae5;
+          background-color: #fbfaf9;
+          &:last-child {
+            border-bottom: 1px solid #e0ded5;
+          }
+          p {
+            margin-bottom: 0;
+            font-size: 14px;
+            color: #8d8b92;
+            span {
+              float: right;
+              &.payment {
+                color: #5a5761;
+              }
+              &.amount,
+              &.subscription {
+                font-size: 14px;
+                color: #5b5863;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .content-three {
+    @media #{$mobile} {
+      background: rgba(#f1f1ed, 0.3);
+    }
     .subscription-settings {
       margin-top: 80px;
       margin-bottom: 200px;
       box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+      @media #{$mobile} {
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
       .subscription-content {
         background-color: #fff;
         padding: 50px 60px 0;
+        @media #{$mobile} {
+          padding: 19px 13px;
+        }
       }
       h3 {
         font-size: 24px;
@@ -4978,13 +5403,25 @@ header.dashboard-page {
         border-bottom: 1px solid #e3e0d3;
         margin-bottom: 0;
         padding-bottom: 15px;
+        @media #{$mobile} {
+          font-size: 18px;
+          line-height: 18px;
+          margin-bottom: 0;
+          padding-bottom: 19px;
+        }
       }
       .list {
         margin-top: 10px;
+        @media #{$mobile} {
+          margin-top: 0;
+        }
         li {
           padding-top: 25px;
           padding-bottom: 25px;
           position: relative;
+          @media #{$mobile} {
+            padding: 20px 0;
+          }
           &:not(:last-child) {
             border-bottom: 1px dashed #e3e0d3;
           }
@@ -4995,20 +5432,30 @@ header.dashboard-page {
               color: #5a5761;
               font-family: "AvertaSemibold";
               margin-bottom: 5px;
+              @media #{$mobile} {
+                font-size: 14px;
+                margin-bottom: 0;
+              }
               &.label {
                 font-size: 14px;
                 line-height: 20px;
                 color: #8d8b92;
                 font-family: "Averta";
+                @media #{$mobile} {
+                  font-size: 12px;
+                }
               }
             }
             span {
               background-color: rgba(#62d5b4, 0.3);
               border-radius: 5px;
-              color: #62d5b4;
+              color: #08ae7e;
               padding: 4px 11px;
               display: inline-block;
               margin-top: 5px;
+              @media #{$mobile} {
+                font-size: 14px;
+              }
             }
             .menu-btn {
               position: absolute;
@@ -5022,16 +5469,22 @@ header.dashboard-page {
               background: #fefefe;
               border: 1px solid #efeee6;
               transition: all 0.3s ease-in-out;
+              @media #{$mobile} {
+                top: 47px;
+                border: 0;
+                background: none;
+              }
               svg {
                 path {
                   transition: all 0.3s ease-in-out;
+                  fill: #b7b5ba;
                 }
               }
               &:hover {
                 border-color: #e1ddcf;
                 svg {
                   path {
-                    fill: #acaaae;
+                    fill: #b7b5ba;
                   }
                 }
               }
@@ -5052,6 +5505,12 @@ header.dashboard-page {
             transition: all 0.2s ease-in-out;
             font-family: "AvertaSemibold";
             border: 0;
+            @media #{$mobile} {
+              font-size: 12px;
+              padding: 12px;
+              right: 10px;
+              z-index: 2;
+            }
           }
           .button {
             position: absolute;
@@ -5061,6 +5520,9 @@ header.dashboard-page {
             line-height: 40px;
             padding: 0px 13px;
             display: inline-block;
+            @media #{$mobile} {
+              top: 20px;
+            }
             &:hover {
               color: #fff;
             }
@@ -5080,14 +5542,24 @@ header.dashboard-page {
             margin-top: 15px;
             margin-bottom: 0;
             display: inline-block;
+            @media #{$mobile} {
+              font-size: 12px;
+              margin-top: 5px;
+            }
           }
         }
       }
       #cancelrenewal {
         .modal-dialog {
           width: 700px;
+          @media #{$mobile} {
+            width: auto;
+          }
           .modal-content {
             padding: 0;
+            @media #{$mobile} {
+              text-align: center;
+            }
           }
           .creditModal-header {
             h5 {
@@ -5098,10 +5570,26 @@ header.dashboard-page {
               margin-bottom: 30px;
               padding-top: 50px;
               padding-left: 40px;
+              @media #{$mobile} {
+                text-align: center !important;
+                padding-left: 0;
+                padding-top: 95px;
+                font-size: 18px;
+                line-height: 18px;
+                width: 80%;
+                padding-bottom: 25px;
+                margin: auto;
+              }
             }
             .close {
               top: 60px;
               right: 40px;
+              @media #{$mobile} {
+                top: 30px;
+                left: 50%;
+                right: auto;
+                transform: translateX(-50%);
+              }
             }
           }
           .modal-body {
@@ -5110,11 +5598,20 @@ header.dashboard-page {
             padding-top: 38px;
             padding-bottom: 38px;
             border-top: 1px solid #e3e0d3;
+            @media #{$mobile} {
+              padding: 23px 0 66px;
+            }
             p {
               font-size: 18px;
               line-height: 28px;
               color: #5b5863;
               margin-bottom: 0;
+              @media #{$mobile} {
+                font-size: 14px;
+                line-height: 24px;
+                width: 80%;
+                margin: auto;
+              }
             }
           }
           .cancel-btns {
@@ -5123,6 +5620,12 @@ header.dashboard-page {
               width: 50%;
               padding: 20px;
               float: left;
+              @media #{$mobile} {
+                width: 100%;
+                display: block;
+                float: none;
+                font-size: 16px;
+              }
             }
             .keep-automatic-renewal {
               color: $primaryColor;
@@ -5136,9 +5639,18 @@ header.dashboard-page {
       padding: 32px 60px;
       background-color: #f5f4f0;
       text-align: right;
+      @media #{$mobile} {
+        padding: 10px;
+      }
 
       button {
         padding: 16px 65px;
+        @media #{$mobile} {
+          width: 100%;
+          display: block;
+          padding: 16px 0;
+          font-size: 16px;
+        }
         &:hover {
           i {
             left: -12px;
@@ -5159,15 +5671,27 @@ header.dashboard-page {
       box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
       margin-top: 80px;
       margin-bottom: 140px;
+      @media #{$mobile} {
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
 
       &-content {
         padding: 60px;
         border-right: 1px solid #e3e0d3;
+        @media #{$mobile} {
+          padding: 24px;
+        }
         form {
           .form-group {
             border: 1px solid #e0ded5;
             padding: 16px 30px;
             margin-bottom: 20px;
+            @media #{$mobile} {
+              padding: 5px 16px;
+              height: 60px;
+              margin-bottom: 8px;
+            }
             label {
               font-size: 12px;
               line-height: 20px;
@@ -5182,10 +5706,16 @@ header.dashboard-page {
               padding: 0;
               height: auto;
               color: #5b5863;
+              @media #{$mobile} {
+                font-size: 14px;
+              }
               &::placeholder {
                 font-size: 16px;
                 line-height: 20px;
                 color: #8d8b92;
+                @media #{$mobile} {
+                  font-size: 14px;
+                }
               }
             }
           }
@@ -5194,6 +5724,10 @@ header.dashboard-page {
             display: block;
             padding-top: 16px;
             padding-bottom: 16px;
+            @media #{$mobile} {
+              margin-top: 165px;
+              font-size: 16px;
+            }
           }
         }
       }
@@ -5201,6 +5735,12 @@ header.dashboard-page {
     .check-password {
       padding: 60px;
       padding-left: 30px;
+      @media #{$mobile} {
+        padding: 25px 25px 15px;
+        position: absolute;
+        top: -247px;
+        z-index: 5;
+      }
       h4 {
         font-size: 16px;
         line-height: 20px;
@@ -5208,6 +5748,10 @@ header.dashboard-page {
         font-family: "AvertaSemibold";
         margin-bottom: 11px;
         width: 70%;
+        @media #{$mobile} {
+          width: 100%;
+          font-size: 14px;
+        }
       }
       ul {
         li {
@@ -5222,8 +5766,8 @@ header.dashboard-page {
           }
           &.invalid {
             i {
-            color: #5b5863;
-          }
+              color: #5b5863;
+            }
           }
           &.valid {
             i {
@@ -5236,20 +5780,42 @@ header.dashboard-page {
   }
 }
 
-
 /* Start expired subscription */
+.content-one.expired-subscription-page {
+  background-color: #f1f1ed;
+  padding-top: 20px;
+  @media #{$tablet} {
+      padding-top: 40px;
+    }
+}
 .expired-subscription {
   .expiration-msg {
     padding: 50px 35px 50px 105px;
     background: rgba(239, 66, 115, 0.05);
-    border: 1px solid #EF4273;
+    border: 1px solid #ef4273;
     border-radius: 5px;
     margin-top: 80px;
     margin-bottom: 20px;
     position: relative;
+    @media #{$mobile} {
+      padding: 22px 25px;
+      margin-top: 0;
+    }
+    @media #{$tablet} {
+      padding: 30px 35px 30px 75px;
+      margin-top: 0;
+    }
     img {
-          position: absolute;
-    left: 60px;
+      position: absolute;
+      left: 60px;
+      @media #{$mobile} {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 22px;
+      }
+      @media #{$tablet} {
+        left: 35px;
+      }
     }
     p {
       font-size: 18px;
@@ -5257,16 +5823,37 @@ header.dashboard-page {
       font-family: "AvertaBold";
       color: $primaryColor;
       margin-bottom: 0;
+      @media #{$mobile} {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        text-align: center;
+      }
     }
     a {
-          position: absolute;
-          display: inline-block;
-    top: 35px;
-    right: 35px;
-    padding: 16px 53px;
-    &:hover {
-      color: #fff;
-    }
+      position: absolute;
+      display: inline-block;
+      top: 35px;
+      right: 35px;
+      padding: 16px 53px;
+      @media #{$mobile} {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        display: block;
+        font-size: 16px;
+        text-align: center;
+        padding: 14px;
+      }
+      @media #{$tablet} {
+        padding: 16px 35px;
+        top: 14px;
+      }
+      &:hover {
+        color: #fff;
+      }
     }
   }
 }
@@ -5275,96 +5862,191 @@ header.dashboard-page {
 /* Start wevpn benefits */
 .wevpn-benefits {
   margin-bottom: 80px;
+  @media #{$mobile} {
+    margin-bottom: 20px;
+  }
+  @media #{$tablet} {
+    margin-bottom: 40px;
+  }
   .wevpn-benefits-content {
     padding: 60px 80px 35px;
     background-color: #fff;
-    box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #E6E4DF;
+    box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+    @media #{$mobile} {
+      padding: 28px 21px 20px;
+      box-shadow: none;
+    }
+    @media #{$tablet} {
+        padding: 60px 40px 35px;
+      }
     h2 {
-    font-size: 24px;
-line-height: 32px;
-width: 40%;
-margin-bottom: 40px;
-  }
-  .wevpn-benefits-list {
-    overflow: hidden;
-    li {
-      float: left;
-      font-size: 16px;
-      line-height: 20px;
-      margin-bottom: 25px;
-      width: 33.3333%;
-      color: #5A5761;
-      i {
-        color: #fff;
-        font-size: 12px;
-        width: 32px;
-        height: 32px;
-        background-color: #62d5b4;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 32px;
-        margin-right: 5px;
+      font-size: 24px;
+      line-height: 32px;
+      width: 40%;
+      margin-bottom: 40px;
+      @media #{$mobile} {
+        font-size: 18px;
+        line-height: 24px;
+        width: 95%;
+        margin-bottom: 25px;
+      }
+      @media #{$tablet} {
+        width: 70%;
+      }
+    }
+    .wevpn-benefits-list {
+      overflow: hidden;
+      li {
+        float: left;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 25px;
+        width: 33.3333%;
+        color: #5a5761;
+        @media #{$mobile} {
+          width: 100%;
+          float: none;
+          margin-bottom: 20px;
+        }
+        @media #{$tablet} {
+          width: 50%;
+          margin-bottom: 20px;
+        }
+        i {
+          color: #fff;
+          font-size: 12px;
+          width: 32px;
+          height: 32px;
+          background-color: #62d5b4;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 32px;
+          margin-right: 5px;
+        }
       }
     }
   }
-  }
-  
 }
 /* End wevpn benefits */
 
-///////////////
+//////////////////////////////////////////////////
 // Start Upgrade Plan
-.dashboard {
+.dashboard.upgrade-plan-page {
+  h2 {
+    @media #{$mobile} {
+      width: 60%;
+      margin: 0 auto 28px;
+    }
+  }
   .payment-features {
     text-align: center;
-        margin-top: -30px;
+    margin-top: -30px;
     margin-bottom: 50px;
+    @media #{$mobile} {
+      text-align: left;
+      margin-left: 80px;
+      margin-bottom: 30px;
+    }
     li {
       display: inline-block;
+      @media #{$mobile} {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      @media #{$tablet} {
+        font-size: 15px;
+      }
       &:not(:last-child) {
         margin-right: 24px;
+        @media #{$tablet} {
+          margin-right: 15px;
+        }
       }
       svg {
         margin-right: 5px;
+        @media #{$tablet} {
+          position: relative;
+          top: -1px;
+          margin-right: 0;
+        }
       }
     }
   }
 }
 
 .list-content.upgrade-plan-page {
-  >div {
+  > div {
     display: none;
   }
 }
 
 .upgrade-plan-content {
-    .pricing-tables {
-      padding-top: 80px;
-      padding-bottom: 60px;
-      .price-card {
-        label {
-          padding-bottom: 0;
+  .pricing-tables {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    @media #{$mobile} {
+      padding-top: 20px;
+      padding-bottom: 29px;
+    }
+    @media #{$tablet} {
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+    .price-card {
+      label {
+        padding-bottom: 0;
+        @media #{$mobile} {
+          padding-bottom: 24px;
         }
       }
     }
-    .payment {
+  }
+  .payment {
     margin-top: 28px;
-    hr {
-        height: 1px;
-        width: 100%;
-        background-color: #E3E0D3;
-        margin-top: 15px;
-        margin-bottom: 32px;
-        border: 0;
+    @media #{$mobile} {
+      margin-top: 0;
+      .row {
+        position: relative;
+        .plan-details-col {
+          position: absolute;
+          right: 0;
+          left: 0;
+          top: 182px;
+        }
       }
+    }
+    hr {
+      height: 1px;
+      width: 100%;
+      background-color: #e3e0d3;
+      margin-top: 15px;
+      margin-bottom: 32px;
+      border: 0;
+      @media #{$mobile} {
+        display: none;
+      }
+    }
     .payment-methods {
       padding-bottom: 80px;
+      @media #{$mobile} {
+        padding-bottom: 35px;
+      }
       h3 {
         font-size: 24px;
         line-height: 44px;
         padding-top: 16px;
+        @media #{$mobile} {
+          padding-top: 0;
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 20px;
+        }
+         @media #{$tablet} {
+            font-size: 22px;
+            line-height: 34px;
+          }
       }
-      
+
       .card-info {
         display: none;
       }
@@ -5398,14 +6080,25 @@ margin-bottom: 40px;
           .label-radio {
             font-size: 18px;
             line-height: 13px;
-            text-transform: uppercase;
-            opacity: 0.7;
+            text-transform: capitalize;
             position: relative;
             cursor: pointer;
             height: 80px;
             display: block;
             padding-left: 80px;
             line-height: 80px;
+            font-family: "AvertaSemibold";
+            margin-bottom: 0;
+            @media #{$mobile} {
+              height: 48px;
+              line-height: 48px;
+              font-size: 14px;
+              padding-left: 43px;
+            }
+            @media #{$tablet} {
+              font-size: 16px;
+              padding-left: 53px;
+            }
 
             &:before {
               content: "";
@@ -5416,6 +6109,18 @@ margin-bottom: 40px;
               height: 32px;
               border-radius: 50%;
               border: 1px solid #adaba5;
+              @media #{$mobile} {
+                width: 20px;
+                height: 20px;
+                top: 14px;
+                left: 16px;
+              }
+               @media #{$tablet} {
+              width: 25px;
+                height: 25px;
+                top: 28px;
+                left: 20px;
+            }
             }
 
             &:after {
@@ -5427,6 +6132,18 @@ margin-bottom: 40px;
               height: 16px;
               border-radius: 50%;
               background-color: $primaryColor;
+              @media #{$mobile} {
+                width: 10px;
+                height: 10px;
+                top: 19px;
+                left: 21px;
+              }
+              @media #{$tablet} {
+                top: 34px;
+                left: 26px;
+                width: 13px;
+                height: 13px;
+            }
             }
           }
           img {
@@ -5434,6 +6151,42 @@ margin-bottom: 40px;
             top: 50%;
             transform: translateY(-50%);
             right: 30px;
+            @media #{$mobile} {
+              &.cards-img {
+                transform: scale(0.6);
+                right: -43px;
+                top: 13px;
+              }
+              &.paypal-img {
+                transform: scale(0.8);
+                right: 8px;
+                top: 15px;
+              }
+            }
+            @media #{$betweentabdesk} {
+              &.cards-img {
+                transform: scale(0.8);
+                right: -15px;
+    top: 30px;
+              }
+              &.paypal-img {
+                transform: scale(0.8);
+                right: 8px;
+                top: 30px;
+              }
+            }
+            @media #{$tablet} {
+              &.cards-img {
+                transform: scale(0.56);
+                right: -55px;
+                top: 30px;
+              }
+              &.paypal-img {
+                transform: scale(0.8);
+                right: 8px;
+                top: 30px;
+              }
+            }
           }
         }
       }
@@ -5442,78 +6195,149 @@ margin-bottom: 40px;
         margin-top: 12px;
       }
       .order-now {
+        @media #{$mobile} {
+          margin-top: 385px;
+        }
         button {
           padding: 16px 54px;
           margin-top: 32px;
           margin-bottom: 32px;
+          @media #{$mobile} {
+            width: 100%;
+            display: block;
+            font-size: 16px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+          }
         }
       }
-      .back {
-        font-size: 20px;
-        line-height: 25px;
-        font-family: "AvertaSemibold";
+      .back-btn {
+        @media #{$mobile} {
+          text-align: center;
+        }
+        .back {
+          font-size: 20px;
+          line-height: 25px;
+          font-family: "AvertaSemibold";
+          color: $primaryColor;
+          @media #{$mobile} {
+            font-size: 16px;
+          }
+          &:hover {
             color: $primaryColor;
-    &:hover {
-      color: $primaryColor;
-    }
+          }
+        }
       }
     }
     .plan-details {
-      background-color: #fff;
-      h3 {
-        font-size: 24px;
-        line-height: 44px;
-        padding-left: 60px;
-        padding-top: 16px;
-      }
-      .line {
-        margin-bottom: 20px;
-      }
       .plan-details-content {
-        padding-left: 60px;
-        padding-right: 60px;
-        li {
-          padding-top: 6px;
-          padding-bottom: 15px;
-          color: #8D8B92;
-          line-height: 28px;
-          &:not(:last-child) {
-            border-bottom: 1px dashed rgba(#E3E0D3, 0.7);
+        background-color: #fff;
+        h3 {
+          font-size: 24px;
+          line-height: 44px;
+          padding-left: 60px;
+          padding-top: 16px;
+          @media #{$mobile} {
+            font-size: 18px;
+            line-height: 24px;
+            padding-left: 16px;
+            margin-bottom: 0;
+          }
+          @media #{$tablet} {
+            font-size: 22px;
+            line-height: 34px;
+            padding-left: 20px;
+          }
+        }
+        .line {
+          margin-bottom: 20px;
+          @media #{$mobile} {
+            display: block;
+            margin-bottom: 10px;
+          }
+        }
+        .plan-details-list {
+          padding-left: 60px;
+          padding-right: 60px;
+          @media #{$mobile} {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          @media #{$tablet} {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+          li {
+            padding-top: 6px;
+            padding-bottom: 15px;
+            color: #8d8b92;
+            line-height: 28px;
+            @media #{$mobile} {
+              font-size: 14px;
+              padding-bottom: 10px;
+            }
+            &:not(:last-child) {
+              border-bottom: 1px dashed rgba(#e3e0d3, 0.7);
+            }
+            span {
+              float: right;
+              color: #5b5863;
+            }
+            .month {
+              color: $primaryColor;
+            }
+          }
+        }
+        .total {
+          margin-left: 60px;
+          margin-right: 60px;
+          padding-top: 26px;
+          padding-bottom: 40px;
+          color: #8d8b92;
+          border-top: 2px solid rgba(#e3e0d3, 0.7);
+          @media #{$mobile} {
+            margin-left: 16px;
+            margin-right: 16px;
+            font-size: 14px;
+            padding-top: 16px;
+            padding-bottom: 24px;
+          }
+          @media #{$tablet} {
+            margin-left: 20px;
+            margin-right: 20px;
           }
           span {
+            font-family: "AvertaSemibold";
+          }
+          .value {
             float: right;
-            color: #5B5863;
-          }
-          .month {
-            color: $primaryColor;
+            color: #5b5863;
           }
         }
       }
-      .total {
-        margin-left: 60px;
-        margin-right: 60px;
-        padding-top: 26px;
-        padding-bottom: 40px;
-        border-top: 2px solid rgba(#E3E0D3, 0.7);
-        span {
-          font-family: "AvertaSemibold";
-
+      .subscription-period {
+        padding: 28px 60px;
+        border: 1px solid #e3e0d3;
+        border-radius: 5px;
+        font-size: 16px;
+        line-height: 28px;
+        color: #8d8b92;
+        margin-top: 20px;
+        @media #{$mobile} {
+          font-size: 14px;
+          padding: 13px 38px;
+          text-align: center;
+          line-height: 20px;
+          margin-top: 12px;
+          margin-bottom: 12px;
         }
-        .value {
-          float: right;
+        @media #{$tablet} {
+          padding: 10px 20px;
+        }
+        @media #{$betweentabdesk} {
+          padding: 15px 60px;
         }
       }
-      
     }
-    .subscription-period {
-      padding: 28px 60px;
-      border: 1px solid #E3E0D3;
-      border-radius: 5px;
-      font-size: 16px;
-      line-height: 28px;
-      color: #8D8B92;
-      margin-top: 20px;
-
-      }
   }
-  }
+}
