@@ -1531,7 +1531,7 @@ header {
 footer {
   background-color: #fff;
   padding-top: 100px;
-  border-top: 1px solid #E8E4DB;
+  border-top: 1px solid #e8e4db;
   @media #{$maxTab} {
     padding-top: 60px;
   }
@@ -3084,9 +3084,9 @@ ol {
         position: absolute;
         top: 8px;
         right: 0;
-         @media #{$betweentabdesk} {
-        padding: 12px;
-      }
+        @media #{$betweentabdesk} {
+          padding: 12px;
+        }
       }
     }
   }
@@ -3096,7 +3096,7 @@ ol {
     @media #{$maxTab} {
       width: auto;
     }
-     @media #{$betweentabdesk} {
+    @media #{$betweentabdesk} {
       width: auto;
     }
     &.one,
@@ -3194,8 +3194,8 @@ ol {
           padding-bottom: 20px;
         }
         @media #{$tablet} {
-        padding-bottom: 20px;
-      }
+          padding-bottom: 20px;
+        }
         .month {
           display: block;
           font-size: 20px;
@@ -3493,6 +3493,9 @@ header.features-page {
       background-color: #fff;
       width: 195px;
     }
+    @media #{$tablet} {
+      background-color: #fff;
+    }
   }
   .popular-tickets-list {
     margin-top: 30px;
@@ -3504,9 +3507,12 @@ header.features-page {
       padding: 0 30px;
       margin-left: 90px;
     }
-    @media #{$tablet} {
+    @media #{$mobile} {
       margin-top: 20px;
       padding: 0;
+    }
+    @media #{$betweentabdesk} {
+      padding: 0 20px;
     }
     li {
       width: 33.3%;
@@ -3518,8 +3524,10 @@ header.features-page {
         float: none;
       }
       @media #{$tablet} {
-      width: 50%;
-    }
+        width: 50%;
+        line-height: 28px;
+      }
+
       a {
         color: $primaryColor;
         text-decoration: underline !important;
@@ -3542,8 +3550,12 @@ header.features-page {
     padding-top: 29px;
     padding-bottom: 29px;
     @media #{$tablet} {
-        padding: 0;
-      }
+      padding: 0;
+      box-shadow: none;
+    }
+    @media #{$betweentabdesk} {
+      padding-left: 95px;
+    }
     @media #{$mobile} {
       padding: 0;
       box-shadow: none;
@@ -3563,13 +3575,18 @@ header.features-page {
         top: 12px;
         left: 68px;
       }
+      @media #{$betweentabdesk} {
+        left: 20px;
+        top: 23px;
+      }
       @media #{$tablet} {
         transform: scale(0.8);
+        top: 16px;
         &.ticket {
-        margin-top: 5px;
+          margin-top: 0;
+          top: 30px;
+        }
       }
-      }
-      
     }
     .contacting-item-info {
       @media #{$mobile} {
@@ -3588,9 +3605,13 @@ header.features-page {
           font-size: 12px;
           margin-bottom: 0;
         }
+        @media #{$betweentabdesk} {
+          margin-bottom: 10px;
+          font-size: 15px;
+        }
         @media #{$tablet} {
           font-size: 14px;
-          margin-bottom: 8px;
+          margin-bottom: 2px;
         }
       }
       h4 {
@@ -3604,6 +3625,10 @@ header.features-page {
           font-size: 18px;
           margin-bottom: 0;
         }
+        @media #{$betweentabdesk} {
+          font-size: 18px;
+          margin-bottom: 0;
+        }
       }
     }
     .contacting-item-btn {
@@ -3612,6 +3637,9 @@ header.features-page {
       right: 32px;
       @media #{$maxTab} {
         position: static;
+      }
+      @media #{$betweentabdesk} {
+        right: 20px;
       }
       a {
         background-color: #f0eee8;
@@ -3628,6 +3656,9 @@ header.features-page {
         }
         @media #{$tablet} {
           font-size: 16px;
+        }
+        @media #{$betweentabdesk} {
+          padding: 16px 20px;
         }
       }
     }
@@ -4670,12 +4701,14 @@ header.dashboard-page {
     @media #{$maxTab} {
       padding-left: 25px;
       padding-top: 10px;
+      padding-bottom: 10px;
     }
   }
   p {
     font-size: 14px;
     line-height: 17px;
     color: #8d8b92;
+    margin-bottom: 0;
 
     a {
       color: $primaryColor;
@@ -4842,6 +4875,14 @@ header.dashboard-page {
         padding: 20px 24px 24px;
         height: auto;
       }
+      @media #{$tablet} {
+        display: block;
+        padding: 20px 24px 24px;
+      }
+      @media #{$betweentabdesk} {
+        height: 120px;
+        padding: 30px;
+      }
       &:first-child {
         border-right: 1px solid #ebe8df;
         @media #{$mobile} {
@@ -4855,27 +4896,35 @@ header.dashboard-page {
         width: 120px;
         line-height: 20px;
         opacity: 0.7;
-        @media #{$mobile} {
+        @media #{$maxTab} {
           width: 100%;
           display: block;
           text-align: center;
           margin-bottom: 5px;
           font-size: 12px;
         }
+        @media #{$tablet} {
+          font-size: 15px;
+          margin-bottom: 10px;
+        }
       }
-      a,
-      button {
+      a {
         color: #ffffff;
         font-family: "AvertaSemibold";
         display: inline-block;
         background-color: $primaryColor;
         padding: 20px 46px;
-        @media #{$mobile} {
+        height: 64px;
+        @media #{$maxTab} {
           display: block;
           padding: 14px 42px;
           font-family: "Averta";
           width: 100%;
+          height: 52px;
         }
+        @media #{$betweentabdesk} {
+        padding: 20px 30px;
+      }
         svg {
           margin-right: 5px;
           position: relative;
@@ -4937,6 +4986,11 @@ header.dashboard-page {
           line-height: 18px;
           padding: 19px 13px;
         }
+        @media #{$tablet} {
+          font-size: 20px;
+        line-height: 30px;
+          padding: 20px;
+        }
         .settings {
           font-size: 12px;
           line-height: 24px;
@@ -4959,6 +5013,10 @@ header.dashboard-page {
               font-size: 0;
             }
           }
+          @media #{$tablet} {
+            right: 20px;
+            top: 17px;
+          }
         }
       }
     }
@@ -4969,12 +5027,18 @@ header.dashboard-page {
       @media #{$mobile} {
         padding: 0 13px;
       }
+      @media #{$tablet} {
+          padding: 0 20px;
+        }
       li {
         padding-top: 35px;
         padding-bottom: 35px;
         position: relative;
         @media #{$mobile} {
           padding: 12px 0;
+        }
+        @media #{$tablet} {
+          padding-bottom: 29px;
         }
         &:not(:last-child) {
           border-bottom: 1px dashed rgba(#e3e0d3, 0.7);
@@ -4998,6 +5062,9 @@ header.dashboard-page {
             margin-bottom: 5px;
             @media #{$mobile} {
               font-size: 14px;
+            }
+            @media #{$tablet} {
+              width: 50%;
             }
           }
         }
@@ -5034,6 +5101,9 @@ header.dashboard-page {
           @media #{$mobile} {
             font-size: 12px;
             margin-top: 5px;
+          }
+          @media #{$tablet} {
+            margin-bottom: 14px;
           }
         }
       }
@@ -5091,6 +5161,9 @@ header.dashboard-page {
   @media #{$mobile} {
     width: auto;
     margin: 20px;
+  }
+  @media #{$tablet} {
+    max-width: 700px;
   }
   .padd {
     padding-right: 10px;
@@ -5152,6 +5225,9 @@ header.dashboard-page {
     @media #{$mobile} {
       padding: 0 14px;
     }
+    @media #{$tablet} {
+      padding: 0;
+    }
     .form-group {
       border: 1px solid #e0ded5;
       padding: 16px 30px;
@@ -5160,6 +5236,9 @@ header.dashboard-page {
       @media #{$mobile} {
         margin-bottom: 8px;
         padding: 7px 16px;
+      }
+      @media #{$tablet} {
+        padding: 12px 20px 15px;
       }
       label {
         font-size: 12px;
@@ -5232,11 +5311,12 @@ header.dashboard-page {
 
 .popular-tickets.dashboard-page {
   background-color: #fff;
-  border-bottom: 1px solid #E8E4DB;
+  border-bottom: 1px solid #e8e4db;
   .popular-tickets-list {
     margin-bottom: 50px;
     @media #{$mobile} {
       margin-bottom: 40px;
+      padding: 0;
     }
   }
 }
@@ -5253,10 +5333,15 @@ header.dashboard-page {
       padding-top: 20px;
       padding-bottom: 60px;
     }
+
     table {
       margin-top: 60px;
       margin-bottom: 195px;
       background-color: #fff;
+      @media #{$tablet} {
+        margin-top: 50px;
+        margin-bottom: 100px;
+      }
       td {
         border-bottom: 1px solid #e0ded5;
         border-top: 0;
@@ -5388,11 +5473,18 @@ header.dashboard-page {
         margin-top: 20px;
         margin-bottom: 40px;
       }
+      @media #{$tablet} {
+        margin-top: 50px;
+        margin-bottom: 100px;
+      }
       .subscription-content {
         background-color: #fff;
         padding: 50px 60px 0;
         @media #{$mobile} {
           padding: 19px 13px;
+        }
+        @media #{$tablet} {
+          padding: 40px 40px 0;
         }
       }
       h3 {
@@ -5642,6 +5734,9 @@ header.dashboard-page {
       @media #{$mobile} {
         padding: 10px;
       }
+      @media #{$mobile} {
+        padding: 30px 40px;
+      }
 
       button {
         padding: 16px 65px;
@@ -5675,12 +5770,19 @@ header.dashboard-page {
         margin-top: 20px;
         margin-bottom: 40px;
       }
+      @media #{$tablet} {
+        margin-top: 50px;
+        margin-bottom: 80px;
+      }
 
       &-content {
         padding: 60px;
         border-right: 1px solid #e3e0d3;
         @media #{$mobile} {
           padding: 24px;
+        }
+        @media #{$tablet} {
+          padding: 30px;
         }
         form {
           .form-group {
@@ -5741,6 +5843,9 @@ header.dashboard-page {
         top: -247px;
         z-index: 5;
       }
+      @media #{$tablet} {
+        padding: 30px 0;
+      }
       h4 {
         font-size: 16px;
         line-height: 20px;
@@ -5751,6 +5856,12 @@ header.dashboard-page {
         @media #{$mobile} {
           width: 100%;
           font-size: 14px;
+        }
+        @media #{$tablet} {
+          width: 75%;
+        }
+        @media #{$betweentabdesk} {
+          width: 100%;
         }
       }
       ul {
@@ -5785,8 +5896,8 @@ header.dashboard-page {
   background-color: #f1f1ed;
   padding-top: 20px;
   @media #{$tablet} {
-      padding-top: 40px;
-    }
+    padding-top: 40px;
+  }
 }
 .expired-subscription {
   .expiration-msg {
@@ -5877,8 +5988,11 @@ header.dashboard-page {
       box-shadow: none;
     }
     @media #{$tablet} {
-        padding: 60px 40px 35px;
-      }
+      padding: 60px 40px 35px;
+    }
+    @media #{$betweentabdesk} {
+      padding: 60px 30px 35px;
+    }
     h2 {
       font-size: 24px;
       line-height: 32px;
@@ -5892,6 +6006,9 @@ header.dashboard-page {
       }
       @media #{$tablet} {
         width: 70%;
+      }
+      @media #{$betweentabdesk} {
+        width: 49%;
       }
     }
     .wevpn-benefits-list {
@@ -6041,10 +6158,10 @@ header.dashboard-page {
           line-height: 24px;
           margin-bottom: 20px;
         }
-         @media #{$tablet} {
-            font-size: 22px;
-            line-height: 34px;
-          }
+        @media #{$tablet} {
+          font-size: 22px;
+          line-height: 34px;
+        }
       }
 
       .card-info {
@@ -6115,12 +6232,12 @@ header.dashboard-page {
                 top: 14px;
                 left: 16px;
               }
-               @media #{$tablet} {
-              width: 25px;
+              @media #{$tablet} {
+                width: 25px;
                 height: 25px;
                 top: 28px;
                 left: 20px;
-            }
+              }
             }
 
             &:after {
@@ -6143,7 +6260,7 @@ header.dashboard-page {
                 left: 26px;
                 width: 13px;
                 height: 13px;
-            }
+              }
             }
           }
           img {
@@ -6167,7 +6284,7 @@ header.dashboard-page {
               &.cards-img {
                 transform: scale(0.8);
                 right: -15px;
-    top: 30px;
+                top: 30px;
               }
               &.paypal-img {
                 transform: scale(0.8);

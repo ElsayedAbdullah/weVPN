@@ -190,18 +190,18 @@ $(function() {
   });
 
   // toggle between credit card and paypal
-  $(".credit-payment .pay-card").click(function() {
-    $(this)
-      .parent()
-      .siblings(".card-info")
-      .slideDown(500);
-  });
-  $(".paypal-payment .pay-card").click(function() {
-    $(this)
-      .parent()
-      .siblings(".card-info")
-      .slideUp(500);
-  });
+  // $(".credit-payment .pay-card").click(function() {
+  //   $(this)
+  //     .parent()
+  //     .siblings(".card-info")
+  //     .slideDown(500);
+  // });
+  // $(".paypal-payment .pay-card").click(function() {
+  //   $(this)
+  //     .parent()
+  //     .siblings(".card-info")
+  //     .slideUp(500);
+  // });
 
   // when click menu button in subscription settings tab open cancel button
   $(".list li .list-item-text .menu-btn").on("click", function() {

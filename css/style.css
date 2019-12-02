@@ -2078,7 +2078,7 @@ header .navbar .login .login-item .get-started:hover {
 footer {
   background-color: #fff;
   padding-top: 100px;
-  border-top: 1px solid #E8E4DB;
+  border-top: 1px solid #e8e4db;
 }
 
 @media (max-width: 992px) {
@@ -4477,6 +4477,12 @@ header.features-page {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .popular-tickets h2 {
+    background-color: #fff;
+  }
+}
+
 .popular-tickets .popular-tickets-list {
   margin-top: 30px;
   margin-bottom: 70px;
@@ -4492,10 +4498,16 @@ header.features-page {
   }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (max-width: 767px) {
   .popular-tickets .popular-tickets-list {
     margin-top: 20px;
     padding: 0;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .popular-tickets .popular-tickets-list {
+    padding: 0 20px;
   }
 }
 
@@ -4516,6 +4528,7 @@ header.features-page {
 @media (min-width: 768px) and (max-width: 992px) {
   .popular-tickets .popular-tickets-list li {
     width: 50%;
+    line-height: 28px;
   }
 }
 
@@ -4545,6 +4558,14 @@ header.features-page {
 @media (min-width: 768px) and (max-width: 992px) {
   .contacting .contacting-item {
     padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .contacting .contacting-item {
+    padding-left: 95px;
   }
 }
 
@@ -4578,13 +4599,22 @@ header.features-page {
   }
 }
 
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .contacting .contacting-item img {
+    left: 20px;
+    top: 23px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
   .contacting .contacting-item img {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
+    top: 16px;
   }
   .contacting .contacting-item img.ticket {
-    margin-top: 5px;
+    margin-top: 0;
+    top: 30px;
   }
 }
 
@@ -4615,10 +4645,17 @@ header.features-page {
   }
 }
 
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .contacting .contacting-item .contacting-item-info p {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
   .contacting .contacting-item .contacting-item-info p {
     font-size: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 2px;
   }
 }
 
@@ -4641,6 +4678,13 @@ header.features-page {
   }
 }
 
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .contacting .contacting-item .contacting-item-info h4 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}
+
 .contacting .contacting-item .contacting-item-btn {
   position: absolute;
   top: 32px;
@@ -4650,6 +4694,12 @@ header.features-page {
 @media (max-width: 992px) {
   .contacting .contacting-item .contacting-item-btn {
     position: static;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .contacting .contacting-item .contacting-item-btn {
+    right: 20px;
   }
 }
 
@@ -4674,6 +4724,12 @@ header.features-page {
 @media (min-width: 768px) and (max-width: 992px) {
   .contacting .contacting-item .contacting-item-btn a {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .contacting .contacting-item .contacting-item-btn a {
+    padding: 16px 20px;
   }
 }
 
@@ -5933,6 +5989,7 @@ header.dashboard-page .navbar {
   header.dashboard-page .get-started-login {
     padding-left: 25px;
     padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -5940,6 +5997,7 @@ header.dashboard-page p {
   font-size: 14px;
   line-height: 17px;
   color: #8d8b92;
+  margin-bottom: 0;
 }
 
 header.dashboard-page p a {
@@ -6160,6 +6218,20 @@ header.dashboard-page p a {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .download .download-content .item {
+    display: block;
+    padding: 20px 24px 24px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .download .download-content .item {
+    height: 120px;
+    padding: 30px;
+  }
+}
+
 .download .download-content .item:first-child {
   border-right: 1px solid #ebe8df;
 }
@@ -6179,7 +6251,7 @@ header.dashboard-page p a {
   opacity: 0.7;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .download .download-content .item p {
     width: 100%;
     display: block;
@@ -6189,48 +6261,57 @@ header.dashboard-page p a {
   }
 }
 
-.download .download-content .item a,
-.download .download-content .item button {
+@media (min-width: 768px) and (max-width: 992px) {
+  .download .download-content .item p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+.download .download-content .item a {
   color: #ffffff;
   font-family: "AvertaSemibold";
   display: inline-block;
   background-color: #fd3e72;
   padding: 20px 46px;
+  height: 64px;
 }
 
-@media (max-width: 767px) {
-  .download .download-content .item a,
-  .download .download-content .item button {
+@media (max-width: 992px) {
+  .download .download-content .item a {
     display: block;
     padding: 14px 42px;
     font-family: "Averta";
     width: 100%;
+    height: 52px;
   }
 }
 
-.download .download-content .item a svg,
-.download .download-content .item button svg {
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .download .download-content .item a {
+    padding: 20px 30px;
+  }
+}
+
+.download .download-content .item a svg {
   margin-right: 5px;
   position: relative;
   top: -2px;
 }
 
-.download .download-content .item a.web-store,
-.download .download-content .item button.web-store {
+.download .download-content .item a.web-store {
   border: 1px solid #e3e0d3;
   background: none;
   color: #5b5863;
 }
 
 @media (max-width: 767px) {
-  .download .download-content .item a.web-store,
-  .download .download-content .item button.web-store {
+  .download .download-content .item a.web-store {
     padding: 12px 42px;
   }
 }
 
-.download .download-content .item a.web-store img,
-.download .download-content .item button.web-store img {
+.download .download-content .item a.web-store img {
   position: relative;
   top: -2px;
   left: -5px;
@@ -6295,6 +6376,15 @@ header.dashboard-page p a {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .subscribe .left-column .item-heading h3,
+  .subscribe .right-column .item-heading h3 {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 20px;
+  }
+}
+
 .subscribe .left-column .item-heading h3 .settings,
 .subscribe .right-column .item-heading h3 .settings {
   font-size: 12px;
@@ -6325,6 +6415,14 @@ header.dashboard-page p a {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .subscribe .left-column .item-heading h3 .settings,
+  .subscribe .right-column .item-heading h3 .settings {
+    right: 20px;
+    top: 17px;
+  }
+}
+
 .subscribe .left-column .list,
 .subscribe .right-column .list {
   padding-left: 40px;
@@ -6335,6 +6433,13 @@ header.dashboard-page p a {
   .subscribe .left-column .list,
   .subscribe .right-column .list {
     padding: 0 13px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .subscribe .left-column .list,
+  .subscribe .right-column .list {
+    padding: 0 20px;
   }
 }
 
@@ -6349,6 +6454,13 @@ header.dashboard-page p a {
   .subscribe .left-column .list li,
   .subscribe .right-column .list li {
     padding: 12px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .subscribe .left-column .list li,
+  .subscribe .right-column .list li {
+    padding-bottom: 29px;
   }
 }
 
@@ -6386,6 +6498,13 @@ header.dashboard-page p a {
   .subscribe .left-column .list li .list-item-text p,
   .subscribe .right-column .list li .list-item-text p {
     font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .subscribe .left-column .list li .list-item-text p,
+  .subscribe .right-column .list li .list-item-text p {
+    width: 50%;
   }
 }
 
@@ -6437,6 +6556,13 @@ header.dashboard-page p a {
   .subscribe .right-column .list li .link {
     font-size: 12px;
     margin-top: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .subscribe .left-column .list li .link,
+  .subscribe .right-column .list li .link {
+    margin-bottom: 14px;
   }
 }
 
@@ -6502,6 +6628,12 @@ header.dashboard-page p a {
   .modal-dialog {
     width: auto;
     margin: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .modal-dialog {
+    max-width: 700px;
   }
 }
 
@@ -6592,6 +6724,12 @@ header.dashboard-page p a {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .modal-dialog .modal-body {
+    padding: 0;
+  }
+}
+
 .modal-dialog .modal-body .form-group {
   border: 1px solid #e0ded5;
   padding: 16px 30px;
@@ -6603,6 +6741,12 @@ header.dashboard-page p a {
   .modal-dialog .modal-body .form-group {
     margin-bottom: 8px;
     padding: 7px 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .modal-dialog .modal-body .form-group {
+    padding: 12px 20px 15px;
   }
 }
 
@@ -6713,7 +6857,7 @@ header.dashboard-page p a {
 
 .popular-tickets.dashboard-page {
   background-color: #fff;
-  border-bottom: 1px solid #E8E4DB;
+  border-bottom: 1px solid #e8e4db;
 }
 
 .popular-tickets.dashboard-page .popular-tickets-list {
@@ -6723,6 +6867,7 @@ header.dashboard-page p a {
 @media (max-width: 767px) {
   .popular-tickets.dashboard-page .popular-tickets-list {
     margin-bottom: 40px;
+    padding: 0;
   }
 }
 
@@ -6742,6 +6887,13 @@ header.dashboard-page p a {
   margin-top: 60px;
   margin-bottom: 195px;
   background-color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .list-content .content-two table {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
 }
 
 .list-content .content-two table td {
@@ -6899,6 +7051,13 @@ header.dashboard-page p a {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .list-content .content-three .subscription-settings {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+}
+
 .list-content .content-three .subscription-settings .subscription-content {
   background-color: #fff;
   padding: 50px 60px 0;
@@ -6907,6 +7066,12 @@ header.dashboard-page p a {
 @media (max-width: 767px) {
   .list-content .content-three .subscription-settings .subscription-content {
     padding: 19px 13px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .list-content .content-three .subscription-settings .subscription-content {
+    padding: 40px 40px 0;
   }
 }
 
@@ -7229,6 +7394,12 @@ header.dashboard-page p a {
   }
 }
 
+@media (max-width: 767px) {
+  .list-content .content-three .back-to-dashboard {
+    padding: 30px 40px;
+  }
+}
+
 .list-content .content-three .back-to-dashboard button {
   padding: 16px 65px;
 }
@@ -7269,6 +7440,13 @@ header.dashboard-page p a {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .list-content .content-four .change-password {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+}
+
 .list-content .content-four .change-password-content {
   padding: 60px;
   border-right: 1px solid #e3e0d3;
@@ -7277,6 +7455,12 @@ header.dashboard-page p a {
 @media (max-width: 767px) {
   .list-content .content-four .change-password-content {
     padding: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .list-content .content-four .change-password-content {
+    padding: 30px;
   }
 }
 
@@ -7385,6 +7569,12 @@ header.dashboard-page p a {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .list-content .content-four .check-password {
+    padding: 30px 0;
+  }
+}
+
 .list-content .content-four .check-password h4 {
   font-size: 16px;
   line-height: 20px;
@@ -7398,6 +7588,18 @@ header.dashboard-page p a {
   .list-content .content-four .check-password h4 {
     width: 100%;
     font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .list-content .content-four .check-password h4 {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .list-content .content-four .check-password h4 {
+    width: 100%;
   }
 }
 
@@ -7567,6 +7769,12 @@ header.dashboard-page p a {
   }
 }
 
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .wevpn-benefits .wevpn-benefits-content {
+    padding: 60px 30px 35px;
+  }
+}
+
 .wevpn-benefits .wevpn-benefits-content h2 {
   font-size: 24px;
   line-height: 32px;
@@ -7586,6 +7794,12 @@ header.dashboard-page p a {
 @media (min-width: 768px) and (max-width: 992px) {
   .wevpn-benefits .wevpn-benefits-content h2 {
     width: 70%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .wevpn-benefits .wevpn-benefits-content h2 {
+    width: 49%;
   }
 }
 
