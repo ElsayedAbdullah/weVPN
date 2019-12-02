@@ -38,11 +38,11 @@ body {
   position: relative;
   overflow-x: hidden;
   color: #5b5863;
-  background-color: #F9F8F4;
+  background-color: #f9f8f4;
 }
 
 body.body-dashboard {
-  background-color: #F2F2ED;
+  background-color: #f2f2ed;
 }
 
 h1,
@@ -4489,8 +4489,12 @@ header.features-page {
   margin-top: 30px;
   margin-bottom: 70px;
   padding: 0 150px;
-  overflow: hidden;
   margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -4515,23 +4519,21 @@ header.features-page {
 
 .popular-tickets .popular-tickets-list li {
   width: 33.3%;
-  float: left;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 10px;
+  padding-right: 30px;
 }
 
 @media (max-width: 767px) {
   .popular-tickets .popular-tickets-list li {
     width: 100%;
-    float: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
   .popular-tickets .popular-tickets-list li {
     width: 50%;
-    line-height: 28px;
   }
 }
 

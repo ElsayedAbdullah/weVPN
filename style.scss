@@ -41,9 +41,9 @@ body {
   position: relative;
   overflow-x: hidden;
   color: #5b5863;
-  background-color: #F9F8F4;
+  background-color: #f9f8f4;
   &.body-dashboard {
-    background-color: #F2F2ED;
+    background-color: #f2f2ed;
   }
 }
 
@@ -3160,8 +3160,8 @@ ol {
       &:after {
         content: "\f00c";
         position: absolute;
-            top: 52px;
-    left: 56px;
+        top: 52px;
+        left: 56px;
         color: #e0ded5;
         font-size: 18px;
         font-family: "fontawesome";
@@ -3494,8 +3494,9 @@ header.features-page {
     margin-top: 30px;
     margin-bottom: 70px;
     padding: 0 150px;
-    overflow: hidden;
     margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
     @media #{$tablet} {
       padding: 0 30px;
       margin-left: 90px;
@@ -3509,17 +3510,15 @@ header.features-page {
     }
     li {
       width: 33.3%;
-      float: left;
       font-size: 14px;
       line-height: 20px;
       margin-bottom: 10px;
+      padding-right: 30px;
       @media #{$mobile} {
         width: 100%;
-        float: none;
       }
       @media #{$tablet} {
         width: 50%;
-        line-height: 28px;
       }
 
       a {
@@ -4819,7 +4818,7 @@ header.dashboard-page {
         svg {
           margin-right: 12px;
           position: relative;
-top: -2px;
+          top: -2px;
           @media #{$mobile} {
             margin-right: 4px;
           }
@@ -4920,8 +4919,8 @@ top: -2px;
           height: 52px;
         }
         @media #{$betweentabdesk} {
-        padding: 20px 30px;
-      }
+          padding: 20px 30px;
+        }
         svg {
           margin-right: 5px;
           position: relative;
@@ -4985,7 +4984,7 @@ top: -2px;
         }
         @media #{$tablet} {
           font-size: 20px;
-        line-height: 30px;
+          line-height: 30px;
           padding: 20px;
         }
         .settings {
@@ -5025,8 +5024,8 @@ top: -2px;
         padding: 0 13px;
       }
       @media #{$tablet} {
-          padding: 0 20px;
-        }
+        padding: 0 20px;
+      }
       li {
         padding-top: 35px;
         padding-bottom: 35px;
