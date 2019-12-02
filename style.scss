@@ -41,7 +41,10 @@ body {
   position: relative;
   overflow-x: hidden;
   color: #5b5863;
-  background-color: #f9f8f4;
+  background-color: #F9F8F4;
+  &.body-dashboard {
+    background-color: #F2F2ED;
+  }
 }
 
 h1,
@@ -1782,28 +1785,8 @@ footer {
       color: rgba(#5b5863, 0.7);
       border-right: 1px solid #ebe8df;
       text-align: center;
-      &:not(:first-child) {
-        &:after {
-          content: "";
-          position: absolute;
-          background-color: $primaryColor;
-          display: block;
-          height: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          transition: all 0.3s ease-in-out;
-          opacity: 0;
-          visibility: hidden;
-        }
-      }
       &.active,
       &:hover {
-        &:after {
-          opacity: 1;
-          visibility: visible;
-          height: 4px;
-        }
         a {
           background-color: #f7f6f0;
           position: relative;
@@ -1835,6 +1818,7 @@ footer {
         display: block;
         padding: 35px 20px 20px;
         transition: all 0.3s ease-in-out;
+        height: 100%;
 
         &.apple-icon {
           padding-top: 27px;
@@ -3063,7 +3047,7 @@ ol {
       padding: 20px 0 20px 12px;
       margin: 0;
       position: relative;
-      @media #{$mobile} {
+      @media #{$maxTab} {
         font-size: 16px;
         line-height: 20px;
       }
@@ -3106,7 +3090,7 @@ ol {
         margin-top: 10px;
       }
       @media #{$tablet} {
-        margin-top: 30px;
+        margin-top: 20px;
       }
     }
     &.three {
@@ -3150,7 +3134,7 @@ ol {
         padding: 24px 16px;
       }
       @media #{$tablet} {
-        padding: 35px;
+        padding: 20px;
       }
       @media #{$betweentabdesk} {
         padding: 24px 16px;
@@ -3168,7 +3152,7 @@ ol {
         text-align: center;
         line-height: 48px;
         transition: all 0.4s ease-in-out;
-        @media #{$mobile} {
+        @media #{$maxTab} {
           top: 24px;
           left: 16px;
         }
@@ -3176,12 +3160,12 @@ ol {
       &:after {
         content: "\f00c";
         position: absolute;
-        top: 50px;
-        left: 55px;
+            top: 52px;
+    left: 56px;
         color: #e0ded5;
         font-size: 18px;
         font-family: "fontawesome";
-        @media #{$mobile} {
+        @media #{$maxTab} {
           top: 35px;
           left: 32px;
         }
@@ -3189,12 +3173,12 @@ ol {
       .price-top {
         padding-bottom: 45px;
         border-bottom: 1px solid #ebe8df;
-        @media #{$mobile} {
+        @media #{$maxTab} {
           padding-left: 60px;
           padding-bottom: 20px;
         }
         @media #{$tablet} {
-          padding-bottom: 20px;
+          padding-left: 0;
         }
         .month {
           display: block;
@@ -3208,12 +3192,18 @@ ol {
             margin-top: 0;
             margin-bottom: 5px;
           }
+          @media #{$tablet} {
+            margin-top: 15px;
+          }
         }
         p {
           position: relative;
           display: inline-block;
           @media #{$mobile} {
             margin-left: 35px;
+            margin-bottom: 0;
+          }
+          @media #{$tablet} {
             margin-bottom: 0;
           }
           .value {
@@ -3279,6 +3269,9 @@ ol {
           margin-bottom: 40px;
           @media #{$mobile} {
             margin-bottom: 0;
+          }
+          @media #{$tablet} {
+            margin-bottom: 30px;
           }
         }
         button {
@@ -3518,7 +3511,8 @@ header.features-page {
       width: 33.3%;
       float: left;
       font-size: 14px;
-      line-height: 32px;
+      line-height: 20px;
+      margin-bottom: 10px;
       @media #{$mobile} {
         width: 100%;
         float: none;
@@ -4691,6 +4685,7 @@ body.servers-page {
 //////////////////////////////////////////////////////////////////////////////
 // Start Dashboard page
 header.dashboard-page {
+  background-color: #fff;
   @media #{$maxTab} {
     height: 76px;
   }
@@ -4823,6 +4818,8 @@ header.dashboard-page {
 
         svg {
           margin-right: 12px;
+          position: relative;
+top: -2px;
           @media #{$mobile} {
             margin-right: 4px;
           }
@@ -5734,7 +5731,7 @@ header.dashboard-page {
       @media #{$mobile} {
         padding: 10px;
       }
-      @media #{$mobile} {
+      @media #{$tablet} {
         padding: 30px 40px;
       }
 

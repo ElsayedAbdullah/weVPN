@@ -38,7 +38,11 @@ body {
   position: relative;
   overflow-x: hidden;
   color: #5b5863;
-  background-color: #f9f8f4;
+  background-color: #F9F8F4;
+}
+
+body.body-dashboard {
+  background-color: #F2F2ED;
 }
 
 h1,
@@ -2397,27 +2401,6 @@ footer .copyright .copyright-links li a:hover {
           flex: 1;
 }
 
-.platforms .platform-content li:not(:first-child):after {
-  content: "";
-  position: absolute;
-  background-color: #fd3e72;
-  display: block;
-  height: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.platforms .platform-content li.active:after, .platforms .platform-content li:hover:after {
-  opacity: 1;
-  visibility: visible;
-  height: 4px;
-}
-
 .platforms .platform-content li.active a, .platforms .platform-content li:hover a {
   background-color: #f7f6f0;
   position: relative;
@@ -2446,6 +2429,7 @@ footer .copyright .copyright-links li a:hover {
   padding: 35px 20px 20px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  height: 100%;
 }
 
 .platforms .platform-content li a.apple-icon {
@@ -3924,7 +3908,7 @@ ol {
   position: relative;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .pricing-tables .marked h3 {
     font-size: 16px;
     line-height: 20px;
@@ -3989,7 +3973,7 @@ ol {
 
 @media (min-width: 768px) and (max-width: 992px) {
   .pricing-tables .price-card.one, .pricing-tables .price-card.three {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 
@@ -4046,7 +4030,7 @@ ol {
 
 @media (min-width: 768px) and (max-width: 992px) {
   .pricing-tables .price-card .label-radio {
-    padding: 35px;
+    padding: 20px;
   }
 }
 
@@ -4071,7 +4055,7 @@ ol {
   transition: all 0.4s ease-in-out;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .pricing-tables .price-card .label-radio:before {
     top: 24px;
     left: 16px;
@@ -4081,14 +4065,14 @@ ol {
 .pricing-tables .price-card .label-radio:after {
   content: "\f00c";
   position: absolute;
-  top: 50px;
-  left: 55px;
+  top: 52px;
+  left: 56px;
   color: #e0ded5;
   font-size: 18px;
   font-family: "fontawesome";
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .pricing-tables .price-card .label-radio:after {
     top: 35px;
     left: 32px;
@@ -4100,7 +4084,7 @@ ol {
   border-bottom: 1px solid #ebe8df;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .pricing-tables .price-card .label-radio .price-top {
     padding-left: 60px;
     padding-bottom: 20px;
@@ -4109,7 +4093,7 @@ ol {
 
 @media (min-width: 768px) and (max-width: 992px) {
   .pricing-tables .price-card .label-radio .price-top {
-    padding-bottom: 20px;
+    padding-left: 0;
   }
 }
 
@@ -4130,6 +4114,12 @@ ol {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .pricing-tables .price-card .label-radio .price-top .month {
+    margin-top: 15px;
+  }
+}
+
 .pricing-tables .price-card .label-radio .price-top p {
   position: relative;
   display: inline-block;
@@ -4138,6 +4128,12 @@ ol {
 @media (max-width: 767px) {
   .pricing-tables .price-card .label-radio .price-top p {
     margin-left: 35px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .pricing-tables .price-card .label-radio .price-top p {
     margin-bottom: 0;
   }
 }
@@ -4228,6 +4224,12 @@ ol {
 @media (max-width: 767px) {
   .pricing-tables .price-card .label-radio .price-bottom p {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .pricing-tables .price-card .label-radio .price-bottom p {
+    margin-bottom: 30px;
   }
 }
 
@@ -4515,7 +4517,8 @@ header.features-page {
   width: 33.3%;
   float: left;
   font-size: 14px;
-  line-height: 32px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 767px) {
@@ -5975,6 +5978,10 @@ body.servers-page {
 }
 
 /* End Servers Benefits */
+header.dashboard-page {
+  background-color: #fff;
+}
+
 @media (max-width: 992px) {
   header.dashboard-page {
     height: 76px;
@@ -6144,6 +6151,8 @@ header.dashboard-page p a {
 
 .dashboard .dashboard-list li a svg {
   margin-right: 12px;
+  position: relative;
+  top: -2px;
 }
 
 @media (max-width: 767px) {
@@ -7394,7 +7403,7 @@ header.dashboard-page p a {
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .list-content .content-three .back-to-dashboard {
     padding: 30px 40px;
   }
