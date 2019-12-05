@@ -1,14 +1,13 @@
 $(function() {
   // add class active on navbar link and remove from siblings
-  $(".navbar .navbar-nav li,.categories-links .links li").on(
-    "click",
-    function() {
-      $(this)
-        .addClass("active")
-        .siblings()
-        .removeClass("active");
-    }
-  );
+  $(
+    ".navbar .navbar-nav li,.categories-links .links li,.platform-content .platform-list li"
+  ).on("click", function() {
+    $(this)
+      .addClass("active")
+      .siblings()
+      .removeClass("active");
+  });
 
   // when click on the menu button it open the menu links
   $(".navbar .navbar-toggler").click(function(event) {
