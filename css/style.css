@@ -83,20 +83,18 @@ ul {
 .primary--btn {
   background-color: #fd3e72;
   font-family: "AvertaSemibold";
-  color: #fff;
+  font-size: 20px;
+  line-height: 25px;
+  color: #fcf9f2;
+  display: inline-block;
   border: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 767px) {
-  .primary--btn {
-    font-size: 20px;
-  }
-}
-
 .primary--btn:hover {
   background-color: #e33866;
+  color: #fcf9f2;
 }
 
 .primary--btn:hover i {
@@ -417,13 +415,8 @@ header .navbar .login .login-item .get-started:hover {
 }
 
 .hero-img-content .hero-img-btn {
-  background-color: #fd3e72;
-  font-family: "AvertaSemibold";
-  color: #fff;
-  padding: 24px 57px;
+  padding: 24px 48px;
   margin: 60px 0 17px;
-  -webkit-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
   display: inline-block;
 }
 
@@ -740,6 +733,14 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+@media (max-width: 767px) {
+  .advantages .section-one .advantages-content,
+  .advantages .section-two .advantages-content,
+  .advantages .section-three .advantages-content {
+    padding-left: 10px;
+  }
+}
+
 .advantages .section-one .advantages-content .advantages-title,
 .advantages .section-two .advantages-content .advantages-title,
 .advantages .section-three .advantages-content .advantages-title {
@@ -755,7 +756,7 @@ header .navbar .login .login-item .get-started:hover {
     padding-top: 50px;
     font-size: 24px;
     line-height: 28px;
-    width: 70%;
+    width: 65%;
     margin-bottom: 0;
   }
 }
@@ -803,15 +804,7 @@ header .navbar .login .login-item .get-started:hover {
 .advantages .section-one .advantages-content .advantages-btn,
 .advantages .section-two .advantages-content .advantages-btn,
 .advantages .section-three .advantages-content .advantages-btn {
-  padding: 24px 57px;
-}
-
-@media (max-width: 767px) {
-  .advantages .section-one .advantages-content .advantages-btn,
-  .advantages .section-two .advantages-content .advantages-btn,
-  .advantages .section-three .advantages-content .advantages-btn {
-    padding: 22.5px 51.5px;
-  }
+  padding: 24px 48px 23px;
 }
 
 .advantages .section-one .advantages-img,
@@ -833,7 +826,7 @@ header .navbar .login .login-item .get-started:hover {
     -webkit-transform: scale(0.66);
             transform: scale(0.66);
     top: -90px;
-    left: -33%;
+    left: -30%;
     position: absolute;
   }
 }
@@ -906,7 +899,7 @@ header .navbar .login .login-item .get-started:hover {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
     top: 23px;
-    left: -12%;
+    left: -10%;
     position: absolute;
   }
 }
@@ -979,29 +972,64 @@ header .navbar .login .login-item .get-started:hover {
 
 @media (max-width: 992px) {
   .advantages .section-three .advantages-icons {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 }
 
 .advantages .section-three .advantages-icons li {
   display: inline-block;
-  margin-right: -6px;
+  margin: 0 3px;
+  width: 30px;
+  height: 30px;
 }
 
-.advantages .section-three .advantages-icons li a:hover img {
-  opacity: 1;
-  -webkit-filter: none;
-          filter: none;
+@media (max-width: 767px) {
+  .advantages .section-three .advantages-icons li {
+    margin: 0;
+    margin-right: 9px;
+    width: 25px;
+    height: 25px;
+  }
 }
 
-.advantages .section-three .advantages-icons li img {
-  opacity: 0.8;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-transform: scale(0.55);
-          transform: scale(0.55);
+@media (min-width: 768px) and (max-width: 992px) {
+  .advantages .section-three .advantages-icons li {
+    margin: 0 10px;
+  }
+}
+
+.advantages .section-three .advantages-icons li a {
+  display: block;
+}
+
+.advantages .section-three .advantages-icons li a:hover svg path {
+  fill: #fd3e72;
+}
+
+.advantages .section-three .advantages-icons li a:hover .firefox .line {
+  stroke: #fd3e72;
+  fill: none;
+}
+
+.advantages .section-three .advantages-icons li a:hover .firefox .fox {
+  fill: #fd3e72;
+}
+
+.advantages .section-three .advantages-icons li a svg {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.advantages .section-three .advantages-icons li a svg path {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 992px) {
+  .advantages .section-three .advantages-icons li a svg {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
 }
 
 /* End advantages */
@@ -1150,6 +1178,7 @@ header .navbar .login .login-item .get-started:hover {
     padding: 5px 20px 20px;
     -webkit-box-shadow: none;
             box-shadow: none;
+    height: 100%;
   }
 }
 
@@ -1323,11 +1352,9 @@ header .navbar .login .login-item .get-started:hover {
 }
 
 .servers .server-btn a {
-  padding: 24px 64px;
+  padding: 24px 51px;
   background-color: #ffecf1;
   color: #fd3e72;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   display: inline-block;
 }
 
@@ -1974,24 +2001,22 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
-.customers-features .custoemer-feat button {
-  font-size: 20px;
-  padding: 21px 42px;
-  font-family: "AvertaSemibold";
+.customers-features .custoemer-feat a {
+  padding: 24px 46px;
   background-color: #ffecf1;
   color: #fd3e72;
 }
 
-.customers-features .custoemer-feat button:hover {
+.customers-features .custoemer-feat a:hover {
   background-color: #fd3e72;
   color: #fff;
 }
 
-.customers-features .custoemer-feat button:hover i {
+.customers-features .custoemer-feat a:hover i {
   color: #fff;
 }
 
-.customers-features .custoemer-feat button:active {
+.customers-features .custoemer-feat a:active {
   background-color: #ff5784;
 }
 
@@ -2097,16 +2122,17 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
-.customers-features .custoemer-feat.two button {
+.customers-features .custoemer-feat.two a {
   background-color: #fd3e72;
   color: #fff;
+  padding: 24px 48px;
 }
 
-.customers-features .custoemer-feat.two button:hover {
+.customers-features .custoemer-feat.two a:hover {
   background-color: #e33866;
 }
 
-.customers-features .custoemer-feat.two button:active {
+.customers-features .custoemer-feat.two a:active {
   background-color: #ff5784;
 }
 
@@ -2508,40 +2534,16 @@ footer .copyright .copyright-links li a:hover {
   }
 }
 
-.platforms .platform-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
-          box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
-}
-
-@media (max-width: 767px) {
-  .platforms .platform-content {
-    display: block;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-}
-
 .platforms .platform-content p {
-  padding: 48px 40px 48px 50px;
-  text-align: left;
-  font-size: 16px;
-  position: relative;
+  text-align: center;
   line-height: 20px;
   font-family: "AvertaSemibold";
   color: rgba(91, 88, 99, 0.7);
-  border-right: 1px solid #ebe8df;
-  width: 217px;
+  margin-bottom: 36px;
 }
 
 @media (max-width: 767px) {
   .platforms .platform-content p {
-    width: 100%;
-    border: 0;
-    padding: 0;
-    text-align: center;
     font-size: 12px;
     margin-bottom: 12px;
   }
@@ -2551,6 +2553,8 @@ footer .copyright .copyright-links li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
+          box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2579,6 +2583,7 @@ footer .copyright .copyright-links li a:hover {
       -ms-flex: 1;
           flex: 1;
   height: 136px;
+  background-color: #fff;
 }
 
 @media (max-width: 767px) {
@@ -2589,7 +2594,6 @@ footer .copyright .copyright-links li a:hover {
     height: 44px;
     line-height: 44px;
     text-align: left;
-    background-color: #fff;
   }
 }
 
@@ -4864,26 +4868,99 @@ ol {
   padding-bottom: 260px;
 }
 
-.hero-img.vpn h1 {
+@media (max-width: 767px) {
+  .hero-img.vpn {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+}
+
+.hero-img.vpn .hero-img-content .hero-img-title {
   margin-bottom: 30px;
   margin-top: 190px;
 }
 
-.hero-img.vpn p {
+@media (max-width: 767px) {
+  .hero-img.vpn .hero-img-content .hero-img-title {
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero-img.vpn .hero-img-content .hero-img-title {
+    margin-bottom: 30px;
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
+.hero-img.vpn .hero-img-content p {
   font-size: 18px;
   line-height: 28px;
   width: 86%;
   margin-bottom: 35px;
 }
 
+@media (max-width: 767px) {
+  .hero-img.vpn .hero-img-content p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 25px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero-img.vpn .hero-img-content p {
+    width: 92%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-img.vpn .hero-img-image {
+    height: 250px;
+  }
+  .hero-img.vpn .hero-img-image img {
+    -webkit-transform: scale(0.53);
+            transform: scale(0.53);
+    top: -105px;
+    left: -159px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero-img.vpn .hero-img-image img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
 .advantages.vpn {
   padding-top: 335px;
+}
+
+@media (max-width: 767px) {
+  .advantages.vpn {
+    padding-top: 185px;
+  }
 }
 
 .advantages.vpn .title-vpn {
   font-size: 56px;
   line-height: 56px;
   font-family: "AvertaBold";
+}
+
+@media (max-width: 767px) {
+  .advantages.vpn .title-vpn {
+    font-size: 24px;
+    line-height: 28px;
+    width: 80%;
+    margin: auto;
+  }
 }
 
 .advantages.vpn .text-vpn {
@@ -4893,6 +4970,15 @@ ol {
   margin-bottom: 70px;
 }
 
+@media (max-width: 767px) {
+  .advantages.vpn .text-vpn {
+    font-size: 14px;
+    line-height: 20px;
+    width: 60%;
+    margin: 10px auto 45px;
+  }
+}
+
 /* Start More Benefits */
 .more-benefits {
   background-color: #fff;
@@ -4900,10 +4986,25 @@ ol {
   padding-bottom: 134px;
 }
 
+@media (max-width: 767px) {
+  .more-benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .more-benefits .title {
   font-size: 36px;
   line-height: 44px;
   margin-bottom: 70px;
+}
+
+@media (max-width: 767px) {
+  .more-benefits .title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
 }
 
 .more-benefits .more-benefits-content {
@@ -4928,10 +5029,26 @@ ol {
           align-items: center;
 }
 
+@media (max-width: 767px) {
+  .more-benefits .more-benefits-content .item {
+    float: none;
+    width: 100%;
+    border: 0;
+  }
+}
+
 .more-benefits .more-benefits-content .item:first-child {
   border-right: 1px solid #ebe8df;
   padding-bottom: 64px;
   max-height: 290px;
+}
+
+@media (max-width: 767px) {
+  .more-benefits .more-benefits-content .item:first-child {
+    border: 0;
+    padding-bottom: 40px;
+    max-height: auto;
+  }
 }
 
 .more-benefits .more-benefits-content .item:nth-child(2) {
@@ -4939,13 +5056,33 @@ ol {
   max-height: 290px;
 }
 
+@media (max-width: 767px) {
+  .more-benefits .more-benefits-content .item:nth-child(2) {
+    padding-bottom: 40px;
+    max-height: auto;
+  }
+}
+
 .more-benefits .more-benefits-content .item:nth-child(5) {
   border-right: 1px solid #ebe8df;
   padding-top: 64px;
 }
 
+@media (max-width: 767px) {
+  .more-benefits .more-benefits-content .item:nth-child(5) {
+    padding-top: 40px;
+    border: 0;
+  }
+}
+
 .more-benefits .more-benefits-content .item:nth-child(6) {
   padding-top: 64px;
+}
+
+@media (max-width: 767px) {
+  .more-benefits .more-benefits-content .item:nth-child(6) {
+    padding-top: 40px;
+  }
 }
 
 .more-benefits .more-benefits-content .item:nth-child(4) {
@@ -4955,6 +5092,13 @@ ol {
   min-height: 370px;
 }
 
+@media (max-width: 767px) {
+  .more-benefits .more-benefits-content .item:nth-child(4) {
+    border: 0;
+    min-height: auto;
+  }
+}
+
 .more-benefits .more-benefits-content .item:nth-child(3) {
   border-right: 1px solid #ebe8df;
   border-top: 1px solid #ebe8df;
@@ -4962,14 +5106,38 @@ ol {
   min-height: 370px;
 }
 
+@media (max-width: 767px) {
+  .more-benefits .more-benefits-content .item:nth-child(3) {
+    border: 0;
+    min-height: auto;
+    padding-bottom: 40px;
+  }
+}
+
 .more-benefits .more-benefits-content .item .icon {
   margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .more-benefits .more-benefits-content .item .icon {
+    -webkit-transform: scale(0.82);
+            transform: scale(0.82);
+    margin-bottom: 10px;
+  }
 }
 
 .more-benefits .more-benefits-content .item .benefit-title {
   margin-bottom: 20px;
   font-size: 20px;
   line-height: 20px;
+}
+
+@media (max-width: 767px) {
+  .more-benefits .more-benefits-content .item .benefit-title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
 }
 
 .more-benefits .more-benefits-content .item .benefit-text {
@@ -4979,10 +5147,45 @@ ol {
   margin: 0 auto;
 }
 
+@media (max-width: 767px) {
+  .more-benefits .more-benefits-content .item .benefit-text {
+    font-size: 14px;
+    line-height: 24px;
+    width: 85%;
+  }
+}
+
 /* End More Benefits */
 /* Start VPN Protocol */
 .vpn-protocol {
   padding: 110px 0 50px;
+}
+
+@media (max-width: 767px) {
+  .vpn-protocol {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .vpn-protocol .vpn-protocol-img {
+    height: 300px;
+    position: relative;
+  }
+  .vpn-protocol .vpn-protocol-img img {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    position: absolute;
+    top: -90px;
+    left: -93px;
+  }
+}
+
+@media (max-width: 767px) {
+  .vpn-protocol .vpn-protocol-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .vpn-protocol .vpn-protocol-content .title {
@@ -4993,9 +5196,24 @@ ol {
   margin-bottom: 25px;
 }
 
+@media (max-width: 767px) {
+  .vpn-protocol .vpn-protocol-content .title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 55px;
+  }
+}
+
 .vpn-protocol .vpn-protocol-content p {
   font-size: 14px;
   line-height: 24px;
+}
+
+@media (max-width: 767px) {
+  .vpn-protocol .vpn-protocol-content p {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 
 .vpn-protocol .vpn-protocol-content p.text {
@@ -5003,6 +5221,12 @@ ol {
 }
 
 /* End VPN Protocol */
+@media (max-width: 767px) {
+  .risk-free.vpn .risk-free-content .risk-free-btn a {
+    padding: 24px 48px 23px;
+  }
+}
+
 /* Start Pricing Tables */
 .pricing-tables {
   padding-top: 130px;
@@ -5015,10 +5239,27 @@ ol {
   }
 }
 
+@media (max-width: 767px) {
+  .pricing-tables {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .pricing-tables .title {
   font-size: 36px;
   line-height: 44px;
   margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .pricing-tables .title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    width: 70%;
+    margin: 0 auto 40px;
+  }
 }
 
 .pricing-tables .marked {
@@ -5150,7 +5391,7 @@ ol {
   color: #fd3e72;
 }
 
-.pricing-tables .price-card input[type="radio"]:checked + .label-radio .price-bottom button {
+.pricing-tables .price-card input[type="radio"]:checked + .label-radio .price-bottom a {
   color: #fff;
   background-color: #fd3e72;
 }
@@ -5375,12 +5616,13 @@ ol {
   }
 }
 
-.pricing-tables .price-card .label-radio .price-bottom button {
+.pricing-tables .price-card .label-radio .price-bottom a {
   background-color: #ffecf1;
   color: #fd3e72;
   display: block;
   width: 100%;
   padding: 24px;
+  text-align: center;
 }
 
 /* End Pricing Tables */

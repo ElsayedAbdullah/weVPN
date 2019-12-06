@@ -80,14 +80,15 @@ ul {
 .primary--btn {
   background-color: $primaryColor;
   font-family: "AvertaSemibold";
-  color: #fff;
+  font-size: 20px;
+  line-height: 25px;
+  color: #fcf9f2;
+  display: inline-block;
   border: 0;
   transition: all 0.3s ease-in-out;
-  @media #{$mobile} {
-    font-size: 20px;
-  }
   &:hover {
     background-color: #e33866;
+    color: #fcf9f2;
     i {
       left: 14px;
     }
@@ -353,12 +354,8 @@ header {
       }
     }
     .hero-img-btn {
-      background-color: $primaryColor;
-      font-family: "AvertaSemibold";
-      color: #fff;
-      padding: 24px 57px;
+      padding: 24px 48px;
       margin: 60px 0 17px;
-      transition: background 0.3s ease-in-out;
       display: inline-block;
       @media #{$mobile} {
         margin-top: 32px;
@@ -574,6 +571,9 @@ header {
       padding-right: 0;
     }
     .advantages-content {
+      @media #{$mobile} {
+        padding-left: 10px;
+      }
       .advantages-title {
         padding-top: 70px;
         font-size: 36px;
@@ -582,7 +582,7 @@ header {
           padding-top: 50px;
           font-size: 24px;
           line-height: 28px;
-          width: 70%;
+          width: 65%;
           margin-bottom: 0;
         }
         @media #{$tablet} {
@@ -609,10 +609,7 @@ header {
         }
       }
       .advantages-btn {
-        padding: 24px 57px;
-        @media #{$mobile} {
-          padding: 22.5px 51.5px;
-        }
+        padding: 24px 48px 23px;
       }
     }
     .advantages-img {
@@ -623,7 +620,7 @@ header {
         img {
           transform: scale(0.66);
           top: -90px;
-          left: -33%;
+          left: -30%;
           position: absolute;
         }
       }
@@ -673,7 +670,7 @@ header {
         img {
           transform: scale(0.8);
           top: 23px;
-          left: -12%;
+          left: -10%;
           position: absolute;
         }
       }
@@ -729,24 +726,49 @@ header {
     .advantages-icons {
       margin-bottom: 40px;
       @media #{$maxTab} {
-        margin-bottom: 20px;
+        margin-bottom: 24px;
       }
       li {
         display: inline-block;
-        margin-right: -6px;
+        margin: 0 3px;
+        width: 30px;
+        height: 30px;
+        @media #{$mobile} {
+          margin: 0;
+          margin-right: 9px;
+          width: 25px;
+          height: 25px;
+        }
+        @media #{$tablet} {
+          margin: 0 10px;
+        }
         a {
+          display: block;
           &:hover {
-            img {
-              opacity: 1;
-              filter: none;
+            svg {
+              path {
+                fill: $primaryColor;
+              }
+            }
+            .firefox {
+              .line {
+                stroke: $primaryColor;
+                fill: none;
+              }
+              .fox {
+                fill: $primaryColor;
+              }
             }
           }
-        }
-        img {
-          opacity: 0.8;
-          filter: grayscale(100%);
-          transform: scale(0.55);
-          transition: all 0.3s ease-in-out;
+          svg {
+            transform: scale(0.7);
+            path {
+              transition: all 0.3s ease-in-out;
+            }
+            @media #{$maxTab} {
+              transform: scale(0.6);
+            }
+          }
         }
       }
     }
@@ -859,6 +881,7 @@ header {
         width: 100%;
         padding: 5px 20px 20px;
         box-shadow: none;
+        height: 100%;
       }
       @media #{$tablet} {
         width: 100%;
@@ -980,10 +1003,9 @@ header {
       padding-bottom: 100px;
     }
     a {
-      padding: 24px 64px;
+      padding: 24px 51px;
       background-color: #ffecf1;
       color: $primaryColor;
-      transition: all 0.3s ease-in-out;
       display: inline-block;
       @media #{$mobile} {
         width: 100%;
@@ -1455,10 +1477,8 @@ header {
         margin-bottom: 20px;
       }
     }
-    button {
-      font-size: 20px;
-      padding: 21px 42px;
-      font-family: "AvertaSemibold";
+    a {
+      padding: 24px 46px;
       background-color: #ffecf1;
       color: $primaryColor;
       &:hover {
@@ -1539,9 +1559,11 @@ header {
           margin-top: 13px;
         }
       }
-      button {
+      a {
         background-color: $primaryColor;
         color: #fff;
+        padding: 24px 48px;
+
         &:hover {
           background-color: #e33866;
         }
@@ -1729,8 +1751,8 @@ footer {
         .login-link {
           color: #fff;
           @media #{$mobile} {
-    color: #5b5863;
-  }
+            color: #5b5863;
+          }
           &:hover {
             color: rgba(#fff, 0.7);
           }
@@ -1739,9 +1761,9 @@ footer {
           background-color: #fff;
           color: $primaryColor;
           @media #{$mobile} {
-    background-color: $primaryColor;
-          color: #fff;
-  }
+            background-color: $primaryColor;
+            color: #fff;
+          }
           &:hover {
             background: #fff;
           }
@@ -1858,33 +1880,20 @@ footer {
     padding-top: 0;
   }
   .platform-content {
-    display: flex;
-    box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
-    @media #{$mobile} {
-      display: block;
-      box-shadow: none;
-    }
     p {
-      padding: 48px 40px 48px 50px;
-      text-align: left;
-      font-size: 16px;
-      position: relative;
+      text-align: center;
       line-height: 20px;
       font-family: "AvertaSemibold";
       color: rgba(#5b5863, 0.7);
-      border-right: 1px solid #ebe8df;
-      width: 217px;
+      margin-bottom: 36px;
       @media #{$mobile} {
-        width: 100%;
-        border: 0;
-        padding: 0;
-        text-align: center;
         font-size: 12px;
         margin-bottom: 12px;
       }
     }
     .platform-list {
       display: flex;
+      box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
       align-items: center;
       flex: 2;
       @media #{$mobile} {
@@ -1902,6 +1911,7 @@ footer {
         text-align: center;
         flex: 1;
         height: 136px;
+        background-color: #fff;
         @media #{$mobile} {
           float: left;
           width: 50%;
@@ -1909,7 +1919,6 @@ footer {
           height: 44px;
           line-height: 44px;
           text-align: left;
-          background-color: #fff;
         }
         &.active,
         &:hover {
@@ -2578,8 +2587,8 @@ footer {
   }
   .devices-content {
     @media #{$mobile} {
-        padding-left: 15px;
-      }
+      padding-left: 15px;
+    }
     .devices-title {
       padding-top: 70px;
       font-size: 36px;
@@ -2618,7 +2627,7 @@ footer {
     .devices-btn {
       padding: 24px 57px;
       display: inline-block;
-      text-align:center;
+      text-align: center;
       @media #{$mobile} {
         padding: 21px 48px;
         font-size: 20px;
@@ -2633,16 +2642,16 @@ footer {
   background-color: #fff;
   padding-top: 134px;
   @media #{$mobile} {
-      padding-top: 60px;
-    }
+    padding-top: 60px;
+  }
   .faq-title {
     font-size: 36px;
     line-height: 44px;
     margin-bottom: 70px;
     @media #{$mobile} {
       font-size: 24px;
-line-height: 28px;
-margin-bottom: 20px;
+      line-height: 28px;
+      margin-bottom: 20px;
     }
   }
   .accordion {
@@ -2761,20 +2770,20 @@ margin-bottom: 20px;
     text-align: center;
     margin-top: 40px;
     padding-bottom: 135px;
-     @media #{$mobile} {
-          margin-top: 0;
-    padding-bottom: 60px;
-        }
+    @media #{$mobile} {
+      margin-top: 0;
+      padding-bottom: 60px;
+    }
     a {
       background-color: #ffecf1;
       color: $primaryColor;
       padding: 24px 95px;
       display: inline-block;
-       @media #{$mobile} {
-          display: block;
-          padding: 21px 60px;
-          font-size: 20px;
-        }
+      @media #{$mobile} {
+        display: block;
+        padding: 21px 60px;
+        font-size: 20px;
+      }
       &:hover {
         background-color: $primaryColor;
         color: #fff;
@@ -2794,11 +2803,11 @@ margin-bottom: 20px;
   padding: 134px 0;
   background-position-x: 43%;
   @media #{$mobile} {
-         padding: 60px 0;
-             background-size: 140%;
+    padding: 60px 0;
+    background-size: 140%;
     background-position: 50% 30px;
     background-repeat: no-repeat;
-        }
+  }
   &-content {
     .risk-free-title {
       font-size: 36px;
@@ -2807,18 +2816,18 @@ margin-bottom: 20px;
       margin: auto;
       margin-bottom: 60px;
       @media #{$mobile} {
-          font-size: 24px;
-line-height: 28px;
-width: 100%;
-margin-bottom: 0;
-        }
+        font-size: 24px;
+        line-height: 28px;
+        width: 100%;
+        margin-bottom: 0;
+      }
     }
     .risk-free-img {
       margin-bottom: 38px;
       @media #{$mobile} {
-              transform: scale(0.62);
-              margin-bottom: 0;
-        }
+        transform: scale(0.62);
+        margin-bottom: 0;
+      }
     }
     .risk-free-txt {
       font-size: 18px;
@@ -2826,13 +2835,13 @@ margin-bottom: 0;
       width: 36%;
       margin: 0 auto 44px;
       @media #{$mobile} {
-          font-size: 14px;
-line-height: 28px;
-margin: 0 auto 24px;
-width: 80%;
+        font-size: 14px;
+        line-height: 28px;
+        margin: 0 auto 24px;
+        width: 80%;
 
-text-align: center;
-        }
+        text-align: center;
+      }
       a {
         color: $primaryColor;
       }
@@ -2842,9 +2851,9 @@ text-align: center;
         padding: 24px 64px;
         display: inline-block;
         @media #{$mobile} {
-              display: block;
-              font-size: 20px;
-              padding: 21px 64px;
+          display: block;
+          font-size: 20px;
+          padding: 21px 64px;
         }
       }
     }
@@ -3539,30 +3548,87 @@ ol {
 // Start what's VPN page
 .hero-img.vpn {
   padding-bottom: 260px;
-  h1 {
+  @media #{$mobile} {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  .hero-img-content {
+    .hero-img-title {
     margin-bottom: 30px;
     margin-top: 190px;
+    @media #{$mobile} {
+      margin-bottom: 25px;
+      margin-top: 25px;
+    }
+    @media #{$tablet} {
+      margin-bottom: 30px;
+      margin-top: 0;
+      width: 100%;
+    }
   }
   p {
     font-size: 18px;
     line-height: 28px;
     width: 86%;
     margin-bottom: 35px;
+    @media #{$mobile} {
+      width: 100%;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 25px;
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+    @media #{$tablet} {
+      width: 92%
+    }
+  }
+  }
+  
+  .hero-img-image {
+    @media #{$mobile} {
+      height: 250px;
+      img {
+        transform: scale(0.53);
+        top: -105px;
+        left: -159px;
+      }
+    }
+    @media #{$tablet} {
+      img {
+        transform: scale(0.8);
+      }
+    }
   }
 }
 
 .advantages.vpn {
   padding-top: 335px;
+  @media #{$mobile} {
+    padding-top: 185px;
+  }
   .title-vpn {
     font-size: 56px;
     line-height: 56px;
     font-family: "AvertaBold";
+    @media #{$mobile} {
+      font-size: 24px;
+      line-height: 28px;
+      width: 80%;
+      margin: auto;
+    }
   }
   .text-vpn {
     font-size: 24px;
     line-height: 30px;
     margin-top: 36px;
     margin-bottom: 70px;
+    @media #{$mobile} {
+      font-size: 14px;
+      line-height: 20px;
+      width: 60%;
+      margin: 10px auto 45px;
+    }
   }
 }
 
@@ -3571,10 +3637,19 @@ ol {
   background-color: #fff;
   padding-top: 134px;
   padding-bottom: 134px;
+  @media #{$mobile} {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .title {
     font-size: 36px;
     line-height: 44px;
     margin-bottom: 70px;
+    @media #{$mobile} {
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 40px;
+    }
   }
   .more-benefits-content {
     overflow: hidden;
@@ -3585,47 +3660,91 @@ ol {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      @media #{$mobile} {
+        float: none;
+        width: 100%;
+        border: 0;
+      }
       &:first-child {
         border-right: 1px solid #ebe8df;
         padding-bottom: 64px;
         max-height: 290px;
+        @media #{$mobile} {
+          border: 0;
+          padding-bottom: 40px;
+          max-height: auto;
+        }
       }
       &:nth-child(2) {
         padding-bottom: 64px;
         max-height: 290px;
+        @media #{$mobile} {
+          padding-bottom: 40px;
+          max-height: auto;
+        }
       }
       &:nth-child(5) {
         border-right: 1px solid #ebe8df;
         padding-top: 64px;
+        @media #{$mobile} {
+          padding-top: 40px;
+          border: 0;
+        }
       }
       &:nth-child(6) {
         padding-top: 64px;
+        @media #{$mobile} {
+          padding-top: 40px;
+        }
       }
       &:nth-child(4) {
         border-right: 0;
         border-top: 1px solid #ebe8df;
         border-bottom: 1px solid #ebe8df;
         min-height: 370px;
+        @media #{$mobile} {
+          border: 0;
+          min-height: auto;
+        }
       }
       &:nth-child(3) {
         border-right: 1px solid #ebe8df;
         border-top: 1px solid #ebe8df;
         border-bottom: 1px solid #ebe8df;
         min-height: 370px;
+        @media #{$mobile} {
+          border: 0;
+          min-height: auto;
+           padding-bottom: 40px;
+        }
       }
       .icon {
         margin-bottom: 50px;
+        @media #{$mobile} {
+          transform: scale(0.82);
+          margin-bottom: 10px;
+        }
       }
       .benefit-title {
         margin-bottom: 20px;
         font-size: 20px;
         line-height: 20px;
+        @media #{$mobile} {
+          font-size: 16px;
+          line-height: 20px;
+          margin-bottom: 12px;
+        }
       }
       .benefit-text {
         font-size: 16px;
         line-height: 28px;
         width: 74%;
         margin: 0 auto;
+        @media #{$mobile} {
+          font-size: 14px;
+          line-height: 24px;
+          width: 85%;
+        }
       }
     }
   }
@@ -3635,17 +3754,47 @@ ol {
 /* Start VPN Protocol */
 .vpn-protocol {
   padding: 110px 0 50px;
+   @media #{$mobile} {
+         padding: 60px 0;
+        }
+  .vpn-protocol-img {
+    @media #{$mobile} {
+      height: 300px;
+      position: relative;
+          img {
+            transform: scale(0.7);
+    position: absolute;
+    top: -90px;
+    left: -93px;
+          }
+        }
+    
+  }
   .vpn-protocol-content {
+    @media #{$mobile} {
+         padding-left: 16px;
+    padding-right: 16px;
+
+        }
     .title {
       margin-top: 80px;
       font-size: 36px;
       line-height: 44px;
       width: 70%;
       margin-bottom: 25px;
+      @media #{$mobile} {
+         font-size: 24px;
+line-height: 28px;
+margin-top: 55px;
+        }
     }
     p {
       font-size: 14px;
       line-height: 24px;
+       @media #{$mobile} {
+         font-size: 16px;
+line-height: 28px;
+        }
       &.text {
         margin-bottom: 20px;
       }
@@ -3654,6 +3803,19 @@ ol {
 }
 /* End VPN Protocol */
 
+.risk-free.vpn {
+  .risk-free-content {
+    .risk-free-btn {
+    @media #{$mobile} {
+    a {
+      padding: 24px 48px 23px;
+    }
+  }
+  }
+  }
+  
+}
+
 /* Start Pricing Tables */
 .pricing-tables {
   padding-top: 130px;
@@ -3661,11 +3823,22 @@ ol {
   @media #{$tablet} {
     padding-top: 40px;
   }
+  @media #{$mobile} {
+    padding-top: 60px;
+  padding-bottom: 60px;
+  }
 
   .title {
     font-size: 36px;
     line-height: 44px;
     margin-bottom: 60px;
+     @media #{$mobile} {
+    font-size: 24px;
+line-height: 28px;
+ margin-bottom: 40px;
+     width: 70%;
+     margin: 0 auto 40px;
+  }
   }
   .marked {
     background-color: #62d5b4;
@@ -3757,7 +3930,7 @@ ol {
       &:checked + .label-radio .price-top p .value {
         color: $primaryColor;
       }
-      &:checked + .label-radio .price-bottom button {
+      &:checked + .label-radio .price-bottom a {
         color: #fff;
         background-color: $primaryColor;
       }
@@ -3913,12 +4086,13 @@ ol {
             margin-bottom: 30px;
           }
         }
-        button {
+        a {
           background-color: #ffecf1;
           color: $primaryColor;
           display: block;
           width: 100%;
           padding: 24px;
+          text-align: center;
         }
       }
     }
