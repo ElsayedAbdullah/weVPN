@@ -3888,18 +3888,43 @@ footer .copyright .copyright-links li a:hover {
   left: 310px;
 }
 
+@media (max-width: 767px) {
+  .hero-img.android .hero-img-image.android .one {
+    top: -150px;
+    left: 80px;
+    -webkit-transform: scale(0.38);
+            transform: scale(0.38);
+  }
+}
+
 .hero-img.android .hero-img-image.android .two {
   top: 70px;
   left: 20px;
 }
 
+@media (max-width: 767px) {
+  .hero-img.android .hero-img-image.android .two {
+    top: -175px;
+    left: -30px;
+    -webkit-transform: scale(0.38);
+            transform: scale(0.38);
+  }
+}
+
 .hero-img.android .hero-img-btn {
   padding: 24px 64.5px;
+  margin-bottom: 10px;
 }
 
 .hero-img.android .google-play {
   display: inline-block;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .hero-img.android .google-play {
+    display: block;
+  }
 }
 
 .hero-img.android .google-play .google-play-btn {
@@ -3908,6 +3933,15 @@ footer .copyright .copyright-links li a:hover {
   position: relative;
   top: -1px;
   margin-left: 15px;
+}
+
+@media (max-width: 767px) {
+  .hero-img.android .google-play .google-play-btn {
+    top: 0;
+    margin-left: 0;
+    display: block;
+    text-align: center;
+  }
 }
 
 .hero-img.android .google-play .google-play-btn img:first-child {
@@ -3935,9 +3969,21 @@ footer .copyright .copyright-links li a:hover {
   text-decoration: none !important;
 }
 
+.benefits .benefits-wrapper .benefit.android .benefits-img img {
+  right: -52px;
+  top: -130px;
+}
+
 .benefits .benefits-wrapper .benefit.android .benfits-img-two {
   border-radius: 55px;
   bottom: 180px;
+}
+
+@media (max-width: 767px) {
+  .benefits .benefits-wrapper .benefit.android .benfits-img-two {
+    bottom: -100px;
+    left: 0;
+  }
 }
 
 .hero-img.iphone .hero-img-image.iphone .one {
@@ -3945,18 +3991,43 @@ footer .copyright .copyright-links li a:hover {
   left: 280px;
 }
 
+@media (max-width: 767px) {
+  .hero-img.iphone .hero-img-image.iphone .one {
+    top: -190px;
+    left: 0px;
+    -webkit-transform: scale(0.41);
+            transform: scale(0.41);
+  }
+}
+
 .hero-img.iphone .hero-img-image.iphone .two {
   top: 190px;
   left: 50px;
 }
 
+@media (max-width: 767px) {
+  .hero-img.iphone .hero-img-image.iphone .two {
+    top: -110px;
+    left: -40px;
+    -webkit-transform: scale(0.41);
+            transform: scale(0.41);
+  }
+}
+
 .hero-img.iphone .hero-img-btn {
   padding: 24px 64.5px;
+  margin-bottom: 10px;
 }
 
 .hero-img.iphone .google-play {
   display: inline-block;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .hero-img.iphone .google-play {
+    display: block;
+  }
 }
 
 .hero-img.iphone .google-play .google-play-btn {
@@ -3967,6 +4038,15 @@ footer .copyright .copyright-links li a:hover {
   margin-left: 15px;
 }
 
+@media (max-width: 767px) {
+  .hero-img.iphone .google-play .google-play-btn {
+    top: 0;
+    margin-left: 0;
+    display: block;
+    text-align: center;
+  }
+}
+
 .hero-img.iphone .google-play .google-play-btn img:first-child {
   margin-right: 10px;
 }
@@ -3975,9 +4055,22 @@ footer .copyright .copyright-links li a:hover {
   overflow: visible;
 }
 
+@media (max-width: 767px) {
+  .benefits .benefits-wrapper .benefit.iphone .benefits-img {
+    margin-top: 20px;
+  }
+}
+
 .benefits .benefits-wrapper .benefit.iphone .benefits-img img {
   right: 45px;
   top: -80px;
+}
+
+@media (max-width: 767px) {
+  .benefits .benefits-wrapper .benefit.iphone .benefits-img img {
+    right: -90px;
+    top: -198px;
+  }
 }
 
 .benefits .benefits-wrapper .benefit.iphone .benfits-img-two {
@@ -3987,6 +4080,13 @@ footer .copyright .copyright-links li a:hover {
           box-shadow: 100px 120px 149px rgba(186, 185, 181, 0.64);
   bottom: 198px;
   left: 35px;
+}
+
+@media (max-width: 767px) {
+  .benefits .benefits-wrapper .benefit.iphone .benfits-img-two {
+    bottom: -60px;
+    left: -40px;
+  }
 }
 
 header.border--bottom .container {

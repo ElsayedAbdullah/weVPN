@@ -2891,10 +2891,10 @@ footer {
     img {
       top: 80px;
       @media #{$mobile} {
-             transform: scale(0.37);
-    top: -195px;
-    left: -195px;
-        }
+        transform: scale(0.37);
+        top: -195px;
+        left: -195px;
+      }
     }
   }
 }
@@ -2902,22 +2902,22 @@ footer {
 .benefits-wrapper.mac {
   .benefits-content {
     @media #{$mobile} {
-          margin-top: 0;
-        }
+      margin-top: 0;
+    }
   }
 }
 
 .benefits .benefits-wrapper .benefit.mac .benefits-img {
   @media #{$mobile} {
-          margin-top: 10px;
+    margin-top: 10px;
     margin-bottom: 20px;
-        }
+  }
   img {
     left: 92px;
     @media #{$mobile} {
-          left: -64px;
-          top: -102px
-        }
+      left: -64px;
+      top: -102px;
+    }
   }
 }
 .benefits .benefits-wrapper .benefit.mac .benfits-img-two {
@@ -2925,9 +2925,9 @@ footer {
   left: 270px;
   box-shadow: -90px 120px 149px rgba(186, 185, 181, 0.54);
   @media #{$mobile} {
-              bottom: -65px;
+    bottom: -65px;
     left: 38px;
-        }
+  }
 }
 
 //////////////////////////////////////////////////////////////
@@ -2937,24 +2937,44 @@ footer {
     .one {
       top: 140px;
       left: 310px;
+      @media #{$mobile} {
+            top: -150px;
+    left: 80px;
+    transform: scale(0.38);
+      }
     }
     .two {
       top: 70px;
       left: 20px;
+      @media #{$mobile} {
+            top: -175px;
+    left: -30px;
+    transform: scale(0.38);
+      }
     }
   }
   .hero-img-btn {
     padding: 24px 64.5px;
+    margin-bottom: 10px;
   }
   .google-play {
     display: inline-block;
     position: relative;
+    @media #{$mobile} {
+      display: block;
+    }
     .google-play-btn {
       background-color: #2c3038;
       padding: 19.5px 50.5px;
       position: relative;
       top: -1px;
       margin-left: 15px;
+      @media #{$mobile} {
+        top: 0;
+        margin-left: 0;
+        display: block;
+        text-align: center;
+      }
       img:first-child {
         margin-right: 10px;
       }
@@ -2979,9 +2999,18 @@ footer {
   }
 }
 
+.benefits .benefits-wrapper .benefit.android .benefits-img img {
+      right: -52px;
+    top: -130px;
+}
+
 .benefits .benefits-wrapper .benefit.android .benfits-img-two {
   border-radius: 55px;
   bottom: 180px;
+  @media #{$mobile} {
+           bottom: -100px;
+    left: 0;
+      }
 }
 
 //////////////////////////////////////////////////////////////
@@ -2991,24 +3020,44 @@ footer {
     .one {
       top: 75px;
       left: 280px;
+      @media #{$mobile} {
+        top: -190px;
+        left: 0px;
+        transform: scale(0.41);
+      }
     }
     .two {
       top: 190px;
       left: 50px;
+      @media #{$mobile} {
+        top: -110px;
+        left: -40px;
+        transform: scale(0.41);
+      }
     }
   }
   .hero-img-btn {
     padding: 24px 64.5px;
+    margin-bottom: 10px;
   }
   .google-play {
     display: inline-block;
     position: relative;
+    @media #{$mobile} {
+      display: block;
+    }
     .google-play-btn {
       background-color: #2c3038;
       padding: 21px 50.5px;
       position: relative;
       top: -1px;
       margin-left: 15px;
+      @media #{$mobile} {
+        top: 0;
+        margin-left: 0;
+        display: block;
+        text-align: center;
+      }
       img:first-child {
         margin-right: 10px;
       }
@@ -3017,10 +3066,17 @@ footer {
 }
 
 .benefits .benefits-wrapper .benefit.iphone .benefits-img {
+  @media #{$mobile} {
+    margin-top: 20px;
+  }
   overflow: visible;
   img {
     right: 45px;
     top: -80px;
+    @media #{$mobile} {
+      right: -90px;
+      top: -198px;
+    }
   }
 }
 .benefits .benefits-wrapper .benefit.iphone .benfits-img-two {
@@ -3029,6 +3085,10 @@ footer {
   box-shadow: 100px 120px 149px rgba(186, 185, 181, 0.64);
   bottom: 198px;
   left: 35px;
+  @media #{$mobile} {
+    bottom: -60px;
+    left: -40px;
+  }
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -3792,7 +3852,7 @@ ol {
           transform: scale(0.82);
           margin-bottom: 10px;
         }
-         @media #{$betweentabdesk} {
+        @media #{$betweentabdesk} {
           margin-bottom: 40px;
         }
       }
@@ -4191,8 +4251,8 @@ ol {
           text-align: center;
           @media #{$tablet} {
             display: inline-block;
-          padding: 24px 48px 23px;
-          width: auto;
+            padding: 24px 48px 23px;
+            width: auto;
           }
         }
       }

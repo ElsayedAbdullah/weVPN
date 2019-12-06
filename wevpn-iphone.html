@@ -104,10 +104,10 @@
                 <i class="fa fa-caret-right" aria-hidden="true"></i>
               </a>
               <div class="google-play">
-                <button class="google-play-btn primary--btn">
+                <a href="#" class="google-play-btn primary--btn">
                   <img src="imgs/apple-store.svg" alt="">
                   <img src="imgs/app-store.svg" alt="">
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -120,7 +120,6 @@
         </div>
         <img class="header-shape windows" src="imgs/head-windows.svg" draggable="false" alt="head-windows img">
       </div>
-      
     </section>
     <!-- End Hero Image -->
     </div>
@@ -249,7 +248,7 @@
     <section class="how-to-use">
       <div class="container">
         <h2 class="how-to-use-title">How to use WeVPN in 3 Steps</h2>
-        <div class="row">
+        <div class="row d-none d-md-flex">
           <div class="col-md-4">
             <div class="step">
               <h3 class="step-text"><span>01</span>Select a location</h3>
@@ -274,6 +273,29 @@
               </div>
             </div>
           </div>
+
+        </div>
+        <div class="slider d-block d-md-none">
+          <div class="owl-carousel owl-theme owl-visible" id="how-to-use-slider">
+            <div class="step">
+              <h3 class="step-text"><span>01</span>Select a location</h3>
+              <div class="step-img">
+                <img src="imgs/iphone-step-one.png" alt="">
+              </div>
+            </div>
+            <div class="step">
+              <h3 class="step-text"><span>02</span>Tap connect button</h3>
+              <div class="step-img">
+                <img src="imgs/iphone-step-two.png" alt="">
+              </div>
+            </div>
+            <div class="step">
+              <h3 class="step-text"><span>03</span>Yay! You’re connected</h3>
+              <div class="step-img last">
+                <img src="imgs/iphone-step-three.png" alt="">
+              </div>
+            </div>
+        </div>
         </div>
       </div>
     </section>
@@ -580,7 +602,7 @@
         <div class="benefits-wrapper">
           <h2 class="benfits-title">Learn how can WeVPN benefit you</h2>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 order-2 order-md-1">
               <div class="benefits-content">
                 <ul class="benefits-list">
                   <li class="benefit-item">
@@ -620,7 +642,7 @@
               </div>
               </div>
             </div>
-            <div class="col-md-6 benefit iphone">
+            <div class="col-md-6 order-1 order-md-2 benefit iphone">
               <div class="benefits-img">
                 <img src="imgs/iphone-benefits-1.png" alt="">
               </div>
@@ -908,6 +930,29 @@
       $(function () {
         // trigger fancybox
         $('[data-fancybox="gallery"]').fancybox({});
+
+         $(window).on('resize', function(){
+           if ($(window).width() > 767) {
+              $('#how-to-use-slider').removeClass('owl-visible');
+            } else {
+              $('#how-to-use-slider').addClass('owl-visible');
+            }
+        });
+
+        $(".owl-visible").owlCarousel({
+        
+          loop:true,
+            margin:30,
+            dots: false,
+            responsive:{
+              0:{
+                  items:1.5
+              },
+              600:{
+                  items:1.5
+              }
+            }
+        });
       });
     </script>
   </body>
