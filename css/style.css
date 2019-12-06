@@ -425,7 +425,7 @@ header .navbar .login .login-item .get-started:hover {
     margin-top: 32px;
     font-size: 20px;
     width: 100%;
-    padding: 21px;
+    padding: 24px;
     display: block;
     text-align: center;
   }
@@ -979,8 +979,8 @@ header .navbar .login .login-item .get-started:hover {
 .advantages .section-three .advantages-icons li {
   display: inline-block;
   margin: 0 3px;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
 }
 
 @media (max-width: 767px) {
@@ -994,7 +994,7 @@ header .navbar .login .login-item .get-started:hover {
 
 @media (min-width: 768px) and (max-width: 992px) {
   .advantages .section-three .advantages-icons li {
-    margin: 0 10px;
+    margin: 0 2px;
   }
 }
 
@@ -1016,20 +1016,13 @@ header .navbar .login .login-item .get-started:hover {
 }
 
 .advantages .section-three .advantages-icons li a svg {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
 }
 
 .advantages .section-three .advantages-icons li a svg path {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-@media (max-width: 992px) {
-  .advantages .section-three .advantages-icons li a svg {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
 }
 
 /* End advantages */
@@ -1360,9 +1353,7 @@ header .navbar .login .login-item .get-started:hover {
 
 @media (max-width: 767px) {
   .servers .server-btn a {
-    width: 100%;
-    font-size: 20px;
-    padding: 21px 64px;
+    padding: 24px 64px 23px;
     display: block;
   }
 }
@@ -2357,7 +2348,7 @@ footer .copyright .copyright-links li a:hover {
   padding-bottom: 150px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .wrapper-header.windows {
     padding-bottom: 60px;
   }
@@ -2920,7 +2911,7 @@ footer .copyright .copyright-links li a:hover {
   padding: 130px 0;
   top: -250px;
   left: 15px;
-  width: 1170px;
+  right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2941,6 +2932,18 @@ footer .copyright .copyright-links li a:hover {
     background-size: cover;
     padding: 56px 0;
     top: -110px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .video-install .video-install-frame {
+    left: 0;
+    right: 0;
+    width: auto;
+    padding: 80px 0;
+    background-position: center;
+    background-size: cover;
+    top: -180px;
   }
 }
 
@@ -2980,6 +2983,15 @@ footer .copyright .copyright-links li a:hover {
     height: 72px;
     line-height: 72px;
     font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .video-install .video-install-frame .video-install-content a {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 28px;
   }
 }
 
@@ -3335,15 +3347,14 @@ footer .copyright .copyright-links li a:hover {
 }
 
 .benefits .benefits-wrapper .benefits-content .benefits-btn a {
-  padding: 21px 96px;
-  font-size: 20px;
+  padding: 24px 96px 23px;
   color: #fd3e72;
   background-color: #ffecf1;
 }
 
 @media (max-width: 767px) {
   .benefits .benefits-wrapper .benefits-content .benefits-btn a {
-    padding: 21px 60px;
+    padding: 24px 60px 23px;
     display: block;
     text-align: center;
   }
@@ -3432,8 +3443,8 @@ footer .copyright .copyright-links li a:hover {
     position: relative;
   }
   .devices-os .devices-img img {
-    -webkit-transform: scale(0.65);
-            transform: scale(0.65);
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
     left: -140px;
     position: absolute;
     top: -120px;
@@ -3503,8 +3514,7 @@ footer .copyright .copyright-links li a:hover {
 
 @media (max-width: 767px) {
   .devices-os .devices-content .devices-btn {
-    padding: 21px 48px;
-    font-size: 20px;
+    padding: 24px 48px;
   }
 }
 
@@ -3702,8 +3712,7 @@ footer .copyright .copyright-links li a:hover {
 @media (max-width: 767px) {
   .faq .faq-btn a {
     display: block;
-    padding: 21px 60px;
-    font-size: 20px;
+    padding: 24px 60px 23px;
   }
 }
 
@@ -3724,7 +3733,7 @@ footer .copyright .copyright-links li a:hover {
   background-position-x: 43%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .risk-free {
     padding: 60px 0;
     background-size: 140%;
@@ -3750,6 +3759,13 @@ footer .copyright .copyright-links li a:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .risk-free-content .risk-free-title {
+    width: 55%;
+    margin-bottom: 30px;
+  }
+}
+
 .risk-free-content .risk-free-img {
   margin-bottom: 38px;
 }
@@ -3759,6 +3775,14 @@ footer .copyright .copyright-links li a:hover {
     -webkit-transform: scale(0.62);
             transform: scale(0.62);
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .risk-free-content .risk-free-img {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    margin-bottom: 20px;
   }
 }
 
@@ -3779,6 +3803,13 @@ footer .copyright .copyright-links li a:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .risk-free-content .risk-free-txt {
+    width: 60%;
+    text-align: center;
+  }
+}
+
 .risk-free-content .risk-free-txt a {
   color: #fd3e72;
 }
@@ -3792,7 +3823,7 @@ footer .copyright .copyright-links li a:hover {
   .risk-free-content .risk-free-btn a {
     display: block;
     font-size: 20px;
-    padding: 21px 64px;
+    padding: 24px 64px 23px;
   }
 }
 
@@ -3805,8 +3836,37 @@ footer .copyright .copyright-links li a:hover {
   top: 80px;
 }
 
+@media (max-width: 767px) {
+  .hero-img.mac .hero-img-image img {
+    -webkit-transform: scale(0.37);
+            transform: scale(0.37);
+    top: -195px;
+    left: -195px;
+  }
+}
+
+@media (max-width: 767px) {
+  .benefits-wrapper.mac .benefits-content {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .benefits .benefits-wrapper .benefit.mac .benefits-img {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
 .benefits .benefits-wrapper .benefit.mac .benefits-img img {
   left: 92px;
+}
+
+@media (max-width: 767px) {
+  .benefits .benefits-wrapper .benefit.mac .benefits-img img {
+    left: -64px;
+    top: -102px;
+  }
 }
 
 .benefits .benefits-wrapper .benefit.mac .benfits-img-two {
@@ -3814,6 +3874,13 @@ footer .copyright .copyright-links li a:hover {
   left: 270px;
   -webkit-box-shadow: -90px 120px 149px rgba(186, 185, 181, 0.54);
           box-shadow: -90px 120px 149px rgba(186, 185, 181, 0.54);
+}
+
+@media (max-width: 767px) {
+  .benefits .benefits-wrapper .benefit.mac .benfits-img-two {
+    bottom: -65px;
+    left: 38px;
+  }
 }
 
 .hero-img.android .hero-img-image.android .one {
@@ -4875,6 +4942,12 @@ ol {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero-img.vpn {
+    padding-bottom: 140px;
+  }
+}
+
 .hero-img.vpn .hero-img-content .hero-img-title {
   margin-bottom: 30px;
   margin-top: 190px;
@@ -4890,8 +4963,9 @@ ol {
 @media (min-width: 768px) and (max-width: 992px) {
   .hero-img.vpn .hero-img-content .hero-img-title {
     margin-bottom: 30px;
-    margin-top: 0;
+    margin-top: 100px;
     width: 100%;
+    font-size: 42px;
   }
 }
 
@@ -4915,7 +4989,7 @@ ol {
 
 @media (min-width: 768px) and (max-width: 992px) {
   .hero-img.vpn .hero-img-content p {
-    width: 92%;
+    width: 100%;
   }
 }
 
@@ -4933,8 +5007,19 @@ ol {
 
 @media (min-width: 768px) and (max-width: 992px) {
   .hero-img.vpn .hero-img-image img {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
+    top: 100px;
+    left: -130px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .hero-img.vpn .hero-img-image img {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    top: 100px;
+    left: -120px;
   }
 }
 
@@ -4945,6 +5030,12 @@ ol {
 @media (max-width: 767px) {
   .advantages.vpn {
     padding-top: 185px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .advantages.vpn {
+    padding-top: 250px;
   }
 }
 
@@ -4960,6 +5051,13 @@ ol {
     line-height: 28px;
     width: 80%;
     margin: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .advantages.vpn .title-vpn {
+    font-size: 36px;
+    line-height: 40px;
   }
 }
 
@@ -4979,6 +5077,14 @@ ol {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .advantages.vpn .text-vpn {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 10px 0 0;
+  }
+}
+
 /* Start More Benefits */
 .more-benefits {
   background-color: #fff;
@@ -4986,7 +5092,7 @@ ol {
   padding-bottom: 134px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .more-benefits {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -5126,6 +5232,12 @@ ol {
   }
 }
 
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .more-benefits .more-benefits-content .item .icon {
+    margin-bottom: 40px;
+  }
+}
+
 .more-benefits .more-benefits-content .item .benefit-title {
   margin-bottom: 20px;
   font-size: 20px;
@@ -5135,8 +5247,20 @@ ol {
 @media (max-width: 767px) {
   .more-benefits .more-benefits-content .item .benefit-title {
     font-size: 16px;
-    line-height: 20px;
     margin-bottom: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .more-benefits .more-benefits-content .item .benefit-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .more-benefits .more-benefits-content .item .benefit-title {
+    padding: 0 10px;
   }
 }
 
@@ -5155,13 +5279,26 @@ ol {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .more-benefits .more-benefits-content .item .benefit-text {
+    width: 90%;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .more-benefits .more-benefits-content .item .benefit-text {
+    width: 90%;
+  }
+}
+
 /* End More Benefits */
 /* Start VPN Protocol */
 .vpn-protocol {
   padding: 110px 0 50px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .vpn-protocol {
     padding: 60px 0;
   }
@@ -5177,6 +5314,20 @@ ol {
             transform: scale(0.7);
     position: absolute;
     top: -90px;
+    left: -93px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .vpn-protocol .vpn-protocol-img {
+    height: 300px;
+    position: relative;
+  }
+  .vpn-protocol .vpn-protocol-img img {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    position: absolute;
+    top: -35px;
     left: -93px;
   }
 }
@@ -5201,6 +5352,13 @@ ol {
     font-size: 24px;
     line-height: 28px;
     margin-top: 55px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .vpn-protocol .vpn-protocol-content .title {
+    width: 90%;
+    margin-top: 0;
   }
 }
 
@@ -5235,7 +5393,8 @@ ol {
 
 @media (min-width: 768px) and (max-width: 992px) {
   .pricing-tables {
-    padding-top: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -5356,7 +5515,7 @@ ol {
 
 @media (min-width: 768px) and (max-width: 992px) {
   .pricing-tables .price-card.one, .pricing-tables .price-card.three {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 
@@ -5623,6 +5782,14 @@ ol {
   width: 100%;
   padding: 24px;
   text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .pricing-tables .price-card .label-radio .price-bottom a {
+    display: inline-block;
+    padding: 24px 48px 23px;
+    width: auto;
+  }
 }
 
 /* End Pricing Tables */

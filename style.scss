@@ -361,7 +361,7 @@ header {
         margin-top: 32px;
         font-size: 20px;
         width: 100%;
-        padding: 21px;
+        padding: 24px;
         display: block;
         text-align: center;
       }
@@ -731,8 +731,8 @@ header {
       li {
         display: inline-block;
         margin: 0 3px;
-        width: 30px;
-        height: 30px;
+        width: 28px;
+        height: 28px;
         @media #{$mobile} {
           margin: 0;
           margin-right: 9px;
@@ -740,7 +740,7 @@ header {
           height: 25px;
         }
         @media #{$tablet} {
-          margin: 0 10px;
+          margin: 0 2px;
         }
         a {
           display: block;
@@ -761,12 +761,9 @@ header {
             }
           }
           svg {
-            transform: scale(0.7);
+            transform: scale(0.6);
             path {
               transition: all 0.3s ease-in-out;
-            }
-            @media #{$maxTab} {
-              transform: scale(0.6);
             }
           }
         }
@@ -1008,9 +1005,7 @@ header {
       color: $primaryColor;
       display: inline-block;
       @media #{$mobile} {
-        width: 100%;
-        font-size: 20px;
-        padding: 21px 64px;
+        padding: 24px 64px 23px;
         display: block;
       }
       &:hover {
@@ -1736,7 +1731,7 @@ footer {
 // header
 .wrapper-header.windows {
   padding-bottom: 150px;
-  @media #{$mobile} {
+  @media #{$maxTab} {
     padding-bottom: 60px;
   }
 }
@@ -2192,7 +2187,7 @@ footer {
     padding: 130px 0;
     top: -250px;
     left: 15px;
-    width: 1170px;
+    right: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2204,6 +2199,15 @@ footer {
       background-size: cover;
       padding: 56px 0;
       top: -110px;
+    }
+    @media #{$tablet} {
+      left: 0;
+      right: 0;
+      width: auto;
+      padding: 80px 0;
+      background-position: center;
+      background-size: cover;
+      top: -180px;
     }
     &:after {
       content: "";
@@ -2236,6 +2240,12 @@ footer {
           height: 72px;
           line-height: 72px;
           font-size: 20px;
+        }
+        @media #{$tablet} {
+          width: 90px;
+          height: 90px;
+          line-height: 90px;
+          font-size: 28px;
         }
       }
       p {
@@ -2503,12 +2513,11 @@ footer {
       }
       .benefits-btn {
         a {
-          padding: 21px 96px;
-          font-size: 20px;
+          padding: 24px 96px 23px;
           color: $primaryColor;
           background-color: #ffecf1;
           @media #{$mobile} {
-            padding: 21px 60px;
+            padding: 24px 60px 23px;
             display: block;
             text-align: center;
           }
@@ -2578,7 +2587,7 @@ footer {
       position: relative;
 
       img {
-        transform: scale(0.65);
+        transform: scale(0.6);
         left: -140px;
         position: absolute;
         top: -120px;
@@ -2629,8 +2638,7 @@ footer {
       display: inline-block;
       text-align: center;
       @media #{$mobile} {
-        padding: 21px 48px;
-        font-size: 20px;
+        padding: 24px 48px;
       }
     }
   }
@@ -2781,8 +2789,7 @@ footer {
       display: inline-block;
       @media #{$mobile} {
         display: block;
-        padding: 21px 60px;
-        font-size: 20px;
+        padding: 24px 60px 23px;
       }
       &:hover {
         background-color: $primaryColor;
@@ -2802,7 +2809,7 @@ footer {
   background-image: url(../imgs/how-use-bg.png);
   padding: 134px 0;
   background-position-x: 43%;
-  @media #{$mobile} {
+  @media #{$maxTab} {
     padding: 60px 0;
     background-size: 140%;
     background-position: 50% 30px;
@@ -2821,12 +2828,20 @@ footer {
         width: 100%;
         margin-bottom: 0;
       }
+      @media #{$tablet} {
+        width: 55%;
+        margin-bottom: 30px;
+      }
     }
     .risk-free-img {
       margin-bottom: 38px;
       @media #{$mobile} {
         transform: scale(0.62);
         margin-bottom: 0;
+      }
+      @media #{$tablet} {
+        transform: scale(0.85);
+        margin-bottom: 20px;
       }
     }
     .risk-free-txt {
@@ -2839,7 +2854,10 @@ footer {
         line-height: 28px;
         margin: 0 auto 24px;
         width: 80%;
-
+        text-align: center;
+      }
+      @media #{$tablet} {
+        width: 60%;
         text-align: center;
       }
       a {
@@ -2853,7 +2871,7 @@ footer {
         @media #{$mobile} {
           display: block;
           font-size: 20px;
-          padding: 21px 64px;
+          padding: 24px 64px 23px;
         }
       }
     }
@@ -2872,19 +2890,44 @@ footer {
   .hero-img-image {
     img {
       top: 80px;
+      @media #{$mobile} {
+             transform: scale(0.37);
+    top: -195px;
+    left: -195px;
+        }
     }
   }
 }
 
+.benefits-wrapper.mac {
+  .benefits-content {
+    @media #{$mobile} {
+          margin-top: 0;
+        }
+  }
+}
+
 .benefits .benefits-wrapper .benefit.mac .benefits-img {
+  @media #{$mobile} {
+          margin-top: 10px;
+    margin-bottom: 20px;
+        }
   img {
     left: 92px;
+    @media #{$mobile} {
+          left: -64px;
+          top: -102px
+        }
   }
 }
 .benefits .benefits-wrapper .benefit.mac .benfits-img-two {
   bottom: 155px;
   left: 270px;
   box-shadow: -90px 120px 149px rgba(186, 185, 181, 0.54);
+  @media #{$mobile} {
+              bottom: -65px;
+    left: 38px;
+        }
 }
 
 //////////////////////////////////////////////////////////////
@@ -3552,39 +3595,43 @@ ol {
     text-align: center;
     padding-bottom: 60px;
   }
+  @media #{$tablet} {
+    padding-bottom: 140px;
+  }
   .hero-img-content {
     .hero-img-title {
-    margin-bottom: 30px;
-    margin-top: 190px;
-    @media #{$mobile} {
-      margin-bottom: 25px;
-      margin-top: 25px;
-    }
-    @media #{$tablet} {
       margin-bottom: 30px;
-      margin-top: 0;
-      width: 100%;
+      margin-top: 190px;
+      @media #{$mobile} {
+        margin-bottom: 25px;
+        margin-top: 25px;
+      }
+      @media #{$tablet} {
+        margin-bottom: 30px;
+        margin-top: 100px;
+        width: 100%;
+        font-size: 42px;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      width: 86%;
+      margin-bottom: 35px;
+      @media #{$mobile} {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 25px;
+        padding-left: 7px;
+        padding-right: 7px;
+      }
+      @media #{$tablet} {
+        width: 100%;
+      }
     }
   }
-  p {
-    font-size: 18px;
-    line-height: 28px;
-    width: 86%;
-    margin-bottom: 35px;
-    @media #{$mobile} {
-      width: 100%;
-      font-size: 16px;
-      line-height: 24px;
-      margin-bottom: 25px;
-      padding-left: 7px;
-      padding-right: 7px;
-    }
-    @media #{$tablet} {
-      width: 92%
-    }
-  }
-  }
-  
+
   .hero-img-image {
     @media #{$mobile} {
       height: 250px;
@@ -3596,7 +3643,16 @@ ol {
     }
     @media #{$tablet} {
       img {
-        transform: scale(0.8);
+        transform: scale(0.65);
+        top: 100px;
+        left: -130px;
+      }
+    }
+    @media #{$betweentabdesk} {
+      img {
+        transform: scale(0.85);
+        top: 100px;
+        left: -120px;
       }
     }
   }
@@ -3607,6 +3663,9 @@ ol {
   @media #{$mobile} {
     padding-top: 185px;
   }
+  @media #{$tablet} {
+    padding-top: 250px;
+  }
   .title-vpn {
     font-size: 56px;
     line-height: 56px;
@@ -3616,6 +3675,10 @@ ol {
       line-height: 28px;
       width: 80%;
       margin: auto;
+    }
+    @media #{$tablet} {
+      font-size: 36px;
+      line-height: 40px;
     }
   }
   .text-vpn {
@@ -3629,6 +3692,11 @@ ol {
       width: 60%;
       margin: 10px auto 45px;
     }
+    @media #{$tablet} {
+      font-size: 20px;
+      line-height: 20px;
+      margin: 10px 0 0;
+    }
   }
 }
 
@@ -3637,7 +3705,7 @@ ol {
   background-color: #fff;
   padding-top: 134px;
   padding-bottom: 134px;
-  @media #{$mobile} {
+  @media #{$maxTab} {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -3715,7 +3783,7 @@ ol {
         @media #{$mobile} {
           border: 0;
           min-height: auto;
-           padding-bottom: 40px;
+          padding-bottom: 40px;
         }
       }
       .icon {
@@ -3724,6 +3792,9 @@ ol {
           transform: scale(0.82);
           margin-bottom: 10px;
         }
+         @media #{$betweentabdesk} {
+          margin-bottom: 40px;
+        }
       }
       .benefit-title {
         margin-bottom: 20px;
@@ -3731,8 +3802,14 @@ ol {
         line-height: 20px;
         @media #{$mobile} {
           font-size: 16px;
-          line-height: 20px;
           margin-bottom: 12px;
+        }
+        @media #{$tablet} {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        @media #{$betweentabdesk} {
+          padding: 0 10px;
         }
       }
       .benefit-text {
@@ -3745,6 +3822,13 @@ ol {
           line-height: 24px;
           width: 85%;
         }
+        @media #{$tablet} {
+          width: 90%;
+          font-size: 15px;
+        }
+        @media #{$betweentabdesk} {
+          width: 90%;
+        }
       }
     }
   }
@@ -3754,28 +3838,36 @@ ol {
 /* Start VPN Protocol */
 .vpn-protocol {
   padding: 110px 0 50px;
-   @media #{$mobile} {
-         padding: 60px 0;
-        }
+  @media #{$maxTab} {
+    padding: 60px 0;
+  }
   .vpn-protocol-img {
     @media #{$mobile} {
       height: 300px;
       position: relative;
-          img {
-            transform: scale(0.7);
-    position: absolute;
-    top: -90px;
-    left: -93px;
-          }
-        }
-    
+      img {
+        transform: scale(0.7);
+        position: absolute;
+        top: -90px;
+        left: -93px;
+      }
+    }
+    @media #{$tablet} {
+      height: 300px;
+      position: relative;
+      img {
+        transform: scale(0.75);
+        position: absolute;
+        top: -35px;
+        left: -93px;
+      }
+    }
   }
   .vpn-protocol-content {
     @media #{$mobile} {
-         padding-left: 16px;
-    padding-right: 16px;
-
-        }
+      padding-left: 16px;
+      padding-right: 16px;
+    }
     .title {
       margin-top: 80px;
       font-size: 36px;
@@ -3783,18 +3875,22 @@ ol {
       width: 70%;
       margin-bottom: 25px;
       @media #{$mobile} {
-         font-size: 24px;
-line-height: 28px;
-margin-top: 55px;
-        }
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 55px;
+      }
+      @media #{$tablet} {
+        width: 90%;
+        margin-top: 0;
+      }
     }
     p {
       font-size: 14px;
       line-height: 24px;
-       @media #{$mobile} {
-         font-size: 16px;
-line-height: 28px;
-        }
+      @media #{$mobile} {
+        font-size: 16px;
+        line-height: 28px;
+      }
       &.text {
         margin-bottom: 20px;
       }
@@ -3806,14 +3902,13 @@ line-height: 28px;
 .risk-free.vpn {
   .risk-free-content {
     .risk-free-btn {
-    @media #{$mobile} {
-    a {
-      padding: 24px 48px 23px;
+      @media #{$mobile} {
+        a {
+          padding: 24px 48px 23px;
+        }
+      }
     }
   }
-  }
-  }
-  
 }
 
 /* Start Pricing Tables */
@@ -3821,24 +3916,25 @@ line-height: 28px;
   padding-top: 130px;
   padding-bottom: 130px;
   @media #{$tablet} {
-    padding-top: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   @media #{$mobile} {
     padding-top: 60px;
-  padding-bottom: 60px;
+    padding-bottom: 60px;
   }
 
   .title {
     font-size: 36px;
     line-height: 44px;
     margin-bottom: 60px;
-     @media #{$mobile} {
-    font-size: 24px;
-line-height: 28px;
- margin-bottom: 40px;
-     width: 70%;
-     margin: 0 auto 40px;
-  }
+    @media #{$mobile} {
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 40px;
+      width: 70%;
+      margin: 0 auto 40px;
+    }
   }
   .marked {
     background-color: #62d5b4;
@@ -3902,7 +3998,7 @@ line-height: 28px;
         margin-top: 10px;
       }
       @media #{$tablet} {
-        margin-top: 20px;
+        margin-top: 30px;
       }
     }
     &.three {
@@ -4093,6 +4189,11 @@ line-height: 28px;
           width: 100%;
           padding: 24px;
           text-align: center;
+          @media #{$tablet} {
+            display: inline-block;
+          padding: 24px 48px 23px;
+          width: auto;
+          }
         }
       }
     }
