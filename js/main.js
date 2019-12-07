@@ -65,7 +65,7 @@ $(function() {
     loop: true,
     nav: true,
     dots: false,
-    responsiveClass: true,
+    // responsiveClass: true,
     margin: 50,
     responsive: {
       0: {
@@ -76,7 +76,7 @@ $(function() {
         items: 1.5,
         margin: 30
       },
-      850: {
+      1024: {
         items: 2,
         margin: 30
       },
@@ -96,18 +96,18 @@ $(function() {
     loop: true,
     nav: true,
     dots: false,
-    responsiveClass: true,
+    // responsiveClass: true,
     margin: 50,
     responsive: {
       0: {
-        items: 1.26,
+        items: 1.25,
         margin: 20
       },
       768: {
         items: 1.5,
         margin: 30
       },
-      850: {
+      1024: {
         items: 2,
         margin: 30
       },
@@ -127,18 +127,18 @@ $(function() {
     loop: true,
     nav: true,
     dots: false,
-    responsiveClass: true,
+    // responsiveClass: true,
     margin: 50,
     responsive: {
       0: {
-        items: 1.26,
+        items: 1.25,
         margin: 20
       },
       768: {
         items: 1.5,
         margin: 30
       },
-      850: {
+      1024: {
         items: 2,
         margin: 30
       },

@@ -311,7 +311,7 @@ header {
   position: relative;
   @media #{$mobile} {
     text-align: center;
-    padding-top: 90px;
+    padding-top: 30px;
   }
 
   &-content {
@@ -394,26 +394,24 @@ header {
   }
   .hero-img-image {
     position: relative;
-    @media #{$mobile} {
-      height: 270px;
-    }
+    
     img {
       position: absolute;
       top: 50px;
       left: -10px;
       z-index: 1;
-      @media #{$mobile} {
-        transform: scale(0.5);
-        top: -130px;
-        left: -210px;
+      @media #{$maxTab} {
+        max-width: 100%;
+        position: static;
       }
       @media #{$tablet} {
-        left: -200px;
-        transform: scale(0.6);
+        top: 150px;
+        position: absolute;
       }
       @media #{$betweentabdesk} {
-        left: -135px;
-        transform: scale(0.75);
+        top: 150px;
+        left: 0;
+        max-width: 100%;
       }
     }
   }
@@ -502,14 +500,9 @@ header {
       &-txt {
         font-size: 16px;
         line-height: 28px;
-        @media #{$mobile} {
+        @media #{$maxTab} {
           font-size: 14px;
           line-height: 24px;
-          margin-bottom: 10px;
-        }
-        @media #{$tablet} {
-          font-size: 15px;
-          line-height: 26px;
         }
       }
     }
@@ -614,35 +607,21 @@ header {
     }
     .advantages-img {
       text-align: left;
-      @media #{$mobile} {
-        position: relative;
-        height: 300px;
-        img {
-          transform: scale(0.66);
-          top: -90px;
-          left: -30%;
-          position: absolute;
-        }
-      }
-      @media #{$tablet} {
-        position: relative;
-        height: 300px;
-        img {
-          transform: scale(0.7);
-          left: -41%;
-          position: absolute;
-        }
-      }
-      @media #{$betweentabdesk} {
-        position: relative;
-        height: 300px;
-        img {
-          position: absolute;
-          transform: scale(0.8);
-          left: -8%;
-        }
+      
+      img {
+        max-width: 100%;
       }
     }
+  }
+  .section-one {
+      .advantages-img {
+        @media #{$tablet} {
+          padding-top: 100px;
+        }
+        @media #{$betweentabdesk} {
+          padding-top: 60px;
+        }
+      }
   }
   .section-two {
     .advantages-content {
@@ -650,7 +629,7 @@ header {
         padding-top: 150px;
         width: 80%;
         @media #{$mobile} {
-          padding-top: 115px;
+          padding-top: 55px;
           width: 90%;
         }
         @media #{$tablet} {
@@ -666,28 +645,15 @@ header {
     .advantages-img {
       text-align: center;
       padding-top: 60px;
-      @media #{$mobile} {
         img {
-          transform: scale(0.8);
-          top: 23px;
-          left: -10%;
-          position: absolute;
-        }
-      }
-      @media #{$tablet} {
-        img {
-          transform: scale(0.8);
-          top: 50px;
-          left: -12%;
-          position: absolute;
-        }
+        max-width: 100%;
       }
     }
   }
   .section-three {
     padding-top: 100px;
     @media #{$mobile} {
-      padding-top: 90px;
+      padding-top: 50px;
     }
     .advantages-content {
       .advantages-title {
@@ -708,19 +674,14 @@ header {
       }
     }
     .advantages-img {
-      @media #{$mobile} {
-        img {
-          top: -90px;
-          left: 50%;
-          transform: translateX(-50%) scale(0.7);
-        }
+       @media #{$mobile} {
+        padding-bottom: 50px;
       }
       @media #{$tablet} {
-        img {
-          top: 0;
-          left: -31%;
-          transform: scale(0.7);
+          padding-top: 100px;
         }
+        img {
+        max-width: 100%;
       }
     }
     .advantages-icons {
@@ -788,12 +749,9 @@ header {
     padding-top: 40px;
     .server-map-img {
       position: relative;
-      height: 120px;
+      min-height: 150px;
       img {
-        transform: scale(0.34);
-        position: absolute;
-        top: -230px;
-        left: -390px;
+       max-width: 100%;
       }
     }
   }
@@ -808,6 +766,7 @@ header {
       font-size: 24px;
       line-height: 28px;
       width: 85%;
+      margin-bottom: 25px;
     }
     @media #{$tablet} {
       font-size: 30px;
@@ -880,6 +839,13 @@ header {
         box-shadow: none;
         height: 100%;
       }
+
+      @media (max-width: 350px) {
+       width: 100%;
+        padding: 5px 10px 20px;
+        box-shadow: none;
+        height: 100%;
+    }
       @media #{$tablet} {
         width: 100%;
         padding: 20px;
@@ -1005,7 +971,7 @@ header {
       color: $primaryColor;
       display: inline-block;
       @media #{$mobile} {
-        padding: 24px 64px 23px;
+        padding: 24px 0 23px;
         display: block;
       }
       &:hover {
@@ -1060,6 +1026,9 @@ header {
       padding-left: 20px;
       padding-top: 60px;
     }
+    @media #{$betweentabdesk} {
+      padding-left: 0;
+    }
     span {
       font-family: "AvertaBold";
     }
@@ -1079,6 +1048,9 @@ header {
       font-size: 30px;
       line-height: 36px;
     }
+    @media #{$betweentabdesk} {
+      padding-left: 0;
+    }
   }
   .testimonials-tabs {
     padding-top: 70px;
@@ -1088,6 +1060,9 @@ header {
       padding-right: 0;
       border-bottom: 1px solid #ebe8e0;
       margin: 0 6px;
+          display: flex;
+    align-items: center;
+    justify-content: space-between;
     }
     @media #{$tablet} {
       padding-top: 60px;
@@ -1117,7 +1092,7 @@ header {
         padding: 10px 0;
 
         @media #{$mobile} {
-          padding: 10px 20px;
+          padding: 10px 12px;
           display: block;
         }
       }
@@ -1205,6 +1180,7 @@ header {
         z-index: 1;
         position: absolute;
         width: 1470px;
+        right: 0;
         left: 30px;
         top: 70px;
         @media #{$maxTab} {
@@ -1214,8 +1190,8 @@ header {
           // position: static;
         }
         @media #{$betweentabdesk} {
-          left: 30px;
           width: 100%;
+          left: 30px;
         }
         .owl-stage-outer {
           padding-bottom: 50px;
@@ -1476,6 +1452,13 @@ header {
       padding: 24px 46px;
       background-color: #ffecf1;
       color: $primaryColor;
+      @media #{$tablet} {
+        padding: 24px 0;
+        display: block;
+      }
+      @media (max-width: 350px) {
+             padding: 24px 20px;
+            }
       &:hover {
         background-color: $primaryColor;
         color: #fff;
@@ -1557,7 +1540,6 @@ header {
       a {
         background-color: $primaryColor;
         color: #fff;
-        padding: 24px 48px;
 
         &:hover {
           background-color: #e33866;
@@ -1576,6 +1558,9 @@ footer {
   background-color: #fff;
   padding-top: 100px;
   border-top: 1px solid #e8e4db;
+  &.footer-home {
+     border-top: 0;
+  }
   @media #{$maxTab} {
     padding-top: 60px;
   }
@@ -1618,6 +1603,9 @@ footer {
           width: 25px;
           height: 25px;
         }
+        @media (max-width: 350px) {
+              margin-right: 8px;
+            }
         @media #{$tablet} {
           margin: 0 10px;
         }
@@ -1643,8 +1631,14 @@ footer {
             path {
               transition: all 0.3s ease-in-out;
             }
-            @media #{$maxTab} {
+            @media #{$mobile} {
               transform: scale(0.7);
+            }
+            @media #{$tablet} {
+              transform: scale(0.85);
+            }
+            @media (max-width: 350px) {
+              transform: scale(0.6);
             }
           }
         }
@@ -1734,6 +1728,9 @@ footer {
   @media #{$maxTab} {
     padding-bottom: 60px;
   }
+  @media #{$betweentabdesk} {
+    padding-bottom: 80px;
+  }
 }
 
 .windows-header {
@@ -1778,12 +1775,26 @@ footer {
       font-size: 48px;
       line-height: 48px;
       width: 80%;
-      @media #{$mobile} {
+      @media #{$maxTab} {
         font-size: 36px;
         line-height: 44px;
         width: 100%;
         margin-top: 40px;
         margin-bottom: 12px;
+      }
+      @media (max-width: 350px) {
+            font-size: 32px;
+        line-height: 40px;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 12px;
+    }
+      @media #{$tablet} {
+        margin-top: 80px;
+      }
+      @media #{$betweentabdesk} {
+        width: 100%;
+        font-size: 42px;
       }
     }
     .hero-img-txt {
@@ -1796,6 +1807,16 @@ footer {
         line-height: 20px;
         margin-top: 0;
         margin-bottom: 30px;
+      }
+      @media #{$tablet} {
+        font-size: 22px;
+        line-height: 22px;
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
+      @media #{$betweentabdesk} {
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
     }
     .hero-img-list {
@@ -1816,6 +1837,11 @@ footer {
         }
       }
     }
+    .hero-img-btn {
+      @media #{$betweentabdesk} {
+        margin-top: 30px;
+      }
+    }
     .download-btn {
       padding: 24px 51px;
       color: $primaryColor;
@@ -1830,6 +1856,17 @@ footer {
         margin-left: 0;
         padding: 0;
       }
+      @media #{$tablet} {
+        padding: 0;
+        text-align: center;
+        width: auto;
+        margin-left: 30px;
+      }
+      @media #{$betweentabdesk} {
+        padding: 0;
+        width: 59%;
+        text-align: center;
+      }
       &:hover {
         color: #e33866;
         text-decoration: none !important;
@@ -1842,16 +1879,23 @@ footer {
     }
   }
   .hero-img-image {
-    @media #{$mobile} {
-      height: 210px;
-    }
     img {
       top: 120px;
-      left: 0;
+      left: -60px;
+      @media #{$maxTab} {
+        max-width: 100%;
+        position: relative;
+        top: 30px;
+        left:0;
+      }
       @media #{$mobile} {
-        transform: scale(0.45);
-        top: -130px;
-        left: -202px;
+        top: 0;
+      }
+      @media #{$betweentabdesk} {
+        max-width: 100%;
+        position: relative;
+        top: 170px;
+        left: 0;
       }
     }
   }
@@ -1865,13 +1909,23 @@ footer {
       left: -350px;
       right: auto;
     }
+    @media #{$tablet} {
+      top: -600px;
+      right: -730px;
+      transform: scale(0.8);
+    }
+    @media #{$betweentabdesk} {
+      top: -620px;
+      right: -765px;
+      transform: scale(0.9);
+    }
   }
 }
 
 /* Start Platform */
 .platforms {
   padding-top: 40px;
-  @media #{$mobile} {
+  @media #{$maxTab} {
     padding-top: 0;
   }
   .platform-content {
@@ -1890,11 +1944,13 @@ footer {
       display: flex;
       box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
       align-items: center;
-      flex: 2;
       @media #{$mobile} {
         display: block;
         overflow: hidden;
         border: 1px solid #ebe8df;
+      }
+      @media #{$tablet} {
+        flex-wrap: wrap;
       }
       li {
         font-size: 16px;
@@ -1914,6 +1970,16 @@ footer {
           height: 44px;
           line-height: 44px;
           text-align: left;
+        }
+        @media #{$tablet} {
+          width: 25%;
+          flex: auto;
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4) {
+            border-bottom: 1px solid #ebe8df;
+          }
         }
         &.active,
         &:hover {
@@ -1954,7 +2020,13 @@ footer {
             padding-top: 12px;
             font-size: 12px;
           }
-
+           @media (max-width: 350px) {
+             padding: 0;
+            padding-left: 32px;
+            position: relative;
+            padding-top: 12px;
+            font-size: 12px;
+    }
           &.apple-icon {
             padding-top: 27px;
             @media #{$mobile} {
@@ -1973,6 +2045,12 @@ footer {
             position: absolute;
             left: 20px;
           }
+           @media (max-width: 350px) {
+             width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 10px;
+    }
 
           path {
             transition: all 0.3s ease-in-out;
@@ -2010,16 +2088,25 @@ footer {
 
   .wevpn-setup-content {
     padding-bottom: 60px;
+    @media #{$tablet} {
+      padding-bottom: 80px;
+    }
+    @media #{$betweentabdesk} {
+      padding-bottom: 100px;
+    }
     .wevpn-setup-img {
+      img {
+        max-width: 100%;
+      }
       @media #{$mobile} {
-        position: relative;
-        height: 300px;
-        img {
-          transform: scale(0.7);
-          left: -64px;
-          top: -50px;
-          position: absolute;
-        }
+        padding-top: 30px;
+        padding-bottom: 40px;
+      }
+      @media #{$tablet} {
+        padding-top: 60px;
+      }
+      @media #{$betweentabdesk} {
+        padding-top: 30px;
       }
     }
     .wevpn-setup-info {
@@ -2033,16 +2120,21 @@ footer {
           line-height: 28px;
           padding-top: 0;
         }
+        @media #{$tablet} {
+          padding-top: 60px;
+          font-size: 32px;
+        }
       }
       .wevpn-setup-list {
         padding-bottom: 20px;
         li {
           font-size: 18px;
-          line-height: 32px;
+          line-height: 24px;
           padding-left: 30px;
           padding-right: 10px;
+          margin-bottom: 15px;
           position: relative;
-          @media #{$mobile} {
+          @media #{$maxTab} {
             font-size: 16px;
             line-height: 20px;
             margin-bottom: 10px;
@@ -2050,6 +2142,7 @@ footer {
               margin-bottom: 0;
             }
           }
+
           span {
             width: 20px;
             height: 20px;
@@ -2063,8 +2156,6 @@ footer {
             display: inline-block;
             position: absolute;
             left: 0;
-            top: 50%;
-            transform: translateY(-50%);
           }
           a {
             text-decoration: underline;
@@ -2081,6 +2172,9 @@ footer {
         margin-left: 35px;
         @media #{$mobile} {
           margin-left: 0;
+        }
+        @media #{$tablet} {
+          font-size: 13px;
         }
         a {
           text-decoration: underline;
@@ -2103,6 +2197,13 @@ footer {
     padding-bottom: 170px;
     .container {
       padding-right: 0;
+    }
+  }
+  @media #{$tablet} {
+    padding-bottom: 250px;
+    .container {
+      padding-right: 0;
+      margin-right: 0;
     }
   }
   .how-to-use-title {
@@ -2153,6 +2254,11 @@ footer {
     .step-img {
       // border-right: 1px solid #eae8e0;
       position: relative;
+      @media #{$betweentabdesk} {
+        img {
+          width: 100%;
+        }
+      }
       &:after {
         content: "";
         position: absolute;
@@ -2161,7 +2267,10 @@ footer {
         height: 100%;
         width: 1px;
         background-color: #eae8e0;
-        @media #{$mobile} {
+        @media #{$maxTab} {
+          display: none;
+        }
+        @media #{$betweentabdesk} {
           display: none;
         }
       }
@@ -2273,6 +2382,9 @@ footer {
     @media #{$mobile} {
       padding-top: 190px;
     }
+    @media #{$tablet} {
+      padding-top: 233px;
+    }
   }
 }
 
@@ -2289,6 +2401,12 @@ footer {
   left: -310px;
   @media #{$mobile} {
     left: 10px;
+  }
+  @media #{$tablet} {
+    left: -250px;
+  }
+  @media #{$betweentabdesk} {
+    left: -235px;
   }
 }
 /* End Testimonials */
@@ -2320,6 +2438,14 @@ footer {
     padding-top: 60px;
     padding-bottom: 132px;
   }
+  @media #{$tablet} {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+  @media #{$betweentabdesk} {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
   .features-windows-title {
     font-size: 36px;
     line-height: 44px;
@@ -2331,6 +2457,14 @@ footer {
       line-height: 28px;
       width: 100%;
       margin: 0 auto 40px;
+    }
+    @media #{$tablet} {
+      width: 75%;
+      margin-bottom: 50px;
+    }
+    @media #{$betweentabdesk} {
+      width: 60%;
+      margin-bottom: 50px;
     }
   }
   .feats {
@@ -2349,6 +2483,16 @@ footer {
           }
         }
       }
+      @media #{$tablet} {
+        width: auto;
+        padding: 70px 25px 80px;
+        margin-bottom: 30px;
+      }
+      @media #{$betweentabdesk} {
+        padding: 70px 15px 80px;
+        margin-bottom: 30px;
+        width: auto;
+      }
       .feat-title {
         margin-top: 50px;
         margin-bottom: 20px;
@@ -2359,6 +2503,11 @@ footer {
           margin-bottom: 12px;
           font-size: 16px;
         }
+        @media #{$betweentabdesk} {
+          margin-top: 30px;
+          margin-bottom: 15px;
+          font-size: 18px;
+        }
       }
       .feat-text {
         font-size: 16px;
@@ -2367,12 +2516,21 @@ footer {
           font-size: 14px;
           line-height: 24px;
         }
+        @media #{$betweentabdesk} {
+          font-size: 15px;
+        }
       }
       &.one {
         margin-top: 80px;
         background: rgba(#fd3e72, 0.05);
         @media #{$mobile} {
           margin-top: 0;
+        }
+        @media #{$tablet} {
+          margin-top: 40px;
+        }
+        @media #{$betweentabdesk} {
+          margin-top: 40px;
         }
       }
       &.two {
@@ -2384,12 +2542,24 @@ footer {
         @media #{$mobile} {
           margin-bottom: 20px;
         }
+        @media #{$tablet} {
+          margin-bottom: 30px;
+        }
+        @media #{$betweentabdesk} {
+          margin-bottom: 30px;
+        }
       }
       &.four {
         background: rgba(#766cf0, 0.1);
         margin: 0 auto 60px;
         @media #{$mobile} {
           margin-bottom: 20px;
+        }
+        @media #{$tablet} {
+          margin-bottom: 30px;
+        }
+        @media #{$betweentabdesk} {
+          margin-bottom: 30px;
         }
       }
       &.five {
@@ -2399,6 +2569,12 @@ footer {
         @media #{$mobile} {
           margin-top: 0;
         }
+        @media #{$tablet} {
+          margin-top: 30px;
+        }
+        @media #{$betweentabdesk} {
+          margin-top: 30px;
+        }
       }
       &.six {
         background: rgba(#6ca9f0, 0.1);
@@ -2407,9 +2583,17 @@ footer {
     }
   }
   .feats-btn {
+
+    
     @media #{$mobile} {
       position: absolute;
       bottom: -593px;
+      left: 15px;
+      right: 15px;
+    }
+    @media (max-width: 350px) {
+       position: absolute;
+      bottom: -661px;
       left: 15px;
       right: 15px;
     }
@@ -2419,8 +2603,7 @@ footer {
       background-color: #ffecf1;
       color: $primaryColor;
       width: 100%;
-      height: 72px;
-      line-height: 72px;
+      padding: 24px 0 23px;
       text-align: center;
       display: block;
       &:hover {
@@ -2442,6 +2625,12 @@ footer {
   @media #{$mobile} {
     padding-bottom: 60px;
   }
+  @media #{$tablet} {
+    padding-bottom: 80px;
+  }
+  @media #{$betweentabdesk} {
+    padding-bottom: 100px;
+  }
 
   .benefits-wrapper {
     padding-top: 155px;
@@ -2449,6 +2638,12 @@ footer {
     @media #{$mobile} {
       padding-top: 60px;
       border-top: 0;
+    }
+    @media #{$tablet} {
+      padding-top: 80px;
+    }
+    @media #{$betweentabdesk} {
+      padding-top: 100px;
     }
     .benfits-title {
       font-size: 36px;
@@ -2460,6 +2655,15 @@ footer {
         text-align: center;
         width: 100%;
         margin-bottom: 40px;
+      }
+      @media #{$tablet} {
+        width: 60%;
+        margin: 0 auto 110px;
+        text-align: center;
+      }
+      @media #{$betweentabdesk} {
+        width: 100%;
+        text-align: center;
       }
     }
     .benefits-content {
@@ -2474,6 +2678,9 @@ footer {
           margin-bottom: 80px;
           @media #{$mobile} {
             padding-left: 0;
+            margin-bottom: 40px;
+          }
+          @media #{$betweentabdesk} {
             margin-bottom: 40px;
           }
           .icon {
@@ -2508,6 +2715,9 @@ footer {
             @media #{$mobile} {
               width: 85%;
             }
+            @media #{$tablet} {
+              width: 80%;
+            }
           }
         }
       }
@@ -2517,7 +2727,7 @@ footer {
           color: $primaryColor;
           background-color: #ffecf1;
           @media #{$mobile} {
-            padding: 24px 60px 23px;
+            padding: 24px 0 23px;
             display: block;
             text-align: center;
           }
@@ -2542,18 +2752,38 @@ footer {
         overflow: hidden;
         position: relative;
         @media #{$mobile} {
-          margin-top: 70px;
-          width: 327px;
-          height: 327px;
+          width: 280px;
+          height: 280px;
+          margin: 70px auto 0;
+        }
+        @media #{$tablet} {
+          width: 500px;
+          height: 500px;
+          margin: auto;
+        }
+        @media #{$betweentabdesk} {
+          margin-top: 170px;
+          width: 450px;
+          height: 450px;
         }
         img {
           position: absolute;
           right: 110px;
           top: 130px;
           @media #{$mobile} {
-            right: -52px;
-            top: -102px;
-            transform: scale(0.47);
+            right: -75px;
+            top: -112px;
+            transform: scale(0.45);
+          }
+          @media #{$tablet} {
+            transform: scale(0.7);
+            right: 10px;
+            top: 0px;
+          }
+          @media #{$betweentabdesk} {
+            right: 30px;
+            top: -50px;
+            transform: scale(0.7);
           }
         }
       }
@@ -2564,9 +2794,19 @@ footer {
         box-shadow: 90px 120px 149px rgba(186, 185, 181, 0.54);
         border-radius: 10px;
         @media #{$mobile} {
-          transform: scale(0.47);
-          bottom: -45px;
-          left: -43px;
+          transform: scale(0.45);
+          bottom: -85px;
+          left: -33px;
+        }
+        @media #{$tablet} {
+          transform: scale(0.7);
+          bottom: 50px;
+          left: 155px;
+        }
+        @media #{$betweentabdesk} {
+          transform: scale(0.7);
+          bottom: 120px;
+          left: -15px;
         }
       }
     }
@@ -2578,20 +2818,18 @@ footer {
 .devices-os {
   padding-top: 155px;
   padding-bottom: 55px;
-  @media #{$mobile} {
+  @media #{$maxTab} {
     padding-top: 65px;
   }
+  @media #{$betweentabdesk} {
+    padding-top: 100px;
+  }
   .devices-img {
-    @media #{$mobile} {
-      height: 300px;
-      position: relative;
-
-      img {
-        transform: scale(0.6);
-        left: -140px;
-        position: absolute;
-        top: -120px;
-      }
+    img {
+      max-width: 100%;
+      @media #{$tablet} {
+      padding-top: 30px;
+    }
     }
   }
   .devices-content {
@@ -2611,9 +2849,12 @@ footer {
         margin-bottom: 0;
       }
       @media #{$tablet} {
-        padding-top: 100px;
+        padding-top: 30px;
         font-size: 30px;
         line-height: 36px;
+      }
+      @media #{$betweentabdesk} {
+        padding-top: 20px;
       }
     }
     .devices-desc {
@@ -2637,7 +2878,7 @@ footer {
       padding: 24px 57px;
       display: inline-block;
       text-align: center;
-      @media #{$mobile} {
+      @media #{$maxTab} {
         padding: 24px 48px;
       }
     }
@@ -2652,6 +2893,12 @@ footer {
   @media #{$mobile} {
     padding-top: 60px;
   }
+  @media #{$tablet} {
+    padding-top: 80px;
+  }
+  @media #{$betweentabdesk} {
+    padding-top: 100px;
+  }
   .faq-title {
     font-size: 36px;
     line-height: 44px;
@@ -2660,6 +2907,9 @@ footer {
       font-size: 24px;
       line-height: 28px;
       margin-bottom: 20px;
+    }
+    @media #{$tablet} {
+      margin-bottom: 40px;
     }
   }
   .accordion {
@@ -2782,6 +3032,13 @@ footer {
       margin-top: 0;
       padding-bottom: 60px;
     }
+    @media #{$tablet} {
+      margin-top: 20px;
+      padding-bottom: 80px;
+    }
+    @media #{$betweentabdesk} {
+      padding-bottom: 100px;
+    }
     a {
       background-color: #ffecf1;
       color: $primaryColor;
@@ -2789,7 +3046,7 @@ footer {
       display: inline-block;
       @media #{$mobile} {
         display: block;
-        padding: 24px 60px 23px;
+        padding: 24px 0 23px;
       }
       &:hover {
         background-color: $primaryColor;
@@ -2809,10 +3066,17 @@ footer {
   background-image: url(../imgs/how-use-bg.png);
   padding: 134px 0;
   background-position-x: 43%;
+      background-repeat: no-repeat;
   @media #{$maxTab} {
     padding: 60px 0;
     background-size: 140%;
     background-position: 50% 30px;
+    background-repeat: no-repeat;
+  }
+  @media #{$betweentabdesk} {
+    padding: 100px 0;
+    background-size: 140%;
+    background-position: 50% 10px;
     background-repeat: no-repeat;
   }
   &-content {
@@ -2870,8 +3134,7 @@ footer {
         display: inline-block;
         @media #{$mobile} {
           display: block;
-          font-size: 20px;
-          padding: 24px 64px 23px;
+          padding: 24px 0 23px;
         }
       }
     }
@@ -2891,12 +3154,35 @@ footer {
     img {
       top: 80px;
       @media #{$mobile} {
-        transform: scale(0.37);
-        top: -195px;
-        left: -195px;
+        top: 0;
+      }
+      @media #{$tablet} {
+        top: 30px;
+      }
+      @media #{$betweentabdesk} {
+        top: 130px;
       }
     }
   }
+}
+
+.hero-img.mac .header-shape.windows {
+  @media #{$mobile} {
+        top: -685px;
+      }
+  @media (max-width: 350px) {
+        top: -715px;
+      }
+  @media #{$tablet} {
+            top: -550px;
+    right: -660px;
+    transform: scale(0.9);
+      }
+  @media #{$betweentabdesk} {
+           top: -580px;
+    right: -745px;
+
+      }
 }
 
 .benefits-wrapper.mac {
@@ -2909,7 +3195,7 @@ footer {
 
 .benefits .benefits-wrapper .benefit.mac .benefits-img {
   @media #{$mobile} {
-    margin-top: 10px;
+    margin-top: 60px;
     margin-bottom: 20px;
   }
   img {
@@ -2917,6 +3203,13 @@ footer {
     @media #{$mobile} {
       left: -64px;
       top: -102px;
+    }
+    @media #{$tablet} {
+      left: 0
+    }
+    @media #{$betweentabdesk} {
+      left: -10px;
+    top: -10px;
     }
   }
 }
@@ -2928,6 +3221,14 @@ footer {
     bottom: -65px;
     left: 38px;
   }
+  @media #{$tablet} {
+        bottom: 40px;
+    left: 250px;
+  }
+  @media #{$betweentabdesk} {
+       bottom: 75px;
+    left: 110px;
+  }
 }
 
 //////////////////////////////////////////////////////////////
@@ -2938,18 +3239,18 @@ footer {
       top: 140px;
       left: 310px;
       @media #{$mobile} {
-            top: -150px;
-    left: 80px;
-    transform: scale(0.38);
+        top: -150px;
+        left: 80px;
+        transform: scale(0.38);
       }
     }
     .two {
       top: 70px;
       left: 20px;
       @media #{$mobile} {
-            top: -175px;
-    left: -30px;
-    transform: scale(0.38);
+        top: -175px;
+        left: -30px;
+        transform: scale(0.38);
       }
     }
   }
@@ -3000,17 +3301,17 @@ footer {
 }
 
 .benefits .benefits-wrapper .benefit.android .benefits-img img {
-      right: -52px;
-    top: -130px;
+  right: -52px;
+  top: -130px;
 }
 
 .benefits .benefits-wrapper .benefit.android .benfits-img-two {
   border-radius: 55px;
   bottom: 180px;
   @media #{$mobile} {
-           bottom: -100px;
+    bottom: -100px;
     left: 0;
-      }
+  }
 }
 
 //////////////////////////////////////////////////////////////

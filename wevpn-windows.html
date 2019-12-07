@@ -88,7 +88,7 @@
     <section class="hero-img windows">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 order-2 order-md-1">
+          <div class="col-lg-5 col-xl-6 order-2 order-lg-1">
             <div class="hero-img-content">
               <h1 class="hero-img-title">
                 Download WeVPN for Windows
@@ -109,7 +109,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-6 order-1 order-md-2">
+          <div class="col-lg-7 col-xl-6 order-1 order-lg-2">
             <div class="hero-img-image">
               <img src="imgs/Sony Display.png" draggable="false" alt="Sony Display img" />
             </div>
@@ -246,7 +246,7 @@
     <section class="how-to-use">
       <div class="container">
         <h2 class="how-to-use-title">How to use WeVPN in 3 Steps</h2>
-        <div class="row d-none d-md-flex">
+        <div class="row d-none d-lg-flex">
           <div class="col-md-4">
             <div class="step">
               <h3 class="step-text"><span>01</span>Select a location</h3>
@@ -273,7 +273,7 @@
           </div>
 
         </div>
-        <div class="slider d-block d-md-none">
+        <div class="slider d-block d-lg-none">
           <div class="owl-carousel owl-theme owl-visible" id="how-to-use-slider">
             <div class="step">
               <h3 class="step-text"><span>01</span>Select a location</h3>
@@ -529,7 +529,7 @@
       <div class="container">
         <h2 class="features-windows-title">Some of the many features that we proudly provide</h2>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-6 col-lg-4">
             <div class="feats">
               <div class="feat one">
                 <div class="icon">
@@ -545,9 +545,16 @@
                 <h3 class="feat-title">Strict no-logs policy</h3>
                 <p class="feat-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit sit. Vestibulum nec volutpat. </p>
               </div>
+              <div class="feat five d-none d-md-block d-lg-none">
+                <div class="icon">
+                  <img src="imgs/spaceship.svg" alt="">
+                </div>
+                <h3 class="feat-title">Private DNS & leak protection</h3>
+                <p class="feat-text">maximus vulputate. Vestibulum bibendum nunc eu nibh consectetur, at tincidunt dui semper.</p>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6 col-lg-4">
             <div class="feats">
               <div class="feat three">
                 <div class="icon">
@@ -563,6 +570,13 @@
                 <h3 class="feat-title">Kill Switch</h3>
                 <p class="feat-text"> Maecenas imperdiet dolor sed tortor vehicula, ac porttitor dui pulvinar. Maecenas venenatis nisl non</p>
               </div>
+              <div class="feat six d-none d-md-block d-lg-none">
+                <div class="icon">
+                  <img src="imgs/virtual-environment.svg" alt="">
+                </div>
+                <h3 class="feat-title">Strict no-logs policy</h3>
+                <p class="feat-text">maximus vulputate. Vestibulum bibendum nunc eu nibh consectetur, at tincidunt dui semper.</p>
+              </div>
             </div>
             <div class="feats-btn">
               <a href="features.html" class="primary--btn">
@@ -571,7 +585,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-12 col-lg-4 d-flex d-md-none d-lg-flex">
             <div class="feats">
               <div class="feat five">
                 <div class="icon">
@@ -600,7 +614,7 @@
         <div class="benefits-wrapper">
           <h2 class="benfits-title">Learn how can WeVPN benefit you</h2>
           <div class="row">
-            <div class="col-md-6 order-2 order-md-1">
+            <div class="col-lg-6 order-2 order-lg-1">
               <div class="benefits-content">
                 <ul class="benefits-list">
                   <li class="benefit-item">
@@ -640,7 +654,7 @@
               </div>
               </div>
             </div>
-            <div class="col-md-6 order-1 order-md-2 benefit">
+            <div class="col-lg-6 order-1 order-lg-2 benefit">
               <div class="benefits-img">
                 <img src="imgs/benefits-1.png" alt="">
               </div>
@@ -658,12 +672,12 @@
     <section class="devices-os">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-7 col-lg-6">
             <div class="devices-img">
               <img src="imgs/geometry.png" alt="">
             </div>
           </div>
-          <div class="col-md-5 offset-md-1">
+          <div class="col-md-5 col-lg-5 offset-lg-1">
             <div class="devices-content">
                 <h2 class="devices-title">WeVPN for All Your Devices</h2>
                 <p class="devices-desc">
@@ -684,7 +698,7 @@
     <section class="faq">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 offset-md-2">
+          <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
             <h2 class="faq-title text-center">Frequently Asked Questions</h2>
             <div class="accordion" id="accordionExample">
               <div class="question">
@@ -934,7 +948,7 @@
         $('[data-fancybox="gallery"]').fancybox({});
 
         $(window).on('resize', function(){
-           if ($(window).width() > 767) {
+           if ($(window).width() > 992) {
               $('#how-to-use-slider').removeClass('owl-visible');
             } else {
               $('#how-to-use-slider').addClass('owl-visible');
@@ -948,10 +962,10 @@
             dots: false,
             responsive:{
               0:{
-                  items:1.5
+                  items: 1.5
               },
-              600:{
-                  items:1.5
+              768:{
+                  items: 2.5
               }
             }
         });
