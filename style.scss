@@ -223,27 +223,32 @@ header {
         .login-link {
           font-size: 16px;
           line-height: 19px;
-          color: #5b5863;
+          color: #fff;
           padding: 8px 12px;
           display: block;
           transition: color 0.3s ease-in-out;
           font-family: "AvertaSemibold";
+          @media #{$maxTab} {
+            color: #5b5863;
+          }
           &:hover {
             color: $primaryColor;
           }
         }
         .get-started {
-          background: $primaryColor;
-          color: #fff;
           padding: 10px 20px;
           display: block;
           font-size: 14px;
           text-align: center;
           transition: background-color 0.3s ease-in-out;
+          background-color: #fff;
+          color: $primaryColor;
           @media #{$maxTab} {
             margin-left: 35px;
             margin-right: 25px;
             padding: 13.5px;
+            color: #fff;
+          background-color: $primaryColor;
           }
           &:hover {
             background-color: #e33866;
@@ -260,6 +265,7 @@ header {
   border: 1px solid #e1e0de;
   width: 36px;
   height: 36px;
+      background-color: #fff;
   img {
     &:last-child {
       display: none;
@@ -394,7 +400,7 @@ header {
   }
   .hero-img-image {
     position: relative;
-    
+
     img {
       position: absolute;
       top: 50px;
@@ -417,12 +423,12 @@ header {
   }
   .header-shape {
     position: absolute;
-    top: -520px;
-    right: -210px;
+    top: -560px;
+    right: -610px;
     z-index: -1;
     @media #{$mobile} {
       transform: scale(0.65);
-      top: -530px;
+      top: -670px;
       left: -125px;
     }
     @media #{$tablet} {
@@ -607,21 +613,21 @@ header {
     }
     .advantages-img {
       text-align: left;
-      
+
       img {
         max-width: 100%;
       }
     }
   }
   .section-one {
-      .advantages-img {
-        @media #{$tablet} {
-          padding-top: 100px;
-        }
-        @media #{$betweentabdesk} {
-          padding-top: 60px;
-        }
+    .advantages-img {
+      @media #{$tablet} {
+        padding-top: 100px;
       }
+      @media #{$betweentabdesk} {
+        padding-top: 60px;
+      }
+    }
   }
   .section-two {
     .advantages-content {
@@ -645,7 +651,7 @@ header {
     .advantages-img {
       text-align: center;
       padding-top: 60px;
-        img {
+      img {
         max-width: 100%;
       }
     }
@@ -674,13 +680,13 @@ header {
       }
     }
     .advantages-img {
-       @media #{$mobile} {
+      @media #{$mobile} {
         padding-bottom: 50px;
       }
       @media #{$tablet} {
-          padding-top: 100px;
-        }
-        img {
+        padding-top: 100px;
+      }
+      img {
         max-width: 100%;
       }
     }
@@ -751,7 +757,7 @@ header {
       position: relative;
       min-height: 150px;
       img {
-       max-width: 100%;
+        max-width: 100%;
       }
     }
   }
@@ -841,11 +847,11 @@ header {
       }
 
       @media (max-width: 350px) {
-       width: 100%;
+        width: 100%;
         padding: 5px 10px 20px;
         box-shadow: none;
         height: 100%;
-    }
+      }
       @media #{$tablet} {
         width: 100%;
         padding: 20px;
@@ -1060,9 +1066,9 @@ header {
       padding-right: 0;
       border-bottom: 1px solid #ebe8e0;
       margin: 0 6px;
-          display: flex;
-    align-items: center;
-    justify-content: space-between;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     @media #{$tablet} {
       padding-top: 60px;
@@ -1334,65 +1340,149 @@ header {
 .authority {
   background-color: #fff;
   padding-top: 275px;
-  @media #{$mobile} {
-    padding-top: 400px;
-  }
+   @media #{$tablet} {
+      padding-top: 220px;
+    }
   .authority-content {
-    margin: 0 100px;
-    border-top: 1px solid #ebe8df;
-    padding-top: 70px;
+    padding-top: 80px;
     padding-bottom: 160px;
     @media #{$mobile} {
-      padding-top: 42px;
-      margin: 0;
       padding-bottom: 60px;
-      .authority-img {
-        text-align: center;
-        img {
-          transform: scale(0.68);
-        }
-      }
+    }
+    @media (max-width: 350px) {
+      padding-top: 170px;
     }
     @media #{$tablet} {
-      margin: 0;
-      padding-bottom: 60px;
-      .authority-img {
-        text-align: center;
-        img {
-          transform: scale(0.75);
-          margin-left: -30px;
-          margin-top: 10px;
-        }
-      }
-    }
-    @media #{$betweentabdesk} {
-      margin: 0 20px;
       padding-bottom: 100px;
     }
-    .authority-text {
+    .authority-img {
+      text-align: center;
+    }
+    .authority-info {
       position: relative;
-      padding-left: 130px;
+      padding-top: 60px;
+      padding-left: 25px;
       @media #{$mobile} {
         padding-left: 0;
+        padding-top: 30px;
       }
-
-      img {
-        position: absolute;
-        top: 50%;
-        left: 30px;
-        transform: translateY(-50%);
-        @media #{$mobile} {
-          top: -50px;
+      @media #{$betweentabdesk} {
+        padding-top: 0;
+      }
+      ul {
+        padding-bottom: 60px;
+        margin-bottom: 45px;
+        position: relative;
+        @media #{$maxTab} {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 35px;
+          margin-bottom: 25px;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          width: 40px;
+          height: 4px;
+          background-color: #ebe8df;
+          bottom: 0;
           left: 0;
+          @media #{$mobile} {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+        li {
+          display: inline-block;
+          position: relative;
+          padding-left: 60px;
+          margin-right: 40px;
+          @media #{$mobile} {
+            padding-left: 0;
+            margin-right: 0;
+            text-align: center;
+          }
+          @media #{$betweentabdesk} {
+         margin-right: 30px;
+      }
+          .icon {
+            width: 48px;
+            height: 48px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            @media #{$mobile} {
+              margin: 0 auto 14px;
+              line-height: 48px;
+              position: relative;
+            }
+          }
+          h3 {
+            font-size: 24px;
+            line-height: 20px;
+            @media #{$mobile} {
+              margin-bottom: 5px;
+            }
+          }
+          span {
+            font-size: 16px;
+            line-height: 20px;
+          }
         }
       }
-      p {
-        font-size: 16px;
-        line-height: 28px;
+
+      .authority-info-txt {
+        font-size: 24px;
+        line-height: 36px;
+        position: relative;
+        margin-bottom: 50px;
+        background-image: url(../imgs/quote.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
         @media #{$mobile} {
-          margin-bottom: 0;
-          margin-top: 10px;
-          width: 95%;
+          background-image: none;
+          font-size: 18px;
+          line-height: 32px;
+          text-align: center;
+          margin-bottom: 40px;
+        }
+      }
+
+      .person-info {
+        position: relative;
+        padding-left: 220px;
+        @media #{$mobile} {
+          padding-left: 0;
+          text-align: center;
+        }
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          @media #{$mobile} {
+            position: relative;
+            margin-bottom: 10px;
+            transform: scale(0.75);
+          }
+            @media #{$betweentabdesk} {
+              top: 6px;
+            }
+        }
+        h3 {
+          font-size: 24px;
+          line-height: 20px;
+          margin-bottom: 12px;
+          @media #{$mobile} {
+            margin-bottom: 10px;
+          }
+        }
+        p {
+          font-size: 16px;
+          line-height: 20px;
+          @media #{$mobile} {
+            width: 80%;
+            margin: auto;
+          }
         }
       }
     }
@@ -1457,8 +1547,8 @@ header {
         display: block;
       }
       @media (max-width: 350px) {
-             padding: 24px 20px;
-            }
+        padding: 24px 20px;
+      }
       &:hover {
         background-color: $primaryColor;
         color: #fff;
@@ -1559,7 +1649,7 @@ footer {
   padding-top: 100px;
   border-top: 1px solid #e8e4db;
   &.footer-home {
-     border-top: 0;
+    border-top: 0;
   }
   @media #{$maxTab} {
     padding-top: 60px;
@@ -1604,8 +1694,8 @@ footer {
           height: 25px;
         }
         @media (max-width: 350px) {
-              margin-right: 8px;
-            }
+          margin-right: 8px;
+        }
         @media #{$tablet} {
           margin: 0 10px;
         }
@@ -1783,12 +1873,12 @@ footer {
         margin-bottom: 12px;
       }
       @media (max-width: 350px) {
-            font-size: 32px;
+        font-size: 32px;
         line-height: 40px;
         width: 100%;
         margin-top: 40px;
         margin-bottom: 12px;
-    }
+      }
       @media #{$tablet} {
         margin-top: 80px;
       }
@@ -1886,7 +1976,7 @@ footer {
         max-width: 100%;
         position: relative;
         top: 30px;
-        left:0;
+        left: 0;
       }
       @media #{$mobile} {
         top: 0;
@@ -2020,13 +2110,13 @@ footer {
             padding-top: 12px;
             font-size: 12px;
           }
-           @media (max-width: 350px) {
-             padding: 0;
+          @media (max-width: 350px) {
+            padding: 0;
             padding-left: 32px;
             position: relative;
             padding-top: 12px;
             font-size: 12px;
-    }
+          }
           &.apple-icon {
             padding-top: 27px;
             @media #{$mobile} {
@@ -2045,12 +2135,12 @@ footer {
             position: absolute;
             left: 20px;
           }
-           @media (max-width: 350px) {
-             width: 16px;
+          @media (max-width: 350px) {
+            width: 16px;
             height: 16px;
             position: absolute;
             left: 10px;
-    }
+          }
 
           path {
             transition: all 0.3s ease-in-out;
@@ -2166,7 +2256,7 @@ footer {
       p {
         border-top: 1px solid #ebe8df;
         font-size: 14px;
-        line-height: 14px;
+        line-height: 18px;
         padding-top: 20px;
         color: #8d8b92;
         margin-left: 35px;
@@ -2215,6 +2305,9 @@ footer {
       font-size: 24px;
       line-height: 28px;
       padding-right: 20px;
+    }
+    @media (max-width: 350px) {
+      width: 80%;
     }
   }
   .step {
@@ -2368,6 +2461,9 @@ footer {
           line-height: 20px;
           margin: 14px auto 0;
         }
+        @media (max-width: 350px) {
+          width: 70%;
+        }
       }
     }
   }
@@ -2457,6 +2553,9 @@ footer {
       line-height: 28px;
       width: 100%;
       margin: 0 auto 40px;
+    }
+    @media (max-width: 350px) {
+      font-size: 22px;
     }
     @media #{$tablet} {
       width: 75%;
@@ -2583,8 +2682,6 @@ footer {
     }
   }
   .feats-btn {
-
-    
     @media #{$mobile} {
       position: absolute;
       bottom: -593px;
@@ -2592,7 +2689,7 @@ footer {
       right: 15px;
     }
     @media (max-width: 350px) {
-       position: absolute;
+      position: absolute;
       bottom: -661px;
       left: 15px;
       right: 15px;
@@ -2828,8 +2925,8 @@ footer {
     img {
       max-width: 100%;
       @media #{$tablet} {
-      padding-top: 30px;
-    }
+        padding-top: 30px;
+      }
     }
   }
   .devices-content {
@@ -3066,7 +3163,7 @@ footer {
   background-image: url(../imgs/how-use-bg.png);
   padding: 134px 0;
   background-position-x: 43%;
-      background-repeat: no-repeat;
+  background-repeat: no-repeat;
   @media #{$maxTab} {
     padding: 60px 0;
     background-size: 140%;
@@ -3168,21 +3265,20 @@ footer {
 
 .hero-img.mac .header-shape.windows {
   @media #{$mobile} {
-        top: -685px;
-      }
+    top: -685px;
+  }
   @media (max-width: 350px) {
-        top: -715px;
-      }
+    top: -715px;
+  }
   @media #{$tablet} {
-            top: -550px;
+    top: -550px;
     right: -660px;
     transform: scale(0.9);
-      }
+  }
   @media #{$betweentabdesk} {
-           top: -580px;
+    top: -580px;
     right: -745px;
-
-      }
+  }
 }
 
 .benefits-wrapper.mac {
@@ -3205,11 +3301,11 @@ footer {
       top: -102px;
     }
     @media #{$tablet} {
-      left: 0
+      left: 0;
     }
     @media #{$betweentabdesk} {
       left: -10px;
-    top: -10px;
+      top: -10px;
     }
   }
 }
@@ -3222,11 +3318,11 @@ footer {
     left: 38px;
   }
   @media #{$tablet} {
-        bottom: 40px;
+    bottom: 40px;
     left: 250px;
   }
   @media #{$betweentabdesk} {
-       bottom: 75px;
+    bottom: 75px;
     left: 110px;
   }
 }
@@ -3234,7 +3330,21 @@ footer {
 //////////////////////////////////////////////////////////////
 // start wevpn-android page
 .hero-img.android {
+  .header-shape.android {
+    @media #{$betweentabdesk} {
+      top: -570px;
+    }
+  }
   .hero-img-image.android {
+    @media #{$mobile} {
+      height: 210px;
+    }
+    @media #{$tablet} {
+      height: 470px;
+    }
+    img {
+      position: absolute;
+    }
     .one {
       top: 140px;
       left: 310px;
@@ -3242,6 +3352,19 @@ footer {
         top: -150px;
         left: 80px;
         transform: scale(0.38);
+      }
+      @media (max-width: 350px) {
+        left: 60px;
+      }
+      @media #{$tablet} {
+        top: 20px;
+        left: 310px;
+        transform: scale(0.8);
+      }
+      @media #{$betweentabdesk} {
+        top: 100px;
+        left: 250px;
+        transform: scale(0.8);
       }
     }
     .two {
@@ -3252,11 +3375,27 @@ footer {
         left: -30px;
         transform: scale(0.38);
       }
+      @media (max-width: 350px) {
+        left: -50px;
+      }
+      @media #{$tablet} {
+        top: -30px;
+        left: 80px;
+        transform: scale(0.8);
+      }
+      @media #{$betweentabdesk} {
+        left: 20px;
+        transform: scale(0.8);
+        top: 40px;
+      }
     }
   }
   .hero-img-btn {
     padding: 24px 64.5px;
     margin-bottom: 10px;
+    @media #{$mobile} {
+      padding: 24px 0 23px;
+    }
   }
   .google-play {
     display: inline-block;
@@ -3275,6 +3414,11 @@ footer {
         margin-left: 0;
         display: block;
         text-align: center;
+      }
+      @media #{$betweentabdesk} {
+        top: 0;
+        margin-left: 0;
+        padding: 20px 79px;
       }
       img:first-child {
         margin-right: 10px;
@@ -3301,30 +3445,85 @@ footer {
 }
 
 .benefits .benefits-wrapper .benefit.android .benefits-img img {
-  right: -52px;
-  top: -130px;
+  right: 115px;
+  top: 130px;
+  @media #{$mobile} {
+    right: -52px;
+    top: -160px;
+  }
+  @media #{$tablet} {
+    right: 30px;
+    top: 0px;
+  }
+  @media #{$betweentabdesk} {
+    right: 20px;
+    top: -40px;
+  }
 }
 
 .benefits .benefits-wrapper .benefit.android .benfits-img-two {
   border-radius: 55px;
   bottom: 180px;
   @media #{$mobile} {
-    bottom: -100px;
-    left: 0;
+    bottom: -118px;
+    left: -15px;
+  }
+  @media #{$tablet} {
+    left: 145px;
+    bottom: 10px;
+  }
+  @media #{$betweentabdesk} {
+    left: 15px;
+    bottom: 80px;
   }
 }
 
 //////////////////////////////////////////////////////////////
 // start wevpn-iphone page
 .hero-img.iphone {
+  .header-shape.iphone {
+    @media #{$betweentabdesk} {
+      top: -560px;
+    }
+  }
   .hero-img-image.iphone {
+    img {
+      position: absolute;
+    }
+    @media #{$mobile} {
+      height: 210px;
+    }
+    @media #{$tablet} {
+      height: 470px;
+    }
+
     .one {
       top: 75px;
       left: 280px;
       @media #{$mobile} {
-        top: -190px;
-        left: 0px;
-        transform: scale(0.41);
+        top: -130px;
+        left: 41px;
+        transform: scale(0.52);
+      }
+      @media (width: 425px) {
+        top: -170px;
+        left: 40px;
+        transform: scale(0.47);
+      }
+      @media (max-width: 350px) {
+        top: -90px;
+        left: 52px;
+        transform: scale(0.6);
+      }
+      @media #{$tablet} {
+        top: -25px;
+        left: 230px;
+        transform: scale(0.8);
+      }
+      @media #{$betweentabdesk} {
+        top: 55px;
+        left: 170px;
+        transform: scale(0.8);
       }
     }
     .two {
@@ -3335,11 +3534,31 @@ footer {
         left: -40px;
         transform: scale(0.41);
       }
+      @media (width: 425px) {
+        top: -107px;
+        left: -20px;
+      }
+      @media (max-width: 350px) {
+        left: -55px;
+      }
+      @media #{$tablet} {
+        top: 78px;
+        left: 60px;
+        transform: scale(0.8);
+      }
+      @media #{$betweentabdesk} {
+        top: 155px;
+        left: 5px;
+        transform: scale(0.8);
+      }
     }
   }
   .hero-img-btn {
     padding: 24px 64.5px;
     margin-bottom: 10px;
+    @media #{$mobile} {
+      padding: 24px 0 23px;
+    }
   }
   .google-play {
     display: inline-block;
@@ -3359,6 +3578,11 @@ footer {
         display: block;
         text-align: center;
       }
+      @media #{$betweentabdesk} {
+        top: 0;
+        margin-left: 0;
+        padding: 21px 84.5px;
+      }
       img:first-child {
         margin-right: 10px;
       }
@@ -3375,8 +3599,17 @@ footer {
     right: 45px;
     top: -80px;
     @media #{$mobile} {
-      right: -90px;
-      top: -198px;
+      right: -115px;
+      top: -220px;
+      transform: scale(0.4);
+    }
+    @media #{$tablet} {
+      right: -45px;
+      top: -170px;
+    }
+    @media #{$betweentabdesk} {
+      right: -35px;
+      top: -180px;
     }
   }
 }
@@ -3387,8 +3620,17 @@ footer {
   bottom: 198px;
   left: 35px;
   @media #{$mobile} {
-    bottom: -60px;
-    left: -40px;
+    bottom: -80px;
+    left: -20px;
+    transform: scale(0.4);
+  }
+  @media #{$tablet} {
+    bottom: 88px;
+    left: 100px;
+  }
+  @media #{$betweentabdesk} {
+    bottom: 122px;
+    left: -15px;
   }
 }
 
