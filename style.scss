@@ -4122,7 +4122,7 @@ ol {
   }
 }
 
-.header-trial,
+header.header-trial,
 header.features-page,
 header.benefits-page {
   .navbar .login .login-item .login-link {
@@ -4130,11 +4130,13 @@ header.benefits-page {
   }
 }
 
-.header-trial,
+header.header-trial,
 header.features-page,
-header.benefits-page .navbar .login .login-item .get-started {
-  color: #fff;
-  background-color: $primaryColor;
+header.benefits-page {
+  .navbar .login .login-item .get-started  {
+    color: #fff;
+    background-color: $primaryColor;
+  }
 }
 
 .header-trial {

@@ -5905,14 +5905,14 @@ ol {
   }
 }
 
-.header-trial .navbar .login .login-item .login-link,
+header.header-trial .navbar .login .login-item .login-link,
 header.features-page .navbar .login .login-item .login-link,
 header.benefits-page .navbar .login .login-item .login-link {
   color: #5b5863;
 }
 
-.header-trial,
-header.features-page,
+header.header-trial .navbar .login .login-item .get-started,
+header.features-page .navbar .login .login-item .get-started,
 header.benefits-page .navbar .login .login-item .get-started {
   color: #fff;
   background-color: #fd3e72;
