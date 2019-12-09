@@ -745,10 +745,10 @@ header .navbar .login .login-item .get-started:hover {
   .advantages .section-one .advantages-content .advantages-title,
   .advantages .section-two .advantages-content .advantages-title,
   .advantages .section-three .advantages-content .advantages-title {
-    padding-top: 50px;
+    padding-top: 10px;
     font-size: 24px;
     line-height: 28px;
-    width: 65%;
+    width: 70%;
     margin-bottom: 0;
   }
 }
@@ -838,6 +838,7 @@ header .navbar .login .login-item .get-started:hover {
 @media (min-width: 768px) and (max-width: 992px) {
   .advantages .section-two .advantages-content .advantages-title {
     width: 100%;
+    padding-top: 110px;
   }
 }
 
@@ -860,7 +861,7 @@ header .navbar .login .login-item .get-started:hover {
   padding-top: 100px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .advantages .section-three {
     padding-top: 50px;
   }
@@ -898,7 +899,7 @@ header .navbar .login .login-item .get-started:hover {
 
 @media (min-width: 768px) and (max-width: 992px) {
   .advantages .section-three .advantages-img {
-    padding-top: 100px;
+    padding-top: 70px;
   }
 }
 
@@ -1556,7 +1557,6 @@ header .navbar .login .login-item .get-started:hover {
 
 .testimonials .testimonials-slider .slider.content-three, .testimonials .testimonials-slider .slider.content-two {
   opacity: 0;
-  visibility: none;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
@@ -1629,6 +1629,7 @@ header .navbar .login .login-item .get-started:hover {
 @media (min-width: 768px) and (max-width: 992px) {
   .testimonials .testimonials-slider .slider .owl-carousel .testim {
     padding: 40px 0 55px 30px;
+    min-height: 480px;
   }
 }
 
@@ -3192,7 +3193,7 @@ footer .copyright .copyright-links li a:hover {
 
 @media (min-width: 1000px) and (max-width: 1200px) {
   .how-to-use .step .step-img img {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -3418,6 +3419,12 @@ footer .copyright .copyright-links li a:hover {
     padding-top: 350px;
     margin-top: 0;
     padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .authority.windows .authority-content {
+    margin-top: 155px;
   }
 }
 
@@ -4039,7 +4046,7 @@ footer .copyright .copyright-links li a:hover {
 
 @media (max-width: 767px) {
   .devices-os .devices-content .devices-title {
-    padding-top: 50px;
+    padding-top: 0;
     font-size: 24px;
     line-height: 28px;
     width: 65%;
@@ -4315,7 +4322,7 @@ footer .copyright .copyright-links li a:hover {
 .faq .faq-btn a {
   background-color: #ffecf1;
   color: #fd3e72;
-  padding: 24px 95px;
+  padding: 24px 75px;
   display: inline-block;
 }
 
@@ -5892,6 +5899,21 @@ ol {
   background-color: #fff;
 }
 
+@media (max-width: 767px) {
+  .wrapper-header.trial {
+    padding-bottom: 40px;
+  }
+}
+
+.header-trial .navbar .login .login-item .login-link {
+  color: #5b5863;
+}
+
+.header-trial .navbar .login .login-item .get-started {
+  color: #fff;
+  background-color: #fd3e72;
+}
+
 .header-trial {
   background-color: #fff;
 }
@@ -5904,12 +5926,28 @@ ol {
   width: 70%;
 }
 
+@media (max-width: 767px) {
+  .hero-img.windows.trial .hero-img-content .hero-img-title {
+    margin-left: 0;
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero-img.windows.trial .hero-img-content .hero-img-title {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
 .hero-img.windows.trial .hero-img-content .hero-img-txt {
   font-size: 24px;
 }
 
-.hero-img.windows.trial .hero-img-content .hero-img-btn {
-  padding: 24px 64.5px;
+@media (max-width: 767px) {
+  .hero-img.windows.trial .hero-img-content .hero-img-btn {
+    margin-bottom: 0;
+  }
 }
 
 .hero-img.windows.trial .hero-img-image img {
@@ -5917,9 +5955,91 @@ ol {
   left: -80px;
 }
 
+@media (max-width: 767px) {
+  .hero-img.windows.trial .hero-img-image img {
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero-img.windows.trial .hero-img-image img {
+    top: 30px;
+    left: 0;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .hero-img.windows.trial .hero-img-image img {
+    top: 175px;
+    left: 0;
+  }
+}
+
 .how-to-use.trial {
   background-color: #f9f8f4;
   padding-bottom: 134px;
+}
+
+@media (max-width: 992px) {
+  .how-to-use.trial {
+    padding-bottom: 60px;
+  }
+  .how-to-use.trial .container {
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .how-to-use.trial {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .how-to-use.trial {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .how-to-use.trial .how-to-use-content {
+    overflow: auto;
+    /* Hide scrollbar for IE and Edge */
+    -ms-overflow-style: none;
+    /* Hide scrollbar for Chrome, Safari and Opera */
+  }
+  .how-to-use.trial .how-to-use-content::-webkit-scrollbar {
+    display: none;
+  }
+  .how-to-use.trial .how-to-use-content .sm-scrolled {
+    width: 1100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .how-to-use.trial .step {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .how-to-use.trial .step .step-text {
+    text-align: center !important;
+  }
+  .how-to-use.trial .step .step-text span {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+.how-to-use.trial .step img {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .how-to-use.trial .step {
+    margin-top: 80px;
+  }
 }
 
 .how-to-use.trial .step .step-img.trial {
@@ -5937,16 +6057,30 @@ ol {
   border-bottom: 0;
 }
 
-.servers.trial h2 {
-  width: 43%;
-}
-
-.servers.trial .server-btn {
-  border-bottom: 1px solid #ebe8df;
-}
-
 .testimonials.trial .owl-nav {
   left: -340px;
+}
+
+@media (max-width: 767px) {
+  .testimonials.trial .owl-nav {
+    left: -10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .testimonials.trial .owl-nav {
+    left: -262px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .testimonials.trial .owl-nav {
+    left: -265px;
+  }
+}
+
+.authority.trial {
+  background-color: #f9f8f4;
 }
 
 .testimonials.trial
@@ -5963,9 +6097,35 @@ ol {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 992px) {
+  .risk-free.trial {
+    background-size: 100%;
+    background-position: 50% 19px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .risk-free.trial {
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .devices-os.trial {
+    padding-bottom: 95px;
+  }
+}
+
 .platforms.trial {
   padding-top: 0;
   padding-bottom: 100px;
+}
+
+@media (max-width: 992px) {
+  .platforms.trial {
+    padding-top: 35px;
+    padding-bottom: 0;
+  }
 }
 
 .hero-img.vpn {

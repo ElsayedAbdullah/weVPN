@@ -188,6 +188,24 @@ $(function() {
     );
   });
 
+  // get the first character of testimonial author
+
+  function getFirstLetter(name) {
+    var firstLetter = $(`.testim .testim-author #${name}`)
+      .text()
+      .charAt(0);
+    $(`.testim-author #${name} .first-letter`).text(firstLetter);
+  }
+
+  getFirstLetter("trust-author-one");
+  getFirstLetter("trust-author-two");
+  getFirstLetter("trust-author-three");
+  getFirstLetter("trust-author-four");
+  getFirstLetter("app-author-one");
+  getFirstLetter("app-author-two");
+  getFirstLetter("app-author-three");
+  getFirstLetter("app-author-four");
+
   // toggle between credit card and paypal
   // $(".credit-payment .pay-card").click(function() {
   //   $(this)

@@ -248,7 +248,7 @@ header {
             margin-right: 25px;
             padding: 13.5px;
             color: #fff;
-          background-color: $primaryColor;
+            background-color: $primaryColor;
           }
           &:hover {
             background-color: #e33866;
@@ -265,7 +265,7 @@ header {
   border: 1px solid #e1e0de;
   width: 36px;
   height: 36px;
-      background-color: #fff;
+  background-color: #fff;
   img {
     &:last-child {
       display: none;
@@ -578,10 +578,10 @@ header {
         font-size: 36px;
         line-height: 44px;
         @media #{$mobile} {
-          padding-top: 50px;
+          padding-top: 10px;
           font-size: 24px;
           line-height: 28px;
-          width: 65%;
+          width: 70%;
           margin-bottom: 0;
         }
         @media #{$tablet} {
@@ -640,6 +640,7 @@ header {
         }
         @media #{$tablet} {
           width: 100%;
+          padding-top: 110px;
         }
       }
       .advantages-desc {
@@ -658,7 +659,7 @@ header {
   }
   .section-three {
     padding-top: 100px;
-    @media #{$mobile} {
+    @media #{$maxTab} {
       padding-top: 50px;
     }
     .advantages-content {
@@ -684,7 +685,7 @@ header {
         padding-bottom: 50px;
       }
       @media #{$tablet} {
-        padding-top: 100px;
+        padding-top: 70px;
       }
       img {
         max-width: 100%;
@@ -1165,7 +1166,6 @@ header {
       &.content-three,
       &.content-two {
         opacity: 0;
-        visibility: none;
         transition: all 0.15s ease-in-out;
         @media #{$mobile} {
           display: none;
@@ -1214,6 +1214,7 @@ header {
           }
           @media #{$tablet} {
             padding: 40px 0 55px 30px;
+            min-height: 480px;
           }
           img {
             width: auto;
@@ -1340,9 +1341,9 @@ header {
 .authority {
   background-color: #fff;
   padding-top: 275px;
-   @media #{$tablet} {
-      padding-top: 220px;
-    }
+  @media #{$tablet} {
+    padding-top: 220px;
+  }
   .authority-content {
     padding-top: 80px;
     padding-bottom: 160px;
@@ -1403,8 +1404,8 @@ header {
             text-align: center;
           }
           @media #{$betweentabdesk} {
-         margin-right: 30px;
-      }
+            margin-right: 30px;
+          }
           .icon {
             width: 48px;
             height: 48px;
@@ -1464,9 +1465,9 @@ header {
             margin-bottom: 10px;
             transform: scale(0.75);
           }
-            @media #{$betweentabdesk} {
-              top: 6px;
-            }
+          @media #{$betweentabdesk} {
+            top: 6px;
+          }
         }
         h3 {
           font-size: 24px;
@@ -2349,7 +2350,7 @@ footer {
       position: relative;
       @media #{$betweentabdesk} {
         img {
-          width: 100%;
+          max-width: 100%;
         }
       }
       &:after {
@@ -2520,6 +2521,9 @@ footer {
       padding-top: 350px;
       margin-top: 0;
       padding-bottom: 60px;
+    }
+    @media #{$tablet} {
+      margin-top: 155px;
     }
   }
 }
@@ -2939,7 +2943,7 @@ footer {
       line-height: 44px;
       width: 80%;
       @media #{$mobile} {
-        padding-top: 50px;
+        padding-top: 0;
         font-size: 24px;
         line-height: 28px;
         width: 65%;
@@ -3139,7 +3143,7 @@ footer {
     a {
       background-color: #ffecf1;
       color: $primaryColor;
-      padding: 24px 95px;
+      padding: 24px 75px;
       display: inline-block;
       @media #{$mobile} {
         display: block;
@@ -4113,6 +4117,20 @@ ol {
 // Start Trial page
 .wrapper-header.trial {
   background-color: #fff;
+  @media #{$mobile} {
+    padding-bottom: 40px;
+  }
+}
+
+.header-trial {
+  .navbar .login .login-item .login-link {
+    color: #5b5863;
+  }
+}
+
+.header-trial .navbar .login .login-item .get-started {
+  color: #fff;
+  background-color: $primaryColor;
 }
 
 .header-trial {
@@ -4124,18 +4142,40 @@ ol {
   .hero-img-content {
     .hero-img-title {
       width: 70%;
+      @media #{$mobile} {
+        margin-left: 0;
+        width: 70%;
+      }
+      @media #{$tablet} {
+        margin-left: 0;
+        width: 100%;
+      }
     }
     .hero-img-txt {
       font-size: 24px;
     }
     .hero-img-btn {
-      padding: 24px 64.5px;
+      @media #{$mobile} {
+        margin-bottom: 0;
+      }
     }
   }
   .hero-img-image {
     img {
       top: 97px;
       left: -80px;
+      @media #{$mobile} {
+        top: 0;
+        left: 0;
+      }
+      @media #{$tablet} {
+        top: 30px;
+        left: 0;
+      }
+      @media #{$betweentabdesk} {
+        top: 175px;
+        left: 0;
+      }
     }
   }
 }
@@ -4143,7 +4183,53 @@ ol {
 .how-to-use.trial {
   background-color: #f9f8f4;
   padding-bottom: 134px;
+  @media #{$maxTab} {
+    padding-bottom: 60px;
+    .container {
+      padding-right: 20px;
+    }
+  }
+  @media #{$tablet} {
+    padding-bottom: 100px;
+  }
+  @media #{$mobile} {
+    overflow: hidden;
+  }
+
+  .how-to-use-content {
+    @media #{$tablet} {
+      overflow: auto;
+      /* Hide scrollbar for IE and Edge */
+      -ms-overflow-style: none;
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .sm-scrolled {
+        width: 1100px;
+      }
+    }
+  }
   .step {
+    @media #{$mobile} {
+      text-align: center;
+      margin-top: 40px;
+      .step-text {
+        text-align: center !important;
+        span {
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    img {
+      max-width: 100%;
+
+
+    }
+    @media #{$tablet} {
+      margin-top: 80px;
+    }
     .step-img.trial {
       box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 3px 8px #e6e4df;
       width: 286px;
@@ -4157,18 +4243,25 @@ ol {
 
 .servers.trial {
   border-bottom: 0;
-  h2 {
-    width: 43%;
-  }
-  .server-btn {
-    border-bottom: 1px solid #ebe8df;
-  }
 }
 
 .testimonials.trial {
   .owl-nav {
     left: -340px;
+    @media #{$mobile} {
+      left: -10px;
+    }
+    @media #{$tablet} {
+      left: -262px;
+    }
+    @media #{$betweentabdesk} {
+      left: -265px;
+    }
   }
+}
+
+.authority.trial {
+ background-color: #f9f8f4;
 }
 
 .testimonials.trial
@@ -4183,11 +4276,28 @@ ol {
   background-color: #fff;
   background-image: url(../imgs/risk-bg-white.png);
   background-repeat: no-repeat;
+  @media #{$maxTab} {
+    background-size: 100%;
+    background-position: 50% 19px;
+  }
+  @media #{$betweentabdesk} {
+    background-size: 100%;
+  }
+}
+
+.devices-os.trial {
+  @media #{$tablet} {
+    padding-bottom: 95px;
+  }
 }
 
 .platforms.trial {
   padding-top: 0;
   padding-bottom: 100px;
+  @media #{$maxTab} {
+    padding-top: 35px;
+    padding-bottom: 0;
+  }
 }
 
 //////////////////////////////////////////////////////////////////////////////
