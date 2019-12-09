@@ -4122,13 +4122,17 @@ ol {
   }
 }
 
-.header-trial {
+.header-trial,
+header.features-page,
+header.benefits-page {
   .navbar .login .login-item .login-link {
     color: #5b5863;
   }
 }
 
-.header-trial .navbar .login .login-item .get-started {
+.header-trial,
+header.features-page,
+header.benefits-page .navbar .login .login-item .get-started {
   color: #fff;
   background-color: $primaryColor;
 }
@@ -4187,6 +4191,7 @@ ol {
     padding-bottom: 60px;
     .container {
       padding-right: 20px;
+      margin-right: auto;
     }
   }
   @media #{$tablet} {
@@ -4224,8 +4229,6 @@ ol {
     }
     img {
       max-width: 100%;
-
-
     }
     @media #{$tablet} {
       margin-top: 80px;
@@ -4261,7 +4264,7 @@ ol {
 }
 
 .authority.trial {
- background-color: #f9f8f4;
+  background-color: #f9f8f4;
 }
 
 .testimonials.trial
@@ -4325,6 +4328,9 @@ ol {
         width: 100%;
         font-size: 42px;
       }
+      @media #{$betweentabdesk} {
+        margin-top: 100px;
+      }
     }
     p {
       font-size: 18px;
@@ -4346,28 +4352,14 @@ ol {
   }
 
   .hero-img-image {
-    @media #{$mobile} {
-      height: 250px;
-      img {
-        transform: scale(0.53);
-        top: -105px;
-        left: -159px;
-      }
-    }
     @media #{$tablet} {
-      img {
-        transform: scale(0.65);
-        top: 100px;
-        left: -130px;
+            text-align: center;
       }
-    }
     @media #{$betweentabdesk} {
-      img {
-        transform: scale(0.85);
-        top: 100px;
-        left: -120px;
+          img {
+            top:100px;
+          }
       }
-    }
   }
 }
 
@@ -4555,25 +4547,11 @@ ol {
     padding: 60px 0;
   }
   .vpn-protocol-img {
-    @media #{$mobile} {
-      height: 300px;
-      position: relative;
-      img {
-        transform: scale(0.7);
-        position: absolute;
-        top: -90px;
-        left: -93px;
-      }
-    }
     @media #{$tablet} {
-      height: 300px;
-      position: relative;
-      img {
-        transform: scale(0.75);
-        position: absolute;
-        top: -35px;
-        left: -93px;
+       text-align: center;
       }
+    img {
+      max-width: 100%;
     }
   }
   .vpn-protocol-content {
@@ -4590,10 +4568,13 @@ ol {
       @media #{$mobile} {
         font-size: 24px;
         line-height: 28px;
-        margin-top: 55px;
+        margin-top: 0;
       }
       @media #{$tablet} {
         width: 90%;
+        margin-top: 0;
+      }
+      @media #{$betweentabdesk} {
         margin-top: 0;
       }
     }
@@ -4758,7 +4739,7 @@ ol {
         padding: 20px;
       }
       @media #{$betweentabdesk} {
-        padding: 24px 16px;
+        padding: 24px;
       }
 
       &:before {
@@ -4907,6 +4888,10 @@ ol {
             padding: 24px 48px 23px;
             width: auto;
           }
+          @media #{$mobile} {
+            padding: 15.5px;
+            font-size: 16px;
+          }
         }
       }
     }
@@ -4916,36 +4901,68 @@ ol {
 
 //////////////////////////////////////////////////////////////////////////////
 // Start benefits page
+header.benefits-page {
+  .navbar-light .navbar-toggler {
+    background-color: #f9f8f4;
+  }
+}
+
 .advantages.benefits-page {
   padding-top: 112px;
   padding-bottom: 134px;
+  @media #{$mobile} {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .benefits-title {
     font-size: 56px;
     line-height: 56px;
     margin-bottom: 35px;
+    @media #{$mobile} {
+      font-size: 24px;
+      line-height: 28px;
+      width: 80%;
+      margin: 0 auto 10px;
+    }
+    @media #{$tablet} {
+      font-size: 46px;
+      line-height: 46px;
+      margin-bottom: 20px;
+    }
   }
   .benefits-text {
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 128px;
+    @media #{$mobile} {
+      font-size: 14px;
+      line-height: 20px;
+      width: 60%;
+      margin: 0 auto 50px;
+    }
+    @media #{$tablet} {
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 0;
+    }
   }
 }
 
-.advantages.benefits-page .section-two .advantages-img {
-  padding-top: 20px;
-}
+// .advantages.benefits-page .section-two .advantages-img {
+//   padding-top: 20px;
+// }
 
-.advantages.benefits-page .section-two .advantages-content .advantages-title {
-  padding-top: 110px;
-}
+// .advantages.benefits-page .section-two .advantages-content .advantages-title {
+//   padding-top: 110px;
+// }
 
-.advantages.benefits-page .section-three .advantages-content .advantages-desc {
-  margin-bottom: 30px;
-}
+// .advantages.benefits-page .section-three .advantages-content .advantages-desc {
+//   margin-bottom: 30px;
+// }
 
-.advantages.benefits-page .section-three .advantages-icons {
-  margin-bottom: 30px;
-}
+// .advantages.benefits-page .section-three .advantages-icons {
+//   margin-bottom: 30px;
+// }
 
 .more-benefits.benefits-page {
   padding-top: 154px;
@@ -4956,11 +4973,30 @@ ol {
 .need-help {
   padding-top: 134px;
   padding-bottom: 134px;
+  @media #{$mobile} {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media #{$tablet} {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
   .need-help-content {
     .need-help-title {
       font-size: 36px;
       line-height: 44px;
       margin-bottom: 35px;
+      @media #{$mobile} {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 24px;
+        margin-top: 40px;
+      }
+      @media #{$tablet} {
+        font-size: 30px;
+        line-height: 28px;
+        margin-bottom: 30px;
+      }
     }
     .need-help-list {
       margin-bottom: 30px;
@@ -4968,6 +5004,14 @@ ol {
         font-size: 18px;
         line-height: 32px;
         margin-bottom: 15px;
+        @media #{$mobile} {
+          font-size: 14px;
+          line-height: 14px;
+        }
+        @media #{$tablet} {
+          font-size: 16px;
+          line-height: 20px;
+        }
         i {
           color: #62d5b4;
           margin-right: 7px;
@@ -4979,11 +5023,32 @@ ol {
       color: $primaryColor;
       padding: 24px 50px;
       font-size: 20px;
+      @media #{$mobile} {
+        padding: 15.5px 22px;
+        font-size: 16px;
+      }
+      @media #{$tablet} {
+        padding: 20px 30px;
+        font-size: 18px;
+      }
     }
     .help-center {
       color: $primaryColor;
       text-decoration: underline !important;
       margin-left: 30px;
+      i {
+        font-weight: bold;
+      }
+      @media #{$mobile} {
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 15px;
+      }
+    }
+  }
+  .need-help-img {
+    img {
+      max-width: 100%;
     }
   }
 }
@@ -4998,17 +5063,45 @@ header.features-page {
 .features-windows.features-page {
   padding-top: 112px;
   padding-bottom: 90px;
+  @media #{$mobile} {
+    padding-top: 50px;
+    background-color: #fff;
+    padding-bottom: 40px;
+  }
+  @media #{$tablet} {
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
 }
 .features-windows.features-page .features-windows-title {
   font-size: 56px;
   line-height: 56px;
   width: 65%;
   margin-bottom: 136px;
+  @media #{$mobile} {
+    font-size: 24px;
+    line-height: 28px;
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  @media #{$tablet} {
+    width: 90%;
+    font-size: 46px;
+    margin-bottom: 80px;
+  }
 }
 
 .features-windows.features-page .feats .feat.one,
 .features-windows.features-page .feats .feat.five {
   margin-top: 60px;
+  @media #{$mobile} {
+    margin-top: 0;
+  }
+}
+.features-windows.features-page .feats .feat.five {
+  @media #{$tablet} {
+    margin-top: 30px;
+  }
 }
 
 .features-windows.features-page .feats .feat.one.repeat,
@@ -5017,6 +5110,12 @@ header.features-page {
 }
 .features-windows.features-page .feats .feat.three.repeat {
   margin-top: -60px;
+  @media #{$mobile} {
+    margin-top: 0;
+  }
+  @media #{$tablet} {
+    margin-top: -64px;
+  }
 }
 
 //////////////////////////////////////////////////////////////////////////////

@@ -190,21 +190,14 @@ $(function() {
 
   // get the first character of testimonial author
 
-  function getFirstLetter(name) {
-    var firstLetter = $(`.testim .testim-author #${name}`)
+  $(".testim .testim-author h4").each(function() {
+    var firstLetter = $(this)
       .text()
       .charAt(0);
-    $(`.testim-author #${name} .first-letter`).text(firstLetter);
-  }
-
-  getFirstLetter("trust-author-one");
-  getFirstLetter("trust-author-two");
-  getFirstLetter("trust-author-three");
-  getFirstLetter("trust-author-four");
-  getFirstLetter("app-author-one");
-  getFirstLetter("app-author-two");
-  getFirstLetter("app-author-three");
-  getFirstLetter("app-author-four");
+    $(this)
+      .find(".first-letter")
+      .text(firstLetter);
+  });
 
   // toggle between credit card and paypal
   // $(".credit-payment .pay-card").click(function() {

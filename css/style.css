@@ -5905,11 +5905,15 @@ ol {
   }
 }
 
-.header-trial .navbar .login .login-item .login-link {
+.header-trial .navbar .login .login-item .login-link,
+header.features-page .navbar .login .login-item .login-link,
+header.benefits-page .navbar .login .login-item .login-link {
   color: #5b5863;
 }
 
-.header-trial .navbar .login .login-item .get-started {
+.header-trial,
+header.features-page,
+header.benefits-page .navbar .login .login-item .get-started {
   color: #fff;
   background-color: #fd3e72;
 }
@@ -5987,6 +5991,7 @@ ol {
   }
   .how-to-use.trial .container {
     padding-right: 20px;
+    margin-right: auto;
   }
 }
 
@@ -6166,6 +6171,12 @@ ol {
   }
 }
 
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .hero-img.vpn .hero-img-content .hero-img-title {
+    margin-top: 100px;
+  }
+}
+
 .hero-img.vpn .hero-img-content p {
   font-size: 18px;
   line-height: 28px;
@@ -6190,33 +6201,15 @@ ol {
   }
 }
 
-@media (max-width: 767px) {
-  .hero-img.vpn .hero-img-image {
-    height: 250px;
-  }
-  .hero-img.vpn .hero-img-image img {
-    -webkit-transform: scale(0.53);
-            transform: scale(0.53);
-    top: -105px;
-    left: -159px;
-  }
-}
-
 @media (min-width: 768px) and (max-width: 992px) {
-  .hero-img.vpn .hero-img-image img {
-    -webkit-transform: scale(0.65);
-            transform: scale(0.65);
-    top: 100px;
-    left: -130px;
+  .hero-img.vpn .hero-img-image {
+    text-align: center;
   }
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
   .hero-img.vpn .hero-img-image img {
-    -webkit-transform: scale(0.85);
-            transform: scale(0.85);
     top: 100px;
-    left: -120px;
   }
 }
 
@@ -6501,32 +6494,14 @@ ol {
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .vpn-protocol .vpn-protocol-img {
-    height: 300px;
-    position: relative;
-  }
-  .vpn-protocol .vpn-protocol-img img {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-    position: absolute;
-    top: -90px;
-    left: -93px;
+    text-align: center;
   }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-  .vpn-protocol .vpn-protocol-img {
-    height: 300px;
-    position: relative;
-  }
-  .vpn-protocol .vpn-protocol-img img {
-    -webkit-transform: scale(0.75);
-            transform: scale(0.75);
-    position: absolute;
-    top: -35px;
-    left: -93px;
-  }
+.vpn-protocol .vpn-protocol-img img {
+  max-width: 100%;
 }
 
 @media (max-width: 767px) {
@@ -6548,13 +6523,19 @@ ol {
   .vpn-protocol .vpn-protocol-content .title {
     font-size: 24px;
     line-height: 28px;
-    margin-top: 55px;
+    margin-top: 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
   .vpn-protocol .vpn-protocol-content .title {
     width: 90%;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .vpn-protocol .vpn-protocol-content .title {
     margin-top: 0;
   }
 }
@@ -6775,7 +6756,7 @@ ol {
 
 @media (min-width: 1000px) and (max-width: 1200px) {
   .pricing-tables .price-card .label-radio {
-    padding: 24px 16px;
+    padding: 24px;
   }
 }
 
@@ -6989,10 +6970,28 @@ ol {
   }
 }
 
+@media (max-width: 767px) {
+  .pricing-tables .price-card .label-radio .price-bottom a {
+    padding: 15.5px;
+    font-size: 16px;
+  }
+}
+
 /* End Pricing Tables */
+header.benefits-page .navbar-light .navbar-toggler {
+  background-color: #f9f8f4;
+}
+
 .advantages.benefits-page {
   padding-top: 112px;
   padding-bottom: 134px;
+}
+
+@media (max-width: 767px) {
+  .advantages.benefits-page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .advantages.benefits-page .benefits-title {
@@ -7001,26 +7000,44 @@ ol {
   margin-bottom: 35px;
 }
 
+@media (max-width: 767px) {
+  .advantages.benefits-page .benefits-title {
+    font-size: 24px;
+    line-height: 28px;
+    width: 80%;
+    margin: 0 auto 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .advantages.benefits-page .benefits-title {
+    font-size: 46px;
+    line-height: 46px;
+    margin-bottom: 20px;
+  }
+}
+
 .advantages.benefits-page .benefits-text {
   font-size: 24px;
   line-height: 30px;
   margin-bottom: 128px;
 }
 
-.advantages.benefits-page .section-two .advantages-img {
-  padding-top: 20px;
+@media (max-width: 767px) {
+  .advantages.benefits-page .benefits-text {
+    font-size: 14px;
+    line-height: 20px;
+    width: 60%;
+    margin: 0 auto 50px;
+  }
 }
 
-.advantages.benefits-page .section-two .advantages-content .advantages-title {
-  padding-top: 110px;
-}
-
-.advantages.benefits-page .section-three .advantages-content .advantages-desc {
-  margin-bottom: 30px;
-}
-
-.advantages.benefits-page .section-three .advantages-icons {
-  margin-bottom: 30px;
+@media (min-width: 768px) and (max-width: 992px) {
+  .advantages.benefits-page .benefits-text {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .more-benefits.benefits-page {
@@ -7034,10 +7051,41 @@ ol {
   padding-bottom: 134px;
 }
 
+@media (max-width: 767px) {
+  .need-help {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .need-help {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
 .need-help .need-help-content .need-help-title {
   font-size: 36px;
   line-height: 44px;
   margin-bottom: 35px;
+}
+
+@media (max-width: 767px) {
+  .need-help .need-help-content .need-help-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 24px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .need-help .need-help-content .need-help-title {
+    font-size: 30px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
 }
 
 .need-help .need-help-content .need-help-list {
@@ -7048,6 +7096,20 @@ ol {
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .need-help .need-help-content .need-help-list li {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .need-help .need-help-content .need-help-list li {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .need-help .need-help-content .need-help-list li i {
@@ -7062,10 +7124,40 @@ ol {
   font-size: 20px;
 }
 
+@media (max-width: 767px) {
+  .need-help .need-help-content .need-help-btn {
+    padding: 15.5px 22px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .need-help .need-help-content .need-help-btn {
+    padding: 20px 30px;
+    font-size: 18px;
+  }
+}
+
 .need-help .need-help-content .help-center {
   color: #fd3e72;
   text-decoration: underline !important;
   margin-left: 30px;
+}
+
+.need-help .need-help-content .help-center i {
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .need-help .need-help-content .help-center {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 15px;
+  }
+}
+
+.need-help .need-help-img img {
+  max-width: 100%;
 }
 
 /* End Need Help */
@@ -7078,6 +7170,21 @@ header.features-page {
   padding-bottom: 90px;
 }
 
+@media (max-width: 767px) {
+  .features-windows.features-page {
+    padding-top: 50px;
+    background-color: #fff;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .features-windows.features-page {
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
+}
+
 .features-windows.features-page .features-windows-title {
   font-size: 56px;
   line-height: 56px;
@@ -7085,9 +7192,39 @@ header.features-page {
   margin-bottom: 136px;
 }
 
+@media (max-width: 767px) {
+  .features-windows.features-page .features-windows-title {
+    font-size: 24px;
+    line-height: 28px;
+    width: 90%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .features-windows.features-page .features-windows-title {
+    width: 90%;
+    font-size: 46px;
+    margin-bottom: 80px;
+  }
+}
+
 .features-windows.features-page .feats .feat.one,
 .features-windows.features-page .feats .feat.five {
   margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+  .features-windows.features-page .feats .feat.one,
+  .features-windows.features-page .feats .feat.five {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .features-windows.features-page .feats .feat.five {
+    margin-top: 30px;
+  }
 }
 
 .features-windows.features-page .feats .feat.one.repeat,
@@ -7097,6 +7234,18 @@ header.features-page {
 
 .features-windows.features-page .feats .feat.three.repeat {
   margin-top: -60px;
+}
+
+@media (max-width: 767px) {
+  .features-windows.features-page .feats .feat.three.repeat {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .features-windows.features-page .feats .feat.three.repeat {
+    margin-top: -64px;
+  }
 }
 
 /* Start Help Center Search*/
