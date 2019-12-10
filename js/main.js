@@ -200,18 +200,21 @@ $(function() {
   });
 
   // toggle between credit card and paypal
-  // $(".credit-payment .pay-card").click(function() {
-  //   $(this)
-  //     .parent()
-  //     .siblings(".card-info")
-  //     .slideDown(500);
-  // });
-  // $(".paypal-payment .pay-card").click(function() {
-  //   $(this)
-  //     .parent()
-  //     .siblings(".card-info")
-  //     .slideUp(500);
-  // });
+  // $(".payment-methods .card-info:first").css("display", "block");
+  $(".payment--method .label-radio").on("click", function() {
+    $(this)
+      .parents(".payment--method")
+      .next(".card-info")
+      .slideToggle();
+
+    $(".card-info")
+      .not(
+        $(this)
+          .parents(".payment--method")
+          .next(".card-info")
+      )
+      .slideUp();
+  });
 
   // when click menu button in subscription settings tab open cancel button
   $(".list li .list-item-text .menu-btn").on("click", function() {
@@ -271,7 +274,7 @@ $(function() {
     }
   });
 
-  // open dropdown menu in invoices in mobile screen
+  // open accordion menu in invoices in mobile screen
   $(".invoices .toggle:first").css("display", "block");
 
   $(".invoices .cell").on("click", function() {
