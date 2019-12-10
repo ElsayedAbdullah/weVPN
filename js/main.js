@@ -205,7 +205,7 @@ $(function() {
     $(this)
       .parents(".payment--method")
       .next(".card-info")
-      .slideToggle();
+      .slideDown();
 
     $(".card-info")
       .not(

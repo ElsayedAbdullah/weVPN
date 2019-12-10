@@ -5906,12 +5906,14 @@ ol {
 }
 
 header.header-trial .navbar .login .login-item .login-link,
+header.login-page .navbar .login .login-item .login-link,
 header.features-page .navbar .login .login-item .login-link,
 header.benefits-page .navbar .login .login-item .login-link {
   color: #5b5863;
 }
 
 header.header-trial .navbar .login .login-item .get-started,
+header.login-page .navbar .login .login-item .get-started,
 header.features-page .navbar .login .login-item .get-started,
 header.benefits-page .navbar .login .login-item .get-started {
   color: #fff;
@@ -7846,16 +7848,30 @@ header.get-started-page .get-started-login p a {
   font-size: 16px;
 }
 
+header.get-started-page .get-started-login p a i {
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 @media (max-width: 767px) {
   header.get-started-page .get-started-login p a {
     display: block;
     text-align: right;
     font-size: 14px;
     font-family: "AvertaSemibold";
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
-  header.get-started-page .get-started-login p a i {
-    font-weight: bold;
-  }
+}
+
+header.get-started-page .get-started-login p a:hover {
+  color: #E33866;
+}
+
+header.get-started-page .get-started-login p a:hover i {
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
 }
 
 /* Start Choose Plan */
@@ -7942,6 +7958,7 @@ header.get-started-page .get-started-login p a {
 .choose-steps {
   padding-top: 80px;
   padding-bottom: 130px;
+  background-color: #F1F1ED;
 }
 
 @media (max-width: 767px) {
@@ -8028,6 +8045,17 @@ header.get-started-page .get-started-login p a {
 
 .choose-steps .choose-title small a i {
   font-weight: bold;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.choose-steps .choose-title small a:hover {
+  color: #E33866;
+}
+
+.choose-steps .choose-title small a:hover i {
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
 }
 
 .choose-steps .choose-title svg {
@@ -8105,6 +8133,7 @@ header.get-started-page .get-started-login p a {
 
 .choose-steps .pricing-tables {
   padding-bottom: 70px;
+  padding-top: 58px;
 }
 
 @media (max-width: 767px) {
@@ -8235,6 +8264,16 @@ header.get-started-page .get-started-login p a {
 
 .choose-steps .payment {
   margin-top: 28px;
+}
+
+.choose-steps .payment .payment-methods .payment--method {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.choose-steps .payment .payment-methods .payment--method:hover {
+  -webkit-box-shadow: 0px 6px 9px #E6E4DF;
+          box-shadow: 0px 6px 9px #E6E4DF;
 }
 
 .choose-steps .payment .payment-methods .card-info {
@@ -8400,6 +8439,12 @@ header.get-started-page .get-started-login p a {
 .choose-steps .payment .payment-methods .card-info .order-info .paypal-btn {
   background-color: #FFC63F;
   color: #44424A;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.choose-steps .payment .payment-methods .card-info .order-info .paypal-btn:hover {
+  background-color: #FFD163;
 }
 
 .choose-steps .payment .payment-methods .card-info .order-info .paypal-btn img {
@@ -8418,6 +8463,12 @@ header.get-started-page .get-started-login p a {
 .choose-steps .payment .payment-methods .card-info .order-info p.complete a {
   font-family: "AvertaSemibold";
   color: #fd3e72;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.choose-steps .payment .payment-methods .card-info .order-info p.complete a:hover {
+  color: #E33866;
 }
 
 .choose-steps .payment .payment-methods .credit-payment,
@@ -9691,6 +9742,21 @@ header.dashboard-page p a {
   text-decoration: underline !important;
   font-family: "AvertaSemibold";
   font-size: 16px;
+}
+
+header.dashboard-page p a i {
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header.dashboard-page p a:hover {
+  color: #E33866;
+}
+
+header.dashboard-page p a:hover i {
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
 }
 
 /* Start Dashboard */

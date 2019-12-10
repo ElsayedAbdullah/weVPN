@@ -4124,6 +4124,7 @@ ol {
 }
 
 header.header-trial,
+header.login-page,
 header.features-page,
 header.benefits-page {
   .navbar .login .login-item .login-link {
@@ -4132,6 +4133,7 @@ header.benefits-page {
 }
 
 header.header-trial,
+header.login-page,
 header.features-page,
 header.benefits-page {
   .navbar .login .login-item .get-started {
@@ -5529,13 +5531,21 @@ header.get-started-page {
         color: $primaryColor;
         margin-left: 5px;
         font-size: 16px;
+        i {
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+          }
         @media #{$mobile} {
           display: block;
           text-align: right;
           font-size: 14px;
           font-family: "AvertaSemibold";
+          transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+          color: $linkHoverColor;
           i {
-            font-weight: bold;
+            transform: translateX(2px);
           }
         }
       }
@@ -5605,6 +5615,7 @@ header.get-started-page {
 .choose-steps {
   padding-top: 80px;
   padding-bottom: 130px;
+  background-color: #F1F1ED;
   @media #{$mobile} {
     padding-top: 30px;
     padding-bottom: 40px;
@@ -5662,6 +5673,13 @@ header.get-started-page {
         font-family: "AvertaSemibold";
         i {
           font-weight: bold;
+           transition: all 0.3s ease-in-out;
+        }
+       &:hover {
+          color: $linkHoverColor;
+          i {
+            transform: translateX(2px);
+          }
         }
       }
     }
@@ -5720,6 +5738,7 @@ header.get-started-page {
   }
   .pricing-tables {
     padding-bottom: 70px;
+    padding-top: 58px;
     @media #{$mobile} {
       padding-top: 20px;
       padding-bottom: 40px;
@@ -5801,6 +5820,12 @@ header.get-started-page {
   .payment {
     margin-top: 28px;
     .payment-methods {
+      .payment--method {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          box-shadow: 0px 6px 9px #E6E4DF;
+        }
+      }
       .card-info {
         background-color: #fff;
         padding: 32px;
@@ -5943,6 +5968,10 @@ header.get-started-page {
           .paypal-btn {
             background-color: #FFC63F;
             color: #44424A;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              background-color: #FFD163;
+            }
             img {
               position: relative;
               top: -2px;
@@ -5956,7 +5985,11 @@ header.get-started-page {
             color: #8D8B92;
             a {
               font-family: "AvertaSemibold";
-              color: $primaryColor
+              color: $primaryColor;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                color: $linkHoverColor;
+              }
             }
           }
         }
@@ -7008,6 +7041,16 @@ header.dashboard-page {
       text-decoration: underline !important;
       font-family: "AvertaSemibold";
       font-size: 16px;
+      i {
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+          }
+       &:hover {
+          color: $linkHoverColor;
+          i {
+            transform: translateX(2px);
+          }
+        }
     }
   }
 }
@@ -8471,7 +8514,7 @@ header.dashboard-page {
       .paypal-payment {
         overflow: hidden;
         background-color: #fff;
-
+        
         .pay-card {
           position: relative;
 
