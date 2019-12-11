@@ -1,5 +1,5 @@
 $primaryColor: #fd3e72;
-$linkHoverColor: #E33866;
+$linkHoverColor: #e33866;
 $mobile: "(max-width: 767px)";
 $tablet: "(min-width: 768px) and (max-width: 992px)";
 $maxTab: "(max-width: 992px)";
@@ -1924,7 +1924,7 @@ footer {
           }
         }
         i {
-          color: #62d5b4;
+          color: #08ae7e;
           margin-right: 7px;
         }
       }
@@ -2240,7 +2240,7 @@ footer {
             height: 20px;
             font-size: 12px;
             font-family: "AvertaSemibold";
-            background-color: #62d5b4;
+            background-color: #08ae7e;
             color: #fff;
             line-height: 20px;
             text-align: center;
@@ -2641,7 +2641,7 @@ footer {
         background: rgba(#c562f3, 0.05);
       }
       &.three {
-        background: rgba(#62d5b4, 0.1);
+        background: rgba(#08ae7e, 0.1);
         margin: 0 auto 60px;
         @media #{$mobile} {
           margin-bottom: 20px;
@@ -3532,8 +3532,8 @@ footer {
       }
     }
     .two {
-      top: 190px;
-      left: 50px;
+          top: 180px;
+    left: 40px;
       @media #{$mobile} {
         top: -110px;
         left: -40px;
@@ -4312,6 +4312,7 @@ header.benefits-page {
 // Start what's VPN page
 .hero-img.vpn {
   padding-bottom: 260px;
+  
   @media #{$mobile} {
     text-align: center;
     padding-bottom: 60px;
@@ -4357,6 +4358,9 @@ header.benefits-page {
   }
 
   .hero-img-image {
+    img {
+      left:0;
+    }
     @media #{$tablet} {
       text-align: center;
     }
@@ -4636,14 +4640,14 @@ header.benefits-page {
     }
   }
   .marked {
-    background-color: #62d5b4;
+    background-color: #08ae7e;
     padding: 8px;
     padding-top: 0;
     width: 366px;
     transition: all 0.3s ease-in-out;
     &:hover {
-      box-shadow: 0px 6px 9px #E6E4DF;
-      transform: translateY(-4px)
+      box-shadow: 0px 6px 9px #e6e4df;
+      transform: translateY(-4px);
     }
     @media #{$maxTab} {
       width: auto;
@@ -4675,7 +4679,7 @@ header.benefits-page {
       span {
         font-size: 16px;
         line-height: 20px;
-        background-color: #50bf9f;
+        background-color: #079e72;
         padding: 12px 19px;
         position: absolute;
         top: 8px;
@@ -4690,7 +4694,7 @@ header.benefits-page {
     background-color: #fff;
     width: 350px;
     transition: all 0.3s ease-in-out;
-    
+
     @media #{$maxTab} {
       width: auto;
     }
@@ -4701,9 +4705,9 @@ header.benefits-page {
     &.three {
       margin-top: 34px;
       &:hover {
-      box-shadow: 0px 6px 9px #E6E4DF;
-      transform: translateY(-4px)
-    }
+        box-shadow: 0px 6px 9px #e6e4df;
+        transform: translateY(-4px);
+      }
       @media #{$mobile} {
         margin-top: 10px;
       }
@@ -4733,7 +4737,8 @@ header.benefits-page {
       &:checked + label:after {
         color: #fff;
       }
-      &:checked + .label-radio .price-top p .value, &:hover + .label-radio .price-top p .value {
+      &:checked + .label-radio .price-top p .value,
+      &:hover + .label-radio .price-top p .value {
         color: $primaryColor;
       }
 
@@ -4741,8 +4746,6 @@ header.benefits-page {
         color: #fff;
         background-color: $primaryColor;
       }
-
-
     }
     .label-radio {
       position: relative;
@@ -5033,7 +5036,7 @@ header.benefits-page {
           line-height: 20px;
         }
         i {
-          color: #62d5b4;
+          color: #08ae7e;
           margin-right: 7px;
         }
       }
@@ -5532,9 +5535,9 @@ header.get-started-page {
         margin-left: 5px;
         font-size: 16px;
         i {
-            font-weight: bold;
-            transition: all 0.3s ease-in-out;
-          }
+          font-weight: bold;
+          transition: all 0.3s ease-in-out;
+        }
         @media #{$mobile} {
           display: block;
           text-align: right;
@@ -5615,10 +5618,10 @@ header.get-started-page {
 .choose-steps {
   padding-top: 80px;
   padding-bottom: 130px;
-  background-color: #F1F1ED;
+  background-color: #f1f1ed;
   @media #{$mobile} {
     padding-top: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
   }
   @media #{$tablet} {
     padding-top: 40px;
@@ -5673,9 +5676,9 @@ header.get-started-page {
         font-family: "AvertaSemibold";
         i {
           font-weight: bold;
-           transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
         }
-       &:hover {
+        &:hover {
           color: $linkHoverColor;
           i {
             transform: translateX(2px);
@@ -5683,25 +5686,11 @@ header.get-started-page {
         }
       }
     }
-    svg {
-      position: relative;
-      top: -7px;
+    img {
       @media #{$mobile} {
-        transform: scale(0.75);
-      }
-    }
-    .secure {
-      font-size: 16px;
-      line-height: 20px;
-      color: #62d5b4;
-      font-family: "AvertaSemibold";
-      position: relative;
-      top: -4px;
-      @media #{$mobile} {
-        font-size: 14px;
-        line-height: 17px;
-        top: -2px;
-        left: -5px;
+        transform: scale(0.6);
+        position: absolute;
+        margin-left: -15px;
       }
     }
     &.payment-method-title {
@@ -5728,7 +5717,7 @@ header.get-started-page {
         display: block;
       }
       i {
-        color: #62d5b4;
+        color: #08ae7e;
         margin-right: 8px;
         @media #{$mobile} {
           margin-right: 4px;
@@ -5758,7 +5747,7 @@ header.get-started-page {
         border: 1px solid transparent;
         transition: all 0.3s ease-in-out;
         &:hover {
-          border: 1px solid #E3E0D7;
+          border: 1px solid #e3e0d7;
         }
         @media #{$mobile} {
           margin-bottom: 8px;
@@ -5823,105 +5812,176 @@ header.get-started-page {
       .payment--method {
         transition: all 0.3s ease-in-out;
         &:hover {
-          box-shadow: 0px 6px 9px #E6E4DF;
+          box-shadow: 0px 6px 9px #e6e4df;
         }
       }
       .card-info {
         background-color: #fff;
-        padding: 32px;
-        border-top: 1px solid #E3E0D3;
+        padding: 32px 32px 36px;
+        border-top: 1px solid #e3e0d3;
         display: none;
-        // @media #{$mobile} {
-        //   padding: 0 14px;
-        // }
-        // @media #{$tablet} {
-        //   padding: 0;
-        // }
+        @media #{$maxTab} {
+          padding: 20px 20px 35px;
+        }
+        @media #{$betweentabdesk} {
+                padding: 20px 20px 35px;
+              }
         .padd {
           padding-right: 10px;
           padding-left: 10px;
-          @media #{$mobile} {
+          @media #{$maxTab} {
             padding-right: 15px;
             padding-left: 15px;
+            &.col-6 {
+              padding-left: 5px;
+            }
           }
+           @media #{$betweentabdesk} {
+               padding-right: 7.5px;
+          padding-left: 7.5px;
+              }
         }
         .padd-right {
           padding-right: 10px;
-          @media #{$mobile} {
+          @media #{$maxTab} {
             padding-right: 15px;
+            &.col-6 {
+              padding-right: 5px;
+            }
           }
+          @media #{$betweentabdesk} {
+               padding-right: 7.5px;
+              }
         }
         .padd-left {
           padding-left: 10px;
-          @media #{$mobile} {
+          @media #{$maxTab} {
             padding-left: 15px;
           }
+           @media #{$betweentabdesk} {
+               padding-left: 7.5px;
+              }
         }
         form {
           .form-group {
-          border: 1px solid #e0ded5;
-          padding: 2px 20px 7px;
-          margin-bottom: 17px;
-          height: 56px;
-          // @media #{$mobile} {
-          //   margin-bottom: 8px;
-          //   padding: 7px 16px;
-          // }
-          // @media #{$tablet} {
-          //   padding: 12px 20px 15px;
-          // }
-          label {
-            font-size: 12px;
-            line-height: 20px;
-            font-family: "AvertaSemibold";
-            margin-bottom: 0;
-            // @media #{$mobile} {
-            //   font-family: "Averta";
-            // }
-            svg {
-              margin-left: 5px;
+            border: 1px solid #e0ded5;
+            padding: 2px 20px 7px;
+            margin-bottom: 17px;
+            height: 56px;
+            @media #{$maxTab} {
+              margin-bottom: 10px;
+              padding: 7px 16px;
             }
-          }
-          input {
-            border: 0;
-            padding: 0;
-            height: auto;
-            font-family: "AvertaSemibold";
-            box-shadow: none;
-            outline: none;
-            color: #5b5863;
-            font-size: 14px;
-            // @media #{$mobile} {
-            //   line-height: 20px;
-            //   font-size: 14px;
-            // }
-            &::placeholder {
-              color: #8d8b92;
-              font-family: "Averta";
+            @media #{$betweentabdesk} {
+               padding: 2px 10px 7px;
+               margin-bottom: 15px;
+              }
+            label {
+              font-size: 12px;
+              line-height: 20px;
+              font-family: "AvertaSemibold";
+              margin-bottom: 0;
+              position: relative;
+              @media #{$maxTab} {
+                font-family: "Averta";
+              }
+              @media #{$betweentabdesk} {
+               font-size: 11px;
+              }
+              svg {
+                margin-left: 5px;
+                cursor: pointer;
+                &:hover {
+                  &~ .tooltiptext {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: scale(1);
+                  }
+
+                }
+              }
+              .tooltiptext {
+                position: absolute;
+                display: inline-block;
+                background: #4F4F4F;
+                // box-shadow: 0px 15px 34px #F0EEE9, 0px 4px 36px #E6E4DF; 
+                width: 200px;
+                height: 86px;
+                font-size: 12px;
+                line-height: 14px;
+                color: #FFFFFF;
+                padding: 12px 16px;
+                top: -93px;
+                left: 25px;
+                font-family: "Averta";
+                opacity: 0;
+                visibility: hidden;
+                transform: scale(0);
+                transition: all 0.2s ease-in-out;
+                &:after {
+                  content: "";
+                  position: absolute;
+                  border-width: 8px;
+                  border-style: solid;
+                  border-color: #4F4F4F transparent transparent transparent;
+                  display:block;
+                  bottom: -16px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                }
+              }
+            }
+            input {
+              border: 0;
+              padding: 0;
+              height: auto;
+              font-family: "AvertaSemibold";
+              box-shadow: none;
+              outline: none;
+              color: #5b5863;
               font-size: 14px;
+              @media #{$maxTab} {
+                line-height: 20px;
+                font-size: 14px;
+              }
+              &::placeholder {
+                color: #8d8b92;
+                font-family: "Averta";
+                font-size: 14px;
+              }
+            }
+            & ~ span {
+              position: relative;
+              font-size: 12px;
+              color: #898691;
+              display: inline-block;
+              top: -17px;
             }
           }
-          &~span {
-            position: relative;
-            font-size: 12px;
-            color: #898691;
-            display: inline-block;
-            top: -17px;
-          }
-        }
         }
 
         .continue {
-            font-size: 18px;
-            line-height: 24px;
-            margin-bottom: 32px;
-            strong {
-              font-family: "AvertaBold"
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 32px;
+          @media #{$maxTab} {
+            margin-bottom: 20px;
+          }
+          strong {
+            font-family: "AvertaBold";
+          }
+        }
+        .order-info {
+          border-top: 1px dashed #e3e0d3;
+          padding-top: 32px;
+          @media #{$maxTab} {
+            border: 0;
+            padding-top: 14px;
+            &.paypal-txt {
+              border-top: 1px dashed #e3e0d3;
+              padding-top: 20px;
             }
           }
-        .order-info {
-          border-top: 1px dashed #E3E0D3;
-          padding-top: 32px;
           .order-info-content {
             .order-total {
               font-size: 18px;
@@ -5934,43 +5994,63 @@ header.get-started-page {
             .bill {
               font-size: 14px;
               line-height: 14px;
-              color: #8D8B92;
+              color: #8d8b92;
+              @media #{$maxTab} {
+                margin-bottom: 24px;
+              }
+              @media #{$betweentabdesk} {
+                margin-bottom: 24px;
+              }
             }
           }
-          
+
           .secure-payment {
+            @media #{$maxTab} {
+              display: flex;
+              justify-content: space-between;
+            }
             li {
               font-size: 12px;
               line-height: 24px;
               position: relative;
               padding-left: 35px;
               margin-bottom: 10px;
+              @media #{$maxTab} {
+                line-height: 12px;
+                padding-left: 30px;
+                margin-bottom: 0;
+              }
               div {
                 width: 24px;
                 height: 24px;
                 position: absolute;
-                top: 0;
-                left:0;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
                 img {
                   max-width: 100%;
                 }
               }
             }
           }
-          .credit-card-submit,.paypal-btn {
+          .credit-card-submit,
+          .paypal-btn {
             width: 100%;
             height: 56px;
             line-height: 56px;
             margin-top: 22px;
             margin-bottom: 15px;
+            @media #{$maxTab} {
+              font-size: 16px;
+            }
           }
 
           .paypal-btn {
-            background-color: #FFC63F;
-            color: #44424A;
+            background-color: #ffc63f;
+            color: #44424a;
             transition: all 0.3s ease-in-out;
             &:hover {
-              background-color: #FFD163;
+              background-color: #ffd163;
             }
             img {
               position: relative;
@@ -5980,15 +6060,20 @@ header.get-started-page {
           }
           p.complete {
             font-size: 14px;
-            line-height: 14px;
+            line-height: 20px;
             text-align: center;
-            color: #8D8B92;
+            color: #8d8b92;
+            @media #{$maxTab} {
+              width: 240px;
+              margin: auto;
+            }
             a {
               font-family: "AvertaSemibold";
               color: $primaryColor;
               transition: all 0.3s ease-in-out;
               &:hover {
                 color: $linkHoverColor;
+                text-decoration: underline !important;
               }
             }
           }
@@ -6057,36 +6142,37 @@ header.get-started-page {
               height: 32px;
               border-radius: 50%;
               border: 1px solid #adaba5;
-              // @media #{$mobile} {
-              //   width: 20px;
-              //   height: 20px;
-              //   top: 14px;
-              //   left: 16px;
-              // }
-              // @media #{$tablet} {
-              //   width: 25px;
-              //   height: 25px;
-              //   top: 28px;
-              //   left: 20px;
-              // }
+              @media #{$mobile} {
+                width: 20px;
+                height: 20px;
+                top: 14px;
+                left: 16px;
+              }
+              @media #{$tablet} {
+                width: 25px;
+                height: 25px;
+                top: 28px;
+                left: 20px;
+              }
             }
 
             &:after {
               content: "\f00c";
               position: absolute;
-                  top: 1px;
+              top: 1px;
               left: 41px;
               color: #fff;
               font-family: "fontawesome";
               font-size: 14px;
-              // @media #{$mobile} {
-              //   top: 19px;
-              //   left: 21px;
-              // }
-              // @media #{$tablet} {
-              //   top: 34px;
-              //   left: 26px;
-              // }
+              @media #{$mobile} {
+                top: 0;
+                left: 21px;
+                font-size: 10px;
+              }
+              @media #{$tablet} {
+                top: 34px;
+                left: 26px;
+              }
             }
           }
           img {
@@ -6139,7 +6225,7 @@ header.get-started-page {
         margin-top: 12px;
         @media #{$mobile} {
           margin-top: 8px;
-          margin-bottom: 20px;
+          margin-bottom: 0;
         }
       }
     }
@@ -6150,6 +6236,7 @@ header.get-started-page {
       @media #{$mobile} {
         padding: 36px;
         box-shadow: none;
+        margin-top: 20px;
       }
       @media (max-width: 350px) {
         padding: 20px;
@@ -6164,9 +6251,6 @@ header.get-started-page {
         @media #{$maxTab} {
           width: 85%;
         }
-        //   @media (max-width: 350px) {
-        //   width: 85%;
-        // }
       }
       ul {
         li {
@@ -6180,7 +6264,7 @@ header.get-started-page {
             font-size: 17px;
           }
           i {
-            color: #62d5b4;
+            color: #08ae7e;
             margin: 7px;
             @media #{$mobile} {
               font-size: 16px;
@@ -6190,13 +6274,10 @@ header.get-started-page {
       }
     }
     .back-btn {
-      margin-top: 222px;
-      // position: relative;
-      // top: -26px;
-      // @media #{$mobile} {
-      //   text-align: center;
-      //   top: 20px;
-      // }
+      margin-top: 10px;
+      @media #{$mobile} {
+        text-align: center;
+      }
       .back {
         font-size: 20px;
         line-height: 25px;
@@ -6826,7 +6907,7 @@ header.get-started-page {
       font-size: 18px;
       line-height: 32px;
       i {
-        color: #62d5b4;
+        color: #08ae7e;
         margin-right: 7px;
       }
     }
@@ -6924,7 +7005,7 @@ body.servers-page {
         height: 64px;
         padding: 0;
         i {
-          color: #62d5b4;
+          color: #08ae7e;
         }
       }
     }
@@ -6982,7 +7063,7 @@ body.servers-page {
         font-size: 21px;
         width: 48px;
         height: 48px;
-        background-color: #62d5b4;
+        background-color: #08ae7e;
         border-radius: 50%;
         text-align: center;
         line-height: 48px;
@@ -7042,15 +7123,15 @@ header.dashboard-page {
       font-family: "AvertaSemibold";
       font-size: 16px;
       i {
-            font-weight: bold;
-            transition: all 0.3s ease-in-out;
-          }
-       &:hover {
-          color: $linkHoverColor;
-          i {
-            transform: translateX(2px);
-          }
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover {
+        color: $linkHoverColor;
+        i {
+          transform: translateX(2px);
         }
+      }
     }
   }
 }
@@ -7876,7 +7957,7 @@ header.dashboard-page {
               }
             }
             span {
-              background-color: rgba(#62d5b4, 0.3);
+              background-color: rgba(#08ae7e, 0.3);
               border-radius: 5px;
               color: #08ae7e;
               padding: 4px 11px;
@@ -8222,7 +8303,7 @@ header.dashboard-page {
           }
           &.valid {
             i {
-              color: #62d5b4;
+              color: #08ae7e;
             }
           }
         }
@@ -8376,7 +8457,7 @@ header.dashboard-page {
           font-size: 12px;
           width: 32px;
           height: 32px;
-          background-color: #62d5b4;
+          background-color: #08ae7e;
           border-radius: 50%;
           text-align: center;
           line-height: 32px;
@@ -8514,7 +8595,7 @@ header.dashboard-page {
       .paypal-payment {
         overflow: hidden;
         background-color: #fff;
-        
+
         .pay-card {
           position: relative;
 

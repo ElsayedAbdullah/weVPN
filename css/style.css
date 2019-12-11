@@ -2624,7 +2624,7 @@ footer .copyright .copyright-links li a:hover {
 }
 
 .hero-img.windows .hero-img-content .hero-img-list li i {
-  color: #62d5b4;
+  color: #08ae7e;
   margin-right: 7px;
 }
 
@@ -3047,7 +3047,7 @@ footer .copyright .copyright-links li a:hover {
   height: 20px;
   font-size: 12px;
   font-family: "AvertaSemibold";
-  background-color: #62d5b4;
+  background-color: #08ae7e;
   color: #fff;
   line-height: 20px;
   text-align: center;
@@ -3598,7 +3598,7 @@ footer .copyright .copyright-links li a:hover {
 }
 
 .features-windows .feats .feat.three {
-  background: rgba(98, 213, 180, 0.1);
+  background: rgba(8, 174, 126, 0.1);
   margin: 0 auto 60px;
 }
 
@@ -4868,8 +4868,8 @@ footer .copyright .copyright-links li a:hover {
 }
 
 .hero-img.iphone .hero-img-image.iphone .two {
-  top: 190px;
-  left: 50px;
+  top: 180px;
+  left: 40px;
 }
 
 @media (max-width: 767px) {
@@ -6203,6 +6203,10 @@ header.benefits-page .navbar .login .login-item .get-started {
   }
 }
 
+.hero-img.vpn .hero-img-image img {
+  left: 0;
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
   .hero-img.vpn .hero-img-image {
     text-align: center;
@@ -6602,7 +6606,7 @@ header.benefits-page .navbar .login .login-item .get-started {
 }
 
 .pricing-tables .marked {
-  background-color: #62d5b4;
+  background-color: #08ae7e;
   padding: 8px;
   padding-top: 0;
   width: 366px;
@@ -6611,8 +6615,8 @@ header.benefits-page .navbar .login .login-item .get-started {
 }
 
 .pricing-tables .marked:hover {
-  -webkit-box-shadow: 0px 6px 9px #E6E4DF;
-          box-shadow: 0px 6px 9px #E6E4DF;
+  -webkit-box-shadow: 0px 6px 9px #e6e4df;
+          box-shadow: 0px 6px 9px #e6e4df;
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
 }
@@ -6662,7 +6666,7 @@ header.benefits-page .navbar .login .login-item .get-started {
 .pricing-tables .marked h3 span {
   font-size: 16px;
   line-height: 20px;
-  background-color: #50bf9f;
+  background-color: #079e72;
   padding: 12px 19px;
   position: absolute;
   top: 8px;
@@ -6699,8 +6703,8 @@ header.benefits-page .navbar .login .login-item .get-started {
 }
 
 .pricing-tables .price-card.one:hover, .pricing-tables .price-card.three:hover {
-  -webkit-box-shadow: 0px 6px 9px #E6E4DF;
-          box-shadow: 0px 6px 9px #E6E4DF;
+  -webkit-box-shadow: 0px 6px 9px #e6e4df;
+          box-shadow: 0px 6px 9px #e6e4df;
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
 }
@@ -6744,7 +6748,8 @@ header.benefits-page .navbar .login .login-item .get-started {
   color: #fff;
 }
 
-.pricing-tables .price-card input[type="radio"]:checked + .label-radio .price-top p .value, .pricing-tables .price-card input[type="radio"]:hover + .label-radio .price-top p .value {
+.pricing-tables .price-card input[type="radio"]:checked + .label-radio .price-top p .value,
+.pricing-tables .price-card input[type="radio"]:hover + .label-radio .price-top p .value {
   color: #fd3e72;
 }
 
@@ -7135,7 +7140,7 @@ header.benefits-page .navbar-light .navbar-toggler {
 }
 
 .need-help .need-help-content .need-help-list li i {
-  color: #62d5b4;
+  color: #08ae7e;
   margin-right: 7px;
 }
 
@@ -7866,7 +7871,7 @@ header.get-started-page .get-started-login p a i {
 }
 
 header.get-started-page .get-started-login p a:hover {
-  color: #E33866;
+  color: #e33866;
 }
 
 header.get-started-page .get-started-login p a:hover i {
@@ -7958,13 +7963,13 @@ header.get-started-page .get-started-login p a:hover i {
 .choose-steps {
   padding-top: 80px;
   padding-bottom: 130px;
-  background-color: #F1F1ED;
+  background-color: #f1f1ed;
 }
 
 @media (max-width: 767px) {
   .choose-steps {
     padding-top: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
   }
 }
 
@@ -8050,7 +8055,7 @@ header.get-started-page .get-started-login p a:hover i {
 }
 
 .choose-steps .choose-title small a:hover {
-  color: #E33866;
+  color: #e33866;
 }
 
 .choose-steps .choose-title small a:hover i {
@@ -8058,33 +8063,12 @@ header.get-started-page .get-started-login p a:hover i {
           transform: translateX(2px);
 }
 
-.choose-steps .choose-title svg {
-  position: relative;
-  top: -7px;
-}
-
 @media (max-width: 767px) {
-  .choose-steps .choose-title svg {
-    -webkit-transform: scale(0.75);
-            transform: scale(0.75);
-  }
-}
-
-.choose-steps .choose-title .secure {
-  font-size: 16px;
-  line-height: 20px;
-  color: #62d5b4;
-  font-family: "AvertaSemibold";
-  position: relative;
-  top: -4px;
-}
-
-@media (max-width: 767px) {
-  .choose-steps .choose-title .secure {
-    font-size: 14px;
-    line-height: 17px;
-    top: -2px;
-    left: -5px;
+  .choose-steps .choose-title img {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    position: absolute;
+    margin-left: -15px;
   }
 }
 
@@ -8121,7 +8105,7 @@ header.get-started-page .get-started-login p a:hover i {
 }
 
 .choose-steps .choose-steps-list li i {
-  color: #62d5b4;
+  color: #08ae7e;
   margin-right: 8px;
 }
 
@@ -8162,7 +8146,7 @@ header.get-started-page .get-started-login p a:hover i {
 }
 
 .choose-steps .create-account .step .form-group:hover {
-  border: 1px solid #E3E0D7;
+  border: 1px solid #e3e0d7;
 }
 
 @media (max-width: 767px) {
@@ -8272,15 +8256,27 @@ header.get-started-page .get-started-login p a:hover i {
 }
 
 .choose-steps .payment .payment-methods .payment--method:hover {
-  -webkit-box-shadow: 0px 6px 9px #E6E4DF;
-          box-shadow: 0px 6px 9px #E6E4DF;
+  -webkit-box-shadow: 0px 6px 9px #e6e4df;
+          box-shadow: 0px 6px 9px #e6e4df;
 }
 
 .choose-steps .payment .payment-methods .card-info {
   background-color: #fff;
-  padding: 32px;
-  border-top: 1px solid #E3E0D3;
+  padding: 32px 32px 36px;
+  border-top: 1px solid #e3e0d3;
   display: none;
+}
+
+@media (max-width: 992px) {
+  .choose-steps .payment .payment-methods .card-info {
+    padding: 20px 20px 35px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .choose-steps .payment .payment-methods .card-info {
+    padding: 20px 20px 35px;
+  }
 }
 
 .choose-steps .payment .payment-methods .card-info .padd {
@@ -8288,10 +8284,20 @@ header.get-started-page .get-started-login p a:hover i {
   padding-left: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .choose-steps .payment .payment-methods .card-info .padd {
     padding-right: 15px;
     padding-left: 15px;
+  }
+  .choose-steps .payment .payment-methods .card-info .padd.col-6 {
+    padding-left: 5px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .choose-steps .payment .payment-methods .card-info .padd {
+    padding-right: 7.5px;
+    padding-left: 7.5px;
   }
 }
 
@@ -8299,9 +8305,18 @@ header.get-started-page .get-started-login p a:hover i {
   padding-right: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .choose-steps .payment .payment-methods .card-info .padd-right {
     padding-right: 15px;
+  }
+  .choose-steps .payment .payment-methods .card-info .padd-right.col-6 {
+    padding-right: 5px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .choose-steps .payment .payment-methods .card-info .padd-right {
+    padding-right: 7.5px;
   }
 }
 
@@ -8309,9 +8324,15 @@ header.get-started-page .get-started-login p a:hover i {
   padding-left: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .choose-steps .payment .payment-methods .card-info .padd-left {
     padding-left: 15px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .choose-steps .payment .payment-methods .card-info .padd-left {
+    padding-left: 7.5px;
   }
 }
 
@@ -8322,15 +8343,84 @@ header.get-started-page .get-started-login p a:hover i {
   height: 56px;
 }
 
+@media (max-width: 992px) {
+  .choose-steps .payment .payment-methods .card-info form .form-group {
+    margin-bottom: 10px;
+    padding: 7px 16px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .choose-steps .payment .payment-methods .card-info form .form-group {
+    padding: 2px 10px 7px;
+    margin-bottom: 15px;
+  }
+}
+
 .choose-steps .payment .payment-methods .card-info form .form-group label {
   font-size: 12px;
   line-height: 20px;
   font-family: "AvertaSemibold";
   margin-bottom: 0;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .choose-steps .payment .payment-methods .card-info form .form-group label {
+    font-family: "Averta";
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .choose-steps .payment .payment-methods .card-info form .form-group label {
+    font-size: 11px;
+  }
 }
 
 .choose-steps .payment .payment-methods .card-info form .form-group label svg {
   margin-left: 5px;
+  cursor: pointer;
+}
+
+.choose-steps .payment .payment-methods .card-info form .form-group label svg:hover ~ .tooltiptext {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.choose-steps .payment .payment-methods .card-info form .form-group label .tooltiptext {
+  position: absolute;
+  display: inline-block;
+  background: #4F4F4F;
+  width: 200px;
+  height: 86px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  padding: 12px 16px;
+  top: -93px;
+  left: 25px;
+  font-family: "Averta";
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.choose-steps .payment .payment-methods .card-info form .form-group label .tooltiptext:after {
+  content: "";
+  position: absolute;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #4F4F4F transparent transparent transparent;
+  display: block;
+  bottom: -16px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .choose-steps .payment .payment-methods .card-info form .form-group input {
@@ -8343,6 +8433,13 @@ header.get-started-page .get-started-login p a:hover i {
   outline: none;
   color: #5b5863;
   font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  .choose-steps .payment .payment-methods .card-info form .form-group input {
+    line-height: 20px;
+    font-size: 14px;
+  }
 }
 
 .choose-steps .payment .payment-methods .card-info form .form-group input::-webkit-input-placeholder {
@@ -8383,13 +8480,30 @@ header.get-started-page .get-started-login p a:hover i {
   margin-bottom: 32px;
 }
 
+@media (max-width: 992px) {
+  .choose-steps .payment .payment-methods .card-info .continue {
+    margin-bottom: 20px;
+  }
+}
+
 .choose-steps .payment .payment-methods .card-info .continue strong {
   font-family: "AvertaBold";
 }
 
 .choose-steps .payment .payment-methods .card-info .order-info {
-  border-top: 1px dashed #E3E0D3;
+  border-top: 1px dashed #e3e0d3;
   padding-top: 32px;
+}
+
+@media (max-width: 992px) {
+  .choose-steps .payment .payment-methods .card-info .order-info {
+    border: 0;
+    padding-top: 14px;
+  }
+  .choose-steps .payment .payment-methods .card-info .order-info.paypal-txt {
+    border-top: 1px dashed #e3e0d3;
+    padding-top: 20px;
+  }
 }
 
 .choose-steps .payment .payment-methods .card-info .order-info .order-info-content .order-total {
@@ -8405,7 +8519,30 @@ header.get-started-page .get-started-login p a:hover i {
 .choose-steps .payment .payment-methods .card-info .order-info .order-info-content .bill {
   font-size: 14px;
   line-height: 14px;
-  color: #8D8B92;
+  color: #8d8b92;
+}
+
+@media (max-width: 992px) {
+  .choose-steps .payment .payment-methods .card-info .order-info .order-info-content .bill {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .choose-steps .payment .payment-methods .card-info .order-info .order-info-content .bill {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .choose-steps .payment .payment-methods .card-info .order-info .secure-payment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .choose-steps .payment .payment-methods .card-info .order-info .secure-payment li {
@@ -8416,19 +8553,30 @@ header.get-started-page .get-started-login p a:hover i {
   margin-bottom: 10px;
 }
 
+@media (max-width: 992px) {
+  .choose-steps .payment .payment-methods .card-info .order-info .secure-payment li {
+    line-height: 12px;
+    padding-left: 30px;
+    margin-bottom: 0;
+  }
+}
+
 .choose-steps .payment .payment-methods .card-info .order-info .secure-payment li div {
   width: 24px;
   height: 24px;
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .choose-steps .payment .payment-methods .card-info .order-info .secure-payment li div img {
   max-width: 100%;
 }
 
-.choose-steps .payment .payment-methods .card-info .order-info .credit-card-submit, .choose-steps .payment .payment-methods .card-info .order-info .paypal-btn {
+.choose-steps .payment .payment-methods .card-info .order-info .credit-card-submit,
+.choose-steps .payment .payment-methods .card-info .order-info .paypal-btn {
   width: 100%;
   height: 56px;
   line-height: 56px;
@@ -8436,15 +8584,22 @@ header.get-started-page .get-started-login p a:hover i {
   margin-bottom: 15px;
 }
 
+@media (max-width: 992px) {
+  .choose-steps .payment .payment-methods .card-info .order-info .credit-card-submit,
+  .choose-steps .payment .payment-methods .card-info .order-info .paypal-btn {
+    font-size: 16px;
+  }
+}
+
 .choose-steps .payment .payment-methods .card-info .order-info .paypal-btn {
-  background-color: #FFC63F;
-  color: #44424A;
+  background-color: #ffc63f;
+  color: #44424a;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .choose-steps .payment .payment-methods .card-info .order-info .paypal-btn:hover {
-  background-color: #FFD163;
+  background-color: #ffd163;
 }
 
 .choose-steps .payment .payment-methods .card-info .order-info .paypal-btn img {
@@ -8455,9 +8610,16 @@ header.get-started-page .get-started-login p a:hover i {
 
 .choose-steps .payment .payment-methods .card-info .order-info p.complete {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 20px;
   text-align: center;
-  color: #8D8B92;
+  color: #8d8b92;
+}
+
+@media (max-width: 992px) {
+  .choose-steps .payment .payment-methods .card-info .order-info p.complete {
+    width: 240px;
+    margin: auto;
+  }
 }
 
 .choose-steps .payment .payment-methods .card-info .order-info p.complete a {
@@ -8468,7 +8630,8 @@ header.get-started-page .get-started-login p a:hover i {
 }
 
 .choose-steps .payment .payment-methods .card-info .order-info p.complete a:hover {
-  color: #E33866;
+  color: #e33866;
+  text-decoration: underline !important;
 }
 
 .choose-steps .payment .payment-methods .credit-payment,
@@ -8552,6 +8715,26 @@ header.get-started-page .get-started-login p a:hover i {
   border: 1px solid #adaba5;
 }
 
+@media (max-width: 767px) {
+  .choose-steps .payment .payment-methods .credit-payment .pay-card .label-radio:before,
+  .choose-steps .payment .payment-methods .paypal-payment .pay-card .label-radio:before {
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    left: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .choose-steps .payment .payment-methods .credit-payment .pay-card .label-radio:before,
+  .choose-steps .payment .payment-methods .paypal-payment .pay-card .label-radio:before {
+    width: 25px;
+    height: 25px;
+    top: 28px;
+    left: 20px;
+  }
+}
+
 .choose-steps .payment .payment-methods .credit-payment .pay-card .label-radio:after,
 .choose-steps .payment .payment-methods .paypal-payment .pay-card .label-radio:after {
   content: "\f00c";
@@ -8561,6 +8744,23 @@ header.get-started-page .get-started-login p a:hover i {
   color: #fff;
   font-family: "fontawesome";
   font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .choose-steps .payment .payment-methods .credit-payment .pay-card .label-radio:after,
+  .choose-steps .payment .payment-methods .paypal-payment .pay-card .label-radio:after {
+    top: 0;
+    left: 21px;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .choose-steps .payment .payment-methods .credit-payment .pay-card .label-radio:after,
+  .choose-steps .payment .payment-methods .paypal-payment .pay-card .label-radio:after {
+    top: 34px;
+    left: 26px;
+  }
 }
 
 .choose-steps .payment .payment-methods .credit-payment .pay-card img,
@@ -8631,7 +8831,7 @@ header.get-started-page .get-started-login p a:hover i {
 @media (max-width: 767px) {
   .choose-steps .payment .payment-methods .paypal-payment {
     margin-top: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 }
 
@@ -8647,6 +8847,7 @@ header.get-started-page .get-started-login p a:hover i {
     padding: 36px;
     -webkit-box-shadow: none;
             box-shadow: none;
+    margin-top: 20px;
   }
 }
 
@@ -8693,7 +8894,7 @@ header.get-started-page .get-started-login p a:hover i {
 }
 
 .choose-steps .payment .license ul li i {
-  color: #62d5b4;
+  color: #08ae7e;
   margin: 7px;
 }
 
@@ -8704,7 +8905,13 @@ header.get-started-page .get-started-login p a:hover i {
 }
 
 .choose-steps .payment .back-btn {
-  margin-top: 222px;
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .choose-steps .payment .back-btn {
+    text-align: center;
+  }
 }
 
 .choose-steps .payment .back-btn .back {
@@ -8730,7 +8937,7 @@ header.get-started-page .get-started-login p a:hover i {
 }
 
 .choose-steps .payment .back-btn .back:hover {
-  color: #E33866;
+  color: #e33866;
 }
 
 .choose-steps .payment .back-btn .back:hover i {
@@ -9484,7 +9691,7 @@ header.get-started-page .get-started-login p a:hover i {
 }
 
 .servers-search .servers-list li i {
-  color: #62d5b4;
+  color: #08ae7e;
   margin-right: 7px;
 }
 
@@ -9614,7 +9821,7 @@ body.servers-page {
 }
 
 .americas .table tbody td i {
-  color: #62d5b4;
+  color: #08ae7e;
 }
 
 .americas .europe-content {
@@ -9676,7 +9883,7 @@ body.servers-page {
   font-size: 21px;
   width: 48px;
   height: 48px;
-  background-color: #62d5b4;
+  background-color: #08ae7e;
   border-radius: 50%;
   text-align: center;
   line-height: 48px;
@@ -9751,7 +9958,7 @@ header.dashboard-page p a i {
 }
 
 header.dashboard-page p a:hover {
-  color: #E33866;
+  color: #e33866;
 }
 
 header.dashboard-page p a:hover i {
@@ -10902,7 +11109,7 @@ header.dashboard-page p a:hover i {
 }
 
 .list-content .content-three .subscription-settings .list li .list-item-text span {
-  background-color: rgba(98, 213, 180, 0.3);
+  background-color: rgba(8, 174, 126, 0.3);
   border-radius: 5px;
   color: #08ae7e;
   padding: 4px 11px;
@@ -11380,7 +11587,7 @@ header.dashboard-page p a:hover i {
 }
 
 .list-content .content-four .check-password ul li.valid i {
-  color: #62d5b4;
+  color: #08ae7e;
 }
 
 /* Start expired subscription */
@@ -11595,7 +11802,7 @@ header.dashboard-page p a:hover i {
   font-size: 12px;
   width: 32px;
   height: 32px;
-  background-color: #62d5b4;
+  background-color: #08ae7e;
   border-radius: 50%;
   text-align: center;
   line-height: 32px;

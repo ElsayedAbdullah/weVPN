@@ -200,7 +200,7 @@ $(function() {
   });
 
   // toggle between credit card and paypal
-  // $(".payment-methods .card-info:first").css("display", "block");
+  // $(".payment-methods .card-info:last").css("display", "block");
   $(".payment--method .label-radio").on("click", function() {
     $(this)
       .parents(".payment--method")
