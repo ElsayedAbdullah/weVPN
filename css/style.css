@@ -260,7 +260,7 @@ header .navbar .login .login-item:first-child {
 header .navbar .login .login-item .login-link {
   font-size: 16px;
   line-height: 19px;
-  color: #fff;
+  color: inherit;
   padding: 8px 12px;
   display: block;
   -webkit-transition: color 0.3s ease-in-out;
@@ -285,8 +285,8 @@ header .navbar .login .login-item .get-started {
   text-align: center;
   -webkit-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
-  background-color: #fff;
-  color: #fd3e72;
+  background-color: #fd3e72;
+  color: #fff;
 }
 
 @media (max-width: 992px) {
@@ -403,7 +403,7 @@ header .navbar .login .login-item .get-started:hover {
 
 @media (max-width: 767px) {
   .hero-img-content .hero-img-txt {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 20px;
     margin-bottom: 0;
   }
@@ -468,6 +468,9 @@ header .navbar .login .login-item .get-started:hover {
 }
 
 @media (max-width: 767px) {
+  .hero-img-content span {
+    margin-left: 0;
+  }
   .hero-img-content span i {
     font-size: 10px;
   }
@@ -495,6 +498,7 @@ header .navbar .login .login-item .get-started:hover {
   .hero-img .hero-img-image img {
     top: 150px;
     position: absolute;
+    left: 0;
   }
 }
 
@@ -517,8 +521,8 @@ header .navbar .login .login-item .get-started:hover {
   .hero-img .header-shape {
     -webkit-transform: scale(0.65);
             transform: scale(0.65);
-    top: -670px;
-    left: -125px;
+    top: -690px;
+    left: -130px;
   }
 }
 
@@ -1326,6 +1330,10 @@ header .navbar .login .login-item .get-started:hover {
   background-color: #f9f8f4;
 }
 
+.testimonials.homepage {
+  padding-bottom: 120px;
+}
+
 @media (max-width: 767px) {
   .testimonials .no-padding {
     padding: 0;
@@ -1623,6 +1631,8 @@ header .navbar .login .login-item .get-started:hover {
   .testimonials .testimonials-slider .slider .owl-carousel .testim {
     padding: 32px 0 55px 24px;
     min-height: 400px;
+    -webkit-box-shadow: 10px 10px 50px -37px #e6e4df, -10px 6px 20px -13px #e6e4df;
+            box-shadow: 10px 10px 50px -37px #e6e4df, -10px 6px 20px -13px #e6e4df;
   }
 }
 
@@ -1970,14 +1980,14 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
-.authority .authority-content .authority-info .person-info img {
+.authority .authority-content .authority-info .person-info .jfl {
   position: absolute;
   top: 0;
   left: 0;
 }
 
 @media (max-width: 767px) {
-  .authority .authority-content .authority-info .person-info img {
+  .authority .authority-content .authority-info .person-info .jfl {
     position: relative;
     margin-bottom: 10px;
     -webkit-transform: scale(0.75);
@@ -1986,7 +1996,7 @@ header .navbar .login .login-item .get-started:hover {
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
-  .authority .authority-content .authority-info .person-info img {
+  .authority .authority-content .authority-info .person-info .jfl {
     top: 6px;
   }
 }
@@ -2015,54 +2025,165 @@ header .navbar .login .login-item .get-started:hover {
   }
 }
 
+.authority.homepage {
+  padding-top: 0;
+  background-color: #f9f8f4;
+}
+
+.authority.homepage .authority-content {
+  padding-top: 0;
+  padding-bottom: 5px;
+}
+
+.authority.homepage .authority-content .authority-info .authority-info-txt {
+  font-size: 18px;
+}
+
+.authority.homepage .authority-content .authority-info .person-info > h3,
+.authority.homepage .authority-content .authority-info .person-info p {
+  display: inline-block;
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .authority.homepage .authority-content .authority-info .person-info > h3,
+  .authority.homepage .authority-content .authority-info .person-info p {
+    display: block;
+  }
+}
+
+.authority.homepage .authority-content .authority-info .person-info p {
+  font-size: 13px;
+  color: #8b898f;
+}
+
+@media (max-width: 767px) {
+  .authority.homepage .authority-content .authority-info .person-info p {
+    width: 100%;
+  }
+}
+
+.authority.homepage .authority-content .authority-info ul {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .authority.homepage .authority-content .authority-info ul {
+    display: block;
+    padding-top: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .authority.homepage .authority-content .authority-info ul {
+    padding-top: 0;
+  }
+}
+
+.authority.homepage .authority-content .authority-info ul h3,
+.authority.homepage .authority-content .authority-info ul span {
+  font-size: 13px;
+  display: inline-block;
+}
+
+.authority.homepage .authority-content .authority-info ul:before {
+  display: none;
+}
+
+.authority.homepage .authority-content .authority-info ul li {
+  padding-left: 30px;
+  margin-right: 18px;
+}
+
+@media (max-width: 767px) {
+  .authority.homepage .authority-content .authority-info ul li {
+    padding-left: 0;
+    margin-right: 8px;
+  }
+  .authority.homepage .authority-content .authority-info ul li .icon {
+    margin-bottom: 6px;
+  }
+}
+
+.authority.homepage .authority-content .authority-info ul li .icon {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+}
+
+.authority.homepage .authority-content .authority-info ul li .icon img {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .authority.homepage .authority-content {
+    padding-bottom: 25px;
+    padding-top: 32px;
+  }
+  .authority.homepage .authority-content .authority-img {
+    padding: 0 50px;
+  }
+  .authority.homepage .authority-content .authority-img .authority-info .authority-info-txt {
+    font-size: 16px;
+  }
+}
+
 /* End Authority */
 /* Start Customers Features */
 .customers-features {
   background-color: #fff;
   overflow: hidden;
+  padding-top: 290px;
 }
 
-.customers-features .custoemer-feat {
+@media (max-width: 767px) {
+  .customers-features {
+    padding-top: 355px;
+  }
+}
+
+.customers-features .customer-feat {
   background-color: #f9f8f4;
   padding: 130px 60px;
   position: relative;
 }
 
 @media (max-width: 767px) {
-  .customers-features .custoemer-feat {
+  .customers-features .customer-feat {
     padding: 40px 32px 60px;
     margin-bottom: 4px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .customers-features .custoemer-feat {
+  .customers-features .customer-feat {
     padding: 65px 32px 60px;
   }
 }
 
 @media (max-width: 767px) {
-  .customers-features .custoemer-feat img {
+  .customers-features .customer-feat img {
     -webkit-transform: scale(0.63);
             transform: scale(0.63);
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .customers-features .custoemer-feat img {
+  .customers-features .customer-feat img {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
 }
 
-.customers-features .custoemer-feat h2 {
+.customers-features .customer-feat h2 {
   margin: 58px 0 26px;
   font-size: 36px;
   line-height: 44px;
 }
 
 @media (max-width: 767px) {
-  .customers-features .custoemer-feat h2 {
+  .customers-features .customer-feat h2 {
     font-size: 24px;
     line-height: 28px;
     margin: 12px 0 16px;
@@ -2070,70 +2191,70 @@ header .navbar .login .login-item .get-started:hover {
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .customers-features .custoemer-feat h2 {
+  .customers-features .customer-feat h2 {
     font-size: 26px;
     line-height: 32px;
     margin: 20px 0;
   }
 }
 
-.customers-features .custoemer-feat p {
+.customers-features .customer-feat p {
   font-size: 18px;
   line-height: 28px;
   margin-bottom: 36px;
 }
 
 @media (max-width: 767px) {
-  .customers-features .custoemer-feat p {
+  .customers-features .customer-feat p {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 20px;
   }
 }
 
-.customers-features .custoemer-feat a {
+.customers-features .customer-feat a {
   padding: 24px 46px;
   background-color: #ffecf1;
   color: #fd3e72;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-  .customers-features .custoemer-feat a {
+@media (max-width: 992px) {
+  .customers-features .customer-feat a {
     padding: 24px 0;
     display: block;
   }
 }
 
 @media (max-width: 350px) {
-  .customers-features .custoemer-feat a {
+  .customers-features .customer-feat a {
     padding: 24px 20px;
   }
 }
 
-.customers-features .custoemer-feat a:hover {
+.customers-features .customer-feat a:hover {
   background-color: #fd3e72;
   color: #fff;
 }
 
-.customers-features .custoemer-feat a:hover i {
+.customers-features .customer-feat a:hover i {
   color: #fff;
 }
 
-.customers-features .custoemer-feat a:active {
+.customers-features .customer-feat a:active {
   background-color: #ff5784;
 }
 
-.customers-features .custoemer-feat.one {
+.customers-features .customer-feat.one {
   margin-right: 5px;
 }
 
 @media (max-width: 767px) {
-  .customers-features .custoemer-feat.one {
+  .customers-features .customer-feat.one {
     margin-right: 0;
   }
 }
 
-.customers-features .custoemer-feat.one:before {
+.customers-features .customer-feat.one:before {
   content: "";
   position: absolute;
   display: block;
@@ -2147,7 +2268,7 @@ header .navbar .login .login-item .get-started:hover {
 }
 
 @media (max-width: 767px) {
-  .customers-features .custoemer-feat.one:before {
+  .customers-features .customer-feat.one:before {
     top: -30px;
     left: -30px;
     border-width: 30px;
@@ -2155,32 +2276,32 @@ header .navbar .login .login-item .get-started:hover {
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .customers-features .custoemer-feat.one:before {
+  .customers-features .customer-feat.one:before {
     top: -40px;
     left: -40px;
     border-width: 40px;
   }
 }
 
-.customers-features .custoemer-feat.two {
+.customers-features .customer-feat.two {
   padding-top: 118px;
   margin-left: 5px;
 }
 
 @media (max-width: 767px) {
-  .customers-features .custoemer-feat.two {
+  .customers-features .customer-feat.two {
     padding: 30px 32px 60px;
     margin-left: 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .customers-features .custoemer-feat.two {
+  .customers-features .customer-feat.two {
     padding: 40px 32px 60px;
   }
 }
 
-.customers-features .custoemer-feat.two:before {
+.customers-features .customer-feat.two:before {
   content: "";
   position: absolute;
   display: block;
@@ -2194,7 +2315,7 @@ header .navbar .login .login-item .get-started:hover {
 }
 
 @media (max-width: 767px) {
-  .customers-features .custoemer-feat.two:before {
+  .customers-features .customer-feat.two:before {
     bottom: -30px;
     right: -30px;
     border-width: 30px;
@@ -2202,39 +2323,39 @@ header .navbar .login .login-item .get-started:hover {
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .customers-features .custoemer-feat.two:before {
+  .customers-features .customer-feat.two:before {
     bottom: -40px;
     right: -40px;
     border-width: 40px;
   }
 }
 
-.customers-features .custoemer-feat.two h2 {
+.customers-features .customer-feat.two h2 {
   margin-top: 38px;
 }
 
 @media (max-width: 767px) {
-  .customers-features .custoemer-feat.two h2 {
+  .customers-features .customer-feat.two h2 {
     margin-top: -5px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .customers-features .custoemer-feat.two h2 {
+  .customers-features .customer-feat.two h2 {
     margin-top: 13px;
   }
 }
 
-.customers-features .custoemer-feat.two a {
+.customers-features .customer-feat.two a {
   background-color: #fd3e72;
   color: #fff;
 }
 
-.customers-features .custoemer-feat.two a:hover {
+.customers-features .customer-feat.two a:hover {
   background-color: #e33866;
 }
 
-.customers-features .custoemer-feat.two a:active {
+.customers-features .customer-feat.two a:active {
   background-color: #ff5784;
 }
 
@@ -8250,591 +8371,6 @@ header.get-started-page .get-started-login p a:hover i {
   margin-top: 28px;
 }
 
-.choose-steps .payment .payment-methods .payment--method {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.choose-steps .payment .payment-methods .payment--method:hover {
-  -webkit-box-shadow: 0px 6px 9px #e6e4df;
-          box-shadow: 0px 6px 9px #e6e4df;
-}
-
-.choose-steps .payment .payment-methods .card-info {
-  background-color: #fff;
-  padding: 32px 32px 36px;
-  border-top: 1px solid #e3e0d3;
-  display: none;
-}
-
-@media (max-width: 992px) {
-  .choose-steps .payment .payment-methods .card-info {
-    padding: 20px 20px 35px;
-  }
-}
-
-@media (min-width: 1000px) and (max-width: 1200px) {
-  .choose-steps .payment .payment-methods .card-info {
-    padding: 20px 20px 35px;
-  }
-}
-
-.choose-steps .payment .payment-methods .card-info .padd {
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-@media (max-width: 992px) {
-  .choose-steps .payment .payment-methods .card-info .padd {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  .choose-steps .payment .payment-methods .card-info .padd.col-6 {
-    padding-left: 5px;
-  }
-}
-
-@media (min-width: 1000px) and (max-width: 1200px) {
-  .choose-steps .payment .payment-methods .card-info .padd {
-    padding-right: 7.5px;
-    padding-left: 7.5px;
-  }
-}
-
-.choose-steps .payment .payment-methods .card-info .padd-right {
-  padding-right: 10px;
-}
-
-@media (max-width: 992px) {
-  .choose-steps .payment .payment-methods .card-info .padd-right {
-    padding-right: 15px;
-  }
-  .choose-steps .payment .payment-methods .card-info .padd-right.col-6 {
-    padding-right: 5px;
-  }
-}
-
-@media (min-width: 1000px) and (max-width: 1200px) {
-  .choose-steps .payment .payment-methods .card-info .padd-right {
-    padding-right: 7.5px;
-  }
-}
-
-.choose-steps .payment .payment-methods .card-info .padd-left {
-  padding-left: 10px;
-}
-
-@media (max-width: 992px) {
-  .choose-steps .payment .payment-methods .card-info .padd-left {
-    padding-left: 15px;
-  }
-}
-
-@media (min-width: 1000px) and (max-width: 1200px) {
-  .choose-steps .payment .payment-methods .card-info .padd-left {
-    padding-left: 7.5px;
-  }
-}
-
-.choose-steps .payment .payment-methods .card-info form .form-group {
-  border: 1px solid #e0ded5;
-  padding: 2px 20px 7px;
-  margin-bottom: 17px;
-  height: 56px;
-}
-
-@media (max-width: 992px) {
-  .choose-steps .payment .payment-methods .card-info form .form-group {
-    margin-bottom: 10px;
-    padding: 7px 16px;
-  }
-}
-
-@media (min-width: 1000px) and (max-width: 1200px) {
-  .choose-steps .payment .payment-methods .card-info form .form-group {
-    padding: 2px 10px 7px;
-    margin-bottom: 15px;
-  }
-}
-
-.choose-steps .payment .payment-methods .card-info form .form-group label {
-  font-size: 12px;
-  line-height: 20px;
-  font-family: "AvertaSemibold";
-  margin-bottom: 0;
-  position: relative;
-}
-
-@media (max-width: 992px) {
-  .choose-steps .payment .payment-methods .card-info form .form-group label {
-    font-family: "Averta";
-  }
-}
-
-@media (min-width: 1000px) and (max-width: 1200px) {
-  .choose-steps .payment .payment-methods .card-info form .form-group label {
-    font-size: 11px;
-  }
-}
-
-.choose-steps .payment .payment-methods .card-info form .form-group label svg {
-  margin-left: 5px;
-  cursor: pointer;
-}
-
-.choose-steps .payment .payment-methods .card-info form .form-group label svg:hover ~ .tooltiptext {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.choose-steps .payment .payment-methods .card-info form .form-group label .tooltiptext {
-  position: absolute;
-  display: inline-block;
-  background: #4F4F4F;
-  width: 200px;
-  height: 86px;
-  font-size: 12px;
-  line-height: 14px;
-  color: #FFFFFF;
-  padding: 12px 16px;
-  top: -93px;
-  left: 25px;
-  font-family: "Averta";
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.choose-steps .payment .payment-methods .card-info form .form-group label .tooltiptext:after {
-  content: "";
-  position: absolute;
-  border-width: 8px;
-  border-style: solid;
-  border-color: #4F4F4F transparent transparent transparent;
-  display: block;
-  bottom: -16px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.choose-steps .payment .payment-methods .card-info form .form-group input {
-  border: 0;
-  padding: 0;
-  height: auto;
-  font-family: "AvertaSemibold";
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none;
-  color: #5b5863;
-  font-size: 14px;
-}
-
-@media (max-width: 992px) {
-  .choose-steps .payment .payment-methods .card-info form .form-group input {
-    line-height: 20px;
-    font-size: 14px;
-  }
-}
-
-.choose-steps .payment .payment-methods .card-info form .form-group input::-webkit-input-placeholder {
-  color: #8d8b92;
-  font-family: "Averta";
-  font-size: 14px;
-}
-
-.choose-steps .payment .payment-methods .card-info form .form-group input:-ms-input-placeholder {
-  color: #8d8b92;
-  font-family: "Averta";
-  font-size: 14px;
-}
-
-.choose-steps .payment .payment-methods .card-info form .form-group input::-ms-input-placeholder {
-  color: #8d8b92;
-  font-family: "Averta";
-  font-size: 14px;
-}
-
-.choose-steps .payment .payment-methods .card-info form .form-group input::placeholder {
-  color: #8d8b92;
-  font-family: "Averta";
-  font-size: 14px;
-}
-
-.choose-steps .payment .payment-methods .card-info form .form-group ~ span {
-  position: relative;
-  font-size: 12px;
-  color: #898691;
-  display: inline-block;
-  top: -17px;
-}
-
-.choose-steps .payment .payment-methods .card-info .continue {
-  font-size: 18px;
-  line-height: 24px;
-  margin-bottom: 32px;
-}
-
-@media (max-width: 992px) {
-  .choose-steps .payment .payment-methods .card-info .continue {
-    margin-bottom: 20px;
-  }
-}
-
-.choose-steps .payment .payment-methods .card-info .continue strong {
-  font-family: "AvertaBold";
-}
-
-.choose-steps .payment .payment-methods .card-info .order-info {
-  border-top: 1px dashed #e3e0d3;
-  padding-top: 32px;
-}
-
-@media (max-width: 992px) {
-  .choose-steps .payment .payment-methods .card-info .order-info {
-    border: 0;
-    padding-top: 14px;
-  }
-  .choose-steps .payment .payment-methods .card-info .order-info.paypal-txt {
-    border-top: 1px dashed #e3e0d3;
-    padding-top: 20px;
-  }
-}
-
-.choose-steps .payment .payment-methods .card-info .order-info .order-info-content .order-total {
-  font-size: 18px;
-  line-height: 24px;
-  margin-bottom: 8px;
-}
-
-.choose-steps .payment .payment-methods .card-info .order-info .order-info-content .order-total .total {
-  font-family: "AvertaBold";
-}
-
-.choose-steps .payment .payment-methods .card-info .order-info .order-info-content .bill {
-  font-size: 14px;
-  line-height: 14px;
-  color: #8d8b92;
-}
-
-@media (max-width: 992px) {
-  .choose-steps .payment .payment-methods .card-info .order-info .order-info-content .bill {
-    margin-bottom: 24px;
-  }
-}
-
-@media (min-width: 1000px) and (max-width: 1200px) {
-  .choose-steps .payment .payment-methods .card-info .order-info .order-info-content .bill {
-    margin-bottom: 24px;
-  }
-}
-
-@media (max-width: 992px) {
-  .choose-steps .payment .payment-methods .card-info .order-info .secure-payment {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-.choose-steps .payment .payment-methods .card-info .order-info .secure-payment li {
-  font-size: 12px;
-  line-height: 24px;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 10px;
-}
-
-@media (max-width: 992px) {
-  .choose-steps .payment .payment-methods .card-info .order-info .secure-payment li {
-    line-height: 12px;
-    padding-left: 30px;
-    margin-bottom: 0;
-  }
-}
-
-.choose-steps .payment .payment-methods .card-info .order-info .secure-payment li div {
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.choose-steps .payment .payment-methods .card-info .order-info .secure-payment li div img {
-  max-width: 100%;
-}
-
-.choose-steps .payment .payment-methods .card-info .order-info .credit-card-submit,
-.choose-steps .payment .payment-methods .card-info .order-info .paypal-btn {
-  width: 100%;
-  height: 56px;
-  line-height: 56px;
-  margin-top: 22px;
-  margin-bottom: 15px;
-}
-
-@media (max-width: 992px) {
-  .choose-steps .payment .payment-methods .card-info .order-info .credit-card-submit,
-  .choose-steps .payment .payment-methods .card-info .order-info .paypal-btn {
-    font-size: 16px;
-  }
-}
-
-.choose-steps .payment .payment-methods .card-info .order-info .paypal-btn {
-  background-color: #ffc63f;
-  color: #44424a;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.choose-steps .payment .payment-methods .card-info .order-info .paypal-btn:hover {
-  background-color: #ffd163;
-}
-
-.choose-steps .payment .payment-methods .card-info .order-info .paypal-btn img {
-  position: relative;
-  top: -2px;
-  left: -3px;
-}
-
-.choose-steps .payment .payment-methods .card-info .order-info p.complete {
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  color: #8d8b92;
-}
-
-@media (max-width: 992px) {
-  .choose-steps .payment .payment-methods .card-info .order-info p.complete {
-    width: 240px;
-    margin: auto;
-  }
-}
-
-.choose-steps .payment .payment-methods .card-info .order-info p.complete a {
-  font-family: "AvertaSemibold";
-  color: #fd3e72;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.choose-steps .payment .payment-methods .card-info .order-info p.complete a:hover {
-  color: #e33866;
-  text-decoration: underline !important;
-}
-
-.choose-steps .payment .payment-methods .credit-payment,
-.choose-steps .payment .payment-methods .paypal-payment {
-  overflow: hidden;
-  background-color: #fff;
-}
-
-.choose-steps .payment .payment-methods .credit-payment .pay-card,
-.choose-steps .payment .payment-methods .paypal-payment .pay-card {
-  position: relative;
-}
-
-.choose-steps .payment .payment-methods .credit-payment .pay-card input[type="radio"],
-.choose-steps .payment .payment-methods .paypal-payment .pay-card input[type="radio"] {
-  display: none;
-}
-
-.choose-steps .payment .payment-methods .credit-payment .pay-card input[type="radio"]:not(:checked) + label:after,
-.choose-steps .payment .payment-methods .paypal-payment .pay-card input[type="radio"]:not(:checked) + label:after {
-  opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-}
-
-.choose-steps .payment .payment-methods .credit-payment .pay-card input[type="radio"]:checked + label:after,
-.choose-steps .payment .payment-methods .paypal-payment .pay-card input[type="radio"]:checked + label:after {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.choose-steps .payment .payment-methods .credit-payment .pay-card input[type="radio"]:checked + label:before,
-.choose-steps .payment .payment-methods .paypal-payment .pay-card input[type="radio"]:checked + label:before {
-  background-color: #fd3e72;
-  border-color: #fd3e72;
-}
-
-.choose-steps .payment .payment-methods .credit-payment .pay-card .label-radio,
-.choose-steps .payment .payment-methods .paypal-payment .pay-card .label-radio {
-  font-size: 18px;
-  text-transform: capitalize;
-  position: relative;
-  cursor: pointer;
-  height: 80px;
-  display: block;
-  padding-left: 80px;
-  line-height: 80px;
-  font-family: "AvertaSemibold";
-  margin-bottom: 0;
-  z-index: 2;
-}
-
-@media (max-width: 767px) {
-  .choose-steps .payment .payment-methods .credit-payment .pay-card .label-radio,
-  .choose-steps .payment .payment-methods .paypal-payment .pay-card .label-radio {
-    height: 48px;
-    line-height: 48px;
-    font-size: 14px;
-    padding-left: 43px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .choose-steps .payment .payment-methods .credit-payment .pay-card .label-radio,
-  .choose-steps .payment .payment-methods .paypal-payment .pay-card .label-radio {
-    font-size: 16px;
-    padding-left: 53px;
-  }
-}
-
-.choose-steps .payment .payment-methods .credit-payment .pay-card .label-radio:before,
-.choose-steps .payment .payment-methods .paypal-payment .pay-card .label-radio:before {
-  content: "";
-  position: absolute;
-  top: 25px;
-  left: 32px;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 1px solid #adaba5;
-}
-
-@media (max-width: 767px) {
-  .choose-steps .payment .payment-methods .credit-payment .pay-card .label-radio:before,
-  .choose-steps .payment .payment-methods .paypal-payment .pay-card .label-radio:before {
-    width: 20px;
-    height: 20px;
-    top: 14px;
-    left: 16px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .choose-steps .payment .payment-methods .credit-payment .pay-card .label-radio:before,
-  .choose-steps .payment .payment-methods .paypal-payment .pay-card .label-radio:before {
-    width: 25px;
-    height: 25px;
-    top: 28px;
-    left: 20px;
-  }
-}
-
-.choose-steps .payment .payment-methods .credit-payment .pay-card .label-radio:after,
-.choose-steps .payment .payment-methods .paypal-payment .pay-card .label-radio:after {
-  content: "\f00c";
-  position: absolute;
-  top: 1px;
-  left: 41px;
-  color: #fff;
-  font-family: "fontawesome";
-  font-size: 14px;
-}
-
-@media (max-width: 767px) {
-  .choose-steps .payment .payment-methods .credit-payment .pay-card .label-radio:after,
-  .choose-steps .payment .payment-methods .paypal-payment .pay-card .label-radio:after {
-    top: 0;
-    left: 21px;
-    font-size: 10px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .choose-steps .payment .payment-methods .credit-payment .pay-card .label-radio:after,
-  .choose-steps .payment .payment-methods .paypal-payment .pay-card .label-radio:after {
-    top: 34px;
-    left: 26px;
-  }
-}
-
-.choose-steps .payment .payment-methods .credit-payment .pay-card img,
-.choose-steps .payment .payment-methods .paypal-payment .pay-card img {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 30px;
-  z-index: 1;
-}
-
-@media (max-width: 767px) {
-  .choose-steps .payment .payment-methods .credit-payment .pay-card img.cards-img,
-  .choose-steps .payment .payment-methods .paypal-payment .pay-card img.cards-img {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-    right: -43px;
-    top: 13px;
-  }
-  .choose-steps .payment .payment-methods .credit-payment .pay-card img.paypal-img,
-  .choose-steps .payment .payment-methods .paypal-payment .pay-card img.paypal-img {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    right: 8px;
-    top: 15px;
-  }
-}
-
-@media (min-width: 1000px) and (max-width: 1200px) {
-  .choose-steps .payment .payment-methods .credit-payment .pay-card img.cards-img,
-  .choose-steps .payment .payment-methods .paypal-payment .pay-card img.cards-img {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    right: -15px;
-    top: 30px;
-  }
-  .choose-steps .payment .payment-methods .credit-payment .pay-card img.paypal-img,
-  .choose-steps .payment .payment-methods .paypal-payment .pay-card img.paypal-img {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    right: 8px;
-    top: 30px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .choose-steps .payment .payment-methods .credit-payment .pay-card img.cards-img,
-  .choose-steps .payment .payment-methods .paypal-payment .pay-card img.cards-img {
-    -webkit-transform: scale(0.56);
-            transform: scale(0.56);
-    right: -55px;
-    top: 30px;
-  }
-  .choose-steps .payment .payment-methods .credit-payment .pay-card img.paypal-img,
-  .choose-steps .payment .payment-methods .paypal-payment .pay-card img.paypal-img {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    right: 8px;
-    top: 30px;
-  }
-}
-
-.choose-steps .payment .payment-methods .paypal-payment {
-  margin-top: 12px;
-}
-
-@media (max-width: 767px) {
-  .choose-steps .payment .payment-methods .paypal-payment {
-    margin-top: 8px;
-    margin-bottom: 0;
-  }
-}
-
 .choose-steps .payment .license {
   background: #ffffff;
   -webkit-box-shadow: 0px 50px 59px rgba(240, 238, 233, 0.8), 0px 6px 9px #e6e4df;
@@ -11874,6 +11410,591 @@ header.dashboard-page p a:hover i {
   display: none;
 }
 
+.payment-methods .payment--method {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.payment-methods .payment--method:hover {
+  -webkit-box-shadow: 0px 6px 9px #e6e4df;
+          box-shadow: 0px 6px 9px #e6e4df;
+}
+
+.payment-methods .card-info {
+  background-color: #fff;
+  padding: 32px 32px 36px;
+  border-top: 1px solid #e3e0d3;
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .payment-methods .card-info {
+    padding: 20px 20px 35px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .payment-methods .card-info {
+    padding: 20px 20px 35px;
+  }
+}
+
+.payment-methods .card-info .padd {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media (max-width: 992px) {
+  .payment-methods .card-info .padd {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .payment-methods .card-info .padd.col-6 {
+    padding-left: 5px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .payment-methods .card-info .padd {
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+  }
+}
+
+.payment-methods .card-info .padd-right {
+  padding-right: 10px;
+}
+
+@media (max-width: 992px) {
+  .payment-methods .card-info .padd-right {
+    padding-right: 15px;
+  }
+  .payment-methods .card-info .padd-right.col-6 {
+    padding-right: 5px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .payment-methods .card-info .padd-right {
+    padding-right: 7.5px;
+  }
+}
+
+.payment-methods .card-info .padd-left {
+  padding-left: 10px;
+}
+
+@media (max-width: 992px) {
+  .payment-methods .card-info .padd-left {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .payment-methods .card-info .padd-left {
+    padding-left: 7.5px;
+  }
+}
+
+.payment-methods .card-info form .form-group {
+  border: 1px solid #e0ded5;
+  padding: 2px 20px 7px;
+  margin-bottom: 17px;
+  height: 56px;
+}
+
+@media (max-width: 992px) {
+  .payment-methods .card-info form .form-group {
+    margin-bottom: 10px;
+    padding: 7px 16px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .payment-methods .card-info form .form-group {
+    padding: 2px 10px 7px;
+    margin-bottom: 15px;
+  }
+}
+
+.payment-methods .card-info form .form-group label {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "AvertaSemibold";
+  margin-bottom: 0;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .payment-methods .card-info form .form-group label {
+    font-family: "Averta";
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .payment-methods .card-info form .form-group label {
+    font-size: 11px;
+  }
+}
+
+.payment-methods .card-info form .form-group label svg {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.payment-methods .card-info form .form-group label svg:hover ~ .tooltiptext {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.payment-methods .card-info form .form-group label .tooltiptext {
+  position: absolute;
+  display: inline-block;
+  background: #4f4f4f;
+  width: 200px;
+  height: 86px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  padding: 12px 16px;
+  top: -93px;
+  left: 25px;
+  font-family: "Averta";
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.payment-methods .card-info form .form-group label .tooltiptext:after {
+  content: "";
+  position: absolute;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #4f4f4f transparent transparent transparent;
+  display: block;
+  bottom: -16px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.payment-methods .card-info form .form-group input {
+  border: 0;
+  padding: 0;
+  height: auto;
+  font-family: "AvertaSemibold";
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  color: #5b5863;
+  font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  .payment-methods .card-info form .form-group input {
+    line-height: 20px;
+    font-size: 14px;
+  }
+}
+
+.payment-methods .card-info form .form-group input::-webkit-input-placeholder {
+  color: #8d8b92;
+  font-family: "Averta";
+  font-size: 14px;
+}
+
+.payment-methods .card-info form .form-group input:-ms-input-placeholder {
+  color: #8d8b92;
+  font-family: "Averta";
+  font-size: 14px;
+}
+
+.payment-methods .card-info form .form-group input::-ms-input-placeholder {
+  color: #8d8b92;
+  font-family: "Averta";
+  font-size: 14px;
+}
+
+.payment-methods .card-info form .form-group input::placeholder {
+  color: #8d8b92;
+  font-family: "Averta";
+  font-size: 14px;
+}
+
+.payment-methods .card-info form .form-group ~ span {
+  position: relative;
+  font-size: 12px;
+  color: #898691;
+  display: inline-block;
+  top: -17px;
+}
+
+.payment-methods .card-info .continue {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 992px) {
+  .payment-methods .card-info .continue {
+    margin-bottom: 20px;
+  }
+}
+
+.payment-methods .card-info .continue strong {
+  font-family: "AvertaBold";
+}
+
+.payment-methods .card-info .order-info {
+  border-top: 1px dashed #e3e0d3;
+  padding-top: 32px;
+}
+
+@media (max-width: 992px) {
+  .payment-methods .card-info .order-info {
+    border: 0;
+    padding-top: 14px;
+  }
+  .payment-methods .card-info .order-info.paypal-txt {
+    border-top: 1px dashed #e3e0d3;
+    padding-top: 20px;
+  }
+}
+
+.payment-methods .card-info .order-info .order-info-content .order-total {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.payment-methods .card-info .order-info .order-info-content .order-total .total {
+  font-family: "AvertaBold";
+}
+
+.payment-methods .card-info .order-info .order-info-content .bill {
+  font-size: 14px;
+  line-height: 14px;
+  color: #8d8b92;
+}
+
+@media (max-width: 992px) {
+  .payment-methods .card-info .order-info .order-info-content .bill {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .payment-methods .card-info .order-info .order-info-content .bill {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .payment-methods .card-info .order-info .secure-payment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.payment-methods .card-info .order-info .secure-payment li {
+  font-size: 12px;
+  line-height: 24px;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+  .payment-methods .card-info .order-info .secure-payment li {
+    line-height: 12px;
+    padding-left: 30px;
+    margin-bottom: 0;
+  }
+}
+
+.payment-methods .card-info .order-info .secure-payment li div {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.payment-methods .card-info .order-info .secure-payment li div img {
+  max-width: 100%;
+}
+
+.payment-methods .card-info .order-info .credit-card-submit,
+.payment-methods .card-info .order-info .paypal-btn {
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  margin-top: 22px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 992px) {
+  .payment-methods .card-info .order-info .credit-card-submit,
+  .payment-methods .card-info .order-info .paypal-btn {
+    font-size: 16px;
+  }
+}
+
+.payment-methods .card-info .order-info .paypal-btn {
+  background-color: #ffc63f;
+  color: #44424a;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.payment-methods .card-info .order-info .paypal-btn:hover {
+  background-color: #ffd163;
+}
+
+.payment-methods .card-info .order-info .paypal-btn img {
+  position: relative;
+  top: -2px;
+  left: -3px;
+}
+
+.payment-methods .card-info .order-info p.complete {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #8d8b92;
+}
+
+@media (max-width: 992px) {
+  .payment-methods .card-info .order-info p.complete {
+    width: 240px;
+    margin: auto;
+  }
+}
+
+.payment-methods .card-info .order-info p.complete a {
+  font-family: "AvertaSemibold";
+  color: #fd3e72;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.payment-methods .card-info .order-info p.complete a:hover {
+  color: #e33866;
+  text-decoration: underline !important;
+}
+
+.payment-methods .credit-payment,
+.payment-methods .paypal-payment {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.payment-methods .credit-payment .pay-card,
+.payment-methods .paypal-payment .pay-card {
+  position: relative;
+}
+
+.payment-methods .credit-payment .pay-card input[type="radio"],
+.payment-methods .paypal-payment .pay-card input[type="radio"] {
+  display: none;
+}
+
+.payment-methods .credit-payment .pay-card input[type="radio"]:not(:checked) + label:after,
+.payment-methods .paypal-payment .pay-card input[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.payment-methods .credit-payment .pay-card input[type="radio"]:checked + label:after,
+.payment-methods .paypal-payment .pay-card input[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.payment-methods .credit-payment .pay-card input[type="radio"]:checked + label:before,
+.payment-methods .paypal-payment .pay-card input[type="radio"]:checked + label:before {
+  background-color: #fd3e72;
+  border-color: #fd3e72;
+}
+
+.payment-methods .credit-payment .pay-card .label-radio,
+.payment-methods .paypal-payment .pay-card .label-radio {
+  font-size: 18px;
+  text-transform: capitalize;
+  position: relative;
+  cursor: pointer;
+  height: 80px;
+  display: block;
+  padding-left: 80px;
+  line-height: 80px;
+  font-family: "AvertaSemibold";
+  margin-bottom: 0;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .payment-methods .credit-payment .pay-card .label-radio,
+  .payment-methods .paypal-payment .pay-card .label-radio {
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    padding-left: 43px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .payment-methods .credit-payment .pay-card .label-radio,
+  .payment-methods .paypal-payment .pay-card .label-radio {
+    font-size: 16px;
+    padding-left: 53px;
+  }
+}
+
+.payment-methods .credit-payment .pay-card .label-radio:before,
+.payment-methods .paypal-payment .pay-card .label-radio:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #adaba5;
+}
+
+@media (max-width: 767px) {
+  .payment-methods .credit-payment .pay-card .label-radio:before,
+  .payment-methods .paypal-payment .pay-card .label-radio:before {
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    left: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .payment-methods .credit-payment .pay-card .label-radio:before,
+  .payment-methods .paypal-payment .pay-card .label-radio:before {
+    width: 25px;
+    height: 25px;
+    top: 28px;
+    left: 20px;
+  }
+}
+
+.payment-methods .credit-payment .pay-card .label-radio:after,
+.payment-methods .paypal-payment .pay-card .label-radio:after {
+  content: "\f00c";
+  position: absolute;
+  top: 1px;
+  left: 41px;
+  color: #fff;
+  font-family: "fontawesome";
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .payment-methods .credit-payment .pay-card .label-radio:after,
+  .payment-methods .paypal-payment .pay-card .label-radio:after {
+    top: 0;
+    left: 21px;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .payment-methods .credit-payment .pay-card .label-radio:after,
+  .payment-methods .paypal-payment .pay-card .label-radio:after {
+    top: 34px;
+    left: 26px;
+  }
+}
+
+.payment-methods .credit-payment .pay-card img,
+.payment-methods .paypal-payment .pay-card img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 30px;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .payment-methods .credit-payment .pay-card img.cards-img,
+  .payment-methods .paypal-payment .pay-card img.cards-img {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    right: -43px;
+    top: 13px;
+  }
+  .payment-methods .credit-payment .pay-card img.paypal-img,
+  .payment-methods .paypal-payment .pay-card img.paypal-img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    right: 8px;
+    top: 15px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .payment-methods .credit-payment .pay-card img.cards-img,
+  .payment-methods .paypal-payment .pay-card img.cards-img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    right: -15px;
+    top: 30px;
+  }
+  .payment-methods .credit-payment .pay-card img.paypal-img,
+  .payment-methods .paypal-payment .pay-card img.paypal-img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    right: 8px;
+    top: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .payment-methods .credit-payment .pay-card img.cards-img,
+  .payment-methods .paypal-payment .pay-card img.cards-img {
+    -webkit-transform: scale(0.56);
+            transform: scale(0.56);
+    right: -55px;
+    top: 30px;
+  }
+  .payment-methods .credit-payment .pay-card img.paypal-img,
+  .payment-methods .paypal-payment .pay-card img.paypal-img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    right: 8px;
+    top: 30px;
+  }
+}
+
+.payment-methods .paypal-payment {
+  margin-top: 12px;
+}
+
+@media (max-width: 767px) {
+  .payment-methods .paypal-payment {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+}
+
 .upgrade-plan-content .pricing-tables {
   padding-top: 80px;
   padding-bottom: 60px;
@@ -11967,201 +12088,6 @@ header.dashboard-page p a:hover i {
     font-size: 22px;
     line-height: 34px;
   }
-}
-
-.upgrade-plan-content .payment .payment-methods .card-info {
-  display: none;
-}
-
-.upgrade-plan-content .payment .payment-methods .credit-payment,
-.upgrade-plan-content .payment .payment-methods .paypal-payment {
-  overflow: hidden;
-  background-color: #fff;
-}
-
-.upgrade-plan-content .payment .payment-methods .credit-payment .pay-card,
-.upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card {
-  position: relative;
-}
-
-.upgrade-plan-content .payment .payment-methods .credit-payment .pay-card input[type="radio"],
-.upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card input[type="radio"] {
-  display: none;
-}
-
-.upgrade-plan-content .payment .payment-methods .credit-payment .pay-card input[type="radio"]:not(:checked) + label:after,
-.upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card input[type="radio"]:not(:checked) + label:after {
-  opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-}
-
-.upgrade-plan-content .payment .payment-methods .credit-payment .pay-card input[type="radio"]:checked + label:after,
-.upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card input[type="radio"]:checked + label:after {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio,
-.upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio {
-  font-size: 18px;
-  line-height: 13px;
-  text-transform: capitalize;
-  position: relative;
-  cursor: pointer;
-  height: 80px;
-  display: block;
-  padding-left: 80px;
-  line-height: 80px;
-  font-family: "AvertaSemibold";
-  margin-bottom: 0;
-}
-
-@media (max-width: 767px) {
-  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio,
-  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio {
-    height: 48px;
-    line-height: 48px;
-    font-size: 14px;
-    padding-left: 43px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio,
-  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio {
-    font-size: 16px;
-    padding-left: 53px;
-  }
-}
-
-.upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio:before,
-.upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio:before {
-  content: "";
-  position: absolute;
-  top: 25px;
-  left: 32px;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 1px solid #adaba5;
-}
-
-@media (max-width: 767px) {
-  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio:before,
-  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio:before {
-    width: 20px;
-    height: 20px;
-    top: 14px;
-    left: 16px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio:before,
-  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio:before {
-    width: 25px;
-    height: 25px;
-    top: 28px;
-    left: 20px;
-  }
-}
-
-.upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio:after,
-.upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio:after {
-  content: "";
-  position: absolute;
-  top: 33px;
-  left: 40px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: #fd3e72;
-}
-
-@media (max-width: 767px) {
-  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio:after,
-  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio:after {
-    width: 10px;
-    height: 10px;
-    top: 19px;
-    left: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card .label-radio:after,
-  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card .label-radio:after {
-    top: 34px;
-    left: 26px;
-    width: 13px;
-    height: 13px;
-  }
-}
-
-.upgrade-plan-content .payment .payment-methods .credit-payment .pay-card img,
-.upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card img {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 30px;
-}
-
-@media (max-width: 767px) {
-  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card img.cards-img,
-  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card img.cards-img {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-    right: -43px;
-    top: 13px;
-  }
-  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card img.paypal-img,
-  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card img.paypal-img {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    right: 8px;
-    top: 15px;
-  }
-}
-
-@media (min-width: 1000px) and (max-width: 1200px) {
-  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card img.cards-img,
-  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card img.cards-img {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    right: -15px;
-    top: 30px;
-  }
-  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card img.paypal-img,
-  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card img.paypal-img {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    right: 8px;
-    top: 30px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card img.cards-img,
-  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card img.cards-img {
-    -webkit-transform: scale(0.56);
-            transform: scale(0.56);
-    right: -55px;
-    top: 30px;
-  }
-  .upgrade-plan-content .payment .payment-methods .credit-payment .pay-card img.paypal-img,
-  .upgrade-plan-content .payment .payment-methods .paypal-payment .pay-card img.paypal-img {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    right: 8px;
-    top: 30px;
-  }
-}
-
-.upgrade-plan-content .payment .payment-methods .paypal-payment {
-  margin-top: 12px;
 }
 
 @media (max-width: 767px) {

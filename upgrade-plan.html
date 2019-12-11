@@ -1025,24 +1025,193 @@
               <div class="payment-methods">
                 <h3>Select a payment method:</h3>
                 <hr>
-                <div class="credit-payment">
-                  <div class="pay-card">
-                    <input type="radio" name="method" id="card" />
-                    <label class="label-radio" for="card">Credit Card</label>
-                    <img class="cards-img" src="imgs/cards.svg" alt="" />
-                  </div>
+                <div class="credit-payment payment--method">
+                <div class="pay-card">
+                  <input type="radio"
+                    name="method"
+                    id="card" />
+                  <label class="label-radio"
+                    for="card">Credit Card</label>
+                  <img class="cards-img"
+                    src="imgs/cards.svg"
+                    alt="" />
                 </div>
-                <div
-                  class="card-info"
-                  style="display: none; height: 100px;"
-                ></div>
-                <div class="paypal-payment">
-                  <div class="pay-card">
-                    <input type="radio" name="method" id="paypal" />
-                    <label class="label-radio" for="paypal">PayPal</label>
-                    <img class="paypal-img" src="imgs/paypal.svg" alt="" />
+              </div>
+              <div class="card-info">
+                <form>
+                  <div class="row">
+                    <div class="col-lg-6 padd-right">
+                      <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text"
+                          class="form-control"
+                          placeholder="e.g. John" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6 padd-left">
+                      <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text"
+                          class="form-control"
+                          placeholder="e.g. Deo" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6 padd-right">
+                      <div class="form-group">
+                        <label>Credit Card Number</label>
+                        <input type="text"
+                          class="form-control input-card-number"
+                          placeholder="#### #### #### ####" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6 padd-left">
+                      <div class="form-group">
+                        <label>Card Security Code
+                          <svg width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M8 0C3.6 0 0 3.6 0 8C0 12.4 3.6 16 8 16C12.4 16 16 12.4 16 8C16 3.6 12.4 0 8 0ZM8 13C7.4 13 7 12.6 7 12C7 11.4 7.4 11 8 11C8.6 11 9 11.4 9 12C9 12.6 8.6 13 8 13ZM9.5 8.4C9 8.7 9 8.8 9 9V10H7V9C7 7.7 7.8 7.1 8.4 6.7C8.9 6.4 9 6.3 9 6C9 5.4 8.6 5 8 5C7.6 5 7.3 5.2 7.1 5.5L6.6 6.4L4.9 5.4L5.4 4.5C5.9 3.6 6.9 3 8 3C9.7 3 11 4.3 11 6C11 7.4 10.1 8 9.5 8.4Z"
+                              fill="#ACAAAE" />
+                          </svg>
+                          <span class="tooltiptext">Card security Code is a 3 or 4-digit code that is printed on the back of your card, at the end of the signature panel.</span>
+                        </label>
+                        <input type="text"
+                          class="form-control input-cvc"
+                          placeholder="3 or 4 digits"
+                          maxlength="4" />
+                      </div>
+                    </div>
+                    <div class="col-6 col-lg-4 padd-right">
+                      <div class="form-group">
+                        <label>Expiry Month</label>
+                        <input type="text"
+                          class="form-control input-month"
+                          placeholder="MM" />
+                      </div>
+                    </div>
+                    <div class="col-6 col-lg-4 padd">
+                      <div class="form-group">
+                        <label>Expiry Year</label>
+                        <input type="text"
+                          class="form-control input-year"
+                          placeholder="YY" />
+                      </div>
+                    </div>
+                    <div class="col-lg-4 padd-left">
+                      <div class="form-group">
+                        <label>Zip / Postal Code <span class="d-inline d-lg-none">(Optional)</span></label>
+                        <input type="text"
+                          maxlength="5"
+                          class="form-control input-zipcode"
+                          placeholder="e.g. 33309" />
+                      </div>
+                      <span class="d-none d-lg-block">Optional</span>
+                    </div>
                   </div>
+                </form>
+                <div class="order-info">
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <div class="order-info-content">
+                        <p class="order-total">
+                          Order total: <span class="total">$69.96</span>
+                        </p>
+                        <p class="bill">
+                          Billed every 12 months ($5.83/month)
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <ul class="secure-payment">
+                        <li>
+                          <div>
+                            <img src="imgs/privacy.svg"
+                              alt="" />
+                          </div>
+                          Secure Payment
+                        </li>
+                        <li>
+                          <div>
+                            <img src="imgs/moneyBackGuarantee.svg"
+                              alt="" />
+                          </div>
+                          30-days money back guarantee
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button class="credit-card-submit primary--btn"
+                    type="submit">
+                    Submit Now!
+                  </button>
+                  <p class="complete">
+                    By completing this form, you agree to our
+                    <a href="terms-of-service.html">Terms of Service.</a>
+                  </p>
                 </div>
+              </div>
+              <div class="paypal-payment payment--method">
+                <div class="pay-card">
+                  <input type="radio"
+                    name="method"
+                    id="paypal" />
+                  <label class="label-radio"
+                    for="paypal">PayPal</label>
+                  <img class="paypal-img"
+                    src="imgs/paypal.svg"
+                    alt="" />
+                </div>
+              </div>
+              <div class="card-info">
+                <p class="continue">
+                  Continue below to buy a VPN subscription with
+                  <strong>PayPal</strong>
+                </p>
+                <div class="order-info paypal-txt">
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <div class="order-info-content">
+                        <p class="order-total">
+                          Order total: <span class="total">$69.96</span>
+                        </p>
+                        <p class="bill">
+                          Billed every 12 months ($5.83/month)
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <ul class="secure-payment">
+                        <li>
+                          <div>
+                            <img src="imgs/privacy.svg"
+                              alt="" />
+                          </div>
+                          Secure Payment
+                        </li>
+                        <li>
+                          <div>
+                            <img src="imgs/moneyBackGuarantee.svg"
+                              alt="" />
+                          </div>
+                          30-days money back guarantee
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button class="paypal-btn primary--btn">
+                    <img src="imgs/paypal.svg"
+                      alt="" />
+                    Continue to PayPal
+                  </button>
+                  <p class="complete">
+                    By continueing, you agree to our
+                    <a href="terms-of-service.html">Terms of Service.</a>
+                  </p>
+                </div>
+              </div>
                 <div class="order-now">
                   <button class="primary--btn">
                     Order Now
