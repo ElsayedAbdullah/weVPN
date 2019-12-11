@@ -340,4 +340,23 @@ $(function() {
   //   }
   // })();
   // console.log(browser);
+
+  // accordion in server page in mobile screen
+  $(".panel-country-header.has-cluster").on("click", function() {
+    $(this)
+      .next(".has-clusters")
+      .slideToggle();
+  });
+  $(".panel-country-header").on("click", function() {
+    $(this)
+      .toggleClass("active")
+      .next(".panel-country-body")
+      .slideToggle();
+  });
+  $(".panel-cluster-header").on("click", function() {
+    $(this)
+      .toggleClass("active")
+      .next(".panel-cluster-body")
+      .slideToggle();
+  });
 });

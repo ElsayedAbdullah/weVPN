@@ -131,6 +131,15 @@ ul {
   }
 }
 
+.heading-medium {
+  font-size: 36px;
+  line-height: 44px;
+  @media #{$mobile} {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 button:focus {
   box-shadow: none;
   outline: none;
@@ -3236,7 +3245,7 @@ footer {
     a {
       background-color: #ffecf1;
       color: $primaryColor;
-      padding: 24px 75px;
+      padding: 24px 75px 23px;
       display: inline-block;
       @media #{$mobile} {
         display: block;
@@ -5616,19 +5625,21 @@ header.get-started-page {
       font-size: 14px;
       line-height: 17px;
       color: #8d8b92;
-      font-family: "AvertaSemibold";
+      font-family: "Averta";
       @media #{$mobile} {
         font-size: 12px;
         line-height: 15px;
-        font-family: "Averta";
       }
       a {
         color: $primaryColor;
         margin-left: 5px;
         font-size: 16px;
+        text-decoration: underline !important;
+        font-family: "AvertaSemibold";
         i {
           font-weight: bold;
           transition: all 0.3s ease-in-out;
+          margin-left: 4px;
         }
         @media #{$mobile} {
           display: block;
@@ -5639,6 +5650,7 @@ header.get-started-page {
         }
         &:hover {
           color: $linkHoverColor;
+          text-decoration: none !important;
           i {
             transform: translateX(2px);
           }
@@ -5769,9 +5781,11 @@ header.get-started-page {
         i {
           font-weight: bold;
           transition: all 0.3s ease-in-out;
+          margin-left: 4px;
         }
         &:hover {
           color: $linkHoverColor;
+          text-decoration: none !important;
           i {
             transform: translateX(2px);
           }
@@ -6565,18 +6579,48 @@ header.get-started-page {
   background-repeat: no-repeat;
   background-position: center;
   border-bottom: 1px solid #e0ded5;
+  @media #{$mobile} {
+    padding-top: 0;
+    padding-bottom: 40px;
+    background: none;
+  }
+  .servers-search-content {
+    @media #{$mobile} {
+      background-image: url(../imgs/servers-map-small.png);
+      background-size: 100% 70%;
+      background-repeat: no-repeat;
+      background-position: 0px 20px;
+    }
+  }
   h2 {
-    font-size: 36px;
-    line-height: 44px;
     margin-bottom: 35px;
+    @media #{$mobile} {
+      width: 70%;
+      margin: 0 auto 20px;
+      padding-top: 27px;
+    }
   }
   .servers-list {
     width: 225px;
     margin: auto;
     margin-bottom: 36px;
+    @media #{$mobile} {
+      text-align: center;
+      width: auto;
+      margin-bottom: 20px;
+    }
     li {
       font-size: 18px;
       line-height: 32px;
+      @media #{$mobile} {
+        font-size: 14px;
+        line-height: 14px;
+        display: inline-block;
+        margin-right: 12px;
+        i {
+          font-size: 16px;
+        }
+      }
       i {
         color: #08ae7e;
         margin-right: 7px;
@@ -6597,10 +6641,25 @@ header.get-started-page {
       box-shadow: none;
       color: #5b5863;
       font-size: 20px;
+      @media #{$mobile} {
+        height: 56px;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 19px 16px;
+      }
       &::placeholder {
         font-size: 20px;
         line-height: 20px;
         color: #8d8b92;
+        @media #{$mobile} {
+          font-size: 14px;
+        }
+      }
+      &:focus {
+        &::-webkit-input-placeholder {
+          opacity: 0.5;
+          transition: opacity 0.3s ease-in-out;
+        }
       }
     }
     button {
@@ -6613,6 +6672,13 @@ header.get-started-page {
       cursor: pointer;
       width: 88px;
       height: 100%;
+      @media #{$mobile} {
+        width: 56px;
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
     }
   }
 }
@@ -6625,11 +6691,19 @@ body.servers-page {
 .americas {
   margin-top: -114px;
   padding-bottom: 88px;
+  @media #{$mobile} {
+    margin-top: 24px;
+  }
   h2 {
     margin-bottom: 33px;
     font-size: 24px;
     line-height: 24px;
     color: #5b5863;
+    @media #{$mobile} {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
   }
   .table {
     background-color: #fff;
@@ -6681,6 +6755,122 @@ body.servers-page {
       }
     }
   }
+  .panel-continent {
+    .panel-country {
+      .panel-country-header {
+        background-color: #ffffff;
+        border-bottom: 1px solid #e0ded5;
+        padding: 0 16px;
+        position: relative;
+        height: 48px;
+        > span {
+          font-size: 14px;
+          line-height: 48px;
+          font-family: "AvertaSemibold";
+        }
+        .arrow {
+          position: absolute;
+          top: 0;
+          right: 16px;
+          .one {
+            transform: rotate(45deg) translate(2px, 2px);
+          }
+          .two {
+            transform: rotate(-45deg) translate(-8px, -5px);
+            width: 9px;
+          }
+        }
+        &.active {
+          .arrow {
+            span {
+              background-color: #5b5863;
+            }
+            .one {
+              transform: rotate(-45deg) translate(-3px, 7px);
+            }
+            .two {
+              transform: rotate(45deg) translate(0px, 10px);
+            }
+          }
+        }
+      }
+      .has-clusters {
+        display: none;
+        .panel-cluster {
+          background-color: #fbfaf9;
+
+          .panel-cluster-header {
+            position: relative;
+            border-bottom: 1px solid #e0ded5;
+            padding: 0 47px;
+            height: 36px;
+            span {
+              font-size: 14px;
+              line-height: 36px;
+            }
+            .arrow {
+              position: absolute;
+              top: -5px;
+              right: 16px;
+              .one {
+                transform: rotate(45deg) translate(2px, 2px);
+              }
+              .two {
+                transform: rotate(-45deg) translate(-8px, -5px);
+                width: 9px;
+              }
+            }
+            &.active {
+          .arrow {
+            span {
+              background-color: #5b5863;
+            }
+            .one {
+              transform: rotate(-45deg) translate(-3px, 7px);
+            }
+            .two {
+              transform: rotate(45deg) translate(0px, 10px);
+            }
+          }
+        }
+          }
+          .panel-cluster-body {
+            padding: 9px 47px;
+            border-bottom: 1px solid #e0ded5;
+            display: none;
+            .panel-protocol {
+              p {
+                font-size: 14px;
+                line-height: 32px;
+                color: #8d8b92;
+                i {
+                  float: right;
+                  color: #62d5b4;
+                }
+              }
+            }
+          }
+        }
+      }
+      .panel-country-body {
+        padding: 14px 16px;
+        border-bottom: 1px solid #e0ded5;
+        background-color: #fbfaf9;
+        display: none;
+        .panel-protocol {
+          p {
+            font-size: 14px;
+            line-height: 32px;
+            color: #8d8b92;
+            i {
+              float: right;
+              color: #62d5b4;
+            }
+          }
+        }
+      }
+    }
+  }
   .europe-content {
     margin-top: 57px;
     margin-bottom: 57px;
@@ -6702,8 +6892,11 @@ body.servers-page {
 .devices-os.servers-page {
   background-color: #f9f8f4;
   padding-bottom: 154px;
-  .platforms {
-    padding-top: 0;
+  @media #{$mobile} {
+    padding-bottom: 55px;
+    .devices-title {
+      width: 80%;
+    }
   }
 }
 
@@ -6711,23 +6904,48 @@ body.servers-page {
 .servers-benefits {
   padding: 134px 0 155px;
   background-color: #f9f8f4;
+  @media #{$mobile} {
+    padding: 60px 0;
+  }
   h2 {
-    font-size: 36px;
-    line-height: 44px;
     width: 50%;
     margin: 0 auto 60px;
+    @media #{$mobile} {
+      width: 100%;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 28px;
+      padding-left: 20px;
+    }
   }
   .servers-benefits-list {
+    @media #{$mobile} {
+      padding-left: 20px;
+    }
+
     li {
       float: left;
       font-size: 20px;
       line-height: 20px;
       margin-bottom: 25px;
+      color: #5a5761;
+      @media #{$mobile} {
+        font-size: 16px;
+        line-height: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+      }
       &:nth-child(odd) {
         width: 60%;
+        @media #{$mobile} {
+          width: 100%;
+        }
       }
       &:nth-child(even) {
         width: 40%;
+        @media #{$mobile} {
+          width: 100%;
+        }
       }
       i {
         color: #fff;
@@ -6741,17 +6959,32 @@ body.servers-page {
         position: relative;
         top: 5px;
         margin-right: 5px;
+        @media #{$mobile} {
+          width: 32px;
+          height: 32px;
+          line-height: 32px;
+          font-size: 12px;
+          top: 0;
+        }
       }
     }
   }
   .benefits-btn {
     text-align: center;
     margin-top: 60px;
-    button {
-      padding: 21px 96px;
+    @media #{$mobile} {
+      margin-top: 8px;
+    }
+    a {
+      padding: 24px 96px 23px;
+      display: inline-block;
       font-size: 20px;
       color: $primaryColor;
       background-color: #ffecf1;
+      @media #{$mobile} {
+        display: block;
+        padding: 24px 0 23px;
+      }
       &:hover {
         background-color: $primaryColor;
         color: #fff;
@@ -6798,6 +7031,7 @@ header.dashboard-page {
         transition: all 0.3s ease-in-out;
       }
       &:hover {
+        text-decoration: none !important;
         color: $linkHoverColor;
         i {
           transform: translateX(2px);
@@ -7496,26 +7730,6 @@ header.dashboard-page {
             .two {
               transform: rotate(45deg) translate(0px, 10px);
             }
-          }
-        }
-        .arrow {
-          position: absolute;
-          top: -10px;
-          right: 20px;
-          span {
-            width: 8px;
-            height: 2px;
-            background-color: #acaaae;
-            display: inline-block;
-            transition: all 0.5s ease-in-out;
-          }
-          .one {
-            transform: rotate(45deg) translate(4px, 1px);
-            transform-origin: left;
-          }
-          .two {
-            transform: rotate(-45deg) translate(-9px, -4px);
-            transform-origin: right;
           }
         }
       }
@@ -8271,14 +8485,24 @@ header.dashboard-page {
           @media #{$betweentabdesk} {
             font-size: 11px;
           }
+
           svg {
-            margin-left: 5px;
             cursor: pointer;
+            display: inline-block;
+            margin-left: 5px;
+            position: relative;
+            z-index: 2;
+            path {
+              transition: all 0.3s ease-in-out;
+            }
             &:hover {
               & ~ .tooltiptext {
                 opacity: 1;
                 visibility: visible;
-                transform: scale(1);
+                top: -93px;
+              }
+              path {
+                fill: #908e91;
               }
             }
           }
@@ -8286,20 +8510,19 @@ header.dashboard-page {
             position: absolute;
             display: inline-block;
             background: #4f4f4f;
-            // box-shadow: 0px 15px 34px #F0EEE9, 0px 4px 36px #E6E4DF;
+            box-shadow: 0px 6px 11px rgba(79, 79, 79, 0.3);
             width: 200px;
             height: 86px;
             font-size: 12px;
             line-height: 14px;
             color: #ffffff;
             padding: 12px 16px;
-            top: -93px;
+            top: -98px;
             left: 25px;
             font-family: "Averta";
             opacity: 0;
             visibility: hidden;
-            transform: scale(0);
-            transition: all 0.2s ease-in-out;
+            transition: all 0.3s ease-in-out;
             &:after {
               content: "";
               position: absolute;
@@ -8310,6 +8533,7 @@ header.dashboard-page {
               bottom: -16px;
               left: 50%;
               transform: translateX(-50%);
+              z-index: 1;
             }
           }
         }
@@ -8823,5 +9047,26 @@ header.dashboard-page {
         }
       }
     }
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  span {
+    width: 8px;
+    height: 2px;
+    background-color: #acaaae;
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+  }
+  .one {
+    transform: rotate(45deg) translate(4px, 1px);
+    transform-origin: left;
+  }
+  .two {
+    transform: rotate(-45deg) translate(-9px, -4px);
+    transform-origin: right;
   }
 }
