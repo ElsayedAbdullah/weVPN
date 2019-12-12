@@ -6519,14 +6519,6 @@ header.single-post-page {
           line-height: 46px;
           margin: 20px 0;
         }
-        a {
-          transition: color 0.3s ease-in-out;
-        }
-        &:hover {
-          a {
-            color: $primaryColor;
-          }
-        }
       }
       .metabox {
         text-align: center;
@@ -6534,13 +6526,6 @@ header.single-post-page {
         @media #{$mobile} {
           font-size: 12px;
           line-height: 14px;
-        }
-        a {
-          transition: color 0.3s ease-in-out;
-          color: inherit;
-          &:hover {
-            color: $primaryColor;
-          }
         }
         .author-img {
           background-image: url(../imgs/author1.png);
@@ -6748,12 +6733,16 @@ header.single-post-page {
             position: absolute;
             bottom: 20px;
             right: 20px;
+            transition: all 0.3s ease-in-out;
             @media #{$mobile} {
               bottom: 10px;
               right: 0;
               left: 0;
               width: 100%;
               position: relative;
+            }
+            &:hover {
+              background-color: $linkHoverColor;
             }
           }
         }
@@ -6800,6 +6789,11 @@ header.single-post-page {
               text-decoration-line: underline !important;
               color: $primaryColor;
               font-family: "AvertaSemibold";
+              transition: color 0.3s ease-in-out;
+              &:hover {
+                text-decoration-line: none !important;
+                color: $linkHoverColor
+              }
             }
           }
           .comment-text {
@@ -6835,10 +6829,17 @@ header.single-post-page {
           box-shadow: 0px 10px 20px rgba(240, 238, 233, 0.4);
           padding: 28px 80px;
           position: relative;
+          display: block;
+          transition: all 0.3s ease-in-out;
           @media #{$mobile} {
             padding: 17px 65px;
           }
-          a {
+          &:hover {
+               color: #5b5863;
+               box-shadow: none;
+               border-color: transparent;
+          }
+          .icon {
             position: absolute;
             top: 30px;
             width: 36px;
