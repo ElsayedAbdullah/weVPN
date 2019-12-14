@@ -99,6 +99,7 @@
               <form>
                 <input
                   type="search"
+                  id="myInput"
                   placeholder="Search any country..."
                 />
                 <button type="submit">
@@ -129,9 +130,9 @@
     <!-- Start Americas -->
     <div class="americas">
       <div class="container">
-        <div class="americas-content">
+        <div class="americas-content continent" id="panel1">
           <h2>Americas</h2>
-          <table class="table table-bordered d-none d-md-table">
+          <table id="myTable1" class="table d-none d-md-table">
             <thead>
               <tr>
                 <th scope="col">Country</th>
@@ -142,8 +143,34 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row"><img src="imgs/CanadaFlag.svg" alt=""> Canada</th>
+              <tr class="parent">
+                <th scope="row"><img src="imgs/CanadaFlag.svg" alt=""> Canada 
+                  <div class="arrow">
+                  <span class="one"></span>
+                  <span class="two"></span>
+                  </div>
+              </th>
+                <td class="text-center"><i class="fa fa-check"></i></td>
+                <td class="text-center"><i class="fa fa-check"></i></td>
+                <td class="text-center"><i class="fa fa-check"></i></td>
+                <td class="text-center"><i class="fa fa-check"></i></td>
+              </tr>
+              <tr class="child">
+                <th scope="row">CA Vancouver</th>
+                <td class="text-center"><i class="fa fa-check"></i></td>
+                <td class="text-center"><i class="fa fa-check"></i></td>
+                <td class="text-center"><i class="fa fa-check"></i></td>
+                <td class="text-center"><i class="fa fa-check"></i></td>
+              </tr>
+              <tr class="child">
+                <th scope="row">CA Toronto</th>
+                <td class="text-center"><i class="fa fa-check"></i></td>
+                <td class="text-center"><i class="fa fa-check"></i></td>
+                <td class="text-center"><i class="fa fa-check"></i></td>
+                <td class="text-center"><i class="fa fa-check"></i></td>
+              </tr>
+              <tr class="child">
+                <th scope="row">CA Montreal</th>
                 <td class="text-center"><i class="fa fa-check"></i></td>
                 <td class="text-center"><i class="fa fa-check"></i></td>
                 <td class="text-center"><i class="fa fa-check"></i></td>
@@ -256,9 +283,9 @@
           </div>
         </div>
         
-        <div class="europe-content">
+        <div class="europe-content continent"  id="panel2">
           <h2>Europe</h2>
-          <table class="table table-bordered d-none d-md-table">
+          <table id="myTable2" class="table d-none d-md-table">
             <thead>
               <tr>
                 <th scope="col">Country</th>
@@ -605,9 +632,9 @@
           
           </div>
         </div>
-        <div class="asia-pacific-content">
+        <div class="asia-pacific-content continent" id="panel3">
           <h2>Asia Pacific</h2>
-          <table class="table table-bordered d-none d-md-table">
+          <table id="myTable3" class="table d-none d-md-table">
             <thead>
               <tr>
                 <th scope="col">Country</th>

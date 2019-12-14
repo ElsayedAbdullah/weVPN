@@ -24,110 +24,112 @@
   </head>
 
   <body>
-    <div class="wrapper-header">
-      <!-- Start Header -->
-      <header class="border--bottom login-page">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container">
-            <a class="navbar-brand" href="index.html"
-              ><img src="imgs/Logo.svg" draggable="false" alt="Logo"
-            /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <img src="imgs/menu-btn.svg" alt="menu-btn" />
-              <img src="imgs/close.svg" alt="menu-btn" />
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html"
-                    >Home <span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="wevpn-windows.html">
-                    Products
-                  </a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#">
-                    Resources
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#">
-                    Support
-                  </a>
-                </li>
-              </ul>
-              <ul class="login">
-                <li class="login-item">
-                  <a href="login.html" class="login-link">Login</a>
-                </li>
-                <li class="login-item">
-                  <a href="get-started.html" class="get-started">Get Started</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <!-- End Header -->
-
-      <!-- Start login -->
-      <div class="login-page">
+    <!-- Start Header -->
+    <header class="border--bottom login-page">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <h1 class="text-center">Login</h1>
-          <div class="row">
-            <div class="col-md-9 col-lg-6 col-xl-5 padd m-md-auto">
-              <div class="login-content">
-                <form>
-                  <div class="form-group">
-                    <label>Email Address</label>
-                    <input
-                      type="email"
-                      class="input-email form-control"
-                      placeholder="e.g. johndoe@example.com"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label>Password</label>
-                    <input
-                      type="password"
-                      class="input-password form-control"
-                      placeholder="Type your password here"
-                    />
-                  </div>
-                  <div class="forgot-password">
-                    <a href="#">Forgot Password?</a>
-                    <button type="submit">Login</button>
-                  </div>
-                </form>
-              </div>
-              <div class="login-footer">
-                <p>Don’t have an account?</p>
-                <a href="#"
-                  >Get started
-                  <i class="fa fa-angle-right" aria-hidden="true"></i
+          <a class="navbar-brand" href="index.html"
+            ><img src="imgs/Logo.svg" draggable="false" alt="Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="imgs/menu-btn.svg" alt="menu-btn" />
+            <img src="imgs/close.svg" alt="menu-btn" />
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="wevpn-windows.html">
+                  Products
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#">
+                  Resources
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#">
+                  Support
+                </a>
+              </li>
+            </ul>
+            <ul class="login">
+              <li class="login-item">
+                <a href="login.html" class="login-link">Login</a>
+              </li>
+              <li class="login-item">
+                <a href="get-started.html" class="get-started">Get Started</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start login -->
+    <div class="login-page">
+      <div class="container">
+        <h1 class="text-center">Login</h1>
+        <div class="row">
+          <div class="col-md-9 col-lg-6 col-xl-5 padd m-md-auto">
+            <div class="login-content">
+              <form>
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input
+                    type="email"
+                    class="input-email form-control"
+                    placeholder="e.g. johndoe@example.com"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input
+                    type="password"
+                    class="input-password form-control"
+                    placeholder="Type your password here"
+                  />
+                </div>
+                <div class="forgot-password">
+                  <a href="reset-password.html">Forgot Password?</a>
+                  <button class="primary--btn" type="submit">Login</button>
+                </div>
+              </form>
+            </div>
+            <div class="login-footer">
+              <p>
+                Don’t have an account?&nbsp;<a
+                  class="wevpn-link"
+                  href="get-started.html"
+                  >Get started<i
+                    class="fa fa-angle-right"
+                    aria-hidden="true"
+                  ></i
                 ></a>
-              </div>
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <!-- End login -->
     </div>
+    <!-- End login -->
 
     <!-- Start Footer -->
     <footer>
@@ -138,7 +140,7 @@
             <p class="apps">Our Apps:</p>
             <ul class="footer-icons">
               <li>
-                <a href="#">
+                <a href="wevpn-windows.html">
                   <svg
                     width="40"
                     height="40"
@@ -166,7 +168,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="wevpn-mac.html">
                   <svg
                     width="40"
                     height="47"
@@ -186,7 +188,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="wevpn-android.html">
                   <svg
                     width="34"
                     height="40"
@@ -202,7 +204,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="wevpn-iphone.html">
                   <svg
                     width="40"
                     height="40"
