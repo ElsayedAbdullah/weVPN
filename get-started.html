@@ -202,6 +202,8 @@
               <div class="form-group">
                 <label>Email Address</label>
                 <input type="email"
+                  readonly="readonly"
+                  onfocus="this.removeAttribute('readonly');"
                   class="input-email form-control"
                   placeholder="e.g. johndoe@example.com" />
               </div>
@@ -237,11 +239,12 @@
       <h4 class="step-no">STEP 03</h4>
       <h3 class="choose-title payment-method-title">
         Select a payment method
-        <img src="imgs/lock-secure.svg" alt="">
+        <img src="imgs/lock-secure.svg"
+          alt="">
       </h3>
       <div class="payment">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-7">
             <div class="payment-methods">
               <div class="credit-payment payment--method">
                 <div class="pay-card">
@@ -250,9 +253,22 @@
                     id="card" />
                   <label class="label-radio"
                     for="card">Credit Card</label>
-                  <img class="cards-img"
-                    src="imgs/cards.svg"
-                    alt="" />
+                  <ul class="cards">
+                    <li><img src="imgs/visa.svg"
+                        alt=""></li>
+                    <li><img src="imgs/mastercard.svg"
+                        alt=""></li>
+                    <li><img src="imgs/Diners_Club.svg"
+                        alt=""></li>
+                    <li><img src="imgs/Amex.svg"
+                        alt=""></li>
+                    <li><img src="imgs/JCB.svg"
+                        alt=""></li>
+                    <li><img src="imgs/UnionPay.svg"
+                        alt=""></li>
+                    <li><img src="imgs/Discover.svg"
+                        alt=""></li>
+                  </ul>
                 </div>
               </div>
               <div class="card-info">
@@ -294,7 +310,8 @@
                               d="M8 0C3.6 0 0 3.6 0 8C0 12.4 3.6 16 8 16C12.4 16 16 12.4 16 8C16 3.6 12.4 0 8 0ZM8 13C7.4 13 7 12.6 7 12C7 11.4 7.4 11 8 11C8.6 11 9 11.4 9 12C9 12.6 8.6 13 8 13ZM9.5 8.4C9 8.7 9 8.8 9 9V10H7V9C7 7.7 7.8 7.1 8.4 6.7C8.9 6.4 9 6.3 9 6C9 5.4 8.6 5 8 5C7.6 5 7.3 5.2 7.1 5.5L6.6 6.4L4.9 5.4L5.4 4.5C5.9 3.6 6.9 3 8 3C9.7 3 11 4.3 11 6C11 7.4 10.1 8 9.5 8.4Z"
                               fill="#ACAAAE" />
                           </svg>
-                          <span class="tooltiptext">Card security Code is a 3 or 4-digit code that is printed on the back of your card, at the end of the signature panel.</span>
+                          <span class="tooltiptext">Card security Code is a 3 or 4-digit code that is printed
+                            on the back of your card, at the end of the signature panel.</span>
                         </label>
                         <input type="text"
                           class="form-control input-cvc"
@@ -420,6 +437,167 @@
                     </div>
                   </div>
                   <button class="paypal-btn primary--btn">
+                    Continue to
+                    <img src="imgs/paypal.svg"
+                      alt="" />
+                  </button>
+                  <p class="complete">
+                    By continuing to PayPal, you agree to our
+                    <a href="terms-of-service.html">Terms of Service.</a>
+                  </p>
+                </div>
+              </div>
+              <div class="crypto-currency-payment payment--method">
+                <div class="pay-card">
+                  <input type="radio"
+                    name="method"
+                    id="crypto" />
+                  <label class="label-radio"
+                    for="crypto">Crypto Currency</label>
+                  <ul class="cards">
+                    <li><img src="imgs/BTC.svg"
+                        alt=""></li>
+                    <li><img src="imgs/ITC.svg"
+                        alt=""></li>
+                    <li><img src="imgs/BHC.svg"
+                        alt=""></li>
+                    <li><img src="imgs/ETH.svg"
+                        alt=""></li>
+                    <li><img src="imgs/DASH.svg"
+                        alt=""></li>
+                    <li><img src="imgs/XMR.svg"
+                        alt=""></li>
+                    <li><img src="imgs/ZEC.svg"
+                        alt=""></li>
+                    <li class="more">4+</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-info">
+                <p class="continue">
+                  Continue below to buy a VPN subscription with
+                  <strong>CoinPayments</strong>
+                </p>
+                <div class="all-coins">
+                  <p>We accept these CryptoCurrencies:</p>
+                  <ul class="coins">
+                    <li><img src="imgs/BTC.svg"
+                        alt="">
+                      <span class="tooltiptext">Bitcoin (BTC)</span></li>
+                    <li><img src="imgs/ITC.svg"
+                        alt=""><span class="tooltiptext">Litecoin (LTC)</span></li>
+                    <li><img src="imgs/BHC.svg"
+                        alt=""><span class="tooltiptext">Bitcoin Cash (BCH)</span></li>
+                    <li><img src="imgs/ETH.svg"
+                        alt=""><span class="tooltiptext">Etherium (ETH)</span></li>
+                    <li><img src="imgs/DASH.svg"
+                        alt=""><span class="tooltiptext">DASH</span></li>
+                    <li><img src="imgs/XMR.svg"
+                        alt=""><span class="tooltiptext">Monero (XMR)</span></li>
+                    <li><img src="imgs/ZEC.svg"
+                        alt=""><span class="tooltiptext">Zcash (ZEC)</span></li>
+                    <li><img src="imgs/TRX.svg"
+                        alt=""><span class="tooltiptext">Tron (TRX)</span></li>
+                    <li><img src="imgs/XRP.svg"
+                        alt=""><span class="tooltiptext">Ripple (XRP)</span></li>
+                    <li><img src="imgs/BTT.svg"
+                        alt=""><span class="tooltiptext">BitTorrent (BTT)</span></li>
+                    <li><img src="imgs/BEAM.svg"
+                        alt=""><span class="tooltiptext">BEAM</span></li>
+                  </ul>
+                </div>
+                <div class="order-info paypal-txt">
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <div class="order-info-content">
+                        <p class="order-total">
+                          Order total: <span class="total">$69.96</span>
+                        </p>
+                        <p class="bill">
+                          Billed every 12 months ($5.83/month)
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <ul class="secure-payment">
+                        <li>
+                          <div>
+                            <img src="imgs/privacy.svg"
+                              alt="" />
+                          </div>
+                          Secure Payment
+                        </li>
+                        <li>
+                          <div>
+                            <img src="imgs/moneyBackGuarantee.svg"
+                              alt="" />
+                          </div>
+                          30-days money back guarantee
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button class="paypal-btn primary--btn">
+                    Continue to
+                    <img class="coin"
+                      src="imgs/CoinPayments.svg"
+                      alt="" />
+                  </button>
+                  <p class="complete">
+                    By continuing to CoinPayments, you agree to our
+                    <a href="terms-of-service.html">Terms of Service.</a>
+                  </p>
+                </div>
+              </div>
+              <div class="alipay-payment payment--method">
+                <div class="pay-card">
+                  <input type="radio"
+                    name="method"
+                    id="alipay" />
+                  <label class="label-radio"
+                    for="alipay">AliPay</label>
+                  <img class="paypal-img"
+                    src="imgs/Alipay.svg"
+                    alt="" />
+                </div>
+              </div>
+              <div class="card-info">
+                <p class="continue">
+                  Continue below to buy a VPN subscription with
+                  <strong>PayPal</strong>
+                </p>
+                <div class="order-info paypal-txt">
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <div class="order-info-content">
+                        <p class="order-total">
+                          Order total: <span class="total">$69.96</span>
+                        </p>
+                        <p class="bill">
+                          Billed every 12 months ($5.83/month)
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <ul class="secure-payment">
+                        <li>
+                          <div>
+                            <img src="imgs/privacy.svg"
+                              alt="" />
+                          </div>
+                          Secure Payment
+                        </li>
+                        <li>
+                          <div>
+                            <img src="imgs/moneyBackGuarantee.svg"
+                              alt="" />
+                          </div>
+                          30-days money back guarantee
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button class="paypal-btn primary--btn">
                     <img src="imgs/paypal.svg"
                       alt="" />
                     Continue to PayPal
@@ -431,9 +609,9 @@
                 </div>
               </div>
             </div>
-            
+
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <div class="license">
               <h3>What you’ll get when your buy a license?</h3>
               <ul>
