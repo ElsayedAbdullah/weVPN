@@ -223,7 +223,7 @@
                   <li><a href="features.html">Features</a></li>
                   <li><a href="benefits.html">Benefits</a></li>
                   <li><a href="trial.html">7-days risk free trial</a></li>
-                  <li><a href="servers.html">Servers</a></li>
+                  <li class="active"><a href="servers.html">Servers</a></li>
                 </ul>
               </div>
             </li>
@@ -281,8 +281,10 @@
               <input type="search"
                 id="myInput"
                 placeholder="Search any country..." />
-              <button type="submit">
-                <svg width="30"
+              <button type="submit"
+                class="search-btn">
+                <svg class="search-icon"
+                  width="30"
                   height="30"
                   viewBox="0 0 30 30"
                   fill="none"
@@ -290,6 +292,23 @@
                   <path
                     d="M28 28L19.777 19.777M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12Z"
                     stroke="#5B5863"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                    stroke-linecap="square" />
+                </svg>
+                <svg class="close-icon"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 2L2 24"
+                    stroke="#FD3E72"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                    stroke-linecap="square" />
+                  <path d="M24 24L2 2"
+                    stroke="#FD3E72"
                     stroke-width="2"
                     stroke-miterlimit="10"
                     stroke-linecap="square" />
@@ -1479,7 +1498,7 @@
           </div>
           <div class="faq-btn">
             <a href="faq.html"
-              class="primary--btn">
+              class="secondary--btn">
               Go to our FAQ page
               <i class="fa fa-caret-right"
                 aria-hidden="true"></i>
