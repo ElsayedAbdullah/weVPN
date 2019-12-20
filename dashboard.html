@@ -464,8 +464,10 @@
 
             Change Password</a>
         </li>
-        <li data-content=".content-five">
-          <a href="#">WePLAY™ <span class="new">New</span></a>
+        <li class="weplay-tab"
+          data-content=".content-five">
+          <a href="#">WePLAY™</a>
+          <span class="new">New</span>
         </li>
       </ul>
     </div>
@@ -551,7 +553,18 @@
                   <li>
                     <div class="list-item-text">
                       <label>Renewal Date:</label>
-                      <p>Dec 20, 2019</p>
+                      <p>Dec 20, 2019 <span class="expire-soon d-none"><img src="imgs/caution-2.svg"
+                            alt=""> Expiring soon, 6 days left</span></p>
+                      <a class="wevpn-link extend d-none"
+                        href="upgrade-plan.html">Extend Now!</a>
+                      <div class="auto-renewal">
+                        <span>AutoRenewal:</span>
+                        <div id="checker">
+                          <input id="check"
+                            type="checkbox"></input>
+                          <label for="check"></label>
+                        </div>
+                      </div>
                     </div>
                   </li>
                   <li>
@@ -711,8 +724,19 @@
                     <span>Version 2.3.1</span>
                     <a href="file.txt"
                       download="weVPN"
-                      class="download"><img src="imgs/data-download.svg"
-                        alt="" /></a>
+                      class="download">
+                      <svg width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.0001 12C8.3001 12 8.5001 11.9 8.7001 11.7L14.4001 6L13.0001 4.6L9.0001 8.6V0H7.0001V8.6L3.0001 4.6L1.6001 6L7.3001 11.7C7.5001 11.9 7.7001 12 8.0001 12Z"
+                          fill="#BFBCC2" />
+                        <path d="M14 14H2V11H0V15C0 15.6 0.4 16 1 16H15C15.6 16 16 15.6 16 15V11H14V14Z"
+                          fill="#BFBCC2" />
+                      </svg>
+                    </a>
                   </li>
                   <li>
                     <svg class="icon"
@@ -732,8 +756,17 @@
                     <a href="imgs/Logo.svg"
                       class="download"
                       download="logo">
-                      <img src="imgs/data-download.svg"
-                        alt="" />
+                      <svg width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.0001 12C8.3001 12 8.5001 11.9 8.7001 11.7L14.4001 6L13.0001 4.6L9.0001 8.6V0H7.0001V8.6L3.0001 4.6L1.6001 6L7.3001 11.7C7.5001 11.9 7.7001 12 8.0001 12Z"
+                          fill="#BFBCC2" />
+                        <path d="M14 14H2V11H0V15C0 15.6 0.4 16 1 16H15C15.6 16 16 15.6 16 15V11H14V14Z"
+                          fill="#BFBCC2" />
+                      </svg>
                     </a>
                   </li>
                   <li>
@@ -754,8 +787,18 @@
                     <span>Version 2.3.1</span>
                     <a href="file.txt"
                       download="weVPN"
-                      class="download"><img src="imgs/data-download.svg"
-                        alt="" /></a>
+                      class="download">
+                      <svg width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.0001 12C8.3001 12 8.5001 11.9 8.7001 11.7L14.4001 6L13.0001 4.6L9.0001 8.6V0H7.0001V8.6L3.0001 4.6L1.6001 6L7.3001 11.7C7.5001 11.9 7.7001 12 8.0001 12Z"
+                          fill="#BFBCC2" />
+                        <path d="M14 14H2V11H0V15C0 15.6 0.4 16 1 16H15C15.6 16 16 15.6 16 15V11H14V14Z"
+                          fill="#BFBCC2" />
+                      </svg></a>
                   </li>
                   <li>
                     <svg class="icon"
@@ -783,24 +826,33 @@
                     <a href="imgs/Logo.svg"
                       class="download"
                       download="logo">
-                      <img src="imgs/data-download.svg"
-                        alt="" />
+                      <svg width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.0001 12C8.3001 12 8.5001 11.9 8.7001 11.7L14.4001 6L13.0001 4.6L9.0001 8.6V0H7.0001V8.6L3.0001 4.6L1.6001 6L7.3001 11.7C7.5001 11.9 7.7001 12 8.0001 12Z"
+                          fill="#BFBCC2" />
+                        <path d="M14 14H2V11H0V15C0 15.6 0.4 16 1 16H15C15.6 16 16 15.6 16 15V11H14V14Z"
+                          fill="#BFBCC2" />
+                      </svg>
                     </a>
                   </li>
                   <li>
-                    <svg class="icon"
+                    <svg class="icon firefox"
                       width="34"
                       height="34"
                       viewBox="0 0 34 34"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path
+                      <path class="line"
                         d="M1.39307 16.4711C1.39307 7.92684 8.3199 1 16.8642 1C25.4084 1 32.3353 7.92684 32.3353 16.4711"
                         stroke="#AFADB2"
                         stroke-width="2"
                         stroke-miterlimit="10"
                         stroke-linecap="square" />
-                      <path
+                      <path class="fox"
                         d="M27.5968 3.44281C31.7922 16.7592 21.9836 29.3653 12.0131 22.0827C12.0272 22.0855 15.8303 22.1277 17.1861 21.3991C18.0412 20.9392 19.1341 20.0306 19.6615 20.1164C20.5166 20.243 20.7177 19.5553 20.2874 19.0616C19.7937 18.4948 18.4857 17.4203 16.9681 18.1404C12.7994 20.115 10.0188 17.1966 10.5012 15.485C10.5912 15.1629 10.9358 14.7381 11.0807 14.71C11.7853 14.025 15.8669 11.3401 16.3774 10.094C16.4984 9.79862 16.6348 9.10524 16.2396 8.96037C15.5827 8.80425 14.023 8.79863 13.4463 8.80285C12.3479 8.81269 11.6109 8.12774 11.6601 7.44561C11.722 6.5947 12.3155 5.53422 14.0005 4.14464C11.1074 3.7227 9.4379 6.0307 9.4365 6.03352C7.87813 5.64674 5.44636 6.09259 5.44495 6.09118C3.84299 5.15448 3.50122 2.79584 3.50122 2.79584C3.50122 2.79584 1.11023 4.57923 1.75158 8.90974C1.75158 8.90974 -2.44531 16.2951 2.15383 24.7536C2.15383 24.7521 6.40275 33.3485 16.864 33.3485C27.4125 33.3485 33.7416 24.6045 33.7416 16.4709C33.7416 10.5145 30.7472 5.98007 27.5968 3.44281Z"
                         fill="#AFADB2" />
                     </svg>
@@ -809,11 +861,22 @@
                     <span>Version 2.3.1</span>
                     <a href="file.txt"
                       download="weVPN"
-                      class="download"><img src="imgs/data-download.svg"
-                        alt="" /></a>
+                      class="download">
+                      <svg width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.0001 12C8.3001 12 8.5001 11.9 8.7001 11.7L14.4001 6L13.0001 4.6L9.0001 8.6V0H7.0001V8.6L3.0001 4.6L1.6001 6L7.3001 11.7C7.5001 11.9 7.7001 12 8.0001 12Z"
+                          fill="#BFBCC2" />
+                        <path d="M14 14H2V11H0V15C0 15.6 0.4 16 1 16H15C15.6 16 16 15.6 16 15V11H14V14Z"
+                          fill="#BFBCC2" />
+                      </svg>
+                    </a>
                   </li>
                   <li>
-                    <svg class="icon"
+                    <svg class="icon smart-tv"
                       width="32"
                       height="28"
                       viewBox="0 0 32 28"
@@ -841,8 +904,17 @@
                     <a href="imgs/Logo.svg"
                       class="download"
                       download="logo">
-                      <img src="imgs/data-download.svg"
-                        alt="" />
+                      <svg width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.0001 12C8.3001 12 8.5001 11.9 8.7001 11.7L14.4001 6L13.0001 4.6L9.0001 8.6V0H7.0001V8.6L3.0001 4.6L1.6001 6L7.3001 11.7C7.5001 11.9 7.7001 12 8.0001 12Z"
+                          fill="#BFBCC2" />
+                        <path d="M14 14H2V11H0V15C0 15.6 0.4 16 1 16H15C15.6 16 16 15.6 16 15V11H14V14Z"
+                          fill="#BFBCC2" />
+                      </svg>
                     </a>
                   </li>
                 </ul>
