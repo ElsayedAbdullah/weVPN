@@ -242,7 +242,7 @@
               </a>
               <div class="dropdown--menu second">
                 <ul>
-                  <li><a href="help-center.html">Help Center</a></li>
+                  <li class="active"><a href="help-center.html">Help Center</a></li>
                   <li><a href="contact-us.html">Contact Us</a></li>
                   <li><a href="faq.html">FAQ</a></li>
                 </ul>
@@ -274,9 +274,12 @@
           <div class="col-md-8 offset-md-2">
             <form>
               <input type="search"
+                id="myInput2"
                 placeholder="Search our knowledgebase..." />
-              <button type="submit">
-                <svg width="30"
+              <button type="submit"
+                class="search-btn">
+                <svg class="search-icon"
+                  width="30"
                   height="30"
                   viewBox="0 0 30 30"
                   fill="none"
@@ -284,6 +287,23 @@
                   <path
                     d="M28 28L19.777 19.777M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12Z"
                     stroke="#5B5863"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                    stroke-linecap="square" />
+                </svg>
+                <svg class="close-icon"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 2L2 24"
+                    stroke="#FD3E72"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                    stroke-linecap="square" />
+                  <path d="M24 24L2 2"
+                    stroke="#FD3E72"
                     stroke-width="2"
                     stroke-miterlimit="10"
                     stroke-linecap="square" />
@@ -427,7 +447,7 @@
           <p class="apps">Our Apps:</p>
           <ul class="footer-icons">
             <li>
-              <a href="#">
+              <a href="wevpn-windows.html">
                 <svg width="40"
                   height="40"
                   viewBox="0 0 40 40"
@@ -445,7 +465,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="wevpn-mac.html">
                 <svg width="40"
                   height="47"
                   viewBox="0 0 40 47"
@@ -461,7 +481,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="wevpn-android.html">
                 <svg width="34"
                   height="40"
                   viewBox="0 0 34 40"
@@ -474,7 +494,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="wevpn-iphone.html">
                 <svg width="40"
                   height="40"
                   viewBox="0 0 36 36"
