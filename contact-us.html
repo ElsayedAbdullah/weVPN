@@ -167,7 +167,7 @@
                   <ul>
                     <li>Browsers</li>
                     <li>
-                      <a href="#!">
+                      <a href="wevpn-chrome.html">
                         <svg width="20"
                           height="22"
                           viewBox="0 0 20 22"
@@ -190,7 +190,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#!">
+                      <a href="wevpn-firefox.html">
                         <svg width="22"
                           height="22"
                           viewBox="0 0 22 22"
@@ -206,7 +206,6 @@
                             d="M17.3577 3.32001C19.8445 11.2132 14.0305 18.6853 8.12067 14.3686C8.12901 14.3703 10.3832 14.3953 11.1869 13.9634C11.6938 13.6908 12.3415 13.1523 12.6542 13.2031C13.161 13.2782 13.2802 12.8705 13.0251 12.5779C12.7325 12.2419 11.9572 11.605 11.0577 12.0318C8.58669 13.2023 6.93853 11.4724 7.22448 10.4579C7.27783 10.267 7.48208 10.0152 7.56795 9.99852C7.98561 9.59253 10.4049 8.00105 10.7075 7.26242C10.7792 7.08735 10.8601 6.67636 10.6258 6.59049C10.2365 6.49795 9.31198 6.49462 8.97018 6.49712C8.31908 6.50295 7.88224 6.09696 7.91142 5.69263C7.9481 5.18826 8.29991 4.55967 9.29864 3.73601C7.58379 3.48591 6.59422 4.85396 6.59339 4.85563C5.66969 4.62637 4.22827 4.89064 4.22744 4.88981C3.27789 4.33458 3.07531 2.93652 3.07531 2.93652C3.07531 2.93652 1.65808 3.99361 2.03823 6.56048C2.03823 6.56048 -0.449434 10.9381 2.27666 15.9517C2.27666 15.9509 4.79517 21.0463 10.996 21.0463C17.2485 21.0463 21 15.8634 21 11.0423C21 7.51169 19.2251 4.82395 17.3577 3.32001Z"
                             fill="#5B5863" />
                         </svg>
-
                         Firefox
                       </a>
                     </li>
@@ -277,24 +276,38 @@
                 <div class="form-group">
                   <label>Email Address</label>
                   <input type="email"
+                    required
                     class="input-email form-control"
                     placeholder="e.g. johndoe@example.com" />
                 </div>
+                <div class="custom-alert">
+                  <img src="imgs/alert.svg"
+                    alt="">
+                  Enter a valid email and try again!
+                </div>
                 <div class="form-group">
                   <label>Subject</label>
-                  <select class="subject form-control">
-                    <option value=""
+                  <select class="subject form-control"
+                    name="subject"
+                    required>
+                    <option value="0"
                       selected>Select an Issue</option>
-                    <option value="">option 1</option>
-                    <option value="">option 2</option>
-                    <option value="">option 3</option>
-                    <option value="">option 4</option>
-                    <option value="">option 5</option>
+                    <option value="1">option 1</option>
+                    <option value="2">option 2</option>
+                    <option value="3">option 3</option>
+                    <option value="4">option 4</option>
+                    <option value="5">option 5</option>
                   </select>
+                </div>
+                <div class="custom-alert">
+                  <img src="imgs/alert.svg"
+                    alt="">
+                  Please select a message subject
                 </div>
                 <div class="form-group">
                   <label>Message</label>
                   <textarea class="message form-control"
+                    required
                     placeholder="Type your message here..."></textarea>
                 </div>
                 <div class="form-group file">
@@ -303,13 +316,15 @@
                       alt="" />
                     <span>Upload an attachement</span>
                     <input class="form-control"
+                      id="inputfile"
                       type="file"
                       style="opacity: 0;" />
-                    <button>Upload</button>
+                    <button>Choose file</button>
                   </div>
                 </div>
                 <div class="submit">
-                  <button type="submit">
+                  <button type="submit"
+                    class="primary--btn">
                     Submit message
                     <svg width="24"
                       height="12"
@@ -323,6 +338,22 @@
                   </button>
                 </div>
               </form>
+            </div>
+            <div class="message-sent text-center">
+              <div class="icon">
+                <svg width="80"
+                  height="80"
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M40 0C17.913 0 0 17.913 0 40C0 62.087 17.913 80 40 80C62.087 80 80 62.087 80 40C80 17.913 62.087 0 40 0ZM62.087 27.3043L34.2609 55.1304C33.913 55.4783 33.5652 55.6522 33.0435 55.6522C32.5217 55.6522 32.1739 55.4783 31.8261 55.1304L17.913 41.2174C17.2174 40.5217 17.2174 39.4783 17.913 38.7826C18.6087 38.087 19.6522 38.087 20.3478 38.7826L33.0435 51.4783L59.6522 24.8696C60.3478 24.1739 61.3913 24.1739 62.087 24.8696C62.7826 25.5652 62.7826 26.6087 62.087 27.3043Z"
+                    fill="#08AE7E"></path>
+                </svg>
+              </div>
+              <h3>Your message is sent!</h3>
+              <p>Our team will be in touch with you as soon as possible, Stay Tuned!</p>
+              <button>Done!</button>
             </div>
           </div>
         </div>
