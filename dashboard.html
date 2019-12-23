@@ -21,9 +21,9 @@
     rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous" />
-  <!-- choose.css -->
-  <link rel="stylesheet"
-    href="css/chosen.min.css">
+  <!-- selects.css -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css"
+    rel="stylesheet" />
   <!-- custom style css -->
   <link rel="stylesheet"
     href="css/style.css" />
@@ -1536,13 +1536,29 @@
                 </div>
                 <div class="form-group">
                   <label>Limited To Country</label>
-                  <select class="chzn-select form-control"
-                    multiple="true"
-                    name="country">
-                    <option value="AC">A</option>
-                    <option value="AD">B</option>
-                    <option value="AM">C</option>
-                    <option value="AP">D</option>
+                  <select class="select-country"
+                    name="states[]"
+                    multiple="multiple"
+                    data-placeholder="Select a Country">
+                    <option value="worldwide">WorldWide</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                    <option value="spain">Spain</option>
+                    <option value="italy">Italy</option>
+                    <option value="austria">Austria</option>
+                    <option value="belgium">Belgium</option>
+                    <option value="denmark">Denmark</option>
+                    <option value="france">France</option>
+                    <option value="hongkong">Hongkong</option>
+                    <option value="hungary">Hungary</option>
+                    <option value="india">India</option>
+                    <option value="netherlands">Netherlands</option>
+                    <option value="norway">Norway</option>
+                    <option value="poland">Poland</option>
+                    <option value="romania">Romania</option>
+                    <option value="singapore">Singapore</option>
+                    <option value="switzerland">Switzerland</option>
                   </select>
                 </div>
                 <div class="submit">
@@ -1821,8 +1837,8 @@
   <script src="js/bootstrap.min.js"></script>
   <!-- cleave js -->
   <script src="js/cleave.min.js"></script>
-  <!-- choose.js -->
-  <script src="js/chosen.jquery.min.js"></script>
+  <!-- select2.js -->
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
   <!-- main js -->
   <script src="js/main.js"></script>
   <script>
@@ -1877,7 +1893,31 @@
         numeralThousandsGroupStyle: "none"
       });
 
-      $(".chzn-select").chosen();
+      function formatState(state) {
+        if (!state.id) {
+          return state.text;
+        }
+        var baseUrl = "/imgs/flags";
+        var $state = $(
+          '<span><img src="' + baseUrl + '/' + state.element.value.toLowerCase() +
+          '.svg" class="img-flag" /> ' + state.text + '</span>'
+        );
+        return $state;
+      };
+
+      $('.select-country').select2({
+        // placeholder: 'Select a country',
+        tags: "true",
+        allowClear: false,
+        closeOnSelect: false,
+        templateResult: formatState,
+        minimumResultsForSearch: -1,
+        dropdownAutoWidth: false,
+        placeholder: function () {
+          $(this).data('placeholder');
+        }
+      });
+      $('.select2-search__field').css('width', '100%');
     });
   </script>
 </body>
