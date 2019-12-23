@@ -545,58 +545,33 @@
   <section class="how-to-use">
     <div class="container">
       <h2 class="how-to-use-title">How to use WeVPN in 3 Steps</h2>
-      <div class="row d-none d-lg-flex">
-        <div class="col-md-4">
-          <div class="step">
-            <h3 class="step-text"><span>01</span>Select a location</h3>
-            <div class="step-img">
-              <img src="imgs/android-step-one.png"
-                alt="">
+      <div class="how-to-use-content">
+        <div class="row sm-scrolled">
+          <div class="col-4">
+            <div class="step">
+              <h3 class="step-text"><span>01</span>Select a location</h3>
+              <div class="step-img">
+                <img src="imgs/android-step-one.png"
+                  alt="">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="step">
-            <h3 class="step-text"><span>02</span>Tap connect button</h3>
-            <div class="step-img">
-              <img src="imgs/android-step-two.png"
-                alt="">
+          <div class="col-4">
+            <div class="step">
+              <h3 class="step-text"><span>02</span>Tap connect button</h3>
+              <div class="step-img">
+                <img src="imgs/android-step-two.png"
+                  alt="">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="step">
-            <h3 class="step-text"><span>03</span>Yay! You’re connected</h3>
-            <div class="step-img last">
-              <img src="imgs/android-step-three.png"
-                alt="">
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="slider d-block d-lg-none">
-        <div class="owl-carousel owl-theme owl-visible"
-          id="how-to-use-slider">
-          <div class="step">
-            <h3 class="step-text"><span>01</span>Select a location</h3>
-            <div class="step-img">
-              <img src="imgs/android-step-one.png"
-                alt="">
-            </div>
-          </div>
-          <div class="step">
-            <h3 class="step-text"><span>02</span>Tap connect button</h3>
-            <div class="step-img">
-              <img src="imgs/android-step-two.png"
-                alt="">
-            </div>
-          </div>
-          <div class="step">
-            <h3 class="step-text"><span>03</span>Yay! You’re connected</h3>
-            <div class="step-img last">
-              <img src="imgs/android-step-three.png"
-                alt="">
+          <div class="col-4">
+            <div class="step">
+              <h3 class="step-text"><span>03</span>Yay! You’re connected</h3>
+              <div class="step-img last">
+                <img src="imgs/android-step-three.png"
+                  alt="">
+              </div>
             </div>
           </div>
         </div>
@@ -1465,7 +1440,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="wevpn-firefox.html">
                 <svg class="firefox"
                   width="42"
                   height="41"
@@ -1485,7 +1460,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="wevpn-chrome.html">
                 <svg width="41"
                   height="40"
                   viewBox="0 0 41 40"
@@ -1552,29 +1527,95 @@
       // trigger fancybox
       $('[data-fancybox="gallery"]').fancybox({});
 
-      $(window).on('resize', function () {
-        if ($(window).width() > 767) {
-          $('#how-to-use-slider').removeClass('owl-visible');
-        } else {
-          $('#how-to-use-slider').addClass('owl-visible');
-        }
-      });
-
-      $(".owl-visible").owlCarousel({
-
+      // trigger owl carousel one
+      $("#our-testimonial-slider").owlCarousel({
         loop: true,
-        margin: 30,
+        nav: true,
         dots: false,
+        // responsiveClass: true,
+        margin: 50,
         responsive: {
           0: {
-            items: 1.5
+            items: 1.25,
+            margin: 20
           },
           768: {
-            items: 2.5
+            items: 1.5,
+            margin: 30
+          },
+          1024: {
+            items: 2,
+            margin: 30
+          },
+          1200: {
+            items: 3.8
           }
-        }
+        },
+        navText: [
+          '<i class="fa fa-angle-left"></i>',
+          '<i class="fa fa-angle-right"></i>'
+        ]
       });
 
+      // trigger owl carousel two
+      $("#our-testimonial-slider2").owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        // responsiveClass: true,
+        margin: 50,
+        responsive: {
+          0: {
+            items: 1.25,
+            margin: 20
+          },
+          768: {
+            items: 1.5,
+            margin: 30
+          },
+          1024: {
+            items: 2,
+            margin: 30
+          },
+          1200: {
+            items: 3.8
+          }
+        },
+        navText: [
+          '<i class="fa fa-angle-left></i>',
+          '<i class="fa fa-angle-right"></i>'
+        ]
+      });
+
+      // trigger owl carousel three
+      $("#our-testimonial-slider3").owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        // responsiveClass: true,
+        margin: 50,
+        responsive: {
+          0: {
+            items: 1.25,
+            margin: 20
+          },
+          768: {
+            items: 1.5,
+            margin: 30
+          },
+          1024: {
+            items: 2,
+            margin: 30
+          },
+          1200: {
+            items: 3.8
+          }
+        },
+        navText: [
+          '<i class="fa fa-angle-left"></i>',
+          '<i class="fa fa-angle-right"></i>'
+        ]
+      });
     });
   </script>
 </body>

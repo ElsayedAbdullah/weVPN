@@ -16,11 +16,6 @@
   <!-- bootstrap css -->
   <link rel="stylesheet"
     href="css/bootstrap.min.css" />
-  <!-- owl-carousel -->
-  <link rel="stylesheet"
-    href="css/owl.carousel.min.css" />
-  <link rel="stylesheet"
-    href="css/owl.theme.default.min.css" />
   <!-- fontawesome -->
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     rel="stylesheet"
@@ -269,12 +264,17 @@
     <div class="container">
       <div class="row">
         <div class="col-6 col-lg-8">
-          <ul class="links d-none d-lg-block">
-            <li class="active"><a href="#">All articles</a></li>
-            <li><a href="#">Security</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">How-To</a></li>
-            <li><a href="#">Service Updates</a></li>
+          <ul class="links desktop d-none d-lg-block">
+            <li data-content=".all"
+              class="active"><a href="#">All articles</a></li>
+            <li data-content=".security"
+              class="security-item"><a href="#">Security</a></li>
+            <li data-content=".privacy"
+              class="privacy-item"><a href="#">Privacy</a></li>
+            <li data-content=".how-to"
+              class="how-to-item"><a href="#">How-To</a></li>
+            <li data-content=".service"
+              class="service-item"><a href="#">Service Updates</a></li>
           </ul>
           <div class="dropdown d-block d-lg-none">
             <button class="dropdown-toggle all-articles"
@@ -285,17 +285,29 @@
               aria-expanded="false">
               All articles
             </button>
-            <div class="dropdown-menu"
+            <ul class="dropdown-menu links"
               aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item"
-                href="#">Security</a>
-              <a class="dropdown-item"
-                href="#">Privacy</a>
-              <a class="dropdown-item"
-                href="#">How-To</a>
-              <a class="dropdown-item"
-                href="#">Service Updates</a>
-            </div>
+              <li data-content=".all">
+                <a class="dropdown-item"
+                  href="#!">All articles</a>
+              </li>
+              <li data-content=".security">
+                <a class="dropdown-item"
+                  href="#!">Security</a>
+              </li>
+              <li data-content=".privacy">
+                <a class="dropdown-item"
+                  href="#!">Privacy</a>
+              </li>
+              <li data-content=".how-to">
+                <a class="dropdown-item"
+                  href="#!">How-To</a>
+              </li>
+              <li data-content=".service">
+                <a class="dropdown-item"
+                  href="#!">Service Updates</a>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="col-6 col-lg-4">
@@ -323,139 +335,532 @@
   </div>
   <!-- End Categories links -->
 
-  <!-- Start Featured Articles -->
-  <div class="featured-articles">
-    <div class="container">
-      <h2 class="heading-medium">Featured Articles</h2>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="article">
-            <a class="label">Security</a>
-            <h3 class="article-title">
-              <a href="#">Vestibulum quis ligula quis sapien auctor</a>
-            </h3>
-            <div class="metabox">
-              <div class="author-img d-inline-block"></div>
-              <a href="#">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26 <span
-                class="bull">&bull;</span> 4 mins read
-            </div>
-            <div class="article-text">
-              Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
-              faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
-            </div>
-            <a href="#"
-              class="learn-more">
-              Learn more<i class="fa fa-angle-right"
-                aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-6 padd">
-          <div class="small-article first">
-            <a class="label">Privacy</a>
-            <h3 class="title">
-              <a href="#">Interdum et malesuada fames ac ante</a>
-            </h3>
-            <div class="meta-box">
-              <div class="author-img d-inline-block"></div>
-              <a href="#">Brandon Pena</a> • May 19 • 3 mins read
-            </div>
-            <div class="text d-none d-md-block">
-              Duis tempor laborum dolore eu sunt ullamco irure cupidatat Lorem
-              cillum amet dolore enim excepteur eu esse tempor nostrud...
-            </div>
-          </div>
-          <div class="small-article">
-            <span class="label">How-To</span>
-            <h3 class="title">
-              <a href="#">Interdum et malesuada fames ac ante</a>
-            </h3>
-            <div class="meta-box">
-              <div class="author-img two d-inline-block"></div>
-              <a href="#">Gregory Bell</a> <span class="bull">&bull;</span> Oct 16 <span
-                class="bull">&bull;</span> 6 mins read
-            </div>
-            <div class="text d-none d-md-block">
-              Duis tempor laborum dolore eu sunt ullamco irure cupidatat Lorem
-              cillum amet dolore enim excepteur eu esse tempor nostrud...
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6">
-          <h2 class="heading-medium">Recent Articles</h2>
-          <div class="small-article first">
-            <a class="label">Privacy</a>
-            <h3 class="title">
-              <a href="#">Interdum et malesuada fames ac ante</a>
-            </h3>
-            <div class="meta-box">
-              <div class="author-img d-inline-block"></div>
-              <a href="#">Brandon Pena</a> <span class="bull">&bull;</span> May 19 <span
-                class="bull">&bull;</span> 3 mins read
-            </div>
-            <div class="text d-none d-md-block">
-              Duis tempor laborum dolore eu sunt ullamco irure cupidatat Lorem
-              cillum amet dolore enim excepteur eu esse tempor nostrud...
-            </div>
-          </div>
-          <div class="small-article">
-            <a class="label">How-To</a>
-            <h3 class="title">
-              <a href="#">Interdum et malesuada fames ac ante</a>
-            </h3>
-            <div class="meta-box">
-              <div class="author-img two d-inline-block"></div>
-              <a href="#">Gregory Bell</a> <span class="bull">&bull;</span> Oct 16 <span
-                class="bull">&bull;</span> 6 mins read
-            </div>
-            <div class="text d-none d-md-block">
-              Duis tempor laborum dolore eu sunt ullamco irure cupidatat Lorem
-              cillum amet dolore enim excepteur eu esse tempor nostrud...
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 padd">
-          <h2 class="heading-medium">Popular Articles</h2>
-          <div class="popular-articles">
-            <div class="item">
-              <a class="label">Privacy</a>
-              <h3 class="title">
-                <a href="#">Sed varius sit amet lacus at aliquet. Duis nec eros sit amet elit iaculis.</a>
+  <!-- Start All Articles -->
+  <div class="articles-content">
+    <!-- Start Featured Articles -->
+    <div class="featured-articles all">
+      <div class="container">
+        <h2 class="heading-medium">Featured Articles</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="article">
+              <a class="label security-cat">Security</a>
+              <h3 class="article-title">
+                <a href="single-post.html">Vestibulum quis ligula quis sapien auctor</a>
               </h3>
               <div class="metabox">
-                <a href="#">Brandon Pena</a> <span class="bull">&bull;</span> Sep 15 <span
-                  class="bull">&bull;</span> 3 mins read
+                <div class="author-img d-inline-block"></div>
+                <a href="single-post.html">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26
+                <span class="bull">&bull;</span> 4 mins read
               </div>
-            </div>
-            <div class="item">
-              <a class="label">How-To</a>
-              <h3 class="title">
-                <a href="#">Etiam molestie nibh a urna fermentum viverra. Dolor sit amet nibh a urna</a>
-              </h3>
-              <div class="metabox">
-                <a href="#">Brandon Pena</a> <span class="bull">&bull;</span> Sep 15 <span
-                  class="bull">&bull;</span> 3 mins read
+              <div class="article-text">
+                Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
+                faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
               </div>
+              <a href="single-post.html"
+                class="learn-more">
+                Learn more<i class="fa fa-angle-right"
+                  aria-hidden="true"></i>
+              </a>
             </div>
-            <div class="item">
-              <a class="label">Security</a>
+          </div>
+          <div class="col-lg-6 padd">
+            <div class="small-article first">
+              <a class="label privacy-cat">Privacy</a>
               <h3 class="title">
                 <a href="#">Interdum et malesuada fames ac ante</a>
               </h3>
-              <div class="metabox">
-                <a href="#">Brandon Pena</a> <span class="bull">&bull;</span> Sep 15 <span
+              <div class="meta-box">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Brandon Pena</a> <span class="bull">&bull;</span> May 19 <span
                   class="bull">&bull;</span> 3 mins read
+              </div>
+              <div class="text d-none d-md-block">
+                Duis tempor laborum dolore eu sunt ullamco irure cupidatat Lorem
+                cillum amet dolore enim excepteur eu esse tempor nostrud...
+              </div>
+            </div>
+            <div class="small-article">
+              <span class="label how-to-cat">How-To</span>
+              <h3 class="title">
+                <a href="#">Interdum et malesuada fames ac ante</a>
+              </h3>
+              <div class="meta-box">
+                <div class="author-img two d-inline-block"></div>
+                <a href="#">Gregory Bell</a> <span class="bull">&bull;</span> Oct 16 <span
+                  class="bull">&bull;</span> 6 mins read
+              </div>
+              <div class="text d-none d-md-block">
+                Duis tempor laborum dolore eu sunt ullamco irure cupidatat Lorem
+                cillum amet dolore enim excepteur eu esse tempor nostrud...
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="heading-medium article-heading">Recent Articles</h2>
+            <div class="small-article first">
+              <a class="label privacy-cat">Privacy</a>
+              <h3 class="title">
+                <a href="#">Interdum et malesuada fames ac ante</a>
+              </h3>
+              <div class="meta-box">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Brandon Pena</a> <span class="bull">&bull;</span> May 19 <span
+                  class="bull">&bull;</span> 3 mins read
+              </div>
+              <div class="text d-none d-md-block">
+                Duis tempor laborum dolore eu sunt ullamco irure cupidatat Lorem
+                cillum amet dolore enim excepteur eu esse tempor nostrud...
+              </div>
+            </div>
+            <div class="small-article">
+              <a class="label how-to-cat">How-To</a>
+              <h3 class="title">
+                <a href="#">Interdum et malesuada fames ac ante</a>
+              </h3>
+              <div class="meta-box">
+                <div class="author-img two d-inline-block"></div>
+                <a href="#">Gregory Bell</a> <span class="bull">&bull;</span> Oct 16 <span
+                  class="bull">&bull;</span> 6 mins read
+              </div>
+              <div class="text d-none d-md-block">
+                Duis tempor laborum dolore eu sunt ullamco irure cupidatat Lorem
+                cillum amet dolore enim excepteur eu esse tempor nostrud...
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 padd">
+            <h2 class="heading-medium article-heading">Popular Articles</h2>
+            <div class="popular-articles">
+              <div class="item">
+                <a class="label privacy-cat">Privacy</a>
+                <h3 class="title">
+                  <a href="#">Sed varius sit amet lacus at aliquet. Duis nec eros sit amet elit iaculis.</a>
+                </h3>
+                <div class="metabox">
+                  <a href="#">Brandon Pena</a> <span class="bull">&bull;</span> Sep 15 <span
+                    class="bull">&bull;</span> 3 mins read
+                </div>
+              </div>
+              <div class="item">
+                <a class="label how-to-cat">How-To</a>
+                <h3 class="title">
+                  <a href="#">Etiam molestie nibh a urna fermentum viverra. Dolor sit amet nibh a urna</a>
+                </h3>
+                <div class="metabox">
+                  <a href="#">Brandon Pena</a> <span class="bull">&bull;</span> Sep 15 <span
+                    class="bull">&bull;</span> 3 mins read
+                </div>
+              </div>
+              <div class="item">
+                <a class="label security-cat">Security</a>
+                <h3 class="title">
+                  <a href="#">Interdum et malesuada fames ac ante</a>
+                </h3>
+                <div class="metabox">
+                  <a href="#">Brandon Pena</a> <span class="bull">&bull;</span> Sep 15 <span
+                    class="bull">&bull;</span> 3 mins read
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- End Featured Articles -->
+    <!-- End All Articles -->
+
+    <!--Start Security -->
+    <div class="security">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="article">
+              <a class="label">Security</a>
+              <h3 class="article-title">
+                <a href="#">Vestibulum quis ligula quis sapien auctor</a>
+              </h3>
+              <div class="metabox">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26 <span
+                  class="bull">&bull;</span> 4 mins read
+              </div>
+              <div class="article-text">
+                Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
+                faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
+              </div>
+              <a href="#"
+                class="learn-more">
+                Learn more<i class="fa fa-angle-right"
+                  aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="article">
+              <a class="label">Security</a>
+              <h3 class="article-title">
+                <a href="#">Vestibulum quis ligula quis sapien auctor</a>
+              </h3>
+              <div class="metabox">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26 <span
+                  class="bull">&bull;</span> 4 mins read
+              </div>
+              <div class="article-text">
+                Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
+                faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
+              </div>
+              <a href="#"
+                class="learn-more">
+                Learn more<i class="fa fa-angle-right"
+                  aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="article">
+              <a class="label">Security</a>
+              <h3 class="article-title">
+                <a href="#">Vestibulum quis ligula quis sapien auctor</a>
+              </h3>
+              <div class="metabox">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26 <span
+                  class="bull">&bull;</span> 4 mins read
+              </div>
+              <div class="article-text">
+                Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
+                faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
+              </div>
+              <a href="#"
+                class="learn-more">
+                Learn more<i class="fa fa-angle-right"
+                  aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="article">
+              <a class="label">Security</a>
+              <h3 class="article-title">
+                <a href="#">Vestibulum quis ligula quis sapien auctor</a>
+              </h3>
+              <div class="metabox">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26 <span
+                  class="bull">&bull;</span> 4 mins read
+              </div>
+              <div class="article-text">
+                Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
+                faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
+              </div>
+              <a href="#"
+                class="learn-more">
+                Learn more<i class="fa fa-angle-right"
+                  aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Security -->
+
+    <!-- Start Privacy -->
+    <div class="privacy">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="article">
+              <a class="label">Privacy</a>
+              <h3 class="article-title">
+                <a href="#">Vestibulum quis ligula quis sapien auctor</a>
+              </h3>
+              <div class="metabox">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26 <span
+                  class="bull">&bull;</span> 4 mins read
+              </div>
+              <div class="article-text">
+                Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
+                faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
+              </div>
+              <a href="#"
+                class="learn-more">
+                Learn more<i class="fa fa-angle-right"
+                  aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="article">
+              <a class="label">Privacy</a>
+              <h3 class="article-title">
+                <a href="#">Vestibulum quis ligula quis sapien auctor</a>
+              </h3>
+              <div class="metabox">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26 <span
+                  class="bull">&bull;</span> 4 mins read
+              </div>
+              <div class="article-text">
+                Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
+                faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
+              </div>
+              <a href="#"
+                class="learn-more">
+                Learn more<i class="fa fa-angle-right"
+                  aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="article">
+              <a class="label">Privacy</a>
+              <h3 class="article-title">
+                <a href="#">Vestibulum quis ligula quis sapien auctor</a>
+              </h3>
+              <div class="metabox">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26 <span
+                  class="bull">&bull;</span> 4 mins read
+              </div>
+              <div class="article-text">
+                Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
+                faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
+              </div>
+              <a href="#"
+                class="learn-more">
+                Learn more<i class="fa fa-angle-right"
+                  aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="article">
+              <a class="label">Privacy</a>
+              <h3 class="article-title">
+                <a href="#">Vestibulum quis ligula quis sapien auctor</a>
+              </h3>
+              <div class="metabox">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26 <span
+                  class="bull">&bull;</span> 4 mins read
+              </div>
+              <div class="article-text">
+                Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
+                faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
+              </div>
+              <a href="#"
+                class="learn-more">
+                Learn more<i class="fa fa-angle-right"
+                  aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="article">
+              <a class="label">Privacy</a>
+              <h3 class="article-title">
+                <a href="#">Vestibulum quis ligula quis sapien auctor</a>
+              </h3>
+              <div class="metabox">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26 <span
+                  class="bull">&bull;</span> 4 mins read
+              </div>
+              <div class="article-text">
+                Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
+                faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
+              </div>
+              <a href="#"
+                class="learn-more">
+                Learn more<i class="fa fa-angle-right"
+                  aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="article">
+              <a class="label">Privacy</a>
+              <h3 class="article-title">
+                <a href="#">Vestibulum quis ligula quis sapien auctor</a>
+              </h3>
+              <div class="metabox">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26 <span
+                  class="bull">&bull;</span> 4 mins read
+              </div>
+              <div class="article-text">
+                Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
+                faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
+              </div>
+              <a href="#"
+                class="learn-more">
+                Learn more<i class="fa fa-angle-right"
+                  aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Privacy -->
+
+    <!--Start How-To -->
+    <div class="how-to">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="article">
+              <a class="label">How-To</a>
+              <h3 class="article-title">
+                <a href="#">Vestibulum quis ligula quis sapien auctor</a>
+              </h3>
+              <div class="metabox">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26 <span
+                  class="bull">&bull;</span> 4 mins read
+              </div>
+              <div class="article-text">
+                Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
+                faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
+              </div>
+              <a href="#"
+                class="learn-more">
+                Learn more<i class="fa fa-angle-right"
+                  aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="article">
+              <a class="label">How-To</a>
+              <h3 class="article-title">
+                <a href="#">Vestibulum quis ligula quis sapien auctor</a>
+              </h3>
+              <div class="metabox">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26 <span
+                  class="bull">&bull;</span> 4 mins read
+              </div>
+              <div class="article-text">
+                Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
+                faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
+              </div>
+              <a href="#"
+                class="learn-more">
+                Learn more<i class="fa fa-angle-right"
+                  aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End How-To -->
+
+    <!--Start Service -->
+    <div class="service">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="article">
+              <a class="label">Service</a>
+              <h3 class="article-title">
+                <a href="#">Vestibulum quis ligula quis sapien auctor</a>
+              </h3>
+              <div class="metabox">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26 <span
+                  class="bull">&bull;</span> 4 mins read
+              </div>
+              <div class="article-text">
+                Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
+                faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
+              </div>
+              <a href="#"
+                class="learn-more">
+                Learn more<i class="fa fa-angle-right"
+                  aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="article">
+              <a class="label">Service</a>
+              <h3 class="article-title">
+                <a href="#">Vestibulum quis ligula quis sapien auctor</a>
+              </h3>
+              <div class="metabox">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26 <span
+                  class="bull">&bull;</span> 4 mins read
+              </div>
+              <div class="article-text">
+                Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
+                faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
+              </div>
+              <a href="#"
+                class="learn-more">
+                Learn more<i class="fa fa-angle-right"
+                  aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="article">
+              <a class="label">Service</a>
+              <h3 class="article-title">
+                <a href="#">Vestibulum quis ligula quis sapien auctor</a>
+              </h3>
+              <div class="metabox">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26 <span
+                  class="bull">&bull;</span> 4 mins read
+              </div>
+              <div class="article-text">
+                Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
+                faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
+              </div>
+              <a href="#"
+                class="learn-more">
+                Learn more<i class="fa fa-angle-right"
+                  aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="article">
+              <a class="label">Service</a>
+              <h3 class="article-title">
+                <a href="#">Vestibulum quis ligula quis sapien auctor</a>
+              </h3>
+              <div class="metabox">
+                <div class="author-img d-inline-block"></div>
+                <a href="#">Tomothy Williamson</a> <span class="bull">&bull;</span> Apr 26 <span
+                  class="bull">&bull;</span> 4 mins read
+              </div>
+              <div class="article-text">
+                Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus. Vivamus ut lectus est. Ut
+                faucibus tellus tellus Ut feugiat nibh quis nibh tincidunt, nec commodo nunc maximus...
+              </div>
+              <a href="#"
+                class="learn-more">
+                Learn more<i class="fa fa-angle-right"
+                  aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Service -->
   </div>
-  <!-- End Featured Articles -->
 
   <!-- Start Footer -->
   <footer>
@@ -551,7 +956,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="wevpn-firefox.html">
                 <svg class="firefox"
                   width="42"
                   height="41"
@@ -571,7 +976,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="wevpn-chrome.html">
                 <svg width="41"
                   height="40"
                   viewBox="0 0 41 40"
@@ -626,8 +1031,6 @@
   <script src="js/popper.min.js"></script>
   <!-- bootstrap js -->
   <script src="js/bootstrap.min.js"></script>
-  <!-- Owl Carousel -->
-  <script src="js/owl.carousel.min.js"></script>
   <!-- custom main js -->
   <script src="js/main.js"></script>
 </body>

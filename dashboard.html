@@ -16,16 +16,14 @@
   <!-- bootstrap css -->
   <link rel="stylesheet"
     href="css/bootstrap.min.css" />
-  <!-- owl-carousel -->
-  <link rel="stylesheet"
-    href="css/owl.carousel.min.css" />
-  <link rel="stylesheet"
-    href="css/owl.theme.default.min.css" />
   <!-- fontawesome -->
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous" />
+  <!-- choose.css -->
+  <link rel="stylesheet"
+    href="css/chosen.min.css">
   <!-- custom style css -->
   <link rel="stylesheet"
     href="css/style.css" />
@@ -1538,14 +1536,13 @@
                 </div>
                 <div class="form-group">
                   <label>Limited To Country</label>
-                  <select required
-                    class="form-control">
-                    <option value="">Select a country</option>
-                    <option value="canada">canada</option>
-                    <option value="usa">USA</option>
-                    <option value="mexico">Mexico</option>
-                    <option value="france">France</option>
-                    <option value="italy">Italy</option>
+                  <select class="chzn-select form-control"
+                    multiple="true"
+                    name="country">
+                    <option value="AC">A</option>
+                    <option value="AD">B</option>
+                    <option value="AM">C</option>
+                    <option value="AP">D</option>
                   </select>
                 </div>
                 <div class="submit">
@@ -1747,7 +1744,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="wevpn-firefox.html">
                 <svg class="firefox"
                   width="42"
                   height="41"
@@ -1767,7 +1764,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="wevpn-chrome.html">
                 <svg width="41"
                   height="40"
                   viewBox="0 0 41 40"
@@ -1822,10 +1819,11 @@
   <script src="js/popper.min.js"></script>
   <!-- bootstrap js -->
   <script src="js/bootstrap.min.js"></script>
-  <!-- Owl Carousel -->
-  <script src="js/owl.carousel.min.js"></script>
-  <!-- custom main js -->
+  <!-- cleave js -->
   <script src="js/cleave.min.js"></script>
+  <!-- choose.js -->
+  <script src="js/chosen.jquery.min.js"></script>
+  <!-- main js -->
   <script src="js/main.js"></script>
   <script>
     $(function () {
@@ -1878,6 +1876,8 @@
         numeral: true,
         numeralThousandsGroupStyle: "none"
       });
+
+      $(".chzn-select").chosen();
     });
   </script>
 </body>
