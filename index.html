@@ -16,6 +16,11 @@
   <!-- bootstrap css -->
   <link rel="stylesheet"
     href="css/bootstrap.min.css" />
+  <!-- owl-carousel -->
+  <link rel="stylesheet"
+    href="css/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="css/owl.theme.default.min.css" />
   <!-- fontawesome -->
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     rel="stylesheet"
@@ -1155,8 +1160,106 @@
   <script src="js/popper.min.js"></script>
   <!-- bootstrap js -->
   <script src="js/bootstrap.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="js/owl.carousel.min.js"></script>
   <!-- custom main js -->
   <script src="js/main.js"></script>
+  <script>
+    $(function () {
+      // trigger fancybox
+      $('[data-fancybox="gallery"]').fancybox({});
+
+      // trigger owl carousel one
+      $("#our-testimonial-slider").owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        // responsiveClass: true,
+        margin: 50,
+        responsive: {
+          0: {
+            items: 1.25,
+            margin: 20
+          },
+          768: {
+            items: 1.5,
+            margin: 30
+          },
+          1024: {
+            items: 2,
+            margin: 30
+          },
+          1200: {
+            items: 3.8
+          }
+        },
+        navText: [
+          '<i class="fa fa-angle-left"></i>',
+          '<i class="fa fa-angle-right"></i>'
+        ]
+      });
+
+      // trigger owl carousel two
+      $("#our-testimonial-slider2").owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        // responsiveClass: true,
+        margin: 50,
+        responsive: {
+          0: {
+            items: 1.25,
+            margin: 20
+          },
+          768: {
+            items: 1.5,
+            margin: 30
+          },
+          1024: {
+            items: 2,
+            margin: 30
+          },
+          1200: {
+            items: 3.8
+          }
+        },
+        navText: [
+          '<i class="fa fa-angle-left"></i>',
+          '<i class="fa fa-angle-right"></i>'
+        ]
+      });
+
+      // trigger owl carousel three
+      $("#our-testimonial-slider3").owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        // responsiveClass: true,
+        margin: 50,
+        responsive: {
+          0: {
+            items: 1.25,
+            margin: 20
+          },
+          768: {
+            items: 1.5,
+            margin: 30
+          },
+          1024: {
+            items: 2,
+            margin: 30
+          },
+          1200: {
+            items: 3.8
+          }
+        },
+        navText: [
+          '<i class="fa fa-angle-left"></i>',
+          '<i class="fa fa-angle-right"></i>'
+        ]
+      });
+    });
+  </script>
 </body>
 
 </html>
