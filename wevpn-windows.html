@@ -537,27 +537,52 @@
           <div class="col-4">
             <div class="step">
               <h3 class="step-text"><span>01</span>Select a location</h3>
-              <div class="step-img">
+              <!-- <div class="step-img">
                 <img src="imgs/step-one.png"
                   alt="">
+              </div> -->
+              <div class="project"
+                style="width: 299px; height: 485px;">
+                <div class="project__card ">
+                  <a href=""
+                    class="project__image"><img src="imgs/step-one.png"
+                      alt=""></a>
+                </div>
               </div>
+
             </div>
           </div>
           <div class="col-4">
             <div class="step">
               <h3 class="step-text"><span>02</span>Tap connect button</h3>
-              <div class="step-img">
+              <!-- <div class="step-img">
                 <img src="imgs/step-two.png"
                   alt="">
+              </div> -->
+              <div class="project"
+                style="width: 299px; height: 485px;">
+                <div class="project__card ">
+                  <a href=""
+                    class="project__image"><img src="imgs/step-two.png"
+                      alt=""></a>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-4">
             <div class="step">
               <h3 class="step-text"><span>03</span>Yay! You’re connected</h3>
-              <div class="step-img last">
+              <!-- <div class="step-img last">
                 <img src="imgs/step-three.png"
                   alt="">
+              </div> -->
+              <div class="project"
+                style="width: 299px; height: 485px;">
+                <div class="project__card ">
+                  <a href=""
+                    class="project__image"><img src="imgs/step-three.png"
+                      alt=""></a>
+                </div>
               </div>
             </div>
           </div>
@@ -1030,7 +1055,8 @@
   <!-- End Features Windows -->
 
   <!-- Start Benefits -->
-  <section class="benefits">
+  <section class="benefits"
+    id="benefits">
     <div class="container">
       <div class="benefits-wrapper">
         <h2 class="benfits-title">Learn how can WeVPN benefit you</h2>
@@ -1102,16 +1128,18 @@
   <!-- End Benefits -->
 
   <!-- Start Devices operating system -->
-  <section class="devices-os">
+  <section class="devices-os"
+    id="devices">
     <div class="container">
       <div class="row">
-        <div class="col-md-7 col-lg-6">
-          <div class="devices-img">
-            <img src="imgs/geometry.png"
-              alt="">
+        <div class="col-md-7 col-lg-5">
+          <div id="devs"
+            class="devices-img">
+            <!-- <img src="imgs/geometry.png"
+              alt=""> -->
           </div>
         </div>
-        <div class="col-md-5 col-lg-5 offset-lg-1">
+        <div class="col-md-5 col-lg-6 offset-lg-1">
           <div class="devices-content">
             <h2 class="devices-title">WeVPN for All Your Devices</h2>
             <p class="devices-desc">
@@ -1475,7 +1503,9 @@
         <div class="row">
           <div class="col-lg-4 order-2 order-lg-1">
             <div class="copyright-txt">
-              <p>© Copyrights 2019 - WeVPN</p>
+              <p>© Copyrights <script>
+                  document.write(new Date().getFullYear())
+                </script> - WeVPN</p>
             </div>
           </div>
           <div class="col-lg-8 order-1 order-lg-2">
@@ -1507,6 +1537,12 @@
   <script src="js/owl.carousel.min.js"></script>
   <!-- fancybox -->
   <script src="js/jquery.fancybox.min.js"></script>
+  <!-- 3d-hover -->
+  <script src="js/jquery.hover3d.min.js"></script>
+  <!-- lottie.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.js"></script>
+  <!-- waypoints -->
+  <script src="js/jquery.waypoints.min.js"></script>
   <!-- custom main js -->
   <script src="js/main.js"></script>
   <script>
@@ -1602,6 +1638,33 @@
           '<i class="fa fa-angle-left"></i>',
           '<i class="fa fa-angle-right"></i>'
         ]
+      });
+
+
+      // trigger the hover 3d effect
+      $(".project").hover3d({
+        selector: ".project__card",
+        shine: false,
+        perspective: 800,
+        sensitivity: 30,
+
+      });
+
+      // lottie animation
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById('devs'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        path: 'lottie/devices.json'
+      });
+
+      var waypoint = new Waypoint({
+        element: document.getElementById('devices'),
+        handler: function (direction) {
+          animation.play();
+        },
+        offset: '50%'
       });
     });
   </script>

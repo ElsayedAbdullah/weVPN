@@ -259,7 +259,8 @@
   <!-- End Header -->
 
   <!-- Start Features Windows -->
-  <section class="features-windows features-page">
+  <section class="features-windows features-page"
+    id="features">
     <div class="container">
       <h2 class="features-windows-title">
         Check all full-fledged WeVPN features
@@ -471,7 +472,8 @@
   <!-- End Features Windows -->
 
   <!-- Start Need Help -->
-  <div class="need-help">
+  <div class="need-help"
+    id="chatanimation">
     <div class="container">
       <div class="row">
         <div class="col-md-6 order-2 order-md-1">
@@ -499,9 +501,10 @@
           </div>
         </div>
         <div class="col-md-6 order-1 order-md-2">
-          <div class="need-help-img">
-            <img src="imgs/need-help-img.png"
-              alt="" />
+          <!-- <img src="imgs/need-help-img.png"
+            alt="" /> -->
+          <div id="chatanim"
+            class="need-help-img">
           </div>
         </div>
       </div>
@@ -789,7 +792,9 @@
         <div class="row">
           <div class="col-lg-4 order-2 order-lg-1">
             <div class="copyright-txt">
-              <p>© Copyrights 2019 - WeVPN</p>
+              <p>© Copyrights <script>
+                  document.write(new Date().getFullYear())
+                </script> - WeVPN</p>
             </div>
           </div>
           <div class="col-lg-8 order-1 order-lg-2">
@@ -816,8 +821,31 @@
   <script src="js/popper.min.js"></script>
   <!-- bootstrap js -->
   <script src="js/bootstrap.min.js"></script>
+  <!-- lottie.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.js"></script>
+  <!-- waypoints -->
+  <script src="js/jquery.waypoints.min.js"></script>
   <!-- custom main js -->
   <script src="js/main.js"></script>
+
+  <script>
+    // lottie animation
+    var animation = bodymovin.loadAnimation({
+      container: document.getElementById('chatanim'),
+      renderer: 'svg',
+      loop: false,
+      autoplay: false,
+      path: 'lottie/chat.json'
+    });
+
+    var waypoint = new Waypoint({
+      element: document.getElementById('features'),
+      handler: function (direction) {
+        animation.play();
+      },
+      offset: 'bottom-in-view'
+    });
+  </script>
 </body>
 
 </html>
